@@ -3,6 +3,7 @@ source :rubygems
 # Project requirements
 gem 'rake'
 gem 'rack-flash'
+gem 'rack-rewrite'
 gem 'thin' # or mongrel
 gem "builder", "2.1.2"
 gem "rdiscount", "1.5.8"
