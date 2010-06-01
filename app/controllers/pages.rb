@@ -66,6 +66,8 @@ Presto.controllers :pages do
     @title = @page.title
     @description = @page.description
     @keywords = @page.keywords
+    
+    response.headers['Cache-Control'] = 'public, max-age=300'
     render 'pages/page'
   end
 

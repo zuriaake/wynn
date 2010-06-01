@@ -1,9 +1,9 @@
 .breadcrumb
   %a{ :href => "/" } Home
-  &gt;
+  &raquo;
   - if @page.parent
     %a{ :href => @page.parent.abspath }= @page.parent.heading
-    &gt;
+    &raquo;
   = @page.heading
 
 #sidebar
