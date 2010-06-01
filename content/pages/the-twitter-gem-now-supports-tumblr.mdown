@@ -1,0 +1,20 @@
+date: 2009-12-18 16:09:32 -06:00
+categories: blog
+
+# The Twitter gem now supports Tumblr
+On the heels of the <a href="http://staff.tumblr.com/post/287703110/api">announcement that Tumblr now supports the Twitter API</a>, we're happy to say the <a href="http://gemcutter.org/gems/twitter">Twitter gem</a> now supports Tumblr!
+<!--more-->
+
+Be sure and grab 0.8.0: <code>sudo gem install twitter</code>
+
+
+To use the gem with Tumblr, pass a new argument when using HTTPAuth. Also note your username is your email address on Tumblr:
+
+[ruby]
+httpauth = Twitter::HTTPAuth.new('email', 'password', :api_endpoint =&gt; 'tumblr.com')
+base = Twitter::Base.new(httpauth)
+
+pp base.user_timeline
+[/ruby]
+
+Tumblr does not support all API methods and instead returns 404s. I'll look into a way to catch those and raise <code>NotImplemented</code> instead.

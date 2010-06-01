@@ -1,0 +1,7 @@
+date: 2009-10-28 07:51:06 -05:00
+categories: blog
+
+# Slides: Hands on with Ruby and MongoDB
+I had the opportunity to drive down to Austin yesterday and meet all the great folks at <a href="http://www.austinonrails.org/">Austin on Rails</a> and talk about <a href="http://mongodb.org">MongoDB</a>. Here are the slides from my talk.
+<!--more-->
+<div style="clear: both;margin: 2em 0;width:425px;text-align:left" id="__ss_2366508"><a style="font:14px Helvetica,Arial,Sans-serif;display:block;margin:12px 0 3px 0;text-decoration:underline;" href="http://www.slideshare.net/pengwynn/hands-on-with-ruby-mongodb" title="Hands on with Ruby &amp; MongoDB">Hands on with Ruby &amp; MongoDB</a><object style="margin:0px" width="425" height="355"><param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=mongodb-aor-091028094249-phpapp01&stripped_title=hands-on-with-ruby-mongodb" /><param name="allowFullScreen" value="true"/><param name="allowScriptAccess" value="always"/><embed src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=mongodb-aor-091028094249-phpapp01&stripped_title=hands-on-with-ruby-mongodb" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="355"></embed></object><div style="font-size:11px;font-family:tahoma,arial;height:26px;padding-top:2px;">View more <a style="text-decoration:underline;" href="http://www.slideshare.net/">documents</a> from <a style="text-decoration:underline;" href="http://www.slideshare.net/pengwynn">Wynn Netherland</a>.</div></div>

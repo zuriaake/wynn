@@ -1,0 +1,108 @@
+date: 2009-11-12 08:33:20 -06:00
+categories: blog
+
+# @font-face-off: Typekit vs. Font Squirrel
+Now that the curtain has come down and now <a href="http://typekit.com">Typekit</a> is available to all, let's see how Typekit and the <a href='http://wynnnetherland.com/2009/10/font-face-made-easy-with-font-squirrel/'>previously mentioned Font Squirrel</a> stack up head-to-head. 
+<!--more-->
+<h4>Selection</h4>
+
+It's ironic to even compare font selection between these services when we've been stuck with such a limited set of web safe fonts for nearly two decades. Even so, it's interesting to compare both the depth and quality of the fonts provided.
+
+<h5>Depth</h5>
+
+<dl class='comparison'>
+  <dt>Typekit</dt>
+  <dd>
+    Nearly 296 available families depending on plan: the Trial plan includes 69 families, the Personal plan includes 231 and the Full plan offers 296 families.
+  </dd>
+  <dt>Font Squirrel</dt>
+  <dd class='winner'>488 families. Not enough? Check the license on that favorite free font and then <a href='http://www.fontsquirrel.com/fontface/generator'>add your own</a>.</dd>
+  <dt>Winner: Font Squirrel</dt>
+  <dd>With almost two hundred more font families available, Font Squirrel is the clear winner.</dd>
+</dl>
+
+<h5>Quality</h5>
+
+Comparing font quality is somewhat subjective, but heading into this comparison, I expected to find a much higher caliber set of fonts on Typekit since their business model includes negotiating with foundries to license fonts for web embedding that otherwise wouldn't be. However, I find no real difference between the quality of fonts provided, and some free (as in speech and beer) fonts <a href='http://typekit.com/fonts/87'>appear</a> on <a href='http://www.fontsquirrel.com/fonts/Inconsolata'>both</a>.
+
+<dl class='comparison'>
+  <dt>Draw</dt>
+  <dd class='draw'>No clear cut edge on quality. Perhaps this will swing to Typekit as foundries come on board.</dd>
+</dl>
+
+<h4>Usability</h4>
+
+Let's face it. A big part of punching up your web typography is actually finding the right font. Let's see how each site helps you wade through all those typefaces.
+
+<h5>Navigation</h5>
+
+<dl class='comparison'>
+  <dt>Typekit</dt>
+  <dd class='winner'>Typekit offers a <a href='http://delicious.com/pengwynn/css+framework'>delicious-style</a> drilldown navigation. You can start with basic styles like serif, sans-serif, or monospace and further drill down using tags such as display, headline, or grunge. However, you can't search the entire library unless you're logged in. Once you're logged in, you're limited to just the fonts in your plan. Bottom line, there is no way to search the full library unless you upgrade to the full plan.</dd>
+  <dt>Font Squirrel</dt>
+  <dd>The browsing experience on Font Squirrel isn't quite as robust as Typekit. While you can still browse and paginate by basic font families, the lack of tags and secondary navigation makes it tedious to get through some of the larger style categories. However, one cool thing Font Squirrel provides is the ability to view all the fonts from a <a href='http://www.fontsquirrel.com/foundry/The-League-of-Moveable-Type'>particular foundry</a>. I look for Typekit to add this soon. </dd>
+  <dt>Winner: Typekit</dt>
+  <dd>Even with the lack of search, the tag-based navigation gives the edge to Typekit</dd>
+</dl>
+
+<h5>Preview</h5>
+
+Both sites do a great job of previewing fonts including specimens and weights &amp; styles, but each site offers some unique features.
+
+<dl class='comparison'>
+  <dt>Typekit</dt>
+  <dd>The <a href='http://typekit.com/fonts/320#browse-specimens'>specimens</a> provided by Typekit range from 9px to 36px and are absolutely gorgeous. Typekit also provides both dark-on-light and light-on-dark previews in several contrast levels.</dd>
+  <dt>Font Squirrel</dt>
+  <dd><a href='http://www.fontsquirrel.com/fonts/Anonymous#characters'>Character maps</a> really enhance the Font Squirrel previews. When choosing a font, it's important to know what characters are supported.</dd>
+  <dt>Draw</dt>
+  <dd class='draw'>I'm hard to please. I'd love to see Typekit's line height range <em>and</em> Font Squirrel's character map.</dd>
+</dl>
+
+<h4>Setup</h4>
+
+Once you've picked that perfect font, you've got to add it to your site. The process is a bit different for each service.
+
+<dl class='comparison'>
+  <dt>Typekit: configure and embed</dt>
+  <dd class='winner'>To use a font, you create a <em>font kit</em> using the font editor. You can select multiple fonts, choose the weights and styles to include, the CSS selectors to which you'd like to apply them, and additional web safe fonts in your font stack (to display while your fonts are downloading the first time a user hits your site). Once your selections are made, Typekit provides an <code>script</code> embed snippet to include in your page <code>head</code> and you're all set.</dd>
+  <dt>Font Squirrel: download and edit</dt>
+  <dd>Taking a different approach, Font Squirrel provides <a href='http://www.fontsquirrel.com/fontface'>@font-face kits</a>, zip file downloads containing all the font formats, CSS code, and demo files you need to add fonts to your site. Simply copy the font files to your server, add the CSS rules to your stylesheet and you're all set.</dd>
+  <dt>Winner: Typekit</dt>
+  <dd>The ability to fine tune as well the ability to update a package on-the-fly without a deploy gives the edge to Typekit for this round.</dd>
+</dl>
+
+<h4>Reliability</h4>
+
+One of the recurring questions that arises in discussing Typekit with my designer friends is, "What if they go down?" Honestly, chances are your site will be down more than theirs.
+
+<dl class='comparison'>
+  <dt>Typekit: hosted</dt>
+  <dd>Distributed servers worldwide helps Typekit serve fonts <a href='http://typekit.com/tour/scalability'>fast and reliably</a>.</dd>
+  <dt>Font Squirrel: self-hosted</dt>
+  <dd class='winner'>Since you host your Font Squirrel fonts yourself, your fonts are served out of your own hosting bandwidth agreement and is as reliable as your own site.</dd>
+  <dt>Slight edge: Font Squirrel</dt>
+  <dd>For me the question of reliability is more about implementation than network questions. Since Typekit relies on JavaScript, an error on your page from any script or widget potentially could prevent your fonts from rendering.</dd>
+</dl>
+
+<h4>Price</h4>
+Because almost everything usually comes back to budget, let's look at the cost comparison between the two services.
+
+<dl class='comparison'>
+  <dt>Typekit: free and paid</dt>
+  <dd>Typekit offers both free and paid plans, but to get the full library, you need to fork over $204 a year (or $49.99/yr for a limited time). This gives you full access to all Typekit fonts for up to five web sites.</dd>
+  <dt>Font Squirrel: 100% free</dt>
+  <dd class='winner'>There is no charge for Font Squirrel fonts. Bandwidth costs come into play as with any other web asset, but if you're serving that much traffic, you're probably already using a Content Delivery Network or Amazon S3, right?</dd>
+  <dt>Winner: Font Squirrel</dt>
+  <dd>Font Squirrel is the clear winner here, especially if you consider that you'll still have to rent those fonts from Typekit even if you've already purchased them to use in print or other non-web digital creations.</dd>
+</dl>
+
+<h4>Bonus: <a href="http://en.wikipedia.org/wiki/Eating_one%27s_own_dog_food">Eat your own <del datetime="2009-11-12T15:08:40+00:00">dog</del> squirrel food</a></h4>
+
+You can't peddle unapplied truth. While you can no doubt create great designs with the web safe font stacks, if you're running a site that touts the breakthroughs of web typography, how about giving us something more to look at than Arial and Georgia. I find it surprising that I couldn't find an example of Typekit using the fonts they serve in their own site out side of their gallery.
+
+Font Squirrel, by contrast employs the very fonts it showcases.
+
+<h4>Summary</h4>
+
+The bottom line is both of these services are great and are advancing web typography. The decision as to which to use comes down to what font you need, your budget, and how comfortable you are editing your own CSS and hosting your own fonts. So go kick the tires on both and make something beautiful!
+

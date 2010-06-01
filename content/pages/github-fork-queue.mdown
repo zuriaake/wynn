@@ -1,0 +1,39 @@
+date: 2009-11-18 03:41:50 -06:00
+categories: blog
+
+# Fork you? No, no, no - Fork Queue.
+You don't have to be a <a href="http://drnicwilliams.com/">Dr. Nic</a> with his <a href="http://github.com/drnic">100+ public repos</a> to appreciate the <a href="http://github.com/blog/270-the-fork-queue">Github Fork Queue</a> and how it streamlines accepting patches for your open source projects.
+<!--more-->
+
+<h3>Gittin' picky wi - it</h3>
+The Fork Queue is a way to cherry pick which pull requests you want to accept, it's not a replacement for your normal git workflow for accepting, testing, and committing patches. If you haven't read <a href="http://www.viget.com/extend/i-have-a-pull-request-on-github-now-what/">Viget's thoughts on patch workflow</a>, head over there and read it first.
+
+The first thing you'll want to do to set up your fork queue is to select or create your integration branch:
+
+<a class='flickr' href="http://www.flickr.com/photos/wynnxp/4112180361/" title="The readernaut Fork Queue - GitHub by pengwynn, on Flickr"><img src="http://farm3.static.flickr.com/2606/4112180361_eec3196bfa.jpg" width="500" height="276" alt="The readernaut Fork Queue - GitHub" /></a>
+
+Simply select an existing branch or create a new one on-the-fly:
+
+<a class='flickr' href="http://www.flickr.com/photos/wynnxp/4112185667/" title="The readernaut Fork Queue - GitHub by pengwynn, on Flickr"><img src="http://farm3.static.flickr.com/2555/4112185667_36bfb1b77d.jpg" width="500" height="120" alt="The readernaut Fork Queue - GitHub" /></a>
+
+Once you've done this one-time setup, you can now cherry pick the commits you want to pull into your integration branch:
+
+<a class='flickr' href="http://www.flickr.com/photos/wynnxp/4113066022/" title="System by pengwynn, on Flickr"><img src="http://farm3.static.flickr.com/2799/4113066022_e65138659c.jpg" width="500" height="90" alt="System" /></a>
+
+Once you've accepted or rejected the changes in the queue, you can pull those changes by pulling down that branch:
+
+[bash]
+$ git checkout integration 
+Switched to branch 'integration'
+$ git pull origin integration
+[/bash]
+
+Once you've tested and cleanly merged all the changes into your integration branch, flip back to your master branch and merge again.
+
+[bash]
+$ git checkout master
+$ git merge integration
+$ git push origin master
+[/bash]
+
+Forkin' simple.

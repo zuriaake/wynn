@@ -1,0 +1,81 @@
+date: 2009-11-07 19:22:06 -06:00
+categories: blog
+
+# Sass up your WordPress themes with Compass
+I'm a Rubyist. But I'm also a pragmatic front-end developer. When I have to write a full-stack solution, I pick Rails or Sinatra because writing Ruby is a joy and the <a href="http://gemcutter.org">Ruby ecosystem</a> is so darn cool. But when I have to create a CMS-based site for myself or a client I love the usability and community behind WordPress. Although I can reluctantly lay Ruby aside when I extend WordPress, I really miss my <a href="http://sass-lang.com/">syntactically awesome stylesheets</a>. Until now.
+<!--more-->
+<h3>Introducing compass-wordpress</h3>
+After turning  my buddy (and Haml/Sass/Compass ninja) <a href="http://web20show.com">Adam</a> onto Thematic, the <a href="http://themeshaper.com">awesome WordPress theme framework</a> from <a href="http://twitter.com/iandstewart/">Ian Stewart</a>, we quickly started lamenting our loss of <a href="http://sass-lang.com/docs/yardoc/SASS_REFERENCE.md.html#mixins">mixins</a>, <a href="http://sass-lang.com/docs/yardoc/SASS_REFERENCE.md.html#nested_rules">nested rules</a>, <a href="http://sass-lang.com/docs/yardoc/SASS_REFERENCE.md.html#variables_">variables</a>, and bundled patterns we got from Sass and <a href="http://compass-style.org">Compass</a>. Fueled by a dream of writing WordPress themes without curly braces and armed with some info from<a href="http://chriseppstein.github.com/"> Chris Eppstein</a>, we hammered out a new gem - <a href="http://gemcutter.org/gems/compass-wordpress">compass-wordpress</a>.
+
+<h3>Features</h3>
+
+Compass-wordpress includes:
+
+<ul>
+	<li>easy Compass and Sass integration for your WordPress theme</li>
+	<li>generic WordPress theme project template</li>
+	<li>Thematic child themes project template (more theme frameworks to come)</li>
+	<li>no production Ruby/Sass/Compass dependencies, deploy only your compiled CSS</li>
+</ul>
+
+<h3>Installation</h3>
+Since compass-wordpress is a Ruby gem, you install it and its dependencies via <a href="http://docs.rubygems.org/read/book/1">ruby gems</a>. If you haven't yet switched to Gemcutter, you'll need to do that first:
+
+[bash]
+sudo gem install gemcutter
+gem tumble
+[/bash]
+
+Then install compass-wordpress: 
+
+[bash]
+sudo gem install compass-wordpress
+
+Password:
+Successfully installed compass-wordpress-0.0.2
+1 gem installed
+Installing ri documentation for compass-wordpress-0.0.2...
+Installing RDoc documentation for compass-wordpress-0.0.2...
+[/bash]
+
+Compass will also be installed if you don't have it. If you're new to Compass, head over to the <a href="http://wiki.github.com/chriseppstein/compass">wiki</a> and checkout all the great info over there.
+
+<h3>Usage</h3>
+
+To stamp out a new blank WordPress template, drop into your themes folder in a terminal and run the compass command:
+
+[bash]
+compass -r compass-wordpress -f wordpress  -p thematic my_awesome_theme 
+[/bash]
+
+In this example we're creating a new Thematic child theme. (You already have the <a href="http://wordpress.org/extend/themes/download/thematic.0.9.5.1.zip">Thematic</a> theme unpacked to your themes folder right?) Let's look at what we've got in our shiny new theme:
+
+[bash]
+drwxr-xr-x  8 wynn  staff  272 Nov  5 22:15 .
+drwxr-xr-x  3 wynn  staff  102 Nov  5 22:15 ..
+-rw-r--r--@ 1 wynn  staff  364 Nov  5 22:15 config.rb
+-rw-r--r--@ 1 wynn  staff  697 Nov  5 22:15 functions.php
+-rw-r--r--  1 wynn  staff  312 Nov  5 22:15 readme.txt
+drwxr-xr-x  5 wynn  staff  170 Nov  5 22:15 src
+-rw-r--r--@ 1 wynn  staff  483 Nov  5 22:15 style.css
+drwxr-xr-x  4 wynn  staff  136 Nov  5 22:15 stylesheets
+[/bash]
+
+If you want a different folder structure for your Sass and compiled css files, you can pass advanced options in the command line:
+
+[bash]
+compass -r compass-wordpress -f wordpress  -p thematic  --sass-dir=sass --css-dir=css -s compressed my_awesome_theme 
+[/bash]
+
+<h3>Developing your theme</h3>
+The only change to your theme development workflow is using Sass instead of CSS.  We compile that Sass into CSS using the <code>compass</code> command again.
+
+[bash]
+compass --watch
+[/bash]
+
+This will launch a process to watch your source files and automatically re-compile your CSS referenced in your theme. As long as this process is running, you can just refresh your browser to view your changes. When you're done, just <code>CTRL-C</code> to stop the compass process and deploy your theme as you normally would. It's that simple!
+
+<h3>Get involved</h3>
+If you're into WordPress development (especially if you're partial to another theme framework), why not <a href="http://github.com/pengwynn/compass-wordpress">fork us</a> and join the party?
+

@@ -1,0 +1,52 @@
+date: 2009-11-03 08:32:24 -06:00
+categories: blog
+
+# New in TwitterLand: TweetMeme and Foller.me API support
+We've added two new APIs to the <a href="http://gemcutter.org/gems/twitterland">TwitterLand gem</a>. Version 0.4.0 adds support for <a href="http://tweetmeme.com">TweetMeme</a> and <a href="http://foller.me">Foller.me</a>.
+<!--more-->
+
+<h3>TweetMeme - the hottest links on Twitter</h3>
+
+TweetMeme does a great job of scouring the Twitterverse for the best links from all those tweets. Now thanks to the TwitterLand gem, all that great TweetMeme content is all yours including <a href="http://help.tweetmeme.com/2009/10/12/stories-api/">stories</a>, <a href="http://help.tweetmeme.com/2009/10/12/comments-api/">comments</a>, and even <a href="http://help.tweetmeme.com/2009/10/12/analytics-api/">analytics</a>.
+
+<h4>TweetMeme examples</h4>
+[ruby]
+    # Get comments for a given url
+    details = Twitterland::TweetMeme.url_info('http://tweetcongress.org')
+    
+    # Get recent comments
+    comments = Twitterland::TweetMeme::Comments.firehose
+    
+    # Get popular stories
+    popular = Twitterland::TweetMeme::Stories.popular
+    
+[/ruby]
+
+More examples are commented in the code, so check out <a href="http://rdoc.info/projects/squeejee/twitterland">the docs</a>.
+
+<h3>Foller.me, to freedom!</h3>
+
+As an Arkansan living in Texas, how could I not support a service named <em><a href="http://foller.me">Foller.me</a></em>?  So what does it do? Foller.me shows you the most popular topics, hashtags, and mentions for a particular Twitter user.
+
+<h4>Foller.me examples</h4>
+
+[ruby]
+# Get topics for a user
+Twitterland::FollerMe.topics('pengwynn')
+
+# Grab hashtags for a user, excluding some
+Twitterland::FollerMe.hashtags('pengwynn', {:exclude =&gt; 'ruby,rails')
+
+# See who a user mentions the most
+Twitterland::FollerMe.mentions('pengwynn')
+
+# See who a user mentions other than his wife
+Twitterland::FollerMe.mentions('pengwynn', {:exclude =&gt; '@mrspengwynn'})
+
+# Hey, give me that in a nifty tag cloud
+Twitterland::FollerMe.mentions('pengwynn', {:exclude =&gt; '@mrspengwynn', :render =&gt; true})
+[/ruby]
+
+<h3>More ahead</h3>
+
+As new Twitter services with their own APIs are popping up, we'll keep adding support for them in TwitterLand. Found a great service we've missed? Let us know. Or better yet, <a href="http://github.com/squeejee/twitterland">fork us</a> and submit a patch!

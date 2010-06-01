@@ -3,14 +3,17 @@ source :rubygems
 # Project requirements
 gem 'rake'
 gem 'rack-flash'
-gem 'adsf'
 gem 'thin' # or mongrel
 gem "builder", "2.1.2"
 gem "rdiscount", "1.5.8"
 gem "RedCloth", "4.2.2"
+gem "ultraviolet", "0.10.1"
+gem "rack-codehighlighter", "~> 0.4.6"
+gem 'adsf'
+
 
 # Component requirements
-gem 'haml'
+gem 'haml', '~> 3.0.2'
 
 # Test requirements
 gem 'rspec', :require => "spec", :group => "test"

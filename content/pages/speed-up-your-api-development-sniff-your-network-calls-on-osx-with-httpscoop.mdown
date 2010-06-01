@@ -1,0 +1,9 @@
+date: 2009-12-07 15:26:39 -06:00
+categories: blog
+
+# Speed up your API development, sniff your network calls on OSX with HTTPScoop
+HTTPScoop from <a href="http://www.tuffcode.com/index.html">Tuffcode</a> is a neat way to see what network calls are going on from all the applications in OS X. It's perfect for debugging API calls or creating fixtures for API wrapper tests.
+<!--more-->
+<object classid='clsid:d27cdb6e-ae6d-11cf-96b8-444553540000' codebase='http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,115,0' width='530' height='323'><param name='movie' value='http://screenr.com/Content/assets/screenr_1116090935.swf' /><param name='flashvars' value='i=31855' /><param name='allowFullScreen' value='true' /><embed src='http://screenr.com/Content/assets/screenr_1116090935.swf' flashvars='i=31855' allowFullScreen='true' width='530' height='323' pluginspage='http://www.macromedia.com/go/getflashplayer'></embed></object>
+
+Download the <a href="http://www.tuffcode.com/download.html">free trial</a>. Full version is <a href="http://www.tuffcode.com/buy.html">only $15 + tax</a>.

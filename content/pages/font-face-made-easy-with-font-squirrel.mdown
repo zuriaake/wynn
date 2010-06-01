@@ -1,0 +1,39 @@
+date: 2009-10-22 19:24:36 -05:00
+categories: blog
+
+# @font-face made easy with Font Squirrel
+When designing the new <a href="http://orrka.com">Orrka site</a>, I wanted more punch in my typography. Let's face it, web typography is <a href="http://en.wikipedia.org/wiki/Web_typography#Web-safe_fonts">boring</a>. It's 2009 and as and industry I think we web designers have gotten our money's worth out of Helvetica and its ilk. 
+<!--more-->
+Sure, alternatives abound such as <a href="http://www.mikeindustries.com/blog/sifr/">sIFR</a>, <a href="http://wiki.github.com/sorccu/cufon/about">Cufón</a>, and good old <a href="http://facelift.mawhorter.net/">image replacement</a>, but what we really want is simple, standards-based, and <em>legal</em> typography choices. We want every machine on the Internet to have every font from <a href="http://new.myfonts.com/">MyFonts</a> installed so we could just use <code>font-family</code> and call it a day. Well maybe that's extreme. We want every machine on the Internet to have the fonts we want to use installed.
+<h3>@font-face to the rescue</h3>
+@font-face has been around since CSS2 and has even been supported in Internet Explorer since Version 5. However, Microsoft chose to implement a proprietary font format (.eot) so @font-face has seen limited adoption. Until now. Recently WebKit and Firefox introduced support for @font-face using the OpenType format (.otf). So now between .eot and .otf, we can deliver some nifty new typography to our users. The problem lies in converting your TrueType fonts (.ttf) to these new formats. Jonathan Snook recently had a <a href="http://snook.ca/archives/html_and_css/becoming-a-font-embedding-master">great article</a> on how to do just that. The process isn't painful but it's not quick either. Further, a lot of us will be repeating the same process for the most popular fonts out there. That's where Font Squirrel comes in.
+<h3>Just a Font Squirrel looking for a nut</h3>
+<a href="http://www.fontsquirrel.com/">Font Squirrel</a> is like <a href="http://dafont.com">many</a> <a href="http://abstractfonts.com">font sites</a> you already use — except these fonts are 100% free for commercial use and many have licenses that allow embedding on the web.
+<h4>@font-face kits — the killer feature</h4>
+Find a font you like, simply <a href="http://www.fontsquirrel.com/fontfacedemo/League-Gothic">preview the @font-face demo</a> and then download an archive containing
+<ul>
+	<li>Fonts in .eot format for Microsoft browsers</li>
+	<li>Fonts in .otf format for Firefox and Safari</li>
+	<li>A demo html page showcasing the font</li>
+	<li>CSS file with instructions on how to implement on your web site</li>
+</ul>
+<h3>Use @font-face to expand your typography choices</h3>
+To use a font downloaded from Font Squirrel, copy the font files to location on your server. Next, add <a href="http://paulirish.com/2009/bulletproof-font-face-implementation-syntax/">bulletproof  @font-face syntax</a> to your stylesheet:
+
+[code lang="css"]
+@font-face {
+  font-family: 'League Gothic Regular';
+  src: url('League_Gothic.eot');
+  src: local('League Gothic Regular'), local('LeagueGothic-Regular'), url('League_Gothic.otf') format('opentype');
+}
+[/code]
+
+That's it! Now you can use your shiny new font just like any other:
+
+[code lang="css"]
+h1 {
+  font-family: 'League Gothic Regular', Helvetica, Arial, sans-serif;
+}
+[/code]
+
+So get over to <a href="http://fontsquirrel.com">Font Squirrel</a> and store up some cool fonts for the winter!

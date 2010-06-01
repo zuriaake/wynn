@@ -1,0 +1,39 @@
+date: 2010-03-20 10:35:06 -05:00
+categories: blog
+
+# Twitter gem hits 0.9.0
+I don't normally do a post for new releases, but if you're using the <a href="http://gemcutter.org/gems/twitter">Twitter gem</a>, there are some new changes you might want to test before deploying.<!--more-->
+<h4>New endpoint</h4>
+The biggest change is the gem now fully supports the new Twitter versioned endpoint <code>api.twitter.com/<version></code> thanks to <a href="http://twitter.com/sferik">Erik Michaels-Ober</a>. Some methods have already been using the new endpoint but we've been waiting for Twitter to fully support (read OAuth) on this URL. What's this mean to you? Maybe not much unless you have to punch through a firewall to hit the Twitter API. Regardless, if your app uses OAuth to authenticate with Twitter, it's a good idea to put the new gem thru the paces before you deploy.
+
+<h4>Search exclusions</h4>
+
+Thanks to a patch from <a href="http://github.com/abozanich">Adam Bozanich</a>, search now includes exclusions:
+
+    :::ruby
+    # get all references to harmony app not from jnunemaker or to pengwynn
+    > Twitter::Search.new('harmony app').from('jnunemaker', true).to('pengwynn', true).fetch
+
+We've also enhanced search to support the upcoming <a href="http://groups.google.com/group/twitter-api-announce/browse_thread/thread/983086ae9935d50c"><em>popular</em> query</a>:
+
+    :::ruby
+    # default result type is mixed
+    > Twitter::Search.new('whodat').fetch
+    # get most popular tweets about the Saints
+    > Twitter::Search.new('whodat').result_type('popular').fetch
+    # get most recent tweets about the Saints
+    > Twitter::Search.new('whodat').result_type('recent').fetch
+
+<h4>Tweet and ReTweet sat on a log. Tweet jumps off. Who's left?</h4>
+We also added support for two newly released API methods: <a href="http://apiwiki.twitter.com/Twitter-REST-API-Method:-GET-statuses-id-retweeted_by">retweeted_by</a> and <a href="http://apiwiki.twitter.com/Twitter-REST-API-Method:-GET-statuses-id-retweeted_by-ids">retweeted_by_ids</a>:
+
+    :::ruby
+    # create an authenticated client
+    > base = Twitter::Base.new(Twitter::HTTPAuth.new('username', 'password'))
+    # get the users who retweeted a tweet
+    > base.retweeters_of(10579279780)
+    # get just the user ids
+    > base.retweeters_of(10579279780, :ids_only => true)
+
+
+That's it for now. Enjoy!
