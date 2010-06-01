@@ -11,16 +11,9 @@
     %link{ :href => "/css/master.css", :media => "screen", :rel => "stylesheet", :type => "text/css" }
     %link{ :href => "/articles.xml", :rel => "alternate", :type => "application/atom+xml" }
   %body{ :class => @body_class }
-    #container
-      #wrapper
+    %section#container
+      %section#wrapper
         = yield
 
-        #footer
-          %p
-            Powered by
-            = succeed "," do
-              %a{ :href => "http://effectif.com/nesta" } nesta
-            designed by
-            %a{ :href => "http://effectif.com" } Graham Ashton
-
-    = partial 'shared/analytics'
+        %footer
+          &copy; 2009-2010 Wynn Netherland

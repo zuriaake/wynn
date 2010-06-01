@@ -1,4 +1,4 @@
-.breadcrumb
+%section.breadcrumb
   %a{ :href => "/" } Home
   &raquo;
   - if @page.parent
@@ -6,11 +6,11 @@
     &raquo;
   = @page.heading
 
-#sidebar
+%aside
   = partial 'pages/categories'
   = partial 'pages/feed'
 
-#content
+%section#content
   - if @page.date
     .date= format_date(@page.date)
   ~ @page.to_html
