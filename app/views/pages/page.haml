@@ -1,8 +1,7 @@
-%header
-  %a#home{:href => "/"}
-    %span.name Wynn Netherland
-    &mdash;
-    design, development, mashups
+%section#meta
+  - if @page.date
+    .date= format_date(@page.date)
+%section#content
   %section.breadcrumb
     %a{ :href => "/" } Home
     &raquo;
@@ -11,23 +10,17 @@
       &raquo;
     = @page.heading
 
-%aside
-  = partial 'pages/categories'
-  = partial 'pages/feed'
-
-%section#content
-  - if @page.date
-    .date= format_date(@page.date)
   ~ @page.to_html
 
-  - @page.pages.each do |page|
-    = partial 'pages/summary', :locals => { :article => page, :heading => :h3 }
-
-  - unless @page.articles.empty?
-    %h2.articles= "Articles on #{@page.heading}"
+  - unless @page.pages.empty?
+    #pages
+      - @page.pages.each do |page|
+        = partial 'pages/summary', :locals => { :article => page, :heading => :h2 }
   
-  - @page.articles.each do |article|
-    = partial 'pages/summary', :locals => { :article => article, :heading => :h3 }
+  - unless @page.articles.empty?
+    #articles
+      - @page.articles.each do |article|
+        = partial 'pages/summary', :locals => { :article => article, :heading => :h2 }
 
   - unless @page.categories.empty?
     .categories
@@ -38,3 +31,8 @@
   = partial 'pages/social'
   = partial 'pages/feed', :locals => { :title => @site_title }
   = partial 'pages/comments'
+
+%aside#sidebar
+  = partial 'shared/intro'
+  = partial 'pages/categories'
+  = partial 'pages/feed'

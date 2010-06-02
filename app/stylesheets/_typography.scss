@@ -31,6 +31,14 @@ h3 { font-size: 24px;}
 h4 { font-size: 20px; font-style: italic; }
 h5 { font-size: 18px;}
 
+#articles h2 {
+  font-family: "League Gothic";
+  font-size: 40px;
+  text-transform: uppercase; 
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1); 
+  a {font-weight: normal;}
+}
+
 p {
   margin: 0 0 1.5em;
 }
@@ -43,7 +51,7 @@ a:active {color:#000; text-decoration: none; font-weight: bold;}
 
 code {
   font-family: Monaco, Consolas, monospace;
-  background: #efefef;
+  background: rgba(0,0,0,.1);
   line-height: 15px;
   font-size: 13px;
 }
@@ -56,6 +64,7 @@ a#home {
   font-family: SeanRegular;
   font-weight: normal;
   font-size: 1.3em;
+  line-height: 1.3em;
   display: block;
   margin-bottom: 1em;
   span.name {font-family: "League Gothic"; font-size: 2em; text-transform: uppercase; vertical-align: sub; font-weight: normal;   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.14);}
@@ -83,7 +92,7 @@ a#home {
   }
   h2 {
     font-family: "SeanRegular", sans-serif;
-    span.name { font-size: 2em;}
+    span.name { font-size: 2em; }
   }
   span.amp {text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.14);}
 }
@@ -93,7 +102,17 @@ span.amp {
   font-style: italic;
 }
 
+
+body.home .intro {
+  font-size: 1.2em;
+  line-height: 2em;
+  a { font-family: SeanRegular; font-weight: normal;}
+}
+
 .note {font-family: SeanRegular; font-size: 20px; padding: 10px; float: right;}
+
+
+p.read-more { text-align: right;}
 
 footer {
   color: #666;

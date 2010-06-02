@@ -33,4 +33,10 @@ Presto.helpers do
     date.strftime("%d %B %Y")
   end
   
+  def widont(string)
+    words = string.split(" ")
+    last_word = words.pop
+    words.join(" ") + "&nbsp;" + last_word
+  end
+  
 end

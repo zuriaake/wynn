@@ -15,9 +15,15 @@
     
   %body{ :class => @body_class }
     %section#top-wrap
+      %header
+        %ul#nav
+          %li= link_to "Blog", "/blog"
+          %li= link_to "Projects", "/projects"
       %section#wrapper
         = yield
-      
+    %section#middle-wrap
+      %section#middle
+        = yield_content :middle
     %footer
       %section.container
         %section.copyright &copy; 2009-2010 Wynn Netherland

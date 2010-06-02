@@ -10,7 +10,13 @@
     %span.amp &amp;
     %span.name Development.
     
-
+- content_for :middle do
+  %section.wynn
+    = image_tag("/images/wynn.png", :class => "wynn")
+  = partial 'shared/intro'
+      
+  
+  
 - if false
   %aside
     %h3 Latest headlines
