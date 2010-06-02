@@ -1,10 +1,15 @@
-%section.breadcrumb
-  %a{ :href => "/" } Home
-  &raquo;
-  - if @page.parent
-    %a{ :href => @page.parent.abspath }= @page.parent.heading
+%header
+  %a#home{:href => "/"}
+    %span.name Wynn Netherland
+    &mdash;
+    design, development, mashups
+  %section.breadcrumb
+    %a{ :href => "/" } Home
     &raquo;
-  = @page.heading
+    - if @page.parent
+      %a{ :href => @page.parent.abspath }= @page.parent.heading
+      &raquo;
+    = @page.heading
 
 %aside
   = partial 'pages/categories'

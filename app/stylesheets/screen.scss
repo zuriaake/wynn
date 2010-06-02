@@ -26,11 +26,16 @@ body {
   margin: 0 auto;
 }
 
-.intro {
+.impact {
   background:url("/images/intro.png") no-repeat scroll left bottom transparent;
   height:220px;
-  margin-bottom:-120px;
+  margin-bottom:-160px;
   padding:45px 30px 75px 0;
+}
+
+#intro {
+  clear: both;
+  margin-top: 200px;
 }
 
 #content {
