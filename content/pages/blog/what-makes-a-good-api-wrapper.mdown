@@ -65,7 +65,7 @@ Idiomatic consistency also means making method calls feel more natural. Take thi
 # 
 def self.info_by_email(email)
   email = email.join(',') if email.is_a?(Array)
-  Mash.new(self.get('/', :query =&gt; {:method =&gt; 'user.getInfoByEmail', :email =&gt; email}.merge(Upcoming.default_options))).rsp.user
+  Mash.new(self.get('/', :query => {:method => 'user.getInfoByEmail', :email => email}.merge(Upcoming.default_options))).rsp.user
 end
 
 [/ruby]
@@ -84,7 +84,7 @@ Two things make this method more Rubyish. <strong>First, change the method name 
 # 
 def self.info_by_email(email)
   email = email.join(',') if email.is_a?(Array)
-  Mash.new(self.get('/', :query =&gt; {:method =&gt; 'user.getInfoByEmail', :email =&gt; email}.merge(Upcoming.default_options))).rsp.user
+  Mash.new(self.get('/', :query => {:method => 'user.getInfoByEmail', :email => email}.merge(Upcoming.default_options))).rsp.user
 end
 
 [/ruby]
@@ -97,12 +97,12 @@ Another design decision in writing a good API wrapper is between writing a wrapp
 
 <h5><a href='http://github.com/mbleigh/twitter-auth'>Twitter Auth</a> from <a href='http://twitter.com/mbleigh'>@mbleigh</a> </h5>
 [ruby]
-user.twitter.post('/statuses/update.json', 'status' =&gt; 'This is my status.')
+user.twitter.post('/statuses/update.json', 'status' => 'This is my status.')
 [/ruby]
 
 <h5><a href='http://github.com/hayesdavis/grackle'>Grackle</a> from <a href='http://twitter.com/hayesdavis'>@hayesdavis</a> </h5>
 [ruby]
-client.statuses.update.json! :status=&gt;'this status is from grackle'
+client.statuses.update.json! :status=>'this status is from grackle'
 [/ruby]
 
 <h5><a href='http://github.com/jnunemaker/twitter'>Twitter</a> from <a href='http://twitter.com/jnunemaker'>@jnunemaker</a> </h5>
@@ -137,10 +137,10 @@ Let's compare the simple wrappers in the first two examples. Both perform a <cod
 
 [ruby]
 # twitter-auth
-user.twitter.post('/statuses/update.json', 'status' =&gt; 'This is my status.')
+user.twitter.post('/statuses/update.json', 'status' => 'This is my status.')
 
 # grackle
-client.statuses.update.json! :status=&gt;'this status is from grackle'
+client.statuses.update.json! :status=>'this status is from grackle'
 [/ruby]
 
 I rather like what Hayes has done with some <a href='http://ruby-doc.org/core/classes/Kernel.html#M005925'><code>method_missing</code></a> magic in the second example. By using dot notation, I have to worry about less string building.
@@ -155,7 +155,7 @@ That's a very natural way of specifying parameters without having to build a par
 
 [ruby]
 # calls http://api.remix.bestbuy.com/v1/stores(area(76227,50))+products(salePrice&lt;=3000)?apiKey=OU812
-stores = client.stores({:area =&gt; ['76227', 50]}).products({:salePrice =&gt; {'$gt' =&gt; 3000}}).fetch.stores
+stores = client.stores({:area => ['76227', 50]}).products({:salePrice => {'$gt' => 3000}}).fetch.stores
 
 [/ruby]
 

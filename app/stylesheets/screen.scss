@@ -1,0 +1,40 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "typography";
+
+
+
+section, article, aside, header, footer, nav, dialog, figure { display:block; }
+
+body {
+  background: #fff;
+}
+
+#wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.intro {
+  background:url("/images/intro.png") no-repeat scroll 100px bottom transparent;
+  height:466px;
+  margin-top:125px;
+}
+
+#content {
+  margin-top: 1em;
+  width: 700px;
+}
+
+footer {
+  margin-top: 1em;
+  clear: both;
+}
+
+pre {
+  margin-bottom: 1.5em;
+}

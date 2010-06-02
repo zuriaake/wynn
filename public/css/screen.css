@@ -1,0 +1,235 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 14, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* line 17, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+
+/* line 19, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 21, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+/* line 23, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 25, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: "" "";
+}
+/* line 96, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+}
+
+/* line 27, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 1, ../../app/stylesheets/_typography.scss */
+body {
+  color: #111;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.3em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* line 10, ../../app/stylesheets/_typography.scss */
+h1, h2, h3, h4, h5 {
+  line-height: 1.1em;
+  font-weight: normal;
+  font-family: SeanRegular, "Palatino Linotype","Book Antiqua",Palatino,FreeSerif,serif;
+  margin: 0 0 .3em;
+}
+
+/* line 17, ../../app/stylesheets/_typography.scss */
+h1 {
+  font-size: 56px;
+  line-height: 1em;
+  text-transform: uppercase;
+  font-family: "LeagueGothicRegular",sans-serif;
+}
+
+/* line 24, ../../app/stylesheets/_typography.scss */
+.wf-active h1 {
+  visibility: visible;
+}
+
+/* line 28, ../../app/stylesheets/_typography.scss */
+h2 {
+  font-size: 28px;
+}
+
+/* line 29, ../../app/stylesheets/_typography.scss */
+h3 {
+  font-size: 24px;
+}
+
+/* line 30, ../../app/stylesheets/_typography.scss */
+h4 {
+  font-size: 20px;
+  font-style: italic;
+}
+
+/* line 31, ../../app/stylesheets/_typography.scss */
+h5 {
+  font-size: 18px;
+}
+
+/* line 33, ../../app/stylesheets/_typography.scss */
+p {
+  margin: 0 0 1.5em;
+}
+
+/* line 40, ../../app/stylesheets/_typography.scss */
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* line 43, ../../app/stylesheets/_typography.scss */
+code {
+  font-family: Monaco, Consolas, monospace;
+  background: #ddd;
+}
+
+/* line 48, ../../app/stylesheets/_typography.scss */
+.date, .hand {
+  font-family: SeanRegular;
+}
+
+/* line 50, ../../app/stylesheets/_typography.scss */
+.hand {
+  text-transform: none;
+}
+
+/* line 52, ../../app/stylesheets/_typography.scss */
+.intro {
+  text-align: right;
+}
+/* line 54, ../../app/stylesheets/_typography.scss */
+.intro h1, .intro h2 {
+  text-transform: none;
+  font-family: "SeanRegular",sans-serif;
+  font-size: 1.6em;
+  line-height: 1em;
+}
+/* line 59, ../../app/stylesheets/_typography.scss */
+.intro h1 span.name, .intro h2 span.name {
+  vertical-align: -20%;
+  line-height: 1em;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 3em;
+  font-family: "LeagueGothicRegular",sans-serif;
+}
+/* line 68, ../../app/stylesheets/_typography.scss */
+.intro h2 {
+  font-family: "SeanRegular", sans-serif;
+}
+/* line 70, ../../app/stylesheets/_typography.scss */
+.intro h2 span.name {
+  font-size: 2em;
+}
+
+/* line 74, ../../app/stylesheets/_typography.scss */
+span.amp {
+  font-family: Baskerville, Palatino, Constantia, "Book Antiqua", "URW Palladio L", serif;
+  font-style: italic;
+}
+
+/* line 79, ../../app/stylesheets/_typography.scss */
+.note {
+  font-family: SeanRegular;
+  font-size: 20px;
+  padding: 10px;
+  float: right;
+}
+
+/* line 81, ../../app/stylesheets/_typography.scss */
+footer {
+  color: #aaa;
+  text-align: right;
+  font-size: .8em;
+}
+
+/* line 11, ../../app/stylesheets/screen.scss */
+section, article, aside, header, footer, nav, dialog, figure {
+  display: block;
+}
+
+/* line 13, ../../app/stylesheets/screen.scss */
+body {
+  background: #fff;
+}
+
+/* line 17, ../../app/stylesheets/screen.scss */
+#wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* line 22, ../../app/stylesheets/screen.scss */
+.intro {
+  background: url("/images/intro.png") no-repeat scroll 100px bottom transparent;
+  height: 466px;
+  margin-top: 125px;
+}
+
+/* line 28, ../../app/stylesheets/screen.scss */
+#content {
+  margin-top: 1em;
+  width: 700px;
+}
+
+/* line 33, ../../app/stylesheets/screen.scss */
+footer {
+  margin-top: 1em;
+  clear: both;
+}
+
+/* line 38, ../../app/stylesheets/screen.scss */
+pre {
+  margin-bottom: 1.5em;
+}

@@ -21,7 +21,7 @@ To display a count of tweets that reference the current page, simply call the he
 
 [code]
 &lt;%= backtweets_count %&gt;
-&lt;%= backtweets_count(:size =&gt; :small) %&gt;
+&lt;%= backtweets_count(:size => :small) %&gt;
 [/code]
 
 <script type="text/javascript">

@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'LeagueGothicRegular';
+  src: url('League_Gothic-webfont.eot');
+  src: local('☺'), url('League_Gothic-webfont.woff') format('woff'), url('League_Gothic-webfont.ttf') format('truetype'), url('League_Gothic-webfont.svg#webfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'SeanRegular';
+  src: url('handsean-webfont.eot');
+  src: local(' '), url('handsean-webfont.woff') format('woff'), url('handsean-webfont.ttf') format('truetype'), url('handsean-webfont.svg#webfont0TstuPxn') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+

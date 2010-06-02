@@ -1,9 +1,19 @@
-%h1
-  = @heading
-  
-%aside
-  %h3 Latest headlines
-  %ul
-    - @articles.each do |article|
-      %li
-        %a{ :href => article.abspath }= article.heading
+.intro
+  %h1
+    Hi, there. My name is
+    %span.name Wynn Netherland,
+  %h2
+    and I'm a
+    %span.name Mashup
+    of
+    %span.name Design
+    %span.amp &amp;
+    %span.name Development.
+
+- if false
+  %aside
+    %h3 Latest headlines
+    %ul
+      - @articles.each do |article|
+        %li
+          %a{ :href => article.abspath }= article.heading

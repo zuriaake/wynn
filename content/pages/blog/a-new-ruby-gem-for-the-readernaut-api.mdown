@@ -18,7 +18,7 @@ sudo gem install readernaut
 # get a list of books for a user
 books = Readernaut.books(&quot;pengwynn&quot;)
 books.reader_books.first.book_edition.title
-=&gt; &quot;Crush It!&quot;
+=> &quot;Crush It!&quot;
 
 # get a list of notes for a user
 notes = Readernaut.notes(&quot;pengwynn&quot;)
@@ -26,12 +26,12 @@ notes = Readernaut.notes(&quot;pengwynn&quot;)
 # get a list of contacts for a user 
 contacts = Readernaut.contacts(&quot;pengwynn&quot;).contacts
 contacts.last.user.username
-=&gt; &quot;blankenship&quot;
+=> &quot;blankenship&quot;
 
 # paginate, ordering
-books = Readernaut.books(&quot;pengwynn&quot;, :page =&gt; 3, :order_by =&gt; &quot;modified&quot;)
+books = Readernaut.books(&quot;pengwynn&quot;, :page => 3, :order_by => &quot;modified&quot;)
 # descending
-books = Readernaut.books(&quot;pengwynn&quot;, :page =&gt; 3, :order_by =&gt; &quot;-modified&quot;)
+books = Readernaut.books(&quot;pengwynn&quot;, :page => 3, :order_by => &quot;-modified&quot;)
 [/ruby]
 
 So, what are you reading? Why not <a href="http://readernaut.com/pengwynn">friend me</a> and recommend something.

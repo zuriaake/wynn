@@ -13,7 +13,7 @@ So, what's in the box? Let's just ask <code>_</code> himself, Ruby style:
 
 [javascript]
 &gt;&gt;&gt; _.methods();
-=&gt; [&quot;all&quot;, &quot;any&quot;, &quot;bind&quot;, &quot;bindAll&quot;, &quot;breakLoop&quot;, &quot;clone&quot;, &quot;compact&quot;,
+=> [&quot;all&quot;, &quot;any&quot;, &quot;bind&quot;, &quot;bindAll&quot;, &quot;breakLoop&quot;, &quot;clone&quot;, &quot;compact&quot;,
  &quot;compose&quot;, &quot;defer&quot;, &quot;delay&quot;, &quot;detect&quot;, &quot;each&quot;, &quot;every&quot;, &quot;extend&quot;,
  &quot;filter&quot;, &quot;first&quot;, &quot;flatten&quot;, &quot;foldl&quot;, &quot;foldr&quot;, &quot;forEach&quot;, &quot;functions&quot;,
  &quot;identity&quot;, &quot;include&quot;, &quot;indexOf&quot;, &quot;inject&quot;, &quot;intersect&quot;, &quot;invoke&quot;,
@@ -28,21 +28,21 @@ Nifty, huh? That should look very familiar. Let's look at <code>map</code> as an
 
 [javascript]
 &gt;&gt;&gt; _.map([1, 2, 3], function(num){ return num*num });
-=&gt; [1, 4, 9]
+=> [1, 4, 9]
 [/javascript]
 
 Pretty straightforward. But we can also call Underscore OOP style:
 
 [javascript]
 &gt;&gt;&gt; _([1, 2, 3]).map(function(num){ return num*num });
-=&gt; [1, 4, 9]
+=> [1, 4, 9]
 [/javascript]
 
 What's the advantage you ask? Chaining!
 
 [javascript]
 &gt;&gt;&gt; _([1, 2, 3]).chain().map(function(num){ return num*num }).size().value();
-=&gt; 3
+=> 3
 [/javascript]
 
 Whoa! Why the <code><del datetime="2009-11-09T21:17:46+00:00">get</del>value()</code> at the end? 
@@ -64,7 +64,7 @@ Underscore also includes also some really useful utility functions.
 var func = function(greeting){ return greeting + ', ' + this.name };
 func = _.bind(func, {name : 'Adrian'}, 'Yo');
 func();
-=&gt; &quot;Yo, Adrian&quot;
+=> &quot;Yo, Adrian&quot;
 [/javascript]
 
 <h5>template</h5>
@@ -76,7 +76,7 @@ Here's an example from the docs:
 [javascript]
 var list = &quot;&lt;% _.each(people, function(name) { %&gt; &lt;li&gt;&lt;%= name %&gt;&lt;/li&gt; &lt;% }); %&gt;&quot;;
 _.template(list, {people : ['moe', 'curly', 'larry']});
-=&gt; &quot; &lt;li&gt;moe&lt;/li&gt; &lt;li&gt;curly&lt;/li&gt; &lt;li&gt;larry&lt;/li&gt; &quot;
+=> &quot; &lt;li&gt;moe&lt;/li&gt; &lt;li&gt;curly&lt;/li&gt; &lt;li&gt;larry&lt;/li&gt; &quot;
 [/javascript]
 
 <h3>Download and enjoy</h3>

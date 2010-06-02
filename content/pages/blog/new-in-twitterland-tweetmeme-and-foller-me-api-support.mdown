@@ -35,16 +35,16 @@ As an Arkansan living in Texas, how could I not support a service named <em><a h
 Twitterland::FollerMe.topics('pengwynn')
 
 # Grab hashtags for a user, excluding some
-Twitterland::FollerMe.hashtags('pengwynn', {:exclude =&gt; 'ruby,rails')
+Twitterland::FollerMe.hashtags('pengwynn', {:exclude => 'ruby,rails')
 
 # See who a user mentions the most
 Twitterland::FollerMe.mentions('pengwynn')
 
 # See who a user mentions other than his wife
-Twitterland::FollerMe.mentions('pengwynn', {:exclude =&gt; '@mrspengwynn'})
+Twitterland::FollerMe.mentions('pengwynn', {:exclude => '@mrspengwynn'})
 
 # Hey, give me that in a nifty tag cloud
-Twitterland::FollerMe.mentions('pengwynn', {:exclude =&gt; '@mrspengwynn', :render =&gt; true})
+Twitterland::FollerMe.mentions('pengwynn', {:exclude => '@mrspengwynn', :render => true})
 [/ruby]
 
 <h3>More ahead</h3>

@@ -29,7 +29,7 @@ client.lists('pengwynn')
 # get list info
 list = client.list('pengwynn', 'rubyists')
 pp list.member_count
-# =&gt; 2
+# => 2
 
 # view all the members for a list
 client.list_members('pengwynn', 'rubyists')

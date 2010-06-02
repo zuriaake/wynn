@@ -17,47 +17,45 @@ The API supports JSON, YAML, and XML return types. From JavaScript, JSON is the 
 
 Most likely, hitting this URL from your browser will download the file. Open that up in your favorite text editor and you should see a JavaScript Object Notation representation of the same repo info:
 
-[javascript]
-{
-    &quot;repository&quot;: {
-        &quot;url&quot;: &quot;http://github.com/pengwynn/linkedin&quot;,
-        &quot;description&quot;: &quot;Ruby wrapper for the LinkedIn API&quot;,
-        &quot;watchers&quot;: 43,
-        &quot;homepage&quot;: &quot;http://bit.ly/ruby-linkedin&quot;,
-        &quot;fork&quot;: false,
-        &quot;forks&quot;: 1,
-        &quot;private&quot;: false,
-        &quot;name&quot;: &quot;linkedin&quot;,
-        &quot;owner&quot;: &quot;pengwynn&quot;,
-        &quot;open_issues&quot;: 1
+    :::javascript
+    {
+        "repository": {
+            "url": "http://github.com/pengwynn/linkedin",
+            "description": "Ruby wrapper for the LinkedIn API",
+            "watchers": 43,
+            "homepage": "http://bit.ly/ruby-linkedin",
+            "fork": false,
+            "forks": 1,
+            "private": false,
+            "name": "linkedin",
+            "owner": "pengwynn",
+            "open_issues": 1
+        }
     }
-}
-[/javascript]
 
 To put this info on the page, in our example, we'll use jQuery, but you can of course use another framework or plain vanilla JavaScript.
 
-[javascript]
-jQuery(document).ready(function($){
-  
-  $.each($('.post.link.github h3 a'), function() {
-    var post = $(this).parents(&quot;.post&quot;);
-    var url = $(this).attr('href');
-    var segments = url.split('/');
-    var repo = segments.pop();
-    var username = segments.pop();
-    $.getJSON(&quot;http://github.com/api/v2/json/repos/show/&quot;+username+&quot;/&quot;+repo+&quot;?callback=?&quot;, function(data){
-      var repo_data = data.repository;
-      if(repo_data) {
-        var watchers_link = $('&lt;a&gt;').addClass('watchers').attr('href', url+'/watchers').text(repo_data.watchers);
-        var forks_link = $('&lt;a&gt;').addClass('forks').attr('href', url+'/network').text(repo_data.forks);
-        var comment_link = post.find('.meta .comment-count');
-        comment_link.after(watchers_link);
-        comment_link.after(forks_link);
-      }
+    :::javascript
+    jQuery(document).ready(function($){
+
+      $.each($('.post.link.github h3 a'), function() {
+        var post = $(this).parents(".post");
+        var url = $(this).attr('href');
+        var segments = url.split('/');
+        var repo = segments.pop();
+        var username = segments.pop();
+        $.getJSON("http://github.com/api/v2/json/repos/show/"+username+"/"+repo+"?callback=?", function(data){
+          var repo_data = data.repository;
+          if(repo_data) {
+            var watchers_link = $('<a>').addClass('watchers').attr('href', url+'/watchers').text(repo_data.watchers);
+            var forks_link = $('<a>').addClass('forks').attr('href', url+'/network').text(repo_data.forks);
+            var comment_link = post.find('.meta .comment-count');
+            comment_link.after(watchers_link);
+            comment_link.after(forks_link);
+          }
+        });
+      });
     });
-  });
-});
-[/javascript]
 
 This code looks for any entries that have CSS classes of <code>link</code> and <code>github</code> (which come from the post's tags), and find the <code>href</code> for the link. We then lop off the last two URL segments to get the repo name and user to pass to our API call.
 
