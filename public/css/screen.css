@@ -77,9 +77,10 @@ h1, h2, h3, h4, h5 {
   font-weight: normal;
   font-family: SeanRegular, "Palatino Linotype","Book Antiqua",Palatino,FreeSerif,serif;
   margin: 0 0 .3em;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.14);
 }
 
-/* line 17, ../../app/stylesheets/_typography.scss */
+/* line 18, ../../app/stylesheets/_typography.scss */
 h1 {
   font-size: 56px;
   line-height: 1em;
@@ -87,38 +88,38 @@ h1 {
   font-family: "LeagueGothicRegular",sans-serif;
 }
 
-/* line 24, ../../app/stylesheets/_typography.scss */
+/* line 25, ../../app/stylesheets/_typography.scss */
 .wf-active h1 {
   visibility: visible;
 }
 
-/* line 28, ../../app/stylesheets/_typography.scss */
+/* line 29, ../../app/stylesheets/_typography.scss */
 h2 {
   font-size: 28px;
 }
 
-/* line 29, ../../app/stylesheets/_typography.scss */
+/* line 30, ../../app/stylesheets/_typography.scss */
 h3 {
   font-size: 24px;
 }
 
-/* line 30, ../../app/stylesheets/_typography.scss */
+/* line 31, ../../app/stylesheets/_typography.scss */
 h4 {
   font-size: 20px;
   font-style: italic;
 }
 
-/* line 31, ../../app/stylesheets/_typography.scss */
+/* line 32, ../../app/stylesheets/_typography.scss */
 h5 {
   font-size: 18px;
 }
 
-/* line 33, ../../app/stylesheets/_typography.scss */
+/* line 34, ../../app/stylesheets/_typography.scss */
 p {
   margin: 0 0 1.5em;
 }
 
-/* line 40, ../../app/stylesheets/_typography.scss */
+/* line 41, ../../app/stylesheets/_typography.scss */
 a:link,
 a:visited,
 a:hover,
@@ -128,58 +129,67 @@ a:active {
   font-weight: bold;
 }
 
-/* line 43, ../../app/stylesheets/_typography.scss */
+/* line 44, ../../app/stylesheets/_typography.scss */
 code {
   font-family: Monaco, Consolas, monospace;
-  background: #ddd;
+  background: #efefef;
+  line-height: 15px;
+  font-size: 13px;
 }
 
-/* line 48, ../../app/stylesheets/_typography.scss */
+/* line 51, ../../app/stylesheets/_typography.scss */
 .date, .hand {
   font-family: SeanRegular;
 }
 
-/* line 50, ../../app/stylesheets/_typography.scss */
+/* line 53, ../../app/stylesheets/_typography.scss */
 .hand {
   text-transform: none;
 }
 
-/* line 52, ../../app/stylesheets/_typography.scss */
+/* line 55, ../../app/stylesheets/_typography.scss */
 .intro {
   text-align: right;
+  font-size: 1.2em;
 }
-/* line 54, ../../app/stylesheets/_typography.scss */
+/* line 58, ../../app/stylesheets/_typography.scss */
 .intro h1, .intro h2 {
   text-transform: none;
   font-family: "SeanRegular",sans-serif;
   font-size: 1.6em;
   line-height: 1em;
+  text-shadow: none;
 }
-/* line 59, ../../app/stylesheets/_typography.scss */
+/* line 64, ../../app/stylesheets/_typography.scss */
 .intro h1 span.name, .intro h2 span.name {
-  vertical-align: -20%;
   line-height: 1em;
   color: #000;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
   text-transform: uppercase;
+  vertical-align: -20%;
   font-size: 3em;
   font-family: "LeagueGothicRegular",sans-serif;
 }
-/* line 68, ../../app/stylesheets/_typography.scss */
+/* line 74, ../../app/stylesheets/_typography.scss */
 .intro h2 {
   font-family: "SeanRegular", sans-serif;
 }
-/* line 70, ../../app/stylesheets/_typography.scss */
+/* line 76, ../../app/stylesheets/_typography.scss */
 .intro h2 span.name {
   font-size: 2em;
 }
+/* line 78, ../../app/stylesheets/_typography.scss */
+.intro span.amp {
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.14);
+}
 
-/* line 74, ../../app/stylesheets/_typography.scss */
+/* line 81, ../../app/stylesheets/_typography.scss */
 span.amp {
   font-family: Baskerville, Palatino, Constantia, "Book Antiqua", "URW Palladio L", serif;
   font-style: italic;
 }
 
-/* line 79, ../../app/stylesheets/_typography.scss */
+/* line 86, ../../app/stylesheets/_typography.scss */
 .note {
   font-family: SeanRegular;
   font-size: 20px;
@@ -187,49 +197,59 @@ span.amp {
   float: right;
 }
 
-/* line 81, ../../app/stylesheets/_typography.scss */
+/* line 88, ../../app/stylesheets/_typography.scss */
 footer {
-  color: #aaa;
+  color: #666;
   text-align: right;
   font-size: .8em;
 }
 
-/* line 11, ../../app/stylesheets/screen.scss */
+/* line 12, ../../app/stylesheets/screen.scss */
 section, article, aside, header, footer, nav, dialog, figure {
   display: block;
 }
 
-/* line 13, ../../app/stylesheets/screen.scss */
+/* line 14, ../../app/stylesheets/screen.scss */
 body {
-  background: #fff;
+  background: #ddd;
 }
 
-/* line 17, ../../app/stylesheets/screen.scss */
+/* line 19, ../../app/stylesheets/screen.scss */
+#top-wrap {
+  background: #fff;
+  padding: 2em 0;
+}
+
+/* line 24, ../../app/stylesheets/screen.scss */
 #wrapper {
   width: 960px;
   margin: 0 auto;
 }
 
-/* line 22, ../../app/stylesheets/screen.scss */
+/* line 29, ../../app/stylesheets/screen.scss */
 .intro {
-  background: url("/images/intro.png") no-repeat scroll 100px bottom transparent;
-  height: 466px;
-  margin-top: 125px;
+  background: url("/images/intro.png") no-repeat scroll left bottom transparent;
+  height: 220px;
+  margin-bottom: -120px;
+  padding: 45px 30px 75px 0;
 }
 
-/* line 28, ../../app/stylesheets/screen.scss */
+/* line 36, ../../app/stylesheets/screen.scss */
 #content {
   margin-top: 1em;
   width: 700px;
 }
 
-/* line 33, ../../app/stylesheets/screen.scss */
+/* line 41, ../../app/stylesheets/screen.scss */
 footer {
   margin-top: 1em;
   clear: both;
+  width: 960px;
+  margin: 1em auto;
+  padding: 1em 0;
 }
 
-/* line 38, ../../app/stylesheets/screen.scss */
+/* line 49, ../../app/stylesheets/screen.scss */
 pre {
   margin-bottom: 1.5em;
 }

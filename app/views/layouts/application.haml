@@ -14,9 +14,9 @@
     
     
   %body{ :class => @body_class }
-    %section#container
+    %section#top-wrap
       %section#wrapper
         = yield
-
-        %footer
-          &copy; 2009-2010 Wynn Netherland
+    %footer
+      %section.container
+        %section.copyright &copy; 2009-2010 Wynn Netherland
