@@ -10,6 +10,7 @@ gem "RedCloth", "4.2.2"
 gem "ultraviolet", "0.10.1"
 gem "rack-codehighlighter", "~> 0.4.6"
 gem 'adsf'
+gem 'hashie'
 
 
 # Component requirements
