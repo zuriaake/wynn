@@ -34,7 +34,6 @@ Presto.controllers :pages do
 
     @title = "#{@title} - #{@subtitle}"
     @articles = Page.find_articles[0..7]
-    @body_class = "home"
     render 'pages/index'
   end
   

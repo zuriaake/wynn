@@ -104,10 +104,12 @@ body.home #middle {
   @include column(4);
   padding-top: 6em;
 }
+
 #content {
   @include column(14);
   @include colborder(rgba(0,0,0,.1), 1px);
 }
+
 
 #sidebar {
   @include column(5, true);

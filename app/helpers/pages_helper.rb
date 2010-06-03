@@ -2,6 +2,12 @@
 
 Presto.helpers do
   
+  def body_classes
+    classes = []
+    classes << 'home' if request.path == "/"
+    classes
+  end
+  
   def nesta_atom_id_for_page(page)
     published = page.date.strftime('%Y-%m-%d')
     "tag:#{request.host},#{published}:#{page.abspath}"

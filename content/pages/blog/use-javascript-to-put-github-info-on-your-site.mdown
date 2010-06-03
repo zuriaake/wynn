@@ -59,7 +59,7 @@ To put this info on the page, in our example, we'll use jQuery, but you can of c
 
 This code looks for any entries that have CSS classes of <code>link</code> and <code>github</code> (which come from the post's tags), and find the <code>href</code> for the link. We then lop off the last two URL segments to get the repo name and user to pass to our API call.
 
-Note the <code>callback=?</code> which is required for the dynamic <a href="http://ajaxian.com/archives/jsonp-json-with-padding"><code>JSONP</code></a> callback which jQuery wires up to our inline callback function. In this function, the <code>data</code> parameter is that JSON we looked at earlier. In this case we just create a couple of links that point back to GitHub and append them to the <code>.meta</code> div for the post.
+Note the <code>callback=?</code> which is required for the dynamic <code><a href="http://ajaxian.com/archives/jsonp-json-with-padding">JSONP</a></code> callback which jQuery wires up to our inline callback function. In this function, the <code>data</code> parameter is that JSON we looked at earlier. In this case we just create a couple of links that point back to GitHub and append them to the <code>.meta</code> div for the post.
 
 Easy peasy!
 

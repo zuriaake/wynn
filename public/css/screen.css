@@ -144,18 +144,23 @@ code {
   line-height: 15px;
   font-size: 13px;
 }
+/* line 57, ../../app/stylesheets/_typography.scss */
+code a {
+  font-weight: normal !important;
+  color: inherit;
+}
 
-/* line 59, ../../app/stylesheets/_typography.scss */
+/* line 60, ../../app/stylesheets/_typography.scss */
 .date, .hand {
   font-family: SeanRegular;
 }
 
-/* line 61, ../../app/stylesheets/_typography.scss */
+/* line 62, ../../app/stylesheets/_typography.scss */
 .hand {
   text-transform: none;
 }
 
-/* line 63, ../../app/stylesheets/_typography.scss */
+/* line 64, ../../app/stylesheets/_typography.scss */
 a#home {
   font-family: SeanRegular;
   font-weight: normal;
@@ -164,7 +169,7 @@ a#home {
   display: block;
   margin-bottom: 1em;
 }
-/* line 70, ../../app/stylesheets/_typography.scss */
+/* line 71, ../../app/stylesheets/_typography.scss */
 a#home span.name {
   font-family: "League Gothic";
   font-size: 2em;
@@ -174,12 +179,12 @@ a#home span.name {
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.14);
 }
 
-/* line 74, ../../app/stylesheets/_typography.scss */
+/* line 75, ../../app/stylesheets/_typography.scss */
 .impact {
   text-align: right;
   font-size: 1.2em;
 }
-/* line 77, ../../app/stylesheets/_typography.scss */
+/* line 78, ../../app/stylesheets/_typography.scss */
 .impact h1, .impact h2 {
   text-transform: none;
   font-family: "SeanRegular",sans-serif;
@@ -187,7 +192,7 @@ a#home span.name {
   line-height: 1em;
   text-shadow: none;
 }
-/* line 83, ../../app/stylesheets/_typography.scss */
+/* line 84, ../../app/stylesheets/_typography.scss */
 .impact h1 span.name, .impact h2 span.name {
   line-height: 1em;
   color: #000;
@@ -197,37 +202,37 @@ a#home span.name {
   font-size: 3em;
   font-family: "LeagueGothicRegular",sans-serif;
 }
-/* line 93, ../../app/stylesheets/_typography.scss */
+/* line 94, ../../app/stylesheets/_typography.scss */
 .impact h2 {
   font-family: "SeanRegular", sans-serif;
 }
-/* line 95, ../../app/stylesheets/_typography.scss */
+/* line 96, ../../app/stylesheets/_typography.scss */
 .impact h2 span.name {
   font-size: 2em;
 }
-/* line 97, ../../app/stylesheets/_typography.scss */
+/* line 98, ../../app/stylesheets/_typography.scss */
 .impact span.amp {
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.14);
 }
 
-/* line 100, ../../app/stylesheets/_typography.scss */
+/* line 101, ../../app/stylesheets/_typography.scss */
 span.amp {
   font-family: Baskerville, Palatino, Constantia, "Book Antiqua", "URW Palladio L", serif;
   font-style: italic;
 }
 
-/* line 106, ../../app/stylesheets/_typography.scss */
+/* line 107, ../../app/stylesheets/_typography.scss */
 body.home .intro {
   font-size: 1.2em;
   line-height: 2em;
 }
-/* line 109, ../../app/stylesheets/_typography.scss */
+/* line 110, ../../app/stylesheets/_typography.scss */
 body.home .intro a {
   font-family: SeanRegular;
   font-weight: normal;
 }
 
-/* line 112, ../../app/stylesheets/_typography.scss */
+/* line 113, ../../app/stylesheets/_typography.scss */
 .note {
   font-family: SeanRegular;
   font-size: 20px;
@@ -235,12 +240,12 @@ body.home .intro a {
   float: right;
 }
 
-/* line 115, ../../app/stylesheets/_typography.scss */
+/* line 116, ../../app/stylesheets/_typography.scss */
 p.read-more {
   text-align: right;
 }
 
-/* line 117, ../../app/stylesheets/_typography.scss */
+/* line 118, ../../app/stylesheets/_typography.scss */
 footer {
   color: #666;
   text-align: right;
@@ -433,7 +438,7 @@ body.home #middle .intro {
   overflow-x: hidden;
 }
 
-/* line 107, ../../app/stylesheets/screen.scss */
+/* line 108, ../../app/stylesheets/screen.scss */
 #content {
   display: inline;
   float: left;
@@ -448,7 +453,7 @@ body.home #middle .intro {
   overflow-x: hidden;
 }
 
-/* line 112, ../../app/stylesheets/screen.scss */
+/* line 114, ../../app/stylesheets/screen.scss */
 #sidebar {
   display: inline;
   float: left;
@@ -461,7 +466,7 @@ body.home #middle .intro {
   overflow-x: hidden;
 }
 
-/* line 117, ../../app/stylesheets/screen.scss */
+/* line 119, ../../app/stylesheets/screen.scss */
 footer {
   margin-top: 1em;
   padding: 1em 0;
@@ -475,7 +480,7 @@ footer {
   display: block;
 }
 
-/* line 123, ../../app/stylesheets/screen.scss */
+/* line 125, ../../app/stylesheets/screen.scss */
 pre {
   margin-bottom: 1.5em;
 }
