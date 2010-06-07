@@ -1,3 +1,4 @@
 categories: projects
+repo: http://github.com/pengwynn/gowalla
 
 # Gowalla

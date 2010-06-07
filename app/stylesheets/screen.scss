@@ -1,3 +1,4 @@
+@import "colors";
 @import "compass/reset";
 @import "blueprint/grid";
 @import "compass/css3";
@@ -10,7 +11,7 @@
 section, article, aside, header, footer, nav, dialog, figure { display:block; }
 
 body {
-  background: #ddd;
+  background: $footer-background;
 }
 
 body.home #top-wrap {
@@ -18,7 +19,7 @@ body.home #top-wrap {
 }
 
 #top-wrap {
-  background: #f0f0f0;
+  background: $body-background;
   padding: 1em 0 2em;
   border-bottom: solid 2px #aaa;
 }
@@ -52,8 +53,8 @@ ul#nav {
   
 }
 
-/*.intro {
-  line-height: 44px;
+.intro.with-icons {
+  line-height: 48px;
   a {display: inline-block; padding-left: 38px; background-position: left center; background-repeat: no-repeat; }
   a[href='/blog'] {padding-left: 0px;}
   a[href*='twitter'] {@include icon-link('twitter');}
@@ -70,7 +71,8 @@ ul#nav {
   a[href*='last.fm'] {@include icon-link('lastfm');}
   a[href*='gowalla'] {@include icon-link('gowalla');}
   a[href*='skype'] {@include icon-link('skype');}
-}*/
+  a[href*='mailto'] {@include icon-link('email');}
+}
 
 #content {
   margin-top: 1em;

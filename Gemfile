@@ -10,8 +10,7 @@ gem "RedCloth", "4.2.2"
 gem "ultraviolet", "0.10.1"
 gem "rack-codehighlighter", "~> 0.4.6"
 gem 'adsf'
-gem 'hashie'
-
+gem "hashie", "~> 0.2.0"
 
 # Component requirements
 gem 'haml', '~> 3.0.2'

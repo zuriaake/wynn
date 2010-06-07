@@ -9,6 +9,8 @@
       %a{ :href => @page.parent.abspath }= @page.parent.heading
       &raquo;
     = @page.heading
+  
+  = @page.metadata.repo
 
   ~ @page.to_html
 
@@ -33,6 +35,6 @@
   = partial 'pages/comments'
 
 %aside#sidebar
-  = partial 'shared/intro'
+  .intro= partial 'shared/intro'
   = partial 'pages/categories'
   = partial 'pages/feed'
