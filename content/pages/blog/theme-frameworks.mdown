@@ -1,12 +1,15 @@
 date: 2009-10-27 07:23:19 -05:00
 categories: blog
+template: article
 
 # From themes to theme frameworks
 Back in the 1990's, early in my career, I recall the dream of software components. One day, we would all drag a few components to a design surface, configure some properties, and quickly stitch together new applications. Reuse was our god. Software vendors cranked out shiny new idols with new major version numbers at least once a year. I suppose somewhere in the catacombs of Corporate America, this type of development still continues.
+<!--more-->
+
 <h4>The rise of frameworks</h4>
 As Open Source software broke the stranglehold software vendors had on application development, one of the biggest trends of the later 2000's has been the emergence of web frameworks.
 
-<!--more-->
+
 
 How many of these frameworks are you using in your web applications?
 <ul>

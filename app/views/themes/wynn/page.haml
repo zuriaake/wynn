@@ -1,19 +1,5 @@
-%section#meta
-  - if @page.date
-    .date= format_date(@page.date)
-  - else
-      
+= theme_partial 'breadcrumb'
 %section#content
-  %section.breadcrumb
-    %a{ :href => "/" } Home
-    &raquo;
-    - if @page.parent
-      %a{ :href => @page.parent.abspath }= @page.parent.heading
-      &raquo;
-    = @page.heading
-  
-  = @page.metadata.repo
-
   ~ @page.to_html
 
   - unless @page.pages.empty?

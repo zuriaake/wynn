@@ -1,5 +1,6 @@
 date: 2009-11-18 03:41:50 -06:00
 categories: blog
+template: article
 
 # Fork you? No, no, no - Fork Queue.
 You don't have to be a <a href="http://drnicwilliams.com/">Dr. Nic</a> with his <a href="http://github.com/drnic">100+ public repos</a> to appreciate the <a href="http://github.com/blog/270-the-fork-queue">Github Fork Queue</a> and how it streamlines accepting patches for your open source projects.

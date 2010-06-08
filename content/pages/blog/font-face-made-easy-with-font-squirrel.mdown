@@ -1,5 +1,6 @@
 date: 2009-10-22 19:24:36 -05:00
 categories: blog
+template: article
 
 # @font-face made easy with Font Squirrel
 When designing the new <a href="http://orrka.com">Orrka site</a>, I wanted more punch in my typography. Let's face it, web typography is <a href="http://en.wikipedia.org/wiki/Web_typography#Web-safe_fonts">boring</a>. It's 2009 and as and industry I think we web designers have gotten our money's worth out of Helvetica and its ilk. 

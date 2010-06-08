@@ -58,7 +58,7 @@ a img {
   border: none;
 }
 
-/* line 1, ../../app/stylesheets/_typography.scss */
+/* line 1, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 body {
   color: #111;
   font-family: Helvetica, Arial, sans-serif;
@@ -67,7 +67,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* line 10, ../../app/stylesheets/_typography.scss */
+/* line 10, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 h1, h2, h3, h4, h5 {
   line-height: 1.1em;
   font-weight: normal;
@@ -76,15 +76,14 @@ h1, h2, h3, h4, h5 {
   margin: 0 0 .3em;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.14);
   color: #333;
-  font-family: "Palatino Linotype",Palatino,"URW Palladio L","Book Antiqua",Baskerville,"Bookman Old Style","Bitstream Charter","Nimbus Roman No9 L",Garamond,"New Century Schoolbook","Century Schoolbook","Century Schoolbook L",Georgia,serif;
+  font-family: Times,Georgia,serif;
   font-style: italic;
   text-transform: none;
   font-weight: normal;
 }
 
-/* line 24, ../../app/stylesheets/_typography.scss */
+/* line 24, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 h1 {
-  font-family: "LeagueGothicRegular", Helvetica, Arial,sans-serif;
   text-transform: uppercase;
   font-size: 56px;
   line-height: 1em;
@@ -95,33 +94,37 @@ h1 {
   text-transform: uppercase;
 }
 
-/* line 36, ../../app/stylesheets/_typography.scss */
+/* line 35, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 .wf-active h1 {
   visibility: visible;
 }
 
-/* line 40, ../../app/stylesheets/_typography.scss */
+/* line 39, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 h2 {
-  font-size: 32px;
-  color: #333;
-}
-
-/* line 41, ../../app/stylesheets/_typography.scss */
-h3 {
   font-size: 28px;
+  color: #333;
+  font-style: normal;
 }
 
-/* line 42, ../../app/stylesheets/_typography.scss */
-h4 {
+/* line 40, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+h3 {
   font-size: 24px;
 }
 
-/* line 43, ../../app/stylesheets/_typography.scss */
-h5 {
+/* line 41, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+h4 {
   font-size: 20px;
+  font-weight: bold;
 }
 
-/* line 45, ../../app/stylesheets/_typography.scss */
+/* line 42, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+h5 {
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* line 44, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 #articles h2 {
   font-family: "LeagueGothicRegular";
   font-size: 40px;
@@ -129,17 +132,17 @@ h5 {
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
   font-style: normal;
 }
-/* line 51, ../../app/stylesheets/_typography.scss */
+/* line 50, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 #articles h2 a {
   font-weight: normal;
 }
 
-/* line 54, ../../app/stylesheets/_typography.scss */
+/* line 53, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 p {
   margin: 0 0 1.5em;
 }
 
-/* line 61, ../../app/stylesheets/_typography.scss */
+/* line 60, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 a:link,
 a:visited,
 a:hover,
@@ -149,39 +152,39 @@ a:active {
   font-weight: bold;
 }
 
-/* line 63, ../../app/stylesheets/_typography.scss */
+/* line 62, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 ul#nav {
   font-weight: bold;
 }
-/* line 65, ../../app/stylesheets/_typography.scss */
+/* line 64, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 ul#nav a {
   font-weight: normal;
 }
 
-/* line 68, ../../app/stylesheets/_typography.scss */
+/* line 67, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 code {
   font-family: Monaco, Consolas, monospace;
   background: rgba(0, 0, 0, 0.1);
   line-height: 15px;
   font-size: 13px;
 }
-/* line 73, ../../app/stylesheets/_typography.scss */
+/* line 72, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 code a {
   font-weight: normal !important;
   color: inherit;
 }
 
-/* line 76, ../../app/stylesheets/_typography.scss */
+/* line 75, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 .date, .hand {
   font-family: SeanRegular;
 }
 
-/* line 78, ../../app/stylesheets/_typography.scss */
+/* line 77, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 .hand {
   text-transform: none;
 }
 
-/* line 80, ../../app/stylesheets/_typography.scss */
+/* line 79, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 a#home {
   font-family: SeanRegular;
   font-weight: normal;
@@ -190,7 +193,7 @@ a#home {
   display: block;
   margin-bottom: 1em;
 }
-/* line 87, ../../app/stylesheets/_typography.scss */
+/* line 86, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 a#home span.name {
   font-family: "LeagueGothicRegular";
   font-size: 2em;
@@ -200,12 +203,12 @@ a#home span.name {
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.14);
 }
 
-/* line 91, ../../app/stylesheets/_typography.scss */
+/* line 90, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 .impact {
   text-align: right;
   font-size: 1.2em;
 }
-/* line 94, ../../app/stylesheets/_typography.scss */
+/* line 93, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 .impact h1, .impact h2 {
   text-transform: none;
   font-family: "SeanRegular",sans-serif;
@@ -214,7 +217,7 @@ a#home span.name {
   line-height: 1em;
   text-shadow: none;
 }
-/* line 101, ../../app/stylesheets/_typography.scss */
+/* line 100, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 .impact h1 span.name, .impact h2 span.name {
   line-height: 1em;
   color: #000;
@@ -224,39 +227,39 @@ a#home span.name {
   font-size: 3em;
   font-family: "LeagueGothicRegular",sans-serif;
 }
-/* line 111, ../../app/stylesheets/_typography.scss */
+/* line 110, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 .impact h2 {
   font-family: "SeanRegular", sans-serif;
   font-size: 1.8em;
 }
-/* line 114, ../../app/stylesheets/_typography.scss */
+/* line 113, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 .impact h2 span.name {
   font-size: 2em;
 }
-/* line 116, ../../app/stylesheets/_typography.scss */
+/* line 115, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 .impact span.amp {
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.14);
 }
 
-/* line 119, ../../app/stylesheets/_typography.scss */
+/* line 118, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 span.amp {
   font-family: Baskerville, Palatino, Constantia, "Book Antiqua", "URW Palladio L", serif;
   font-style: italic;
 }
 
-/* line 125, ../../app/stylesheets/_typography.scss */
+/* line 124, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 body.home .intro {
   font-size: 1.2em;
   line-height: 2em;
   color: #999999;
   /*a { font-family: SeanRegular; font-weight: normal;}*/
 }
-/* line 130, ../../app/stylesheets/_typography.scss */
+/* line 129, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 body.home .intro a {
   color: white;
 }
 
-/* line 136, ../../app/stylesheets/_typography.scss */
+/* line 135, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 .note {
   font-family: SeanRegular;
   font-size: 20px;
@@ -264,41 +267,41 @@ body.home .intro a {
   float: right;
 }
 
-/* line 139, ../../app/stylesheets/_typography.scss */
+/* line 138, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 p.read-more {
   text-align: right;
 }
 
-/* line 141, ../../app/stylesheets/_typography.scss */
+/* line 140, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 footer {
   color: #666666;
   text-align: right;
   font-size: .8em;
 }
 
-/* line 11, ../../app/stylesheets/screen.scss */
+/* line 11, ../../app/views/themes/wynn/stylesheets/screen.scss */
 section, article, aside, header, footer, nav, dialog, figure {
   display: block;
 }
 
-/* line 13, ../../app/stylesheets/screen.scss */
+/* line 13, ../../app/views/themes/wynn/stylesheets/screen.scss */
 body {
   background: #333333;
 }
 
-/* line 17, ../../app/stylesheets/screen.scss */
+/* line 17, ../../app/views/themes/wynn/stylesheets/screen.scss */
 body.home #top-wrap {
   height: 220px;
 }
 
-/* line 21, ../../app/stylesheets/screen.scss */
+/* line 21, ../../app/views/themes/wynn/stylesheets/screen.scss */
 #top-wrap {
   background: #f0f0f0;
   padding: 1em 0 2em;
   border-bottom: solid 2px #aaa;
 }
 
-/* line 26, ../../app/stylesheets/screen.scss */
+/* line 26, ../../app/views/themes/wynn/stylesheets/screen.scss */
 header {
   width: 950px;
   margin: 0 auto;
@@ -310,7 +313,7 @@ header {
   display: block;
 }
 
-/* line 30, ../../app/stylesheets/screen.scss */
+/* line 30, ../../app/views/themes/wynn/stylesheets/screen.scss */
 ul#nav {
   margin: 0;
   padding: 0;
@@ -344,7 +347,7 @@ ul#nav li:last-child, ul#nav li.last {
   padding-right: 0px;
 }
 
-/* line 35, ../../app/stylesheets/screen.scss */
+/* line 35, ../../app/views/themes/wynn/stylesheets/screen.scss */
 #wrapper {
   width: 950px;
   margin: 0 auto;
@@ -356,12 +359,12 @@ ul#nav li:last-child, ul#nav li.last {
   display: block;
 }
 
-/* line 39, ../../app/stylesheets/screen.scss */
+/* line 39, ../../app/views/themes/wynn/stylesheets/screen.scss */
 .breadcrumb {
   margin: 0 0 1em;
 }
 
-/* line 44, ../../app/stylesheets/screen.scss */
+/* line 44, ../../app/views/themes/wynn/stylesheets/screen.scss */
 .impact {
   display: inline;
   float: left;
@@ -374,98 +377,98 @@ ul#nav li:last-child, ul#nav li.last {
   overflow-x: hidden;
 }
 
-/* line 51, ../../app/stylesheets/screen.scss */
+/* line 51, ../../app/views/themes/wynn/stylesheets/screen.scss */
 .intro.with-icons {
   line-height: 48px;
 }
-/* line 53, ../../app/stylesheets/screen.scss */
+/* line 53, ../../app/views/themes/wynn/stylesheets/screen.scss */
 .intro.with-icons a {
   display: inline-block;
   padding-left: 38px;
   background-position: left center;
   background-repeat: no-repeat;
 }
-/* line 54, ../../app/stylesheets/screen.scss */
+/* line 54, ../../app/views/themes/wynn/stylesheets/screen.scss */
 .intro.with-icons a[href='/blog'] {
   padding-left: 0px;
 }
-/* line 55, ../../app/stylesheets/screen.scss */
+/* line 55, ../../app/views/themes/wynn/stylesheets/screen.scss */
 .intro.with-icons a[href*='twitter'] {
   background-image: url(http://static.wynnnetherland.com/images/smi/twitter-32x32.png);
 }
-/* line 56, ../../app/stylesheets/screen.scss */
+/* line 56, ../../app/views/themes/wynn/stylesheets/screen.scss */
 .intro.with-icons a[href*='tumblr'] {
   background-image: url(http://static.wynnnetherland.com/images/smi/tumblr-32x32.png);
 }
-/* line 57, ../../app/stylesheets/screen.scss */
+/* line 57, ../../app/views/themes/wynn/stylesheets/screen.scss */
 .intro.with-icons a[href*='github'] {
   background-image: url(http://static.wynnnetherland.com/images/smi/github-32x32.png);
 }
-/* line 58, ../../app/stylesheets/screen.scss */
+/* line 58, ../../app/views/themes/wynn/stylesheets/screen.scss */
 .intro.with-icons a[href*='dribbble'] {
   background-image: url(http://static.wynnnetherland.com/images/smi/dribbble-32x32.png);
 }
-/* line 59, ../../app/stylesheets/screen.scss */
+/* line 59, ../../app/views/themes/wynn/stylesheets/screen.scss */
 .intro.with-icons a[href*='linkedin'] {
   background-image: url(http://static.wynnnetherland.com/images/smi/linkedin-32x32.png);
 }
-/* line 60, ../../app/stylesheets/screen.scss */
+/* line 60, ../../app/views/themes/wynn/stylesheets/screen.scss */
 .intro.with-icons a[href*='facebook'] {
   background-image: url(http://static.wynnnetherland.com/images/smi/facebook-32x32.png);
 }
-/* line 61, ../../app/stylesheets/screen.scss */
+/* line 61, ../../app/views/themes/wynn/stylesheets/screen.scss */
 .intro.with-icons a[href*='delicious'] {
   background-image: url(http://static.wynnnetherland.com/images/smi/delicious-32x32.png);
 }
-/* line 62, ../../app/stylesheets/screen.scss */
+/* line 62, ../../app/views/themes/wynn/stylesheets/screen.scss */
 .intro.with-icons a[href*='readernaut'] {
   background-image: url(http://static.wynnnetherland.com/images/smi/readernaut-32x32.png);
 }
-/* line 63, ../../app/stylesheets/screen.scss */
+/* line 63, ../../app/views/themes/wynn/stylesheets/screen.scss */
 .intro.with-icons a[href*='slideshare'] {
   background-image: url(http://static.wynnnetherland.com/images/smi/slideshare-32x32.png);
 }
-/* line 64, ../../app/stylesheets/screen.scss */
+/* line 64, ../../app/views/themes/wynn/stylesheets/screen.scss */
 .intro.with-icons a[href*='vimeo'] {
   background-image: url(http://static.wynnnetherland.com/images/smi/vimeo-32x32.png);
 }
-/* line 65, ../../app/stylesheets/screen.scss */
+/* line 65, ../../app/views/themes/wynn/stylesheets/screen.scss */
 .intro.with-icons a[href*='flickr'] {
   background-image: url(http://static.wynnnetherland.com/images/smi/flickr-32x32.png);
 }
-/* line 66, ../../app/stylesheets/screen.scss */
+/* line 66, ../../app/views/themes/wynn/stylesheets/screen.scss */
 .intro.with-icons a[href*='last.fm'] {
   background-image: url(http://static.wynnnetherland.com/images/smi/lastfm-32x32.png);
 }
-/* line 67, ../../app/stylesheets/screen.scss */
+/* line 67, ../../app/views/themes/wynn/stylesheets/screen.scss */
 .intro.with-icons a[href*='gowalla'] {
   background-image: url(http://static.wynnnetherland.com/images/smi/gowalla-32x32.png);
 }
-/* line 68, ../../app/stylesheets/screen.scss */
+/* line 68, ../../app/views/themes/wynn/stylesheets/screen.scss */
 .intro.with-icons a[href*='skype'] {
   background-image: url(http://static.wynnnetherland.com/images/smi/skype-32x32.png);
 }
-/* line 69, ../../app/stylesheets/screen.scss */
+/* line 69, ../../app/views/themes/wynn/stylesheets/screen.scss */
 .intro.with-icons a[href*='mailto'] {
   background-image: url(http://static.wynnnetherland.com/images/smi/email-32x32.png);
 }
 
-/* line 72, ../../app/stylesheets/screen.scss */
+/* line 72, ../../app/views/themes/wynn/stylesheets/screen.scss */
 #content {
   margin-top: 1em;
 }
 
-/* line 76, ../../app/stylesheets/screen.scss */
+/* line 76, ../../app/views/themes/wynn/stylesheets/screen.scss */
 article {
   padding: 2em 0;
   border-bottom: solid 1px rgba(0, 0, 0, 0.15);
 }
-/* line 79, ../../app/stylesheets/screen.scss */
+/* line 79, ../../app/views/themes/wynn/stylesheets/screen.scss */
 article:last-child {
   border: none;
 }
 
-/* line 84, ../../app/stylesheets/screen.scss */
+/* line 84, ../../app/views/themes/wynn/stylesheets/screen.scss */
 #middle-wrap {
   width: 950px;
   margin: 0 auto;
@@ -478,18 +481,18 @@ article:last-child {
   display: block;
 }
 
-/* line 90, ../../app/stylesheets/screen.scss */
+/* line 90, ../../app/views/themes/wynn/stylesheets/screen.scss */
 body.home #middle section.wynn {
   left: 50%;
   margin: -88px 0 0 -460px;
   position: absolute;
   width: 270px;
 }
-/* line 95, ../../app/stylesheets/screen.scss */
+/* line 95, ../../app/views/themes/wynn/stylesheets/screen.scss */
 body.home #middle section.wynn img.wynn {
   margin-top: -100px;
 }
-/* line 97, ../../app/stylesheets/screen.scss */
+/* line 97, ../../app/views/themes/wynn/stylesheets/screen.scss */
 body.home #middle .intro {
   display: inline;
   float: left;
@@ -503,7 +506,7 @@ body.home #middle .intro {
   overflow-x: hidden;
 }
 
-/* line 100, ../../app/stylesheets/screen.scss */
+/* line 100, ../../app/views/themes/wynn/stylesheets/screen.scss */
 #meta {
   display: inline;
   float: left;
@@ -516,7 +519,7 @@ body.home #middle .intro {
   overflow-x: hidden;
 }
 
-/* line 105, ../../app/stylesheets/screen.scss */
+/* line 105, ../../app/views/themes/wynn/stylesheets/screen.scss */
 #content {
   display: inline;
   float: left;
@@ -530,19 +533,22 @@ body.home #middle .intro {
 * html #content {
   overflow-x: hidden;
 }
-/* line 108, ../../app/stylesheets/screen.scss */
-body.detail #content {
+/* line 109, ../../app/views/themes/wynn/stylesheets/screen.scss */
+body.article #content, body.project #content {
   display: inline;
   float: left;
   margin-right: 10px;
   width: 550px;
+  padding-right: 24px;
+  margin-right: 25px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
 /* line 138, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.detail #content {
+* html body.article #content, * html body.project #content {
   overflow-x: hidden;
 }
 
-/* line 114, ../../app/stylesheets/screen.scss */
+/* line 117, ../../app/views/themes/wynn/stylesheets/screen.scss */
 #sidebar {
   display: inline;
   float: left;
@@ -555,7 +561,7 @@ body.detail #content {
   overflow-x: hidden;
 }
 
-/* line 119, ../../app/stylesheets/screen.scss */
+/* line 122, ../../app/views/themes/wynn/stylesheets/screen.scss */
 footer {
   margin-top: 1em;
   padding: 1em 0;
@@ -569,7 +575,7 @@ footer {
   display: block;
 }
 
-/* line 125, ../../app/stylesheets/screen.scss */
+/* line 128, ../../app/views/themes/wynn/stylesheets/screen.scss */
 pre {
   margin-bottom: 1.5em;
 }

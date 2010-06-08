@@ -1,5 +1,6 @@
 date: 2009-11-25 19:14:13 -06:00
 categories: blog
+template: article
 
 # Rubyists I'm thankful for this year
 Thanksgiving is one of my favorite holidays. I also like what's become a blogging trend of stopping and giving thanks for a few things. This year, I focus on some Rubyists that I feel don't get enough praise for the great work they do.

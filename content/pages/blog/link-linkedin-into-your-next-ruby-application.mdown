@@ -1,5 +1,6 @@
 date: 2009-11-29 18:12:42 -06:00
 categories: blog
+template: article
 
 # Link LinkedIn into your next Ruby application
 LinkedIn <a href='http://blog.programmableweb.com/2009/11/23/linkedin-api-platform-goes-live-your-resume-and-business-network-now-have-an-api/'>launched</a> its new API last week, allowing any developer brave enough to implement <a href='http://oauth.net'>OAuth</a> to integrate with one of the largest social networks around. Seeking an opportunity to really understand OAuth more fully and play around with the <a href='http://developer.linkedin.com'>LinkedIn API</a> at the same time, I created the <a href='http://gemcutter.org/gems/linkedin'>LinkedIn Ruby Gem</a>.

@@ -1,5 +1,6 @@
 date: 2009-11-07 19:22:06 -06:00
 categories: blog
+template: article
 
 # Sass up your WordPress themes with Compass
 I'm a Rubyist. But I'm also a pragmatic front-end developer. When I have to write a full-stack solution, I pick Rails or Sinatra because writing Ruby is a joy and the <a href="http://gemcutter.org">Ruby ecosystem</a> is so darn cool. But when I have to create a CMS-based site for myself or a client I love the usability and community behind WordPress. Although I can reluctantly lay Ruby aside when I extend WordPress, I really miss my <a href="http://sass-lang.com/">syntactically awesome stylesheets</a>. Until now.

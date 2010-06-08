@@ -1,5 +1,6 @@
 date: 2009-11-05 21:36:38 -06:00
 categories: blog
+template: article
 
 # Add additional owners to your Gemcutter gems
 Thanks to <a href="http://railstips.org">John Nunemaker</a> for this tip.

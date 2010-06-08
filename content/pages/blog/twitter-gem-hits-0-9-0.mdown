@@ -1,5 +1,6 @@
 date: 2010-03-20 10:35:06 -05:00
 categories: blog
+template: article
 
 # Twitter gem hits 0.9.0
 I don't normally do a post for new releases, but if you're using the <a href="http://gemcutter.org/gems/twitter">Twitter gem</a>, there are some new changes you might want to test before deploying.<!--more-->

@@ -5,7 +5,7 @@ Presto.helpers do
   def body_classes
     classes = []
     classes << 'home' if request.path == "/"
-    classes << 'detail' if @page and @page.articles.blank? and @page.pages.blank?
+    classes << @page.template if @page and @page.template
     
     classes
   end

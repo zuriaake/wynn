@@ -1,5 +1,6 @@
 date: 2009-10-29 02:52:43 -05:00
 categories: blog
+template: article
 
 # Build a WordPress theme with Thematic
 In a <a href="http://wynnnetherland.com/2009/10/theme-frameworks/">previous post</a>, we looked at the new trend of theme frameworks. Today we'll build a WordPress theme step-by-step using the <a href="http://themeshaper.com">Thematic</a> theme framework.<!--more-->

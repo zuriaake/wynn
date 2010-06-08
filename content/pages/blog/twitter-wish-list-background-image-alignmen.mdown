@@ -1,5 +1,6 @@
 date: 2009-11-02 10:00:46 -06:00
 categories: blog
+template: article
 
 # Twitter wish list: background image alignment
 I love that Twitter lets you <a href="http://www.smashingmagazine.com/2009/09/18/effective-twitter-backgrounds-examples-and-best-practices/">customize your background image</a>. It's a great way to provide a bit more info about yourself to prospective tweeps and express yourself in the process. But there's something missing.<!--more-->

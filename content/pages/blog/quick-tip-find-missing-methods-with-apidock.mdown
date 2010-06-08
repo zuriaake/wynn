@@ -1,5 +1,6 @@
 date: 2009-12-22 15:40:57 -06:00
 categories: blog
+template: article
 
 # Quick tip: Use APIdock to hunt down missing methods
 From time to time, we all to have step into older projects and add features. Suddenly that old standby method you'd come to love is giving you a <code>method_missing</code>. How do you go about finding out which version of Rails introduced it so you can upgrade or monkey patch? APIdock has your back.

@@ -1,5 +1,6 @@
 date: 2010-02-15 15:54:30 -06:00
 categories: blog
+template: article
 
 # Enhance your site search with OpenSearch
 If your web site provides its own search function, set up <a href="http://www.opensearch.org/Home">OpenSearch</a> to let your users search from the browser search box.<!--more-->

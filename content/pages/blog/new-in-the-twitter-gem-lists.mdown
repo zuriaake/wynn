@@ -1,5 +1,6 @@
 date: 2009-10-31 12:07:24 -05:00
 categories: blog
+template: article
 
 # New in the Twitter gem: Lists!
 I believe Twitter's new list feature is big. In fact, I like the idea so much we built our own list of <a href="http://tweetcongress.org/">US congressfolk</a> last year. Now, opportunities abound for everyone to share their favorite tweeters in topical lists.

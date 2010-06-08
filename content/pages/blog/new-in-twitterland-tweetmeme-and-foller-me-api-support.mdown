@@ -1,5 +1,6 @@
 date: 2009-11-03 08:32:24 -06:00
 categories: blog
+template: article
 
 # New in TwitterLand: TweetMeme and Foller.me API support
 We've added two new APIs to the <a href="http://gemcutter.org/gems/twitterland">TwitterLand gem</a>. Version 0.4.0 adds support for <a href="http://tweetmeme.com">TweetMeme</a> and <a href="http://foller.me">Foller.me</a>.

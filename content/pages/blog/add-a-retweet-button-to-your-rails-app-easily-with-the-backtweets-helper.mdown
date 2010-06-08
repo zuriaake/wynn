@@ -1,5 +1,7 @@
 date: 2009-12-02 13:09:05 -06:00
 categories: blog
+template: article
+template: article
 
 # Add a retweet button to your Rails app easily with the Backtweets helper
 On this blog, I use the excellent <a href="http://wordpress.org/extend/plugins/socialize/">Socialize plugin</a> to easily add social sharing buttons to each post. For Twitter, I chose to configure Socialize to use <a href='http://backtweets.com'>Backtweets</a> for displaying tweet counts mainly because it's more configurable than the TweetMeme widget. 

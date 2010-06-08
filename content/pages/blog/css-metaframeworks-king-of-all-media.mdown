@@ -1,5 +1,6 @@
 date: 2010-02-10 13:43:47 -06:00
 categories: blog
+template: article
 
 # CSS Metaframeworks - King of all @media
 I had the opportunity to give a presentation on CSS Metaframeworks at Dallas.rb last week. We discussed CSS, <a href="http://sass-lang.com">Sass</a>, <a href="http://compass-style.org">Compass</a>, <a href="http://lesscss.org/">LessCSS</a>, <a href="http://xcss.antpaw.org/">xCSS</a>, <a href="http://www.blueprintcss.org/">Blueprint</a>, and <a href="http://960.gs">960.gs</a>. Here are the video and slides.

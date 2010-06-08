@@ -1,5 +1,6 @@
 date: 2009-11-16 09:06:56 -06:00
 categories: blog
+template: article
 
 # What makes a good API wrapper?
 As cool new <a href='http://www.programmableweb.com/apis/directory/1?protocol=REST&sort=date'>RESTful services</a> crop up practically each day, I find myself using or writing a lot of Ruby API wrappers. So much that I've seen some common approaches emerge, each with their own pros and cons.

@@ -1,5 +1,6 @@
 date: 2009-12-15 10:24:57 -06:00
 categories: blog
+template: article
 
 # Use JavaScript to put GitHub info on your site
 In case you missed it, <a href="http://adamstacoviak.com">Adam</a> and I launched a <a href="http://thechangelog.com">new blog</a> and are six episodes into a new podcast where we bring you what's fresh and new in open source software. Our goal is to scour the depths of <a href="http://github.com">GitHub</a> (and other sources) to highlight the cool new and newly released open source projects. As the good folks at Github <a href="http://github.com/blog/555-the-changelog">recently highlighted</a>, one of my favorite features of the blog is the GitHub integration. Here's how to use JavaScript to put GitHub info on your site.

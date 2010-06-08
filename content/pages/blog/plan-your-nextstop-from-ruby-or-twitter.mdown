@@ -1,5 +1,6 @@
 date: 2009-11-19 22:18:48 -06:00
 categories: blog
+template: article
 
 # Plan your Nextstop from Ruby -- or Twitter!
 I stumbled across <a href='http://nextstop.com'>Nextstop</a> this week, a community driven travel site where users can post destination guides and recommend places to explore, eat & drink, or just sleep. Since I'm an API junkie, when they announced their new API this week, I just had to write a <a href="http://gemcutter.org/gems/nextstop">Ruby wrapper</a>.

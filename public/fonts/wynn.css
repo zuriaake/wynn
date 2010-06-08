@@ -15,3 +15,45 @@
   font-style: normal;
 }
 
+
+
+@font-face {
+  font-family: 'GnuolaneRgBold';
+  src: url('gnuolane_bd-webfont.eot');
+  src: local('☺'), url('gnuolane_bd-webfont.woff') format('woff'), url('gnuolane_bd-webfont.ttf') format('truetype'), url('gnuolane_bd-webfont.svg#webfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GnuolaneXlRegular';
+  src: url('gnuolane_xl-webfont.eot');
+  src: local('☺'), url('gnuolane_xl-webfont.woff') format('woff'), url('gnuolane_xl-webfont.ttf') format('truetype'), url('gnuolane_xl-webfont.svg#webfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GnuolaneRgRegular';
+  src: url('gnuolane_rg-webfont.eot');
+  src: local('☺'), url('gnuolane_rg-webfont.woff') format('woff'), url('gnuolane_rg-webfont.ttf') format('truetype'), url('gnuolane_rg-webfont.svg#webfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GnuolaneUlRegular';
+  src: url('gnuolane_ul-webfont.eot');
+  src: local('☺'), url('gnuolane_ul-webfont.woff') format('woff'), url('gnuolane_ul-webfont.ttf') format('truetype'), url('gnuolane_ul-webfont.svg#webfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GnuolaneBkRegular';
+  src: url('gnuolane_bk-webfont.eot');
+  src: local('☺'), url('gnuolane_bk-webfont.woff') format('woff'), url('gnuolane_bk-webfont.ttf') format('truetype'), url('gnuolane_bk-webfont.svg#webfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+

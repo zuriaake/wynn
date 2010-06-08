@@ -1,5 +1,6 @@
 date: 2009-11-09 14:17:07 -06:00
 categories: blog
+template: article
 
 # Rubyists: Meet Underscore.js, your new favorite Javascript library
 One of my favorite aspects of developing in Rails is the <a href="http://slash7.com/articles/2006/12/21/secrets-of-the-rails-console-ninjas">console</a>. The ability to load and interact with my Ruby objects without using the browser is powerful. 

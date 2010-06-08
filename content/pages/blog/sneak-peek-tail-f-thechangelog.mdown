@@ -1,5 +1,6 @@
 date: 2010-01-21 11:37:12 -06:00
 categories: blog
+template: article
 
 # Sneak peek: tail -f thechangelog
 I wanted to give you my readers (all five of you) a sneak peek at a little something <a href="http://twitter.com/adamstac">Adam</a> and I have been working on over at <a href="http://thechangelog.com">The Changelog</a>.

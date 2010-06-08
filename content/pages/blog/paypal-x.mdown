@@ -1,5 +1,6 @@
 date: 2009-11-04 07:31:52 -06:00
 categories: blog
+template: article
 
 # PayPal X: Slightly less "Huh?"
 With the announcement of <a href="http://x.com">X, PayPal's new developer network</a>, I was excited. Finally, I thought, PayPal integration would get simpler. Maybe not.

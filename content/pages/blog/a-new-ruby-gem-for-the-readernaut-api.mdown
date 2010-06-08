@@ -1,38 +1,38 @@
 date: 2009-11-14 20:06:02 -06:00
 categories: blog
+template: article
 
 # A new Ruby gem for the Readernaut API
 I was so happy to discover <a href="http://readernaut.com">Readernaut</a> this weekend. It's got a lot of features and the interface seems much more intuitive than Shelfari or Good Reads. Since <a href="http://railstips.org">John Nunemaker's</a> <a href="http://httparty.rubyforge.org/">HTTParty</a> makes writing API wrappers in Ruby so much fun, I knocked out <a href="http://gemcutter.org/gems/readernaut">readernaut</a>.
 <!--more-->
-<h3 id="installation">Installation</h3>
 
-[bash]
-sudo gem install gemcutter
-gem tumble
-sudo gem install readernaut
-[/bash]
+### Installation
 
-<h3 id="usage">Usage</h3>
+    sudo gem install gemcutter
+    gem tumble
+    sudo gem install readernaut
 
-[ruby]
-# get a list of books for a user
-books = Readernaut.books(&quot;pengwynn&quot;)
-books.reader_books.first.book_edition.title
-=> &quot;Crush It!&quot;
+### Usage
 
-# get a list of notes for a user
-notes = Readernaut.notes(&quot;pengwynn&quot;)
+    :::ruby
+    # get a list of books for a user
+    books = Readernaut.books("pengwynn")
+    books.reader_books.first.book_edition.title
+    => "Crush It!"
 
-# get a list of contacts for a user 
-contacts = Readernaut.contacts(&quot;pengwynn&quot;).contacts
-contacts.last.user.username
-=> &quot;blankenship&quot;
+    # get a list of notes for a user
+    notes = Readernaut.notes("pengwynn")
 
-# paginate, ordering
-books = Readernaut.books(&quot;pengwynn&quot;, :page => 3, :order_by => &quot;modified&quot;)
-# descending
-books = Readernaut.books(&quot;pengwynn&quot;, :page => 3, :order_by => &quot;-modified&quot;)
-[/ruby]
+    # get a list of contacts for a user 
+    contacts = Readernaut.contacts("pengwynn").contacts
+    contacts.last.user.username
+    => "blankenship"
 
-So, what are you reading? Why not <a href="http://readernaut.com/pengwynn">friend me</a> and recommend something.
+    # paginate, ordering
+    books = Readernaut.books("pengwynn", :page => 3, :order_by => "modified")
+    # descending
+    books = Readernaut.books("pengwynn", :page => 3, :order_by => "-modified")
+
+
+So, what are you reading? Why not [friend me](http://readernaut.com/pengwynn) and recommend something.
 

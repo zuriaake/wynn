@@ -1,5 +1,6 @@
 date: 2009-11-12 08:33:20 -06:00
 categories: blog
+template: article
 
 # @font-face-off: Typekit vs. Font Squirrel
 Now that the curtain has come down and now <a href="http://typekit.com">Typekit</a> is available to all, let's see how Typekit and the <a href='http://wynnnetherland.com/2009/10/font-face-made-easy-with-font-squirrel/'>previously mentioned Font Squirrel</a> stack up head-to-head. 
