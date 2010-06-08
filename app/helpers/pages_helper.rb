@@ -10,6 +10,10 @@ Presto.helpers do
     classes
   end
   
+  def theme_partial(partial, options={})
+    partial "themes/default/#{partial}", options
+  end
+  
   def nesta_atom_id_for_page(page)
     published = page.date.strftime('%Y-%m-%d')
     "tag:#{request.host},#{published}:#{page.abspath}"
