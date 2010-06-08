@@ -10,32 +10,44 @@ body {
 h1,h2,h3,h4,h5 {
   line-height: 1.1em;
   font-weight: normal;
-  font-family: SeanRegular, "Palatino Linotype","Book Antiqua",Palatino,FreeSerif,serif;
+  font-family: "LeagueGothicRegular", Helvetica, Arial,sans-serif;
+  text-transform: uppercase;
   margin: 0 0 .3em;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.14);
+  color: #333;
+  font-family: "Palatino Linotype",Palatino,"URW Palladio L","Book Antiqua",Baskerville,"Bookman Old Style","Bitstream Charter","Nimbus Roman No9 L",Garamond,"New Century Schoolbook","Century Schoolbook","Century Schoolbook L",Georgia,serif; 
+  font-style: italic; 
+  text-transform: none; 
+  font-weight: normal;
 }
 
 h1 {
+  font-family: "LeagueGothicRegular", Helvetica, Arial,sans-serif;
+  text-transform: uppercase;
   font-size: 56px;
   line-height: 1em;
-  text-transform: uppercase;
-  font-family: "LeagueGothicRegular",sans-serif;
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.14);
+  color: #111;
+  font-family: "LeagueGothicRegular", Helvetica, Arial,sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
 }
 
 .wf-active h1 {
   visibility: visible;
 }
 
-h2 { font-size: 28px;}
-h3 { font-size: 24px;}
-h4 { font-size: 20px; font-style: italic; }
-h5 { font-size: 18px;}
+h2 { font-size: 32px; color: #333;}
+h3 { font-size: 28px;}
+h4 { font-size: 24px;}
+h5 { font-size: 20px;}
 
 #articles h2 {
-  font-family: "League Gothic";
+  font-family: "LeagueGothicRegular";
   font-size: 40px;
   text-transform: uppercase; 
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1); 
+  font-style: normal;
   a {font-weight: normal;}
 }
 
@@ -48,6 +60,10 @@ a:visited,
 a:hover,
 a:active {color: $link-color; text-decoration: none; font-weight: bold;}
 
+ul#nav {
+  font-weight: bold;
+  a {font-weight: normal;}
+}
 
 code {
   font-family: Monaco, Consolas, monospace;
@@ -68,7 +84,7 @@ a#home {
   line-height: 1.3em;
   display: block;
   margin-bottom: 1em;
-  span.name {font-family: "League Gothic"; font-size: 2em; text-transform: uppercase; vertical-align: sub; font-weight: normal;   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.14);}
+  span.name {font-family: "LeagueGothicRegular"; font-size: 2em; text-transform: uppercase; vertical-align: sub; font-weight: normal;   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.14);}
   
 }
 
@@ -78,6 +94,7 @@ a#home {
   h1, h2 {
     text-transform: none;
     font-family: "SeanRegular",sans-serif;
+    font-style: normal;
     font-size: 1.6em;
     line-height: 1em;
     text-shadow: none;
@@ -93,6 +110,7 @@ a#home {
   }
   h2 {
     font-family: "SeanRegular", sans-serif;
+    font-size: 1.8em;
     span.name { font-size: 2em; }
   }
   span.amp {text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.14);}
@@ -109,7 +127,10 @@ body.home .intro {
   line-height: 2em;
   color: lighten($footer-background, 40%);
   /*a { font-family: SeanRegular; font-weight: normal;}*/
-  a {color: lighten($footer-background, 90%);}
+  a {
+    color: lighten($footer-background, 80%);
+  }
+  
 }
 
 .note {font-family: SeanRegular; font-size: 20px; padding: 10px; float: right;}
@@ -118,7 +139,7 @@ body.home .intro {
 p.read-more { text-align: right;}
 
 footer {
-  color: #f0f0f0;
+  color: lighten($footer-background, 20%);
   text-align: right;
   font-size: .8em;
 }

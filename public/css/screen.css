@@ -71,63 +71,75 @@ body {
 h1, h2, h3, h4, h5 {
   line-height: 1.1em;
   font-weight: normal;
-  font-family: SeanRegular, "Palatino Linotype","Book Antiqua",Palatino,FreeSerif,serif;
+  font-family: "LeagueGothicRegular", Helvetica, Arial,sans-serif;
+  text-transform: uppercase;
   margin: 0 0 .3em;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.14);
+  color: #333;
+  font-family: "Palatino Linotype",Palatino,"URW Palladio L","Book Antiqua",Baskerville,"Bookman Old Style","Bitstream Charter","Nimbus Roman No9 L",Garamond,"New Century Schoolbook","Century Schoolbook","Century Schoolbook L",Georgia,serif;
+  font-style: italic;
+  text-transform: none;
+  font-weight: normal;
 }
 
-/* line 17, ../../app/stylesheets/_typography.scss */
+/* line 24, ../../app/stylesheets/_typography.scss */
 h1 {
+  font-family: "LeagueGothicRegular", Helvetica, Arial,sans-serif;
+  text-transform: uppercase;
   font-size: 56px;
   line-height: 1em;
-  text-transform: uppercase;
-  font-family: "LeagueGothicRegular",sans-serif;
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.14);
+  color: #111;
+  font-family: "LeagueGothicRegular", Helvetica, Arial,sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
 }
 
-/* line 25, ../../app/stylesheets/_typography.scss */
+/* line 36, ../../app/stylesheets/_typography.scss */
 .wf-active h1 {
   visibility: visible;
 }
 
-/* line 29, ../../app/stylesheets/_typography.scss */
+/* line 40, ../../app/stylesheets/_typography.scss */
 h2 {
+  font-size: 32px;
+  color: #333;
+}
+
+/* line 41, ../../app/stylesheets/_typography.scss */
+h3 {
   font-size: 28px;
 }
 
-/* line 30, ../../app/stylesheets/_typography.scss */
-h3 {
+/* line 42, ../../app/stylesheets/_typography.scss */
+h4 {
   font-size: 24px;
 }
 
-/* line 31, ../../app/stylesheets/_typography.scss */
-h4 {
-  font-size: 20px;
-  font-style: italic;
-}
-
-/* line 32, ../../app/stylesheets/_typography.scss */
+/* line 43, ../../app/stylesheets/_typography.scss */
 h5 {
-  font-size: 18px;
+  font-size: 20px;
 }
 
-/* line 34, ../../app/stylesheets/_typography.scss */
+/* line 45, ../../app/stylesheets/_typography.scss */
 #articles h2 {
-  font-family: "League Gothic";
+  font-family: "LeagueGothicRegular";
   font-size: 40px;
   text-transform: uppercase;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+  font-style: normal;
 }
-/* line 39, ../../app/stylesheets/_typography.scss */
+/* line 51, ../../app/stylesheets/_typography.scss */
 #articles h2 a {
   font-weight: normal;
 }
 
-/* line 42, ../../app/stylesheets/_typography.scss */
+/* line 54, ../../app/stylesheets/_typography.scss */
 p {
   margin: 0 0 1.5em;
 }
 
-/* line 49, ../../app/stylesheets/_typography.scss */
+/* line 61, ../../app/stylesheets/_typography.scss */
 a:link,
 a:visited,
 a:hover,
@@ -137,30 +149,39 @@ a:active {
   font-weight: bold;
 }
 
-/* line 52, ../../app/stylesheets/_typography.scss */
+/* line 63, ../../app/stylesheets/_typography.scss */
+ul#nav {
+  font-weight: bold;
+}
+/* line 65, ../../app/stylesheets/_typography.scss */
+ul#nav a {
+  font-weight: normal;
+}
+
+/* line 68, ../../app/stylesheets/_typography.scss */
 code {
   font-family: Monaco, Consolas, monospace;
   background: rgba(0, 0, 0, 0.1);
   line-height: 15px;
   font-size: 13px;
 }
-/* line 57, ../../app/stylesheets/_typography.scss */
+/* line 73, ../../app/stylesheets/_typography.scss */
 code a {
   font-weight: normal !important;
   color: inherit;
 }
 
-/* line 60, ../../app/stylesheets/_typography.scss */
+/* line 76, ../../app/stylesheets/_typography.scss */
 .date, .hand {
   font-family: SeanRegular;
 }
 
-/* line 62, ../../app/stylesheets/_typography.scss */
+/* line 78, ../../app/stylesheets/_typography.scss */
 .hand {
   text-transform: none;
 }
 
-/* line 64, ../../app/stylesheets/_typography.scss */
+/* line 80, ../../app/stylesheets/_typography.scss */
 a#home {
   font-family: SeanRegular;
   font-weight: normal;
@@ -169,9 +190,9 @@ a#home {
   display: block;
   margin-bottom: 1em;
 }
-/* line 71, ../../app/stylesheets/_typography.scss */
+/* line 87, ../../app/stylesheets/_typography.scss */
 a#home span.name {
-  font-family: "League Gothic";
+  font-family: "LeagueGothicRegular";
   font-size: 2em;
   text-transform: uppercase;
   vertical-align: sub;
@@ -179,20 +200,21 @@ a#home span.name {
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.14);
 }
 
-/* line 75, ../../app/stylesheets/_typography.scss */
+/* line 91, ../../app/stylesheets/_typography.scss */
 .impact {
   text-align: right;
   font-size: 1.2em;
 }
-/* line 78, ../../app/stylesheets/_typography.scss */
+/* line 94, ../../app/stylesheets/_typography.scss */
 .impact h1, .impact h2 {
   text-transform: none;
   font-family: "SeanRegular",sans-serif;
+  font-style: normal;
   font-size: 1.6em;
   line-height: 1em;
   text-shadow: none;
 }
-/* line 84, ../../app/stylesheets/_typography.scss */
+/* line 101, ../../app/stylesheets/_typography.scss */
 .impact h1 span.name, .impact h2 span.name {
   line-height: 1em;
   color: #000;
@@ -202,38 +224,39 @@ a#home span.name {
   font-size: 3em;
   font-family: "LeagueGothicRegular",sans-serif;
 }
-/* line 94, ../../app/stylesheets/_typography.scss */
+/* line 111, ../../app/stylesheets/_typography.scss */
 .impact h2 {
   font-family: "SeanRegular", sans-serif;
+  font-size: 1.8em;
 }
-/* line 96, ../../app/stylesheets/_typography.scss */
+/* line 114, ../../app/stylesheets/_typography.scss */
 .impact h2 span.name {
   font-size: 2em;
 }
-/* line 98, ../../app/stylesheets/_typography.scss */
+/* line 116, ../../app/stylesheets/_typography.scss */
 .impact span.amp {
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.14);
 }
 
-/* line 101, ../../app/stylesheets/_typography.scss */
+/* line 119, ../../app/stylesheets/_typography.scss */
 span.amp {
   font-family: Baskerville, Palatino, Constantia, "Book Antiqua", "URW Palladio L", serif;
   font-style: italic;
 }
 
-/* line 107, ../../app/stylesheets/_typography.scss */
+/* line 125, ../../app/stylesheets/_typography.scss */
 body.home .intro {
   font-size: 1.2em;
   line-height: 2em;
   color: #999999;
   /*a { font-family: SeanRegular; font-weight: normal;}*/
 }
-/* line 112, ../../app/stylesheets/_typography.scss */
+/* line 130, ../../app/stylesheets/_typography.scss */
 body.home .intro a {
   color: white;
 }
 
-/* line 115, ../../app/stylesheets/_typography.scss */
+/* line 136, ../../app/stylesheets/_typography.scss */
 .note {
   font-family: SeanRegular;
   font-size: 20px;
@@ -241,14 +264,14 @@ body.home .intro a {
   float: right;
 }
 
-/* line 118, ../../app/stylesheets/_typography.scss */
+/* line 139, ../../app/stylesheets/_typography.scss */
 p.read-more {
   text-align: right;
 }
 
-/* line 120, ../../app/stylesheets/_typography.scss */
+/* line 141, ../../app/stylesheets/_typography.scss */
 footer {
-  color: #f0f0f0;
+  color: #666666;
   text-align: right;
   font-size: .8em;
 }
@@ -320,12 +343,8 @@ ul#nav li:first-child, ul#nav li.first {
 ul#nav li:last-child, ul#nav li.last {
   padding-right: 0px;
 }
-/* line 35, ../../app/stylesheets/screen.scss */
-ul#nav li a {
-  font-weight: normal;
-}
 
-/* line 41, ../../app/stylesheets/screen.scss */
+/* line 35, ../../app/stylesheets/screen.scss */
 #wrapper {
   width: 950px;
   margin: 0 auto;
@@ -337,12 +356,12 @@ ul#nav li a {
   display: block;
 }
 
-/* line 45, ../../app/stylesheets/screen.scss */
+/* line 39, ../../app/stylesheets/screen.scss */
 .breadcrumb {
   margin: 0 0 1em;
 }
 
-/* line 50, ../../app/stylesheets/screen.scss */
+/* line 44, ../../app/stylesheets/screen.scss */
 .impact {
   display: inline;
   float: left;
@@ -355,98 +374,98 @@ ul#nav li a {
   overflow-x: hidden;
 }
 
-/* line 56, ../../app/stylesheets/screen.scss */
+/* line 51, ../../app/stylesheets/screen.scss */
 .intro.with-icons {
   line-height: 48px;
 }
-/* line 58, ../../app/stylesheets/screen.scss */
+/* line 53, ../../app/stylesheets/screen.scss */
 .intro.with-icons a {
   display: inline-block;
   padding-left: 38px;
   background-position: left center;
   background-repeat: no-repeat;
 }
-/* line 59, ../../app/stylesheets/screen.scss */
+/* line 54, ../../app/stylesheets/screen.scss */
 .intro.with-icons a[href='/blog'] {
   padding-left: 0px;
 }
-/* line 60, ../../app/stylesheets/screen.scss */
+/* line 55, ../../app/stylesheets/screen.scss */
 .intro.with-icons a[href*='twitter'] {
   background-image: url(http://static.wynnnetherland.com/images/smi/twitter-32x32.png);
 }
-/* line 61, ../../app/stylesheets/screen.scss */
+/* line 56, ../../app/stylesheets/screen.scss */
 .intro.with-icons a[href*='tumblr'] {
   background-image: url(http://static.wynnnetherland.com/images/smi/tumblr-32x32.png);
 }
-/* line 62, ../../app/stylesheets/screen.scss */
+/* line 57, ../../app/stylesheets/screen.scss */
 .intro.with-icons a[href*='github'] {
   background-image: url(http://static.wynnnetherland.com/images/smi/github-32x32.png);
 }
-/* line 63, ../../app/stylesheets/screen.scss */
+/* line 58, ../../app/stylesheets/screen.scss */
 .intro.with-icons a[href*='dribbble'] {
   background-image: url(http://static.wynnnetherland.com/images/smi/dribbble-32x32.png);
 }
-/* line 64, ../../app/stylesheets/screen.scss */
+/* line 59, ../../app/stylesheets/screen.scss */
 .intro.with-icons a[href*='linkedin'] {
   background-image: url(http://static.wynnnetherland.com/images/smi/linkedin-32x32.png);
 }
-/* line 65, ../../app/stylesheets/screen.scss */
+/* line 60, ../../app/stylesheets/screen.scss */
 .intro.with-icons a[href*='facebook'] {
   background-image: url(http://static.wynnnetherland.com/images/smi/facebook-32x32.png);
 }
-/* line 66, ../../app/stylesheets/screen.scss */
+/* line 61, ../../app/stylesheets/screen.scss */
 .intro.with-icons a[href*='delicious'] {
   background-image: url(http://static.wynnnetherland.com/images/smi/delicious-32x32.png);
 }
-/* line 67, ../../app/stylesheets/screen.scss */
+/* line 62, ../../app/stylesheets/screen.scss */
 .intro.with-icons a[href*='readernaut'] {
   background-image: url(http://static.wynnnetherland.com/images/smi/readernaut-32x32.png);
 }
-/* line 68, ../../app/stylesheets/screen.scss */
+/* line 63, ../../app/stylesheets/screen.scss */
 .intro.with-icons a[href*='slideshare'] {
   background-image: url(http://static.wynnnetherland.com/images/smi/slideshare-32x32.png);
 }
-/* line 69, ../../app/stylesheets/screen.scss */
+/* line 64, ../../app/stylesheets/screen.scss */
 .intro.with-icons a[href*='vimeo'] {
   background-image: url(http://static.wynnnetherland.com/images/smi/vimeo-32x32.png);
 }
-/* line 70, ../../app/stylesheets/screen.scss */
+/* line 65, ../../app/stylesheets/screen.scss */
 .intro.with-icons a[href*='flickr'] {
   background-image: url(http://static.wynnnetherland.com/images/smi/flickr-32x32.png);
 }
-/* line 71, ../../app/stylesheets/screen.scss */
+/* line 66, ../../app/stylesheets/screen.scss */
 .intro.with-icons a[href*='last.fm'] {
   background-image: url(http://static.wynnnetherland.com/images/smi/lastfm-32x32.png);
 }
-/* line 72, ../../app/stylesheets/screen.scss */
+/* line 67, ../../app/stylesheets/screen.scss */
 .intro.with-icons a[href*='gowalla'] {
   background-image: url(http://static.wynnnetherland.com/images/smi/gowalla-32x32.png);
 }
-/* line 73, ../../app/stylesheets/screen.scss */
+/* line 68, ../../app/stylesheets/screen.scss */
 .intro.with-icons a[href*='skype'] {
   background-image: url(http://static.wynnnetherland.com/images/smi/skype-32x32.png);
 }
-/* line 74, ../../app/stylesheets/screen.scss */
+/* line 69, ../../app/stylesheets/screen.scss */
 .intro.with-icons a[href*='mailto'] {
   background-image: url(http://static.wynnnetherland.com/images/smi/email-32x32.png);
 }
 
-/* line 77, ../../app/stylesheets/screen.scss */
+/* line 72, ../../app/stylesheets/screen.scss */
 #content {
   margin-top: 1em;
 }
 
-/* line 81, ../../app/stylesheets/screen.scss */
+/* line 76, ../../app/stylesheets/screen.scss */
 article {
   padding: 2em 0;
   border-bottom: solid 1px rgba(0, 0, 0, 0.15);
 }
-/* line 84, ../../app/stylesheets/screen.scss */
+/* line 79, ../../app/stylesheets/screen.scss */
 article:last-child {
   border: none;
 }
 
-/* line 89, ../../app/stylesheets/screen.scss */
+/* line 84, ../../app/stylesheets/screen.scss */
 #middle-wrap {
   width: 950px;
   margin: 0 auto;
@@ -459,31 +478,32 @@ article:last-child {
   display: block;
 }
 
-/* line 95, ../../app/stylesheets/screen.scss */
+/* line 90, ../../app/stylesheets/screen.scss */
 body.home #middle section.wynn {
   left: 50%;
   margin: -88px 0 0 -460px;
   position: absolute;
   width: 270px;
 }
-/* line 100, ../../app/stylesheets/screen.scss */
+/* line 95, ../../app/stylesheets/screen.scss */
 body.home #middle section.wynn img.wynn {
   margin-top: -100px;
 }
-/* line 102, ../../app/stylesheets/screen.scss */
+/* line 97, ../../app/stylesheets/screen.scss */
 body.home #middle .intro {
   display: inline;
   float: left;
   margin-right: 0;
   width: 670px;
   padding-left: 280px;
+  padding-top: 1em;
 }
 /* line 138, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.home #middle .intro {
   overflow-x: hidden;
 }
 
-/* line 105, ../../app/stylesheets/screen.scss */
+/* line 100, ../../app/stylesheets/screen.scss */
 #meta {
   display: inline;
   float: left;
@@ -496,12 +516,12 @@ body.home #middle .intro {
   overflow-x: hidden;
 }
 
-/* line 110, ../../app/stylesheets/screen.scss */
+/* line 105, ../../app/stylesheets/screen.scss */
 #content {
   display: inline;
   float: left;
   margin-right: 10px;
-  width: 550px;
+  width: 710px;
   padding-right: 24px;
   margin-right: 25px;
   border-right: 1px solid rgba(0, 0, 0, 0.1);
@@ -510,8 +530,19 @@ body.home #middle .intro {
 * html #content {
   overflow-x: hidden;
 }
+/* line 108, ../../app/stylesheets/screen.scss */
+body.detail #content {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 550px;
+}
+/* line 138, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body.detail #content {
+  overflow-x: hidden;
+}
 
-/* line 116, ../../app/stylesheets/screen.scss */
+/* line 114, ../../app/stylesheets/screen.scss */
 #sidebar {
   display: inline;
   float: left;
@@ -524,7 +555,7 @@ body.home #middle .intro {
   overflow-x: hidden;
 }
 
-/* line 121, ../../app/stylesheets/screen.scss */
+/* line 119, ../../app/stylesheets/screen.scss */
 footer {
   margin-top: 1em;
   padding: 1em 0;
@@ -538,7 +569,7 @@ footer {
   display: block;
 }
 
-/* line 127, ../../app/stylesheets/screen.scss */
+/* line 125, ../../app/stylesheets/screen.scss */
 pre {
   margin-bottom: 1.5em;
 }

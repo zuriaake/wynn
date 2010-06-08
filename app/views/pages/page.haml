@@ -1,6 +1,8 @@
-- if @page.date
-  %section#meta
+%section#meta
+  - if @page.date
     .date= format_date(@page.date)
+  - else
+      
 %section#content
   %section.breadcrumb
     %a{ :href => "/" } Home

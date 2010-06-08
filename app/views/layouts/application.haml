@@ -2,6 +2,7 @@
 %html{ :lang => "en", "xml:lang" => "en", :xmlns => 'http://www.w3.org/1999/xhtml' }
   %head
     %meta{ "http-equiv" => "content-type", "content" => "text/html; charset=utf-8" }
+    %meta{:content => "width=960; initial-scale=0.75; user-scalable=1;", :name => "viewport"}
     - if @description
       %meta{ "name" => "description", "content" => @description }
     - if @keywords
@@ -12,13 +13,13 @@
     %link{ :href => "/css/screen.css", :media => "screen", :rel => "stylesheet", :type => "text/css" }
     %link{ :href => "/articles.xml", :rel => "alternate", :type => "application/atom+xml" }
     
+    %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"}
+    
     
   %body{ :class => body_classes }
     %section#top-wrap
       %header
-        %ul#nav
-          %li= link_to "Blog", "/blog"
-          %li= link_to "Projects", "/projects"
+        = partial 'shared/nav'
       %section#wrapper
         = yield
     %section#middle-wrap
@@ -26,4 +27,4 @@
         = yield_content :middle
     %footer
       %section.container
-        %section.copyright &copy; 2009-2010 Wynn Netherland
+        %section.copyright &copy; 2009 - 2010 Wynn Netherland

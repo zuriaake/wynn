@@ -30,12 +30,6 @@ header {
 ul#nav {
   @include horizontal-list(10px);
   float: right;
-  li {
-   
-    a {
-      font-weight: normal;
-    } 
-  }
 }
 
 #wrapper {
@@ -52,6 +46,7 @@ ul#nav {
   padding-top: 40px;
   
 }
+
 
 .intro.with-icons {
   line-height: 48px;
@@ -99,7 +94,7 @@ body.home #middle {
     width:270px;
     img.wynn {margin-top: -100px; }
   }
-  .intro { @include column(17, true); @include prepend(7);}
+  .intro { @include column(17, true); @include prepend(7); padding-top: 1em;}
 }
 
 #meta {
@@ -108,8 +103,11 @@ body.home #middle {
 }
 
 #content {
-  @include column(14);
+  @include column(18);
   @include colborder(rgba(0,0,0,.1), 1px);
+  body.detail & {
+    @include column(14);
+  }
 }
 
 
