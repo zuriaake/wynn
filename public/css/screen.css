@@ -70,79 +70,74 @@ body {
 /* line 10, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 h1, h2, h3, h4, h5 {
   line-height: 1.1em;
-  font-weight: normal;
-  font-family: "LeagueGothicRegular", Helvetica, Arial,sans-serif;
-  text-transform: uppercase;
+  font-family: "GnuolaneRgRegular", Helvetica,Arial,sans-serif;
   margin: 0 0 .3em;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.14);
-  color: #333;
-  font-family: Times,Georgia,serif;
-  font-style: italic;
-  text-transform: none;
-  font-weight: normal;
+  color: #555;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+}
+/* line 18, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+h1 em, h2 em, h3 em, h4 em, h5 em {
+  font-family: "GnuolaneRgBold", Helvetica,Arial,sans-serif;
+  color: #000;
 }
 
 /* line 24, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 h1 {
-  text-transform: uppercase;
-  font-size: 56px;
+  font-size: 48px;
   line-height: 1em;
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.14);
   color: #111;
-  font-family: "LeagueGothicRegular", Helvetica, Arial,sans-serif;
-  font-style: normal;
-  text-transform: uppercase;
+  font-family: "GnuolaneRgBold", Helvetica,Arial,sans-serif;
 }
 
-/* line 35, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 33, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 .wf-active h1 {
   visibility: visible;
 }
 
-/* line 39, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 37, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 h2 {
+  font-size: 32px;
+}
+
+/* line 38, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+h3 {
   font-size: 28px;
+}
+
+/* line 39, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+h4 {
+  font-size: 24px;
+  font-family: "GnuolaneRgBold", Helvetica,Arial,sans-serif;
   color: #333;
-  font-style: normal;
 }
 
 /* line 40, ../../app/views/themes/wynn/stylesheets/_typography.scss */
-h3 {
-  font-size: 24px;
-}
-
-/* line 41, ../../app/views/themes/wynn/stylesheets/_typography.scss */
-h4 {
-  font-size: 20px;
-  font-weight: bold;
+h5 {
+  font-size: 22px;
+  font-family: "GnuolaneRgBold", Helvetica,Arial,sans-serif;
+  color: #666;
 }
 
 /* line 42, ../../app/views/themes/wynn/stylesheets/_typography.scss */
-h5 {
-  font-size: 16px;
-  font-weight: bold;
-  font-style: normal;
-}
-
-/* line 44, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 #articles h2 {
-  font-family: "LeagueGothicRegular";
-  font-size: 40px;
-  text-transform: uppercase;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
-  font-style: normal;
+  font-family: "GnuolaneRgRegular", Helvetica, Arial, sans-serif;
 }
-/* line 50, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 45, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 #articles h2 a {
+  color: #333;
   font-weight: normal;
 }
 
-/* line 53, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 48, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 p {
   margin: 0 0 1.5em;
 }
 
-/* line 60, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 55, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 a:link,
 a:visited,
 a:hover,
@@ -152,39 +147,39 @@ a:active {
   font-weight: bold;
 }
 
-/* line 62, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 57, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 ul#nav {
   font-weight: bold;
 }
-/* line 64, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 59, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 ul#nav a {
   font-weight: normal;
 }
 
-/* line 67, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 62, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 code {
   font-family: Monaco, Consolas, monospace;
   background: rgba(0, 0, 0, 0.1);
   line-height: 15px;
   font-size: 13px;
 }
-/* line 72, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 67, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 code a {
   font-weight: normal !important;
   color: inherit;
 }
 
-/* line 75, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 70, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 .date, .hand {
   font-family: SeanRegular;
 }
 
-/* line 77, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 72, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 .hand {
   text-transform: none;
 }
 
-/* line 79, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 74, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 a#home {
   font-family: SeanRegular;
   font-weight: normal;
@@ -193,7 +188,7 @@ a#home {
   display: block;
   margin-bottom: 1em;
 }
-/* line 86, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 81, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 a#home span.name {
   font-family: "LeagueGothicRegular";
   font-size: 2em;
@@ -203,21 +198,21 @@ a#home span.name {
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.14);
 }
 
-/* line 90, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 85, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 .impact {
   text-align: right;
-  font-size: 1.2em;
 }
-/* line 93, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 87, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 .impact h1, .impact h2 {
   text-transform: none;
   font-family: "SeanRegular",sans-serif;
   font-style: normal;
-  font-size: 1.6em;
+  font-size: 1.8em;
   line-height: 1em;
   text-shadow: none;
+  color: #000;
 }
-/* line 100, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 95, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 .impact h1 span.name, .impact h2 span.name {
   line-height: 1em;
   color: #000;
@@ -225,41 +220,41 @@ a#home span.name {
   text-transform: uppercase;
   vertical-align: -20%;
   font-size: 3em;
-  font-family: "LeagueGothicRegular",sans-serif;
+  font-family: "GnuolaneRgBold", Helvetica,Arial,sans-serif;
 }
-/* line 110, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 105, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 .impact h2 {
   font-family: "SeanRegular", sans-serif;
   font-size: 1.8em;
 }
-/* line 113, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 108, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 .impact h2 span.name {
   font-size: 2em;
 }
-/* line 115, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 110, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 .impact span.amp {
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.14);
 }
 
-/* line 118, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 113, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 span.amp {
   font-family: Baskerville, Palatino, Constantia, "Book Antiqua", "URW Palladio L", serif;
   font-style: italic;
 }
 
-/* line 124, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 119, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 body.home .intro {
   font-size: 1.2em;
   line-height: 2em;
   color: #999999;
   /*a { font-family: SeanRegular; font-weight: normal;}*/
 }
-/* line 129, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 124, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 body.home .intro a {
   color: white;
 }
 
-/* line 135, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 130, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 .note {
   font-family: SeanRegular;
   font-size: 20px;
@@ -267,12 +262,12 @@ body.home .intro a {
   float: right;
 }
 
-/* line 138, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 133, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 p.read-more {
   text-align: right;
 }
 
-/* line 140, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 135, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 footer {
   color: #666666;
   text-align: right;

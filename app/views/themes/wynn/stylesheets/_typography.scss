@@ -9,45 +9,40 @@ body {
 
 h1,h2,h3,h4,h5 {
   line-height: 1.1em;
-  font-weight: normal;
-  font-family: "LeagueGothicRegular", Helvetica, Arial,sans-serif;
-  text-transform: uppercase;
+  font-family: "GnuolaneRgRegular", Helvetica,Arial,sans-serif;
   margin: 0 0 .3em;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.14);
-  color: #333;
-  font-family:  Times,Georgia,serif; 
-  font-style: italic;
-  text-transform: none; 
-  font-weight: normal;
+  color: #555;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+  em {
+    font-family: "GnuolaneRgBold", Helvetica,Arial,sans-serif;
+    color: #000;
+  }
 }
 
 h1 {
-  text-transform: uppercase;
-  font-size: 56px;
+
+  font-size: 48px;
   line-height: 1em;
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.14);
   color: #111;
-  font-family: "LeagueGothicRegular", Helvetica, Arial,sans-serif;
-  font-style: normal;
-  text-transform: uppercase;
+  font-family: "GnuolaneRgBold", Helvetica,Arial,sans-serif;
 }
 
 .wf-active h1 {
   visibility: visible;
 }
 
-h2 { font-size: 28px; color: #333; font-style: normal; }
-h3 { font-size: 24px;}
-h4 { font-size: 20px; font-weight: bold;}
-h5 { font-size: 16px; font-weight: bold; font-style: normal;} 
+h2 { font-size: 32px; }
+h3 { font-size: 28px; }
+h4 { font-size: 24px; font-family: "GnuolaneRgBold", Helvetica,Arial,sans-serif; color: #333;}
+h5 { font-size: 22px; font-family: "GnuolaneRgBold", Helvetica,Arial,sans-serif; color: #666;} 
 
 #articles h2 {
-  font-family: "LeagueGothicRegular";
-  font-size: 40px;
-  text-transform: uppercase; 
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1); 
-  font-style: normal;
-  a {font-weight: normal;}
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+  font-family: "GnuolaneRgRegular", Helvetica, Arial, sans-serif; 
+  a {color: #333; font-weight: normal;}
 }
 
 p {
@@ -89,14 +84,14 @@ a#home {
 
 .impact {
   text-align: right;
-  font-size: 1.2em;
   h1, h2 {
     text-transform: none;
     font-family: "SeanRegular",sans-serif;
     font-style: normal;
-    font-size: 1.6em;
+    font-size: 1.8em;
     line-height: 1em;
     text-shadow: none;
+    color: #000;
     span.name {
       line-height: 1em;
       color: #000;
@@ -104,7 +99,7 @@ a#home {
       text-transform:uppercase;
       vertical-align:-20%;
       font-size: 3em;
-      font-family: "LeagueGothicRegular",sans-serif;
+      font-family: "GnuolaneRgBold", Helvetica,Arial,sans-serif;
     }
   }
   h2 {
