@@ -11,7 +11,7 @@ Presto.helpers do
   end
   
   def theme_partial(partial, options={})
-    partial "themes/default/#{partial}", options
+    partial "themes/#{Nesta::Config.theme}/#{partial}", options
   end
   
   def nesta_atom_id_for_page(page)
