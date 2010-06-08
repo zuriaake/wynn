@@ -1,5 +1,5 @@
 date: 2009-12-18 16:09:32 -06:00
-categories: blog
+categories: blog, ruby, twitter, gem, tumblr
 template: article
 
 # The Twitter gem now supports Tumblr

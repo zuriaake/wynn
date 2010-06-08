@@ -1,5 +1,5 @@
 date: 2009-12-22 15:40:57 -06:00
-categories: blog
+categories: blog, ruby, documentation, quick-tip
 template: article
 
 # Quick tip: Use APIdock to hunt down missing methods

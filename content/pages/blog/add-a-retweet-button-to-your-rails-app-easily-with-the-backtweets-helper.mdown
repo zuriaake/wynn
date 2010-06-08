@@ -1,6 +1,5 @@
 date: 2009-12-02 13:09:05 -06:00
-categories: blog
-template: article
+categories: blog, ruby, rails, plugins, twitter
 template: article
 
 # Add a retweet button to your Rails app easily with the Backtweets helper
@@ -9,40 +8,28 @@ On this blog, I use the excellent <a href="http://wordpress.org/extend/plugins/s
 When I needed a Backtweets widget for a client Rails application, I whipped up a quick plugin that provides an easy helper for writing all those JavaScript options.
 <!--more-->
 
-<h3>Installation</h3>
+### Installation
 
 You can install the plugin from the <a href="http://github.com/pengwynn/backtweets_helper">GitHub repo</a>:
 
-[code]
-script/plugin install git://github.com/pengwynn/backtweets_helper.git
-[/code]
+    script/plugin install git://github.com/pengwynn/backtweets_helper.git
 
-<h3>Displaying a tweet count in your view</h3>
+### Displaying a tweet count in your view
 
 To display a count of tweets that reference the current page, simply call the helper:
 
-[code]
-&lt;%= backtweets_count %&gt;
-&lt;%= backtweets_count(:size => :small) %&gt;
-[/code]
+    :::html
+    <%= backtweets_count %>
+    <%= backtweets_count(:size => :small) %>
 
-<script type="text/javascript">
-        tweetcount_url = 'http://wynnnetherland.com/2009/12/add-a-retweet-button-to-your-rails-app-easily-with-the-backtweets-helper';
-</script>
-<script type="text/javascript" src="http://widgets.backtype.com/tweetcount.js"></script>
-<script type="text/javascript">
-        tweetcount_url = 'http://wynnnetherland.com/2009/12/add-a-retweet-button-to-your-rails-app-easily-with-the-backtweets-helper';
-        tweetcount_size = 'small';
-</script>
-<script type="text/javascript" src="http://widgets.backtype.com/tweetcount.js"></script>
 
 The full set of options include:
 
-<table>
+<table cellspacing="5">
   <tr>
     <th>Parameter</th>
     <th>Default value</th>
-    <th>Description></th>
+    <th>Description</th>
   </tr>
   <tr>
     <td><code>url</code></td>
@@ -71,8 +58,8 @@ The full set of options include:
   </tr>
   <tr>
     <td><code>size</code></td>
-    <td><code>"large"</code></td>
-    <td>Size of button ("large" or "small")</td>
+    <td><code>large</code></td>
+    <td>Size of button (<code>large</code> or <code>small</code>)</td>
   </tr>
   <tr>
     <td><code>api_key</code></td>
@@ -87,32 +74,32 @@ The full set of options include:
   <tr>
     <td><code>background</code></td>
     <td></td>
-    <td>Button background color (e.g. 'FFFFFF')</td>
+    <td>Button background color (e.g. <code>FFFFFF</code>)</td>
   </tr>
   <tr>
     <td><code>border</code></td>
     <td></td>
-    <td>Button border color (e.g. 'CCCCCC')</td>
+    <td>Button border color (e.g. <code>CCCCCC</code>)</td>
   </tr>
   <tr>
     <td><code>text</code></td>
     <td></td>
-    <td>Button text color (e.g. '000000')</td>
+    <td>Button text color (e.g. <code>000000</code>)</td>
   </tr>
 </table>
 
 <h3>Displaying recent comments, blogroll and search</h3>
 The plugin also includes three other helpers to render user comments and blogroll widgets as well as a comment search widget:
 
-[code]
-&lt;%= backtweets_comments('pengwynn') -%&gt;
-&lt;%= backtweets_blogroll('pengwynn') -%&gt;
-&lt;%= backtweets_search('ruby') -%&gt;
-[/code]
+    :::html
+    <%= backtweets_comments('pengwynn') -%>
+    <%= backtweets_blogroll('pengwynn') -%>
+    <%= backtweets_search('ruby') -%>
 
 <script type="text/javascript" src="http://widgets.backtype.com/pengwynn"></script>
 <script type="text/javascript" src="http://widgets.backtype.com/pengwynn/blogs"></script>
 <script type="text/javascript" src="http://widgets.backtype.com/comments?q=ruby"></script>
-<br />
+
+<br style="clear:both">
 
 If you would like to hit the Backtweets API for more info on your links and counts, check out the <a href='http://github.com/squeejee/twitterland'>Twitterland gem</a>.

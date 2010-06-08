@@ -1,5 +1,5 @@
 date: 2009-12-15 10:24:57 -06:00
-categories: blog
+categories: blog, javascript, mashups, github, jquery
 template: article
 
 # Use JavaScript to put GitHub info on your site

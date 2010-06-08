@@ -14,6 +14,8 @@
       - @page.categories.each do |category|
         %a{ :href => category.abspath }= category.heading
 
+  - if @page.metadata.categories.split(",").map{|c| c.downcase.strip}.include?('feature')
+    = theme_partial 'about'
   = theme_partial 'social'
   = theme_partial 'feed', :locals => { :title => @site_title }
   = theme_partial 'comments'
@@ -21,4 +23,3 @@
 %aside#sidebar
   .intro= theme_partial 'intro'
   = theme_partial 'categories'
-  = theme_partial 'feed'

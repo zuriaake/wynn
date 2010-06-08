@@ -7,44 +7,45 @@ One of my favorite aspects of developing in Rails is the <a href="http://slash7.
 
 Thanks to <a href="http://getfirebug.com/">Firebug</a> for Firefox and <a href="http://webkit.org/blog/829/web-inspector-updates/">Web Inspector</a> for Webkit, I also have a console for my client-side JavaScript. I wish jQuery were as powerful when traversing raw JavaScript objects as it is traversing the DOM. Well it seems I have two wishes left for the first has been granted in <a href="http://documentcloud.github.com/underscore">Underscore.js</a>.<!--more-->
 
-<h3>Underscore.js: 2kb of pure JavaScript horsepower!</h3>
+### Underscore.js: 2kb of pure JavaScript horsepower!
+
 Underscore.js is a new JavaScript framework from <a href="http://documentcloud.org/">DocumentCloud</a> that brings a powerful set of utility functions to JavaScript with a disctinct Ruby flavor and without monkey-patching the native JavaScript types by extending via <code>prototype</code>. Just as <a href="http://prototypejs.org">Prototype.js</a> and <a href="http://jquery.com">jQuery</a> employ the <code>$</code> function, Underscore adds all of this goodness via the <code>_</code> function.
 
 So, what's in the box? Let's just ask <code>_</code> himself, Ruby style:
 
-[javascript]
-&gt;&gt;&gt; _.methods();
-=> [&quot;all&quot;, &quot;any&quot;, &quot;bind&quot;, &quot;bindAll&quot;, &quot;breakLoop&quot;, &quot;clone&quot;, &quot;compact&quot;,
- &quot;compose&quot;, &quot;defer&quot;, &quot;delay&quot;, &quot;detect&quot;, &quot;each&quot;, &quot;every&quot;, &quot;extend&quot;,
- &quot;filter&quot;, &quot;first&quot;, &quot;flatten&quot;, &quot;foldl&quot;, &quot;foldr&quot;, &quot;forEach&quot;, &quot;functions&quot;,
- &quot;identity&quot;, &quot;include&quot;, &quot;indexOf&quot;, &quot;inject&quot;, &quot;intersect&quot;, &quot;invoke&quot;,
- &quot;isArray&quot;, &quot;isElement&quot;, &quot;isEmpty&quot;, &quot;isEqual&quot;, &quot;isFunction&quot;,
- &quot;isUndefined&quot;, &quot;keys&quot;, &quot;last&quot;, &quot;lastIndexOf&quot;, &quot;map&quot;, &quot;max&quot;,
- &quot;methods&quot;, &quot;min&quot;, &quot;pluck&quot;, &quot;reduce&quot;, &quot;reduceRight&quot;, &quot;reject&quot;,
- &quot;select&quot;, &quot;size&quot;, &quot;some&quot;, &quot;sortBy&quot;, &quot;sortedIndex&quot;, &quot;template&quot;,
- &quot;toArray&quot;, &quot;uniq&quot;, &quot;uniqueId&quot;, &quot;values&quot;, &quot;without&quot;, &quot;wrap&quot;, &quot;zip&quot;]
-[/javascript]
+    :::javascript
+    >>> _.methods();
+    => ["all", "any", "bind", "bindAll", "breakLoop", "clone", "compact",
+     "compose", "defer", "delay", "detect", "each", "every", "extend",
+     "filter", "first", "flatten", "foldl", "foldr", "forEach", "functions",
+     "identity", "include", "indexOf", "inject", "intersect", "invoke",
+     "isArray", "isElement", "isEmpty", "isEqual", "isFunction",
+     "isUndefined", "keys", "last", "lastIndexOf", "map", "max",
+     "methods", "min", "pluck", "reduce", "reduceRight", "reject",
+     "select", "size", "some", "sortBy", "sortedIndex", "template",
+     "toArray", "uniq", "uniqueId", "values", "without", "wrap", "zip"]
+
 
 Nifty, huh? That should look very familiar. Let's look at <code>map</code> as an example.
 
-[javascript]
-&gt;&gt;&gt; _.map([1, 2, 3], function(num){ return num*num });
-=> [1, 4, 9]
-[/javascript]
+    :::javascript
+    >>> _.map([1, 2, 3], function(num){ return num*num });
+    => [1, 4, 9]
+
 
 Pretty straightforward. But we can also call Underscore OOP style:
 
-[javascript]
-&gt;&gt;&gt; _([1, 2, 3]).map(function(num){ return num*num });
-=> [1, 4, 9]
-[/javascript]
+    :::javascript
+    >>> _([1, 2, 3]).map(function(num){ return num*num });
+    => [1, 4, 9]
+
 
 What's the advantage you ask? Chaining!
 
-[javascript]
-&gt;&gt;&gt; _([1, 2, 3]).chain().map(function(num){ return num*num }).size().value();
-=> 3
-[/javascript]
+    :::javascript
+    >>> _([1, 2, 3]).chain().map(function(num){ return num*num }).size().value();
+    => 3
+
 
 Whoa! Why the <code><del datetime="2009-11-09T21:17:46+00:00">get</del>value()</code> at the end? 
 
@@ -52,33 +53,35 @@ Whoa! Why the <code><del datetime="2009-11-09T21:17:46+00:00">get</del>value()</
 
 When chaining, Underscore returns a wrapped set, a special container object (like jQuery does for wrapped sets of elements returned via a selector). To get the last value in the chain, simply call <code>value</code>.
 
-<h5>What else is in the box?</h5>
+#### What else is in the box?
+
 Many of the same Ruby Enumerable and Array functions you've come to know and love are implemented including: <code>each</code>, <code>map</code>, <code>detect</code>, <code>select</code>, <code>reject</code>, <code>all</code>, <code>any</code>, <code>include</code>, <code>max</code>, <code>min</code>, <code>sortBy</code>, <code>toArray</code>, <code>size</code>, <code>first</code>, <code>last</code>, <code>compact</code>, <code>flatten</code>, <code>uniq</code>, and <code>zip</code> plus some <a href="http://documentcloud.github.com/underscore/#documentation">new ones</a> you'll love.
 
 Underscore also includes also some really useful utility functions.
 
-<h5>bind</h5>
+#### `bind`
 
 <blockquote><code>bind</code> a function to a context object, meaning that whenever the function is called, the value of this will be the context. Optionally, bind arguments to the function to pre-fill them, also known as currying. </blockquote>
 
-[javascript]
-var func = function(greeting){ return greeting + ', ' + this.name };
-func = _.bind(func, {name : 'Adrian'}, 'Yo');
-func();
-=> &quot;Yo, Adrian&quot;
-[/javascript]
+    :::javascript
+    var func = function(greeting){ return greeting + ', ' + this.name };
+    func = _.bind(func, {name : 'Adrian'}, 'Yo');
+    func();
+    => "Yo, Adrian"
 
-<h5>template</h5>
+
+#### template
 
 <blockquote>Compiles JavaScript templates into functions that can be evaluated for rendering. Useful for rendering complicated bits of HTML from JSON data sources. Template functions can both interpolate variables, using
 <code><%= … %></code>, as well as execute arbitrary JavaScript code, with <code><% … %></code>. When you evaluate a template function, pass in a context object that has properties corresponding to the template's free variables. If you're writing a one-off, you can pass the context object as the second parameter to template in order to render immediately instead of returning a template function. </blockquote>
 
 Here's an example from the docs:
-[javascript]
-var list = &quot;&lt;% _.each(people, function(name) { %&gt; &lt;li&gt;&lt;%= name %&gt;&lt;/li&gt; &lt;% }); %&gt;&quot;;
-_.template(list, {people : ['moe', 'curly', 'larry']});
-=> &quot; &lt;li&gt;moe&lt;/li&gt; &lt;li&gt;curly&lt;/li&gt; &lt;li&gt;larry&lt;/li&gt; &quot;
-[/javascript]
 
-<h3>Download and enjoy</h3>
+    :::javascript
+    var list = "<% _.each(people, function(name) { %> <li><%= name %></li> <% }); %>";
+    _.template(list, {people : ['moe', 'curly', 'larry']});
+    => " <li>moe</li> <li>curly</li> <li>larry</li> "
+
+
+### Download and enjoy
 Underscore.js is available in both <a href="http://documentcloud.github.com/underscore/underscore-min.js">production</a> and <a href="http://documentcloud.github.com/underscore/underscore.js">development</a> flavors. Go grab it and have some fun!

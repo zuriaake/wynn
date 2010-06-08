@@ -1,5 +1,5 @@
 date: 2009-10-31 12:07:24 -05:00
-categories: blog
+categories: blog, ruby, twitter-gem, twitter
 template: article
 
 # New in the Twitter gem: Lists!
@@ -7,34 +7,39 @@ I believe Twitter's new list feature is big. In fact, I like the idea so much we
 
 While the Lists API is still in <del datetime="2009-10-31T18:52:34+00:00">alpha</del> draft status, I couldn't resist baking in some of these new features into the <a href="http://github.com/jnunemaker/twitter">Twitter gem</a> from <a href="http://railstips.org">John Nunemaker</a>.
 <!--more-->
-<h4>What's new</h4>
+### What's new
 
 New in version 0.7.0 is the ability to:
-<ul>
-	<li>View a user's lists</li>
-        <li>View a list members</li>
-        <li>Create, update, delete lists</li>
-        <li>Add/remove list members</li>
-        <li>Subscribe/unsubscribe from a list</li>
-</ul>
 
-<h4>Some examples</h4>
-[ruby]
-# authenticate via basic auth
-httpauth = Twitter::HTTPAuth.new('username', 'password')
-client = Twitter::Base.new(httpauth)
+* View a user's lists
+* View a list members
+* Create, update, delete lists
+* Add/remove list members
+* Subscribe/unsubscribe from a list
 
-# get all my lists
-client.lists('pengwynn')
 
-# get list info
-list = client.list('pengwynn', 'rubyists')
-pp list.member_count
-# => 2
+### Some examples
 
-# view all the members for a list
-client.list_members('pengwynn', 'rubyists')
+    :::ruby
+    # authenticate via basic auth
+    httpauth = Twitter::HTTPAuth.new('username', 'password')
+    client = Twitter::Base.new(httpauth)
 
-[/ruby]
+    # get all my lists
+    client.lists('pengwynn')
 
-So if you've got plans of incorporating Twitter lists into your Ruby app, <code>gem install twitter</code> and get busy!
+    # get list info
+    list = client.list('pengwynn', 'rubyists')
+    pp list.member_count
+    # => 2
+
+    # view all the members for a list
+    client.list_members('pengwynn', 'rubyists')
+
+
+
+So if you've got plans of incorporating Twitter lists into your Ruby app, 
+
+    gem install twitter
+
+and get busy!

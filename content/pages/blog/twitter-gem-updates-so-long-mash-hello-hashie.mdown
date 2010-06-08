@@ -1,23 +1,24 @@
 date: 2009-11-17 08:30:40 -06:00
-categories: blog
+categories: blog, ruby, twitter-gem, gem
 template: article
 
 # Twitter gem updates: So long Mash, hello Hashie
+
 A couple of quick updates on the <a href="http://gemcutter.org/gems/twitter">Twitter gem</a>. Due to some conflicts with extlib, we've swapped out Mash in favor of <a href="http://github.com/intridea/hashie">Hashie</a>. Michael's <a href="http://www.intridea.com/2009/11/12/hashie-the-hash-toolkit?blog=company">blog post</a> has the low down on the move. Thanks to <a href="http://twitter.com/hassox">hassox</a> for the patch!
 <!--more-->
-<h3>New feature: Tweeple search</h3>
+### New feature: Tweeple search
 
 Last night the Twitter team opened up the user search method on the API and I couldn't resist adding this feature to the gem:
-[ruby]
-# search for our favorite South Bend rubyist
-tweeps = client.user_search('John Nunemaker')
-tweeps.size
-=&amp;gt; 2  # huh?
 
-# will the real slim shady please stand up, please stand up
-tweeps.map{|u| u.screen_name}
-=&amp;gt; ['jnunemaker', 'Gburgguy26']
+    :::ruby
+    # search for our favorite South Bend rubyist
+    tweeps = client.user_search('John Nunemaker')
+    tweeps.size
+    => 2  # huh?
 
-[/ruby]
+    # will the real slim shady please stand up, please stand up
+    tweeps.map{|u| u.screen_name}
+    => ['jnunemaker', 'Gburgguy26']
+
 
 So there it is, go grab <a href="http://gemcutter.org/gems/twitter">0.7.5</a> and enjoy!

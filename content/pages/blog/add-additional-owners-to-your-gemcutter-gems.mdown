@@ -1,5 +1,5 @@
 date: 2009-11-05 21:36:38 -06:00
-categories: blog
+categories: blog, gems, tips
 template: article
 
 # Add additional owners to your Gemcutter gems
@@ -7,12 +7,12 @@ Thanks to <a href="http://railstips.org">John Nunemaker</a> for this tip.
 
 If you need to add additional owners to your gems on <a href="http://gemcutter.org">Gemcutter</a>, you can use the <code>gem owner</code> command like so:
 
-[code]
-$ gem owner -a codemonkey@example my-cool-gem
-Added owner: codemonkey@example.com
-Owners for gem: my-cool-gem
-- codemonkey@example.com
-- codeslinger@example.com
-[/code] 
+
+    $ gem owner -a codemonkey@example my-cool-gem
+    Added owner: codemonkey@example.com
+    Owners for gem: my-cool-gem
+    - codemonkey@example.com
+    - codeslinger@example.com
+
 
 Hopefully this feature will be included in the web interface soon. How about <a href="http://github.com/qrush/gemcutter">forking Gemcutter</a> and beating me to the punch?

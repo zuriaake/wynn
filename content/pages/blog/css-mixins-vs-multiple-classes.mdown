@@ -1,5 +1,5 @@
 date: 2009-11-04 19:00:46 -06:00
-categories: blog
+categories: blog, css, sass, mixins
 template: article
 
 # CSS Mixins vs. multiple classes
@@ -8,167 +8,166 @@ A growing number of CSS meta-frameworks provide support for mixins. While CSS mi
 
 I like the idea of <a href="http://en.wikipedia.org/wiki/Don't_repeat_yourself">DRY</a>ing up my CSS. This usually begins simply by using selector grouping.
 
-[css]
-h1 {font-weight: bold;}
-h2 {font-weight: bold;}
-h3 {font-weight: bold;}
-[/css]
+    :::css
+    h1 {font-weight: bold;}
+    h2 {font-weight: bold;}
+    h3 {font-weight: bold;}
+
 
 becomes:
 
-[css]
-h1, h2, h3 {font-weight: bold}
-[/css]
+    :::css
+    h1, h2, h3 {font-weight: bold}
+
 
 Pretty basic so far. But what happens when the styles become a bit more complex? Take the following example:
 
-[css]
-#sidebar {
-  background: #efefef;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  padding: 10px;
-}
+    :::css
+    #sidebar {
+      background: #efefef;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      padding: 10px;
+    }
 
-#login {
-  background: #999;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  padding: 10px;
-}
+    #login {
+      background: #999;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      padding: 10px;
+    }
 
-[/css]
+
 
 Using selector groups in this case leads to less maintainable code in that you have to keep updating the permutations of selector groups. A common solution is to factor common properties into <a href="http://www.w3.org/TR/CSS2/selector.html#class-html">classes</a>:
 
-[css]
-.rounded {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-}
+    :::css
+    .rounded {
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+    }
 
-.box {
-  padding: 10px;
-}
+    .box {
+      padding: 10px;
+    }
 
-#sidebar {
-  background: #efefef;
-}
+    #sidebar {
+      background: #efefef;
+    }
 
-#login {
-  background: #999
-}
+    #login {
+      background: #999
+    }
 
-[/css]
+
 
 ... and we employ these new classes like so:
 
-[html]
-&lt;div id='notice' class='box'&gt;
-   ...
-&lt;/div&gt;
+    :::html
+    <div id='notice' class='box'>
+       ...
+    </div>
 
-&lt;div id='login' class='rounded box'&gt;
-   ...
-&lt;/div&gt;
+    <div id='login' class='rounded box'>
+       ...
+    </div>
 
-&lt;div id='sidebar' class='rounded box'&gt;
-   ...
-&lt;/div&gt;
-[/html]
+    <div id='sidebar' class='rounded box'>
+       ...
+    </div>
 
 The idea is that we group common styles into reusable classes that can be added to elements as needed. Breaking the styles down into <code>rounded</code> and <code>box</code> classes, lets us use them independently.
 
-<h3>Mixins: a more programmatic approach</h3>
+### Mixins: a more programmatic approach
 
 To my knowledge, <a href="http://sass-lang.com/">Sass</a>, heavily influenced by the Ruby language in which it's implemented, brought the idea of mixins to CSS. Consider this example:
 
-[code]
-=rounded
-  -webkit-border-radius: 5px
-  -moz-border-radius: 5px
+    :::css
+    =rounded
+      -webkit-border-radius: 5px
+      -moz-border-radius: 5px
 
-#login
-  background: #efefef;
-  +rounded
-#sidebar
-  +rounded
-[/code]
+    #login
+      background: #efefef;
+      +rounded
+    #sidebar
+      +rounded
+
 
 If you're a newcomer to Sass, this example might be a bit hard to follow. Basically, we declare a mixin named <code>rounded</code> with a set of styles. These styles are then <em>mixed into</em> the elements in the following selectors. When compiled, this Sass stylesheet yields the following CSS:
 
-[css]
-#login,
-#sidebar {
-   -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-}
-[/css]
+    :::css
+    #login,
+    #sidebar {
+       -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+    }
+
 
 Here's the same example using <a href="http://lesscss.org/">LessCSS</a> which has a more CSSsy syntax:
 
-[css]
-.rounded {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-}
+    :::css
+    .rounded {
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+    }
 
-#sidebar {
-  background: #efefef;
-  .rounded;
-}
+    #sidebar {
+      background: #efefef;
+      .rounded;
+    }
 
-#login {
-  .rounded;
-}
-[/css]
+    #login {
+      .rounded;
+    }
+
 
 Where this truly becomes powerful is in the use of variables like in this Sass example:
 
-[code]
-=rounded(!radius=5px)
-  -webkit-border-radius = !radius
-  -moz-border-radius = !radius
+    :::css
+    =rounded(!radius=5px)
+      -webkit-border-radius = !radius
+      -moz-border-radius = !radius
 
-#login
-  background: #efefef
-  +rounded
-#sidebar
-  +rounded(3px)
-[/code]
+    #login
+      background: #efefef
+      +rounded
+    #sidebar
+      +rounded(3px)
+
 
 which yields:
 
-[css]
-#login {
-  background: #efefef;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px; 
-}
+    :::css
+    #login {
+      background: #efefef;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px; 
+    }
 
-#sidebar {
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px; 
-}
-[/css]
+    #sidebar {
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px; 
+    }
+
 
 With a single mixin we can reuse rules in a parameter-driven fashion to create two sets of styles, one with a <code>5px</code> border radius one with <code>3px</code>. Nifty, huh? 
 
-<h3>The tradeoff</h3>
+### The tradeoff
 
 I'm a big fan of Sass, especially as implemented in the <a href="http://compass-style.org/">Compass</a> meta-framework, and use this mixin approach frequently. However, in moving away from multiple css classes to mixins, I've noticed I've lost a part of my development workflow that I've come to depend on - quick style spelunking with <a href="http://getfirebug.com">Firebug</a>.
 
-<h4>Not so obvious style sources</h4>
+#### Not so obvious style sources
 
 When using multiple classes, the Firebug style inspector can take me to the exact line where the style was defined. 
 <a href="http://wynnnetherland.com/wp-content/uploads/2009/11/Screen-shot-2009-11-04-at-9.25.22-PM.png"><img src="http://wynnnetherland.com/wp-content/uploads/2009/11/Screen-shot-2009-11-04-at-9.25.22-PM-300x100.png" alt="Screen shot 2009-11-04 at 9.25.22 PM" title="Screen shot 2009-11-04 at 9.25.22 PM" width="300" height="100" class="aligncenter size-medium wp-image-99" /></a>
 
 With the mixin approach, these styles are now mixed into each rule. Firebug will of course show me the styles in each rule, but now I don't know where they come from unless I leave my browser and traverse my Sass code.
 
-<h4>Harder to play eye doctor</h4>
+#### Harder to play eye doctor
 
 Something else I do frequently in Firebug is playing eye doctor. You know "Better? Worse? Better Worse?" I add and remove additional css classes to elements to quickly apply and remove styles to play with different design aspects (like trying out rounded corners, etc.). When using <a href="http://blueprintcss.org">Blueprint CSS</a>'s css classes, I can quickly prototype layouts and increase/decrease column widths just by modifying CSS classes like <code>span-10</code> or <code>span-12</code>. When using Compass's mixin approach, I get all that grid layout goodness mixed into my semantic selectors. However since it's much harder to edit a dozen CSS style properties than to toggle a CSS class I lose the ability to quickly play around with the layout.
 
-<h3>Conclusion</h3>
+### Conclusion
 
 I think the growing list of CSS meta-frameworks are changing how we look at creating CSS. However with power comes certain tradeoffs. What's your take?

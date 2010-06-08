@@ -1,56 +1,49 @@
 date: 2009-11-19 22:18:48 -06:00
-categories: blog
+categories: blog, ruby, gem, api
 template: article
 
-# Plan your Nextstop from Ruby -- or Twitter!
+# Plan your Nextstop from Ruby &mdash; or Twitter!
 I stumbled across <a href='http://nextstop.com'>Nextstop</a> this week, a community driven travel site where users can post destination guides and recommend places to explore, eat & drink, or just sleep. Since I'm an API junkie, when they announced their new API this week, I just had to write a <a href="http://gemcutter.org/gems/nextstop">Ruby wrapper</a>.
 <!--more-->
 
-<h3>Features</h3>
+### Features
 
 The Nextstop API is powerful yet simple and includes searching and retrieving detailed information for:
 
-<ul>
-  <li>Places or Place Summaries</li>
-  <li>Guides and Related Guides</li>
-  <li>Recommendations</li>
-  <li>Related Website</li>
-  <li>Authors</li>
-</ul>
+* Places or Place Summaries
+* Guides and Related Guides
+* Recommendations
+* Related Website
+* Authors
 
-<h4>Installation</h4>
+#### Installation</h4>
+    sudo gem install nextstop
 
-[bash]
-sudo gem install gemcutter
-gem tumble
-sudo gem install nextstop
-[/bash]
 
-<h4>Usage</h4>
+#### Usage</h4>
 
 To use the API, you'll need to sign up for an <a href='http://www.nextstop.com/api/get_key/'>API Key</a>.
 
-[ruby]
-# init the nextstop client with your api key
-nextstop = Nextstop.new('OU812')
+    :::ruby
+    # init the nextstop client with your api key
+    nextstop = Nextstop.new('OU812')
 
-# search guides for Dallas
-nextstop.search_guides(:q =&amp;gt; 'Dallas')
+    # search guides for Dallas
+    nextstop.search_guides(:q => 'Dallas')
 
-# search guides for Dallas
-nextstop.search_places(:q =&amp;gt; 'Dallas')
+    # search guides for Dallas
+    nextstop.search_places(:q => 'Dallas')
 
-# get detailed info for a guide
-nextstop.guide('nzp9KFPK4ok')
+    # get detailed info for a guide
+    nextstop.guide('nzp9KFPK4ok')
 
-# get detailed info for a place
-nextstop.place('kgOslXII8bo')
+    # get detailed info for a place
+    nextstop.place('kgOslXII8bo')
 
-[/ruby]
 
 Easy peasy. You can explore your own back yard right from your Ruby console. As always, you can <a href="http://github.com/pengwynn/nextstop">grab the code on the hub</a>.
 
-<h3>Nextstop's nifty Twitter bot</h3>
+### Nextstop's nifty Twitter bot
 
 If you're on the go and want to find your Nextstop from your phone, just send a tweet to <a href="http://twitter.com/nextstopbot">@nextstopbot</a> in the form of <code>@nextstopbot [query] near [place]</code>. 
 

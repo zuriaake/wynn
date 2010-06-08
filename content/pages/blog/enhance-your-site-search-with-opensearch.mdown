@@ -9,24 +9,23 @@ With two simple steps you can let users hit your site's search page without forc
 
 First, create an OpenSearch definition.
 
-[code lang="xml"]
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
-&lt;OpenSearchDescription xmlns=&quot;http://a9.com/-/spec/opensearch/1.1/&quot;
-                       xmlns:moz=&quot;http://www.mozilla.org/2006/browser/search/&quot;&gt;
-&lt;ShortName&gt;Wynn Netherland&lt;/ShortName&gt;
-&lt;Description&gt;Designer &amp;amp; Developer&lt;/Description&gt;
-&lt;Contact&gt;wynn@orrka.com&lt;/Contact&gt;
-&lt;Image height=&quot;16&quot; width=&quot;16&quot; type=&quot;image/x-icon&quot;&gt;http://wynnnetherland.com/favicon.ico&lt;/Image&gt;
-&lt;Url type=&quot;text/html&quot; method=&quot;get&quot; template=&quot;http://wynnnetherland.com/?s={searchTerms}&quot;/&gt;
-&lt;moz:SearchForm&gt;http://wynnnetherland.com&lt;/moz:SearchForm&gt;
-&lt;/OpenSearchDescription&gt;
-[/code]
+    :::xml
+    <?xml version="1.0" encoding="utf-8"?>
+    <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                           xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+    <ShortName>Wynn Netherland</ShortName>
+    <Description>Designer &amp; Developer</Description>
+    <Contact>wynn@orrka.com</Contact>
+    <Image height="16" width="16" type="image/x-icon">http://wynnnetherland.com/favicon.ico</Image>
+    <Url type="text/html" method="get" template="http://wynnnetherland.com/?s={searchTerms}"/>
+    <moz:SearchForm>http://wynnnetherland.com</moz:SearchForm>
+    </OpenSearchDescription>
 
 Next, reference your search definition in your page layout.
 
-[code lang="html"]
-&lt;link rel=&quot;search&quot; type=&quot;application/opensearchdescription+xml&quot; href=&quot;http://wynnnetherland.com/opensearch.xml&quot; title=&quot;Wynn Netherland&quot; /&gt;
-[/code]
+    :::html
+    <link rel="search" type="application/opensearchdescription+xml" href="http://wynnnetherland.com/opensearch.xml" title="Wynn Netherland" />
+
 
 Here's a <a href="http://screenr.com/AKx">quick video</a> on how FireFox and Chrome handle OpenSearch and how your users will benefit:
 

@@ -23,18 +23,14 @@ Once you've done this one-time setup, you can now cherry pick the commits you wa
 
 Once you've accepted or rejected the changes in the queue, you can pull those changes by pulling down that branch:
 
-[bash]
-$ git checkout integration 
-Switched to branch 'integration'
-$ git pull origin integration
-[/bash]
+    $ git checkout integration 
+    Switched to branch 'integration'
+    $ git pull origin integration
 
 Once you've tested and cleanly merged all the changes into your integration branch, flip back to your master branch and merge again.
 
-[bash]
-$ git checkout master
-$ git merge integration
-$ git push origin master
-[/bash]
+    $ git checkout master
+    $ git merge integration
+    $ git push origin master
 
 Forkin' simple.
