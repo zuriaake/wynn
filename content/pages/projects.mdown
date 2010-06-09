@@ -1,6 +1,10 @@
+template: projects
+
 # Projects
 
-* twitter
+Some stuff I've created.
+
+<!-- * twitter
 * linkedin
 * chargify
 * gowalla
@@ -17,4 +21,4 @@
 * groupon
 * fumblr
 * presto
-* ujs_sort_helper
+* ujs_sort_helper -->

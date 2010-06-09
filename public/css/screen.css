@@ -1,4 +1,4 @@
-/* line 14, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 14, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -18,42 +18,42 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   vertical-align: baseline;
 }
 
-/* line 17, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 body {
   line-height: 1;
   color: black;
   background: white;
 }
 
-/* line 19, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 19, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 21, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 21, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: separate;
   border-spacing: 0;
   vertical-align: middle;
 }
 
-/* line 23, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 23, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 25, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 25, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: "" "";
 }
-/* line 96, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 96, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
 }
 
-/* line 27, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 27, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
@@ -82,8 +82,13 @@ h1 em, h2 em, h3 em, h4 em, h5 em {
   font-family: "GnuolaneRgBold", Helvetica,Arial,sans-serif;
   color: #000;
 }
+/* line 22, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+h1 code, h2 code, h3 code, h4 code, h5 code {
+  font-size: inherit;
+  text-transform: none;
+}
 
-/* line 24, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 25, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 h1 {
   font-size: 48px;
   line-height: 1em;
@@ -92,50 +97,50 @@ h1 {
   font-family: "GnuolaneRgBold", Helvetica,Arial,sans-serif;
 }
 
-/* line 33, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 34, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 .wf-active h1 {
   visibility: visible;
 }
 
-/* line 37, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 38, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 h2 {
   font-size: 32px;
 }
 
-/* line 38, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 39, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 h3 {
   font-size: 28px;
 }
 
-/* line 39, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 40, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 h4 {
   font-size: 24px;
   color: #333;
 }
 
-/* line 40, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 41, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 h5 {
   font-size: 22px;
   color: #666;
 }
 
-/* line 42, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 43, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 #articles h2 {
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
   font-family: "GnuolaneRgRegular", Helvetica, Arial, sans-serif;
 }
-/* line 45, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 46, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 #articles h2 a {
   color: #111;
   font-weight: normal;
 }
 
-/* line 48, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 49, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 p {
   margin: 0 0 1.5em;
 }
 
-/* line 55, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 56, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 a:link,
 a:visited,
 a:hover,
@@ -145,39 +150,39 @@ a:active {
   font-weight: bold;
 }
 
-/* line 57, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 58, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 ul#nav {
   font-weight: bold;
 }
-/* line 59, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 60, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 ul#nav a {
   font-weight: normal;
 }
 
-/* line 62, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 63, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 code {
   font-family: Monaco, Consolas, monospace;
   background: rgba(0, 0, 0, 0.1);
   line-height: 15px;
   font-size: 13px;
 }
-/* line 67, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 68, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 code a {
   font-weight: normal !important;
   color: inherit;
 }
 
-/* line 70, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 71, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 .date, .hand {
   font-family: SeanRegular;
 }
 
-/* line 72, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 73, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 .hand {
   text-transform: none;
 }
 
-/* line 74, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 75, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 a#home {
   font-family: SeanRegular;
   font-weight: normal;
@@ -186,7 +191,7 @@ a#home {
   display: block;
   margin-bottom: 1em;
 }
-/* line 81, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 82, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 a#home span.name {
   font-family: "LeagueGothicRegular";
   font-size: 2em;
@@ -196,11 +201,11 @@ a#home span.name {
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.14);
 }
 
-/* line 85, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 86, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 .impact {
   text-align: right;
 }
-/* line 87, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 88, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 .impact h1, .impact h2 {
   text-transform: none;
   font-family: "SeanRegular",sans-serif;
@@ -210,7 +215,7 @@ a#home span.name {
   text-shadow: none;
   color: #000;
 }
-/* line 95, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 96, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 .impact h1 span.name, .impact h2 span.name {
   line-height: 1em;
   color: #000;
@@ -220,40 +225,72 @@ a#home span.name {
   font-size: 3em;
   font-family: "GnuolaneRgBold", Helvetica,Arial,sans-serif;
 }
-/* line 105, ../../app/views/themes/wynn/stylesheets/_typography.scss */
-.impact h2 {
+/* line 106, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+.impact h2, .impact h4 {
   font-family: "SeanRegular", sans-serif;
   font-size: 1.8em;
 }
-/* line 108, ../../app/views/themes/wynn/stylesheets/_typography.scss */
-.impact h2 span.name {
+/* line 109, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+.impact h2 span.name, .impact h4 span.name {
   font-size: 2em;
 }
-/* line 110, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 111, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 .impact span.amp {
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.14);
 }
 
-/* line 113, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 114, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 span.amp {
   font-family: Baskerville, Palatino, Constantia, "Book Antiqua", "URW Palladio L", serif;
   font-style: italic;
 }
 
-/* line 119, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 120, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+#sidebar h3, #sidebar h4 {
+  font-family: SeanRegular;
+  font-size: 15px;
+  text-transform: none;
+  color: #555;
+  text-align: center;
+  margin-bottom: 0;
+}
+/* line 127, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+#sidebar h3 span.name, #sidebar h4 span.name {
+  line-height: 1.2em;
+  color: #333;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  vertical-align: -20%;
+  font-size: 30px;
+  font-family: "GnuolaneRgBold", Helvetica,Arial,sans-serif;
+  display: block;
+}
+
+/* line 140, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+#sidebar h4 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+/* line 142, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+#sidebar h4 span.name {
+  font-size: 22px;
+  margin-top: 5px;
+}
+
+/* line 150, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 body.home .intro {
   font-size: 1.2em;
   line-height: 2em;
   color: #999999;
   /*a { font-family: SeanRegular; font-weight: normal;}*/
 }
-/* line 124, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 155, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 body.home .intro a {
   color: white;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
 }
 
-/* line 131, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 162, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 .note {
   font-family: SeanRegular;
   font-size: 20px;
@@ -261,12 +298,12 @@ body.home .intro a {
   float: right;
 }
 
-/* line 134, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 165, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 p.read-more {
   text-align: right;
 }
 
-/* line 136, ../../app/views/themes/wynn/stylesheets/_typography.scss */
+/* line 167, ../../app/views/themes/wynn/stylesheets/_typography.scss */
 footer {
   color: #666666;
   text-align: right;
@@ -302,7 +339,7 @@ header {
   overflow: hidden;
   display: inline-block;
 }
-/* line 8, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/utilities/general/_hacks.scss */
+/* line 8, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.1/frameworks/compass/stylesheets/compass/utilities/general/_hacks.scss */
 header {
   display: block;
 }
@@ -317,11 +354,11 @@ ul#nav {
   display: inline-block;
   float: right;
 }
-/* line 8, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/utilities/general/_hacks.scss */
+/* line 8, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.1/frameworks/compass/stylesheets/compass/utilities/general/_hacks.scss */
 ul#nav {
   display: block;
 }
-/* line 50, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/utilities/lists/_horizontal-list.scss */
+/* line 50, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.1/frameworks/compass/stylesheets/compass/utilities/lists/_horizontal-list.scss */
 ul#nav li {
   list-style-image: none;
   list-style-type: none;
@@ -332,11 +369,11 @@ ul#nav li {
   padding-left: 10px;
   padding-right: 10px;
 }
-/* line 41, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/utilities/lists/_horizontal-list.scss */
+/* line 41, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.1/frameworks/compass/stylesheets/compass/utilities/lists/_horizontal-list.scss */
 ul#nav li:first-child, ul#nav li.first {
   padding-left: 0px;
 }
-/* line 43, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/utilities/lists/_horizontal-list.scss */
+/* line 43, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.1/frameworks/compass/stylesheets/compass/utilities/lists/_horizontal-list.scss */
 ul#nav li:last-child, ul#nav li.last {
   padding-right: 0px;
 }
@@ -348,7 +385,7 @@ ul#nav li:last-child, ul#nav li.last {
   overflow: hidden;
   display: inline-block;
 }
-/* line 8, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/utilities/general/_hacks.scss */
+/* line 8, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.1/frameworks/compass/stylesheets/compass/utilities/general/_hacks.scss */
 #wrapper {
   display: block;
 }
@@ -366,7 +403,7 @@ ul#nav li:last-child, ul#nav li.last {
   width: 950px;
   padding-top: 40px;
 }
-/* line 138, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 138, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html .impact {
   overflow-x: hidden;
 }
@@ -470,7 +507,7 @@ article:last-child {
   display: inline-block;
   margin-top: 1em;
 }
-/* line 8, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/utilities/general/_hacks.scss */
+/* line 8, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.1/frameworks/compass/stylesheets/compass/utilities/general/_hacks.scss */
 #middle-wrap {
   display: block;
 }
@@ -495,7 +532,7 @@ body.home #middle .intro {
   padding-left: 280px;
   padding-top: 1em;
 }
-/* line 138, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 138, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.home #middle .intro {
   overflow-x: hidden;
 }
@@ -506,9 +543,9 @@ body.home #middle .intro {
   float: left;
   margin-right: 10px;
   width: 150px;
-  padding-top: 6em;
+  padding-top: 2em;
 }
-/* line 138, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 138, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #meta {
   overflow-x: hidden;
 }
@@ -523,12 +560,12 @@ body.home #middle .intro {
   margin-right: 25px;
   border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
-/* line 138, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 138, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #content {
   overflow-x: hidden;
 }
-/* line 109, ../../app/views/themes/wynn/stylesheets/screen.scss */
-body.article #content, body.project #content {
+/* line 108, ../../app/views/themes/wynn/stylesheets/screen.scss */
+body.article #content {
   display: inline;
   float: left;
   margin-right: 10px;
@@ -537,25 +574,24 @@ body.article #content, body.project #content {
   margin-right: 25px;
   border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
-/* line 138, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.article #content, * html body.project #content {
+/* line 138, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body.article #content {
   overflow-x: hidden;
 }
 
-/* line 117, ../../app/views/themes/wynn/stylesheets/screen.scss */
+/* line 116, ../../app/views/themes/wynn/stylesheets/screen.scss */
 #sidebar {
   display: inline;
   float: left;
   margin-right: 0;
   width: 190px;
-  padding-top: 3em;
 }
-/* line 138, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 138, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #sidebar {
   overflow-x: hidden;
 }
 
-/* line 126, ../../app/views/themes/wynn/stylesheets/screen.scss */
+/* line 124, ../../app/views/themes/wynn/stylesheets/screen.scss */
 .categories,
 .about,
 .feed,
@@ -564,7 +600,7 @@ embed {
   margin: 1em 0;
 }
 
-/* line 130, ../../app/views/themes/wynn/stylesheets/screen.scss */
+/* line 128, ../../app/views/themes/wynn/stylesheets/screen.scss */
 p img {
   float: right;
   border: solid 1px #ddd;
@@ -577,56 +613,89 @@ p img {
   box-shadow: rgba(0, 0, 0, 0.3) 2px 2px 2px;
 }
 
-/* line 139, ../../app/views/themes/wynn/stylesheets/screen.scss */
+/* line 137, ../../app/views/themes/wynn/stylesheets/screen.scss */
 table {
   margin: 1em 0;
   font-size: .8em;
 }
-/* line 142, ../../app/views/themes/wynn/stylesheets/screen.scss */
+/* line 140, ../../app/views/themes/wynn/stylesheets/screen.scss */
 table th {
   font-weight: bold;
   border-bottom: solid 1px rgba(0, 0, 0, 0.2);
 }
-/* line 146, ../../app/views/themes/wynn/stylesheets/screen.scss */
+/* line 144, ../../app/views/themes/wynn/stylesheets/screen.scss */
 table th, table td {
   padding: 5px;
 }
-/* line 149, ../../app/views/themes/wynn/stylesheets/screen.scss */
+/* line 147, ../../app/views/themes/wynn/stylesheets/screen.scss */
 table tr:nth-child(odd) {
   background: rgba(0, 0, 0, 0.05);
 }
-/* line 152, ../../app/views/themes/wynn/stylesheets/screen.scss */
+/* line 150, ../../app/views/themes/wynn/stylesheets/screen.scss */
 table code {
   background: transparent;
 }
 
-/* line 155, ../../app/views/themes/wynn/stylesheets/screen.scss */
+/* line 153, ../../app/views/themes/wynn/stylesheets/screen.scss */
 dl {
   margin: 1em;
 }
-/* line 157, ../../app/views/themes/wynn/stylesheets/screen.scss */
+/* line 155, ../../app/views/themes/wynn/stylesheets/screen.scss */
 dl dt {
   font-weight: bold;
 }
-/* line 158, ../../app/views/themes/wynn/stylesheets/screen.scss */
+/* line 156, ../../app/views/themes/wynn/stylesheets/screen.scss */
 dl dd {
   margin: 0 0 1em 1em;
 }
 
-/* line 163, ../../app/views/themes/wynn/stylesheets/screen.scss */
+/* line 161, ../../app/views/themes/wynn/stylesheets/screen.scss */
 ul {
   margin: 1em 2em;
   list-style: square;
 }
 
-/* line 168, ../../app/views/themes/wynn/stylesheets/screen.scss */
+/* line 166, ../../app/views/themes/wynn/stylesheets/screen.scss */
 blockquote {
   margin: 1em 1em 1em 2em;
+  padding-left: 1em;
+  border-left: solid 1px rgba(0, 0, 0, 0.2);
   font-style: italic;
   color: #777;
 }
 
 /* line 174, ../../app/views/themes/wynn/stylesheets/screen.scss */
+ul.project-links {
+  list-style: none;
+  margin: 0 0 1em 1em;
+  float: right;
+}
+/* line 178, ../../app/views/themes/wynn/stylesheets/screen.scss */
+ul.project-links li a {
+  line-height: 30px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding-left: 32px;
+  display: block;
+}
+/* line 184, ../../app/views/themes/wynn/stylesheets/screen.scss */
+ul.project-links li a.watchers {
+  background-image: url(/images/watch.png);
+}
+/* line 187, ../../app/views/themes/wynn/stylesheets/screen.scss */
+ul.project-links li a.forks {
+  background-image: url(/images/fork.png);
+}
+/* line 190, ../../app/views/themes/wynn/stylesheets/screen.scss */
+ul.project-links li a.source {
+  background-image: url(/images/code.png);
+}
+/* line 193, ../../app/views/themes/wynn/stylesheets/screen.scss */
+ul.project-links li a.docs {
+  background-image: url(/images/doc.png);
+}
+
+/* line 200, ../../app/views/themes/wynn/stylesheets/screen.scss */
 footer {
   margin-top: 1em;
   padding: 1em 0;
@@ -635,12 +704,12 @@ footer {
   overflow: hidden;
   display: inline-block;
 }
-/* line 8, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/utilities/general/_hacks.scss */
+/* line 8, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.1/frameworks/compass/stylesheets/compass/utilities/general/_hacks.scss */
 footer {
   display: block;
 }
 
-/* line 180, ../../app/views/themes/wynn/stylesheets/screen.scss */
+/* line 206, ../../app/views/themes/wynn/stylesheets/screen.scss */
 pre {
   margin-bottom: 1.5em;
 }

@@ -1,0 +1,12 @@
+= theme_partial 'breadcrumb'
+%section#content
+  ~ @page.to_html
+
+  - unless @page.pages.empty?
+    %ul.projects
+      - @page.pages.each do |page|
+        %li{:class => page.heading.downcase.dasherize }
+          = link_to(page.heading, page.abspath)
+
+%aside#sidebar
+  = theme_partial 'branding'

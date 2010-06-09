@@ -51,4 +51,21 @@ Presto.helpers do
     words.join(" ") + "&nbsp;" + last_word
   end
   
+  def watchers_link(repo, count)
+    link_to(count, "http://github.com/#{repo}/watchers", :class => 'watchers')
+  end
+  
+  def forks_link(repo, count)
+    link_to(count, "http://github.com/#{repo}/network", :class => 'forks')
+  end
+  
+  def source_link(repo)
+    link_to("Source", "http://github.com/#{repo}", :class => 'source')
+    
+  end
+  
+  def docs_link(name)
+    link_to("Docs", "/projects/#{name.downcase}/api", :class => 'docs')
+  end
+  
 end

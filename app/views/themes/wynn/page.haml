@@ -18,11 +18,6 @@
       - @page.categories.each do |category|
         %a{ :href => category.abspath }= category.heading
 
-  = theme_partial 'social'
-  = theme_partial 'feed', :locals => { :title => @site_title }
-  = theme_partial 'comments'
-
 %aside#sidebar
+  = theme_partial 'branding'
   .intro= theme_partial 'intro'
-  = theme_partial 'categories'
-  = theme_partial 'feed'

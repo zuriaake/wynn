@@ -19,6 +19,7 @@ h1,h2,h3,h4,h5 {
     font-family: "GnuolaneRgBold", Helvetica,Arial,sans-serif;
     color: #000;
   }
+  code {font-size: inherit; text-transform: none;}
 }
 
 h1 {
@@ -102,7 +103,7 @@ a#home {
       font-family: "GnuolaneRgBold", Helvetica,Arial,sans-serif;
     }
   }
-  h2 {
+  h2, h4 {
     font-family: "SeanRegular", sans-serif;
     font-size: 1.8em;
     span.name { font-size: 2em; }
@@ -113,6 +114,36 @@ a#home {
 span.amp {
   font-family: Baskerville, Palatino, Constantia, "Book Antiqua", "URW Palladio L", serif;
   font-style: italic;
+}
+
+#sidebar {
+  h3, h4 {
+    font-family:SeanRegular;
+    font-size:15px;
+    text-transform:none;
+    color: #555;
+    text-align: center;
+    margin-bottom: 0;
+    span.name {
+      line-height: 1.2em;
+      color: #333;
+      text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+      text-transform:uppercase;
+      vertical-align:-20%;
+      font-size: 30px;
+      font-family: "GnuolaneRgBold", Helvetica,Arial,sans-serif;
+      display: block;
+    } 
+  }
+}
+
+#sidebar h4 {
+  text-align: center;
+  span.name {
+    font-size: 22px;
+    margin-top: 5px;
+  }
+  margin-bottom: 1em;
 }
 
 

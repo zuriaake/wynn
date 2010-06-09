@@ -11,6 +11,7 @@ gem "ultraviolet", "0.10.1"
 gem "rack-codehighlighter", "~> 0.4.6"
 gem 'adsf'
 gem "hashie", "~> 0.2.0"
+gem 'octopussy', "~> 0.2.2"
 
 # Component requirements
 gem 'haml', '~> 3.0.2'

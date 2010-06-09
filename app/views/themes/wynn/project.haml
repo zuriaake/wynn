@@ -1,0 +1,16 @@
+= theme_partial "breadcrumb"
+
+%section#content
+  - if @page.metadata.repo
+    - repo = Octopussy.repo(@page.metadata.repo)
+    - if repo
+      %ul.project-links
+        %li= source_link(@page.metadata.repo)
+        %li= docs_link(@page.heading)
+        %li= watchers_link(@page.metadata.repo, repo.watchers)
+        %li= forks_link(@page.metadata.repo, repo.forks)
+  ~ @page.to_html
+
+
+%aside#sidebar
+  = theme_partial 'branding'
