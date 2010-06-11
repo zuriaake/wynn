@@ -782,15 +782,7 @@ ul.project-links li a.docs {
   background-image: url(/images/doc.png);
 }
 
-/* line 185, ../../app/views/themes/wynn/stylesheets/screen.sass */
-body.page-about-me #content img {
-  -moz-transform: rotate(1.5deg);
-  -webkit-transform: rotate(1.5deg);
-  -o-transform: rotate(1.5deg);
-  transform: rotate(1.5deg);
-}
-
-/* line 189, ../../app/views/themes/wynn/stylesheets/screen.sass */
+/* line 186, ../../app/views/themes/wynn/stylesheets/screen.sass */
 footer {
   margin-top: 1em;
   padding: 1em 0;
@@ -804,7 +796,7 @@ footer {
   display: block;
 }
 
-/* line 194, ../../app/views/themes/wynn/stylesheets/screen.sass */
+/* line 191, ../../app/views/themes/wynn/stylesheets/screen.sass */
 pre {
   margin-bottom: 1.5em;
 }
