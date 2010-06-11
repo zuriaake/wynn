@@ -1,4 +1,4 @@
-template: article
+template: page
 
 # This is a top order headline. What do you think of the&nbsp;size?
 

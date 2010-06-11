@@ -3,16 +3,17 @@
 %section#meta
   - if @page.date
     = format_date(@page.date)
-      
-%section#content
-
-  ~ @page.to_html
-
   - unless @page.categories.empty?
     .categories
       Filed under
       - @page.categories.each do |category|
         %a{ :href => category.abspath }= category.heading
+      
+%section#content
+
+  ~ @page.to_html
+
+
 
   - if @page.metadata.categories.split(",").map{|c| c.downcase.strip}.include?('feature')
     = theme_partial 'about'

@@ -6,7 +6,7 @@ Presto.helpers do
     classes = []
     classes << 'home' if request.path == "/"
     classes << @page.template if @page and @page.template
-    
+    classes << "page-#{@page.heading.downcase.gsub(/\s/, '-')}" if @page
     classes
   end
   
