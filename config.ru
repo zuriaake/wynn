@@ -3,8 +3,6 @@ require 'adsf'
 require 'uv'
 require 'rack/codehighlighter'
 
-
-
 use Rack::Codehighlighter, :ultraviolet, :markdown => true, :theme => 'mac_classic', :element => "pre>code", :pattern => /\A:::(\w+)\s*(\n|&#x000A;)/i, :logging => true
 
 
