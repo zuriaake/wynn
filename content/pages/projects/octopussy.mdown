@@ -1,0 +1,9 @@
+categories: projects
+repo: pengwynn/octopussy
+template: project
+
+# Octopussy
+
+Simple Ruby wrapper for the GitHub v2 API and feeds
+
+<!--more -->

@@ -1,0 +1,9 @@
+categories: projects
+repo: pengwynn/chargify
+template: project
+
+# Chargify
+
+Ruby wrapper for the chargify.com SAAS and billing API
+
+<!--more -->

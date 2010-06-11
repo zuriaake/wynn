@@ -1,0 +1,9 @@
+categories: projects
+repo: pengwynn/fumblr
+template: project
+
+# Fumblr
+
+Stop fumbling with your Tumblr theme development - mashup of my own process with Thimblr
+
+<!--more -->

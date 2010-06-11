@@ -1,0 +1,9 @@
+categories: projects
+repo: pengwynn/buzzsprout
+template: project
+
+# Buzzsprout
+
+Ruby wrapper for the ghost Buzzsprout API
+
+<!--more -->

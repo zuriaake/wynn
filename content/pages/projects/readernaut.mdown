@@ -1,0 +1,9 @@
+categories: projects
+repo: pengwynn/readernaut
+template: project
+
+# Readernaut
+
+Ruby wrapper for the Readernaut social reading site API
+
+<!--more -->

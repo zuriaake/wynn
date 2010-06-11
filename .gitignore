@@ -5,9 +5,5 @@ bin/*
 vendor/gems/*
 !vendor/gems/cache/
 .sass-cache/*
-<<<<<<< HEAD
-=======
 config.yml
-content
->>>>>>> 8d1cc24cce75b6efbf63d1f3c0f46a5cb1bb2876
 tmp

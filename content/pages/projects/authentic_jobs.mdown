@@ -1,0 +1,9 @@
+categories: projects
+repo: pengwynn/authentic_jobs
+template: project
+
+# Authentic jobs
+
+Find your next gig from the console. Ruby wrapper for the Authentic Jobs API
+
+<!--more -->

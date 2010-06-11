@@ -1,0 +1,9 @@
+categories: projects
+repo: pengwynn/chunky-baconfile
+template: project
+
+# Chunky-baconfile
+
+Tasty wrapper for the Baconfile API
+
+<!--more -->

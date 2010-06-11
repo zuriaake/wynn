@@ -1,0 +1,9 @@
+categories: projects
+repo: pengwynn/nextstop
+template: project
+
+# Nextstop
+
+Ruby wrapper for the Nextstop.com API
+
+<!--more -->
