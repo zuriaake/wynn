@@ -38,10 +38,10 @@ pre.mac_classic {
   font-family: Monaco, Consolas, monospace;
   font-size: 12.5px;
   overflow: auto;
-  -moz-box-shadow: rgba(0, 0, 0, 0.55) 1px 1px 5px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.55) 1px 1px 5px;
-  -o-box-shadow: rgba(0, 0, 0, 0.55) 1px 1px 5px;
-  box-shadow: rgba(0, 0, 0, 0.55) 1px 1px 5px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.35) 1px 1px 3px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 1px 1px 3px;
+  -o-box-shadow: rgba(0, 0, 0, 0.35) 1px 1px 3px;
+  box-shadow: rgba(0, 0, 0, 0.35) 1px 1px 3px;
 }
 
 /* line 32, ../../app/views/themes/wynn/stylesheets/mac_classic.sass */

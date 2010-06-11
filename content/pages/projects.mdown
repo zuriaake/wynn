@@ -2,7 +2,7 @@ template: projects
 
 # Projects
 
-Some stuff I've created.
+Some stuff I've created, maintain, or hack on.
 
 <!-- * twitter
 * linkedin

@@ -5,9 +5,11 @@
   - unless @page.pages.empty?
     %ul.projects
       - @page.pages.each do |page|
-        %li{:class => page.heading.downcase.dasherize }
-          %h3= link_to(page.heading, page.abspath)
-          = page.summary
+        %li{:class => page.heading.downcase.gsub(' ', '-') }
+          %a{:href => page.abspath}
+            %strong.project-name= page.heading
+            = strip_tags(page.summary)
 
 %aside#sidebar
   = theme_partial 'branding'
+  .intro= theme_partial 'intro'

@@ -1,0 +1,86 @@
+=project-link-logo($name)
+  a
+    background-image: url(http://static.wynnnetherland.com/projects/#{$name}.png)
+    
+
+ul.project-links
+  list-style: none
+  margin: 0 0 1em 1em
+  padding-top: 48px
+  float: right
+  width: 120px
+  li a
+    line-height: 30px
+    background-position: left center
+    background-repeat: no-repeat
+    padding-left: 32px
+    display: block
+    &.watchers
+      background-image: url(/images/watch.png)
+    &.forks
+      background-image: url(/images/fork.png)
+    &.source
+      background-image: url(/images/code.png)
+    &.docs
+      background-image: url(/images/doc.png)
+      
+  body.page-twitter &
+    background: url(http://static.wynnnetherland.com/projects/twitter.png) top center no-repeat
+  body.page-gowalla &
+    background: url(http://static.wynnnetherland.com/projects/gowalla.png) top center no-repeat
+      
+ul.projects
+  list-style: none
+  margin: 0
+  padding: 0
+  li
+    margin-bottom: 1em
+    width: 550px
+    a
+      font-weight: normal
+      display: block
+      padding: 10px 140px 10px 10px
+      background-position: right 20px
+      background-repeat: no-repeat
+      min-height: 75px
+    .project-name
+      font-weight: bold
+      font-size: 20px
+      display: block
+      margin-bottom: 5px
+    h2,h3,h4
+      margin-bottom: 0
+    &.authentic-jobs
+      +project-link-logo('authentic-jobs')
+    &.buzzsprout
+      +project-link-logo('buzzsprout')
+    &.chargify
+      +project-link-logo('chargify')
+    &.chunky-baconfile
+      +project-link-logo('baconfile')
+    &.formstack
+      +project-link-logo('formstack')
+    &.gowalla
+      +project-link-logo('gowalla')
+    &.groupon
+      +project-link-logo('groupon')
+    &.linkedin
+      +project-link-logo('linkedin')
+    &.nextstop
+      +project-link-logo('nextstop')
+    &.octopussy
+      +project-link-logo('github')
+    &.plancast
+      +project-link-logo('plancast')
+    &.readernaut
+      +project-link-logo('readernaut')
+    &.topsy
+      +project-link-logo('topsy')
+    &.twitter
+      +project-link-logo('twitter')
+
+body.project
+  #content
+    h2,h3,h4,h5
+      clear: both
+      

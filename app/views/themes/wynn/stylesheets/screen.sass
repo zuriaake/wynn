@@ -5,6 +5,7 @@
 @import compass/utilities
 @import typography
 @import links
+@import projects
 
 section, article, aside, header, footer, nav, dialog, figure
   display: block
@@ -163,32 +164,6 @@ blockquote
   font-style: italic
   color: #777
 
-ul.project-links
-  list-style: none
-  margin: 0 0 1em 1em
-  float: right
-  li a
-    line-height: 30px
-    background-position: left center
-    background-repeat: no-repeat
-    padding-left: 32px
-    display: block
-    &.watchers
-      background-image: url(/images/watch.png)
-    &.forks
-      background-image: url(/images/fork.png)
-    &.source
-      background-image: url(/images/code.png)
-    &.docs
-      background-image: url(/images/doc.png)
-      
-ul.projects
-  list-style: none
-  margin: 0
-  padding: 0
-  li
-    h2,h3,h4
-      margin-bottom: 0
 
 #disqus_thread
   margin-top: 2em
