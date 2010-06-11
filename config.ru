@@ -2,6 +2,9 @@ require ::File.dirname(__FILE__) + '/config/boot.rb'
 require 'adsf'
 require 'uv'
 require 'rack/codehighlighter'
+
+use Rack::Static, :urls => ["/fonts"]
+
 use Rack::Codehighlighter, :ultraviolet, :markdown => true, :theme => 'mac_classic', :element => "pre>code", :pattern => /\A:::(\w+)\s*(\n|&#x000A;)/i, :logging => true
 
 
