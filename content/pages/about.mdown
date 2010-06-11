@@ -4,7 +4,7 @@ template: page
 
 !["Profile photo"](/images/headshot-about.png)
 
-My name is Wynn Netherland and I’m a web designer, front-end web developer, JavaScript framework fanboy, and CSS geek.
+My name is Wynn Netherland and I’m a web designer, front-end developer, JavaScript framework fanboy, and CSS geek.
 
 I’ve been building on the web since 1996 when I first cranked up [Netscape Composer](http://en.wikipedia.org/wiki/Netscape_Composer) and made my family their own web sites for Christmas, complete with blink tags.
 

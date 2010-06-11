@@ -6,7 +6,8 @@
     %ul.projects
       - @page.pages.each do |page|
         %li{:class => page.heading.downcase.dasherize }
-          = link_to(page.heading, page.abspath)
+          %h3= link_to(page.heading, page.abspath)
+          = page.summary
 
 %aside#sidebar
   = theme_partial 'branding'

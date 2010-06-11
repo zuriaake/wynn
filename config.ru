@@ -13,5 +13,4 @@ use Rack::Rewrite do
   r301 %r{\d{4}\/\d{2}\/([\w-]+)}, '/blog/$1'
 end
 
-
 run Padrino.application
