@@ -3,22 +3,3 @@ template: projects
 # Projects
 
 Some stuff I've created, maintain, or hack on.
-
-<!-- * twitter
-* linkedin
-* chargify
-* gowalla
-* plancast
-* formstack
-* transparency-data
-* twitterland
-* topsy
-* buzzsprout
-* chunky-baconfile
-* readernaut
-* nextstop
-* authentic_jobs
-* groupon
-* fumblr
-* presto
-* ujs_sort_helper -->
