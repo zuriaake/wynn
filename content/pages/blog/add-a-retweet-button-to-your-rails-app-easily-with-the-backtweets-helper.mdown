@@ -25,7 +25,7 @@ To display a count of tweets that reference the current page, simply call the he
 
 The full set of options include:
 
-<table cellspacing="5">
+<table cellspacing="5" class='zebra'>
   <tr>
     <th>Parameter</th>
     <th>Default value</th>

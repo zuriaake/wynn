@@ -4,5 +4,14 @@ template: page
 
 !["Profile photo"](/images/headshot-about.png)
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+My name is Wynn Netherland and I’m a web designer, front-end web developer, JavaScript framework fanboy, and CSS geek.
+
+I’ve been building on the web since 1996 when I first cranked up [Netscape Composer](http://en.wikipedia.org/wiki/Netscape_Composer) and made my family their own web sites for Christmas, complete with blink tags.
+
+I’m a veteran of some [very large ecommerce operations](http://hp.com/), but I prefer the more creative, faster pace world of freelancing and small teams.
+
+I’m a [Razorback](http://www.uark.edu/home/) now living in Texas with dreams of returning to the Ozarks one day.
+
+I’ve had the opportunity to help create some very cool things, like [Tweet Congress](http://tweetcongress.org/) which took home a [SxSW Web Award](http://2009.sxsw.com/interactive/web_awards/winners/) in 2009.
+
 

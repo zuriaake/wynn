@@ -696,25 +696,25 @@ p img {
 }
 
 /* line 132, ../../app/views/themes/wynn/stylesheets/screen.sass */
-table {
+table.zebra {
   margin: 1em 0;
   font-size: 0.8em;
 }
 /* line 135, ../../app/views/themes/wynn/stylesheets/screen.sass */
-table th {
+table.zebra th {
   font-weight: bold;
   border-bottom: solid 1px rgba(0, 0, 0, 0.2);
 }
 /* line 138, ../../app/views/themes/wynn/stylesheets/screen.sass */
-table th, table td {
+table.zebra th, table.zebra td {
   padding: 5px;
 }
 /* line 140, ../../app/views/themes/wynn/stylesheets/screen.sass */
-table tr:nth-child(odd) {
+table.zebra tr:nth-child(odd) {
   background: rgba(0, 0, 0, 0.05);
 }
 /* line 142, ../../app/views/themes/wynn/stylesheets/screen.sass */
-table code {
+table.zebra code {
   background: transparent;
 }
 
@@ -782,7 +782,12 @@ ul.project-links li a.docs {
   background-image: url(/images/doc.png);
 }
 
-/* line 186, ../../app/views/themes/wynn/stylesheets/screen.sass */
+/* line 185, ../../app/views/themes/wynn/stylesheets/screen.sass */
+#disqus_thread {
+  margin-top: 2em;
+}
+
+/* line 188, ../../app/views/themes/wynn/stylesheets/screen.sass */
 footer {
   margin-top: 1em;
   padding: 1em 0;
@@ -796,7 +801,7 @@ footer {
   display: block;
 }
 
-/* line 191, ../../app/views/themes/wynn/stylesheets/screen.sass */
+/* line 193, ../../app/views/themes/wynn/stylesheets/screen.sass */
 pre {
   margin-bottom: 1.5em;
 }

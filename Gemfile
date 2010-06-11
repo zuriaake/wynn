@@ -12,6 +12,7 @@ gem "rack-codehighlighter", "~> 0.4.6"
 gem 'adsf'
 gem "hashie", "~> 0.2.0"
 gem 'octopussy', "~> 0.2.2"
+gem 'rack-rewrite', "~> 1.0.0"
 
 # Component requirements
 gem 'haml', '~> 3.0.2'

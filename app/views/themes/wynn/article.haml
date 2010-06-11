@@ -17,7 +17,7 @@
 
   - if @page.metadata.categories.split(",").map{|c| c.downcase.strip}.include?('feature')
     = theme_partial 'about'
-  = theme_partial 'social'
+  = #theme_partial 'social'
   = theme_partial 'feed', :locals => { :title => @site_title }
   = theme_partial 'comments'
 

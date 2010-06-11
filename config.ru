@@ -8,8 +8,10 @@ use Rack::Codehighlighter, :ultraviolet, :markdown => true, :theme => 'mac_class
 
 use Adsf::Rack::IndexFileFinder, :root => "public"
 
-# use Rack::Codehighlighter, :ultraviolet, :markdown => true,
-#   :element => "pre>code", :pattern => /\A:::(\w+)\s*(\n|&#x000A;)/i, :logging => false
-# 
+require 'rack/rewrite'
+use Rack::Rewrite do
+  r301 %r{\d{4}\/\d{2}\/([\w-]+)}, '/blog/$1'
+end
+
 
 run Padrino.application
