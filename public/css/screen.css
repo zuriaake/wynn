@@ -429,43 +429,52 @@ ul.project-links li a.source {
 ul.project-links li a.docs {
   background-image: url(/images/doc.png);
 }
-/* line 27, ../../app/views/themes/wynn/stylesheets/_projects.sass */
+/* line 26, ../../app/views/themes/wynn/stylesheets/_projects.sass */
+ul.project-links li a.download {
+  background-image: url(/images/download.png);
+}
+/* line 29, ../../app/views/themes/wynn/stylesheets/_projects.sass */
 body.page-twitter ul.project-links {
   background: url(http://static.wynnnetherland.com/projects/twitter.png) top center no-repeat;
 }
-/* line 29, ../../app/views/themes/wynn/stylesheets/_projects.sass */
+/* line 31, ../../app/views/themes/wynn/stylesheets/_projects.sass */
 body.page-gowalla ul.project-links {
   background: url(http://static.wynnnetherland.com/projects/gowalla.png) top center no-repeat;
 }
 
-/* line 32, ../../app/views/themes/wynn/stylesheets/_projects.sass */
+/* line 34, ../../app/views/themes/wynn/stylesheets/_projects.sass */
 ul.projects {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 36, ../../app/views/themes/wynn/stylesheets/_projects.sass */
+/* line 38, ../../app/views/themes/wynn/stylesheets/_projects.sass */
 ul.projects li {
+  border-bottom: 1px solid #dddddd;
   margin-bottom: 1em;
-  width: 550px;
+  padding: 0.4em 0;
 }
-/* line 39, ../../app/views/themes/wynn/stylesheets/_projects.sass */
+/* line 42, ../../app/views/themes/wynn/stylesheets/_projects.sass */
+ul.projects li:last-child {
+  border: none;
+}
+/* line 44, ../../app/views/themes/wynn/stylesheets/_projects.sass */
 ul.projects li a {
   font-weight: normal;
   display: block;
-  padding: 10px 140px 10px 10px;
-  background-position: right 20px;
+  padding-right: 140px;
+  background-position: right center;
   background-repeat: no-repeat;
   min-height: 75px;
 }
-/* line 46, ../../app/views/themes/wynn/stylesheets/_projects.sass */
+/* line 51, ../../app/views/themes/wynn/stylesheets/_projects.sass */
 ul.projects li .project-name {
   font-weight: bold;
   font-size: 20px;
   display: block;
   margin-bottom: 5px;
 }
-/* line 51, ../../app/views/themes/wynn/stylesheets/_projects.sass */
+/* line 56, ../../app/views/themes/wynn/stylesheets/_projects.sass */
 ul.projects li h2, ul.projects li h3, ul.projects li h4 {
   margin-bottom: 0;
 }
@@ -526,7 +535,7 @@ ul.projects li.twitter a {
   background-image: url(http://static.wynnnetherland.com/projects/twitter.png);
 }
 
-/* line 84, ../../app/views/themes/wynn/stylesheets/_projects.sass */
+/* line 89, ../../app/views/themes/wynn/stylesheets/_projects.sass */
 body.project #content h2, body.project #content h3, body.project #content h4, body.project #content h5 {
   clear: both;
 }

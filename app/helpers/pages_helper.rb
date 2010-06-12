@@ -52,20 +52,24 @@ Presto.helpers do
   end
   
   def watchers_link(repo, count)
-    link_to(count, "http://github.com/#{repo}/watchers", :class => 'watchers')
+    link_to(count, "http://github.com/#{repo}/watchers", :class => 'watchers', :title => "View watchers on Github")
   end
   
   def forks_link(repo, count)
-    link_to(count, "http://github.com/#{repo}/network", :class => 'forks')
+    link_to(count, "http://github.com/#{repo}/network", :class => 'forks', :title => "View forks on GitHub")
   end
   
   def source_link(repo)
-    link_to("Source", "http://github.com/#{repo}", :class => 'source')
+    link_to("Source", "http://github.com/#{repo}", :class => 'source', :title => "View source on GitHub")
     
   end
   
   def docs_link(name)
-    link_to("Docs", "/projects/#{name.downcase}/api", :class => 'docs')
+    link_to("Docs", "/projects/#{name.downcase}/api", :class => 'docs', :title => "View API docs")
+  end
+  
+  def gem_link(gem_stats)
+    link_to(gem_stats['downloads'], gem_stats['project_uri'], :class => 'download', :title => "Download #{gem_stats['name']} from RubyGems.org")
   end
   
 end

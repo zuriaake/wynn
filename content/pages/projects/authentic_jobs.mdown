@@ -1,9 +1,52 @@
 categories: projects
 repo: pengwynn/authentic_jobs
+rubygem: authentic_jobs
 template: project
 
 # Authentic jobs
 
-Find your next gig from the console. Ruby wrapper for the Authentic Jobs API
-
+Find your next gig from the console! This is a Ruby wrapper for the [AuthenticJobs.com API](http://www.authenticjobs.com/api/documentation/).
 <!--more -->
+
+### Installation
+
+    :::ruby
+    sudo gem install authentic_jobs
+    
+### Usage
+
+Create a client with your [API key](Get your key at http://www.authenticjobs.com/api/)
+  
+    :::ruby
+    client = AuthenticJobs.new('OU812') 
+
+Search for jobs
+
+    :::ruby
+    jobs = client.search(:location => 'austintxus', :keywords => 'ruby')
+    
+List all companies with current listings
+
+    :::ruby
+    companies = client.companies
+    
+List all job types
+
+    :::ruby
+    types = client.types
+    
+List all job categories
+
+    :::ruby
+    categories = client.categories
+    
+
+The categories, types, and locations methods are all cached after the first call. To refresh, simply add a bang:
+
+    :::ruby
+    client.categories!
+    client.types!
+    client.locations!
+    
+All calls return a [Hashie::Mash](http://github.com/intridea/hashie) and support dot-notation.
+

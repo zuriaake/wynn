@@ -2,4 +2,4 @@ template: blog
 
 # Blog
 
-For shorter, more random thoughts on everything from guitars to Pibb Zero, check out my [tumblr](http://pengwynn.tumblr.com).
+In order to spare you my more random thoughts on everything from guitars to Pibb Zero on this blog, I created a  [tumblr](http://pengwynn.tumblr.com).

@@ -5,7 +5,7 @@
   - unless @page.pages.empty?
     %ul.projects
       - @page.pages.each do |page|
-        %li{:class => page.heading.downcase.gsub(' ', '-') }
+        %li{:id => page.heading.downcase.split(' '), :class => page.heading.downcase.gsub(' ', '-') }
           %a{:href => page.abspath}
             %strong.project-name= page.heading
             = strip_tags(page.summary)

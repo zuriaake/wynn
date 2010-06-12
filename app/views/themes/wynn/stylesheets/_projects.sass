@@ -23,6 +23,8 @@ ul.project-links
       background-image: url(/images/code.png)
     &.docs
       background-image: url(/images/doc.png)
+    &.download
+      background-image: url(/images/download.png)
       
   body.page-twitter &
     background: url(http://static.wynnnetherland.com/projects/twitter.png) top center no-repeat
@@ -34,13 +36,16 @@ ul.projects
   margin: 0
   padding: 0
   li
+    border-bottom: 1px solid #DDDDDD
     margin-bottom: 1em
-    width: 550px
+    padding: 0.4em 0
+    &:last-child
+      border: none
     a
       font-weight: normal
       display: block
-      padding: 10px 140px 10px 10px
-      background-position: right 20px
+      padding-right: 140px
+      background-position: right center
       background-repeat: no-repeat
       min-height: 75px
     .project-name
