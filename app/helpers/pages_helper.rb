@@ -65,7 +65,7 @@ Presto.helpers do
   end
   
   def docs_link(name)
-    link_to("Docs", "/projects/#{name.downcase}/api", :class => 'docs', :title => "View API docs")
+    link_to("Docs", "/projects/#{name.downcase.gsub(' ', '_')}/api", :class => 'docs', :title => "View API docs")
   end
   
   def gem_link(gem_stats)

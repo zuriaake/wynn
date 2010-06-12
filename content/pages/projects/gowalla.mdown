@@ -1,6 +1,7 @@
 categories: projects
 repo: pengwynn/gowalla
 template: project
+summary: Ruby wrapper for the Gowalla API
 
 # Gowalla
 

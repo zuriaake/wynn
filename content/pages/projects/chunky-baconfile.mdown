@@ -1,6 +1,8 @@
 categories: projects
 repo: pengwynn/chunky-baconfile
+rubygem: chunky_baconfile
 template: project
+summary: Tasty wrapper for the Baconfile API
 
 # Chunky-baconfile
 

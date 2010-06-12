@@ -406,7 +406,7 @@ ul.project-links {
   width: 120px;
 }
 /* line 12, ../../app/views/themes/wynn/stylesheets/_projects.sass */
-ul.project-links li a {
+ul.project-links li > a {
   line-height: 30px;
   background-position: left center;
   background-repeat: no-repeat;
@@ -414,23 +414,23 @@ ul.project-links li a {
   display: block;
 }
 /* line 18, ../../app/views/themes/wynn/stylesheets/_projects.sass */
-ul.project-links li a.watchers {
+ul.project-links li > a.watchers {
   background-image: url(/images/watch.png);
 }
 /* line 20, ../../app/views/themes/wynn/stylesheets/_projects.sass */
-ul.project-links li a.forks {
+ul.project-links li > a.forks {
   background-image: url(/images/fork.png);
 }
 /* line 22, ../../app/views/themes/wynn/stylesheets/_projects.sass */
-ul.project-links li a.source {
+ul.project-links li > a.source {
   background-image: url(/images/code.png);
 }
 /* line 24, ../../app/views/themes/wynn/stylesheets/_projects.sass */
-ul.project-links li a.docs {
+ul.project-links li > a.docs {
   background-image: url(/images/doc.png);
 }
 /* line 26, ../../app/views/themes/wynn/stylesheets/_projects.sass */
-ul.project-links li a.download {
+ul.project-links li > a.download {
   background-image: url(/images/download.png);
 }
 /* line 29, ../../app/views/themes/wynn/stylesheets/_projects.sass */
