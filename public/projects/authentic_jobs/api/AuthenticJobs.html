@@ -92,7 +92,7 @@
       <li class="public ">
   <span class="summary_signature">
     
-      <a href="#api_key-instance_method" title="#api_key (instance method)">- (nil) <strong>api_key</strong> </a>
+      <a href="#api_key-instance_method" title="#api_key (instance method)">- (String) <strong>api_key</strong> </a>
     
 
     
@@ -108,7 +108,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Returns the value of attribute api_key.</p>
+    <span class="summary_desc"><div class='inline'><p>API key for all requests.</p>
 </div></span>
   
 </li>
@@ -128,7 +128,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#categories-instance_method" title="#categories (instance method)">- (nil) <strong>categories</strong> </a>
+      <a href="#categories-instance_method" title="#categories (instance method)">- (Array&lt;Hashie::Mash&gt;) <strong>categories</strong> </a>
     
 
     
@@ -141,7 +141,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'>
+    <span class="summary_desc"><div class='inline'><p>List supported job categories.</p>
 </div></span>
   
 </li>
@@ -150,7 +150,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#categories%21-instance_method" title="#categories! (instance method)">- (nil) <strong>categories!</strong> </a>
+      <a href="#categories%21-instance_method" title="#categories! (instance method)">- (Array&lt;Hashie::Mash&gt;) <strong>categories!</strong> </a>
     
 
     
@@ -163,7 +163,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'>
+    <span class="summary_desc"><div class='inline'><p>List supported job categories, explicitly refreshing cache.</p>
 </div></span>
   
 </li>
@@ -172,7 +172,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#companies-instance_method" title="#companies (instance method)">- (nil) <strong>companies</strong> </a>
+      <a href="#companies-instance_method" title="#companies (instance method)">- (Array&lt;Hashie::Mash&gt;) <strong>companies</strong> </a>
     
 
     
@@ -185,7 +185,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'>
+    <span class="summary_desc"><div class='inline'><p>List of companies that are currently advertising positions.</p>
 </div></span>
   
 </li>
@@ -194,7 +194,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#companies%21-instance_method" title="#companies! (instance method)">- (nil) <strong>companies!</strong> </a>
+      <a href="#companies%21-instance_method" title="#companies! (instance method)">- (Array&lt;Hashie::Mash&gt;) <strong>companies!</strong> </a>
     
 
     
@@ -207,7 +207,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'>
+    <span class="summary_desc"><div class='inline'><p>List of companies that are currently advertising positions, explicitly refreshing cache.</p>
 </div></span>
   
 </li>
@@ -240,7 +240,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#locations-instance_method" title="#locations (instance method)">- (nil) <strong>locations</strong> </a>
+      <a href="#locations-instance_method" title="#locations (instance method)">- (Array&lt;Hashie::Mash&gt;) <strong>locations</strong> </a>
     
 
     
@@ -253,7 +253,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'>
+    <span class="summary_desc"><div class='inline'><p>List locations for companies that are currently advertising positions.</p>
 </div></span>
   
 </li>
@@ -262,7 +262,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#locations%21-instance_method" title="#locations! (instance method)">- (nil) <strong>locations!</strong> </a>
+      <a href="#locations%21-instance_method" title="#locations! (instance method)">- (Array&lt;Hashie::Mash&gt;) <strong>locations!</strong> </a>
     
 
     
@@ -275,7 +275,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'>
+    <span class="summary_desc"><div class='inline'><p>List locations for companies that are currently advertising positions, explicitly refreshing cache.</p>
 </div></span>
   
 </li>
@@ -297,7 +297,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>category: The id of a job category to limit to.</p>
+    <span class="summary_desc"><div class='inline'><p>List current positions.</p>
 </div></span>
   
 </li>
@@ -306,7 +306,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#types-instance_method" title="#types (instance method)">- (nil) <strong>types</strong> </a>
+      <a href="#types-instance_method" title="#types (instance method)">- (Array&lt;Hashie::Mash&gt;) <strong>types</strong> </a>
     
 
     
@@ -319,7 +319,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'>
+    <span class="summary_desc"><div class='inline'><p>List supported job types.</p>
 </div></span>
   
 </li>
@@ -328,7 +328,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#types%21-instance_method" title="#types! (instance method)">- (nil) <strong>types!</strong> </a>
+      <a href="#types%21-instance_method" title="#types! (instance method)">- (Array&lt;Hashie::Mash&gt;) <strong>types!</strong> </a>
     
 
     
@@ -341,7 +341,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'>
+    <span class="summary_desc"><div class='inline'><p>List supported job types, explicitly refreshing cache.</p>
 </div></span>
   
 </li>
@@ -403,19 +403,62 @@
       <div class="method_details first">
   <p class="signature first" id="api_key-instance_method">
   
-    - (<tt>nil</tt>) <strong>api_key</strong> 
+    - (<tt>String</tt>) <strong>api_key</strong> 
   
 
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>Returns the value of attribute api_key</p>
+    <p>API key for all requests</p>
 
 
   </div>
 </div>
 <div class="tags">
+  <h3>Parameters:</h3>
+<ul class="param">
   
+    <li>
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <span class='name'>api_key</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>your API key</p>
+</div>
+      
+    </li>
+  
+</ul>
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>API key</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  <h3>See Also:</h3>
+  <ul class="see">
+    
+      <li><a href="http://www.authenticjobs.com/api/" target="_parent" title="Request your API key here">Request your API key here</a></li>
+    
+  </ul>
+
 </div><table class="source_code">
   <tr>
     <td>
@@ -448,22 +491,48 @@
       <div class="method_details first">
   <p class="signature first" id="categories-instance_method">
   
-    - (<tt>nil</tt>) <strong>categories</strong> 
+    - (<tt>Array&lt;Hashie::Mash&gt;</tt>) <strong>categories</strong> 
   
 
   
-</p><table class="source_code">
+</p><div class="docstring">
+  <div class="discussion">
+    <p>List supported job categories</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>Array&lt;Hashie::Mash&gt;</tt>)</span>
+      
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>list of categories</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-74
-75
-76</pre>
+100
+101
+102</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/authentic_jobs.rb', line 74</span>
+      <pre class="code"><span class="info file"># File 'lib/authentic_jobs.rb', line 100</span>
 
 <span class='def def kw'>def</span> <span class='categories identifier id'>categories</span>
   <span class='@categories ivar id'>@categories</span> <span class='opasgn op'>||=</span> <span class='categories! fid id'>categories!</span>
@@ -477,22 +546,48 @@
       <div class="method_details ">
   <p class="signature " id="categories!-instance_method">
   
-    - (<tt>nil</tt>) <strong>categories!</strong> 
+    - (<tt>Array&lt;Hashie::Mash&gt;</tt>) <strong>categories!</strong> 
   
 
   
-</p><table class="source_code">
+</p><div class="docstring">
+  <div class="discussion">
+    <p>List supported job categories, explicitly refreshing cache</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>Array&lt;Hashie::Mash&gt;</tt>)</span>
+      
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>list of categories</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-70
-71
-72</pre>
+93
+94
+95</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/authentic_jobs.rb', line 70</span>
+      <pre class="code"><span class="info file"># File 'lib/authentic_jobs.rb', line 93</span>
 
 <span class='def def kw'>def</span> <span class='categories! fid id'>categories!</span>
   <span class='mashup identifier id'>mashup</span><span class='lparen token'>(</span><span class='self self kw'>self</span><span class='dot token'>.</span><span class='class identifier id'>class</span><span class='dot token'>.</span><span class='get identifier id'>get</span><span class='lparen token'>(</span><span class='string val'>&quot;/&quot;</span><span class='comma token'>,</span> <span class='symbol val'>:query</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='method_params identifier id'>method_params</span><span class='lparen token'>(</span><span class='string val'>'aj.categories.getList'</span><span class='rparen token'>)</span><span class='rparen token'>)</span><span class='rparen token'>)</span><span class='dot token'>.</span><span class='categories identifier id'>categories</span><span class='dot token'>.</span><span class='category identifier id'>category</span>
@@ -506,22 +601,48 @@
       <div class="method_details ">
   <p class="signature " id="companies-instance_method">
   
-    - (<tt>nil</tt>) <strong>companies</strong> 
+    - (<tt>Array&lt;Hashie::Mash&gt;</tt>) <strong>companies</strong> 
   
 
   
-</p><table class="source_code">
+</p><div class="docstring">
+  <div class="discussion">
+    <p>List of companies that are currently advertising positions</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>Array&lt;Hashie::Mash&gt;</tt>)</span>
+      
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>list of companies</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-37
-38
-39</pre>
+43
+44
+45</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/authentic_jobs.rb', line 37</span>
+      <pre class="code"><span class="info file"># File 'lib/authentic_jobs.rb', line 43</span>
 
 <span class='def def kw'>def</span> <span class='companies identifier id'>companies</span>
   <span class='@companies ivar id'>@companies</span> <span class='opasgn op'>||=</span> <span class='companies! fid id'>companies!</span>
@@ -535,22 +656,48 @@
       <div class="method_details ">
   <p class="signature " id="companies!-instance_method">
   
-    - (<tt>nil</tt>) <strong>companies!</strong> 
+    - (<tt>Array&lt;Hashie::Mash&gt;</tt>) <strong>companies!</strong> 
   
 
   
-</p><table class="source_code">
+</p><div class="docstring">
+  <div class="discussion">
+    <p>List of companies that are currently advertising positions, explicitly refreshing cache</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>Array&lt;Hashie::Mash&gt;</tt>)</span>
+      
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>list of companies</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-33
-34
-35</pre>
+36
+37
+38</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/authentic_jobs.rb', line 33</span>
+      <pre class="code"><span class="info file"># File 'lib/authentic_jobs.rb', line 36</span>
 
 <span class='def def kw'>def</span> <span class='companies! fid id'>companies!</span>
   <span class='mashup identifier id'>mashup</span><span class='lparen token'>(</span><span class='self self kw'>self</span><span class='dot token'>.</span><span class='class identifier id'>class</span><span class='dot token'>.</span><span class='get identifier id'>get</span><span class='lparen token'>(</span><span class='string val'>&quot;/&quot;</span><span class='comma token'>,</span> <span class='symbol val'>:query</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='method_params identifier id'>method_params</span><span class='lparen token'>(</span><span class='string val'>'aj.jobs.getCompanies'</span><span class='rparen token'>)</span><span class='rparen token'>)</span><span class='rparen token'>)</span><span class='dot token'>.</span><span class='companies identifier id'>companies</span><span class='dot token'>.</span><span class='company identifier id'>company</span>
@@ -564,22 +711,48 @@
       <div class="method_details ">
   <p class="signature " id="locations-instance_method">
   
-    - (<tt>nil</tt>) <strong>locations</strong> 
+    - (<tt>Array&lt;Hashie::Mash&gt;</tt>) <strong>locations</strong> 
   
 
   
-</p><table class="source_code">
+</p><div class="docstring">
+  <div class="discussion">
+    <p>List locations for companies that are currently advertising positions</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>Array&lt;Hashie::Mash&gt;</tt>)</span>
+      
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>list of locations</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-45
-46
-47</pre>
+58
+59
+60</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/authentic_jobs.rb', line 45</span>
+      <pre class="code"><span class="info file"># File 'lib/authentic_jobs.rb', line 58</span>
 
 <span class='def def kw'>def</span> <span class='locations identifier id'>locations</span>
   <span class='@locations ivar id'>@locations</span> <span class='opasgn op'>||=</span> <span class='locations! fid id'>locations!</span>
@@ -593,22 +766,48 @@
       <div class="method_details ">
   <p class="signature " id="locations!-instance_method">
   
-    - (<tt>nil</tt>) <strong>locations!</strong> 
+    - (<tt>Array&lt;Hashie::Mash&gt;</tt>) <strong>locations!</strong> 
   
 
   
-</p><table class="source_code">
+</p><div class="docstring">
+  <div class="discussion">
+    <p>List locations for companies that are currently advertising positions, explicitly refreshing cache</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>Array&lt;Hashie::Mash&gt;</tt>)</span>
+      
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>list of locations</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-41
-42
-43</pre>
+51
+52
+53</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/authentic_jobs.rb', line 41</span>
+      <pre class="code"><span class="info file"># File 'lib/authentic_jobs.rb', line 51</span>
 
 <span class='def def kw'>def</span> <span class='locations! fid id'>locations!</span>
   <span class='mashup identifier id'>mashup</span><span class='lparen token'>(</span><span class='self self kw'>self</span><span class='dot token'>.</span><span class='class identifier id'>class</span><span class='dot token'>.</span><span class='get identifier id'>get</span><span class='lparen token'>(</span><span class='string val'>&quot;/&quot;</span><span class='comma token'>,</span> <span class='symbol val'>:query</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='method_params identifier id'>method_params</span><span class='lparen token'>(</span><span class='string val'>'aj.jobs.getLocations'</span><span class='rparen token'>)</span><span class='rparen token'>)</span><span class='rparen token'>)</span><span class='dot token'>.</span><span class='locations identifier id'>locations</span><span class='dot token'>.</span><span class='location identifier id'>location</span>
@@ -628,32 +827,154 @@
   
 </p><div class="docstring">
   <div class="discussion">
-    <p>category: The id of a job category to limit to. See aj.categories.getList
-type: The id of a job type to limit to. See aj.types.getList
-sort: Accepted values are: date-posted-desc (the default) and date-posted-asc
-company: Free-text matching against company names. Suggested values are the ids from aj.jobs.getCompanies
-location: Free-text matching against company location names. Suggested values are the ids from aj.jobs.getLocation
-keywords: Keywords to look for in the title or description of the job posting. Separate multiple keywords with commas. Multiple keywords will be treated as an OR
-page: The page of listings to return. Defaults to 1.
-perpage: The number of listings per page. The default value is 10. The maximum value is 100.</p>
+    <p>List current positions</p>
 
 
   </div>
 </div>
 <div class="tags">
+  <h3>Parameters:</h3>
+<ul class="param">
   
+    <li>
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <span class='name'>options</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'><p>a customizable set of options</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    <h3>Options Hash (<tt>options</tt>):</h3>
+    <ul class="option">
+      
+        <li>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="name">:category</span>
+          <span class="default">
+            
+              <span class="na">N/A</span>
+            
+          </span>
+          &mdash;<div class='inline'><p>The id of a job category to limit to. See aj.categories.getList</p>
+</div>
+        </tr>
+      
+        <li>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="name">:type</span>
+          <span class="default">
+            
+              <span class="na">N/A</span>
+            
+          </span>
+          &mdash;<div class='inline'><p>The id of a job type to limit to. See aj.types.getList</p>
+</div>
+        </tr>
+      
+        <li>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="name">:sort</span>
+          <span class="default">
+            
+              &mdash; default:
+              <tt>'date-posted-desc'</tt>
+            
+          </span>
+          &mdash;<div class='inline'><p>Accepted values are 'date-posted-desc' and 'date-posted-asc'</p>
+</div>
+        </tr>
+      
+        <li>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="name">:company</span>
+          <span class="default">
+            
+              <span class="na">N/A</span>
+            
+          </span>
+          &mdash;<div class='inline'><p>Free-text matching against company names. Suggested values are the ids from aj.jobs.getCompanies</p>
+</div>
+        </tr>
+      
+        <li>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="name">:location</span>
+          <span class="default">
+            
+              <span class="na">N/A</span>
+            
+          </span>
+          &mdash;<div class='inline'><p>Free-text matching against company location names. Suggested values are the ids from aj.jobs.getLocation</p>
+</div>
+        </tr>
+      
+        <li>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="name">:keywords</span>
+          <span class="default">
+            
+              <span class="na">N/A</span>
+            
+          </span>
+          &mdash;<div class='inline'><p>Keywords to look for in the title or description of the job posting. Separate multiple keywords with commas. Multiple keywords will be treated as an OR</p>
+</div>
+        </tr>
+      
+        <li>
+          <span class="type">(<tt>Integer</tt>)</span>
+          <span class="name">:page</span>
+          <span class="default">
+            
+              &mdash; default:
+              <tt>1</tt>
+            
+          </span>
+          &mdash;<div class='inline'><p>The page of listings to return. Defaults to 1.</p>
+</div>
+        </tr>
+      
+        <li>
+          <span class="type">(<tt>Integer</tt>)</span>
+          <span class="name">:perpage</span>
+          <span class="default">
+            
+              &mdash; default:
+              <tt>1</tt>
+            
+          </span>
+          &mdash;<div class='inline'><p>The number of listings per page. The default value is 10. The maximum value is 100.</p>
+</div>
+        </tr>
+      
+    </ul>
+  
+
 </div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-58
-59
-60</pre>
+72
+73
+74</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/authentic_jobs.rb', line 58</span>
+      <pre class="code"><span class="info file"># File 'lib/authentic_jobs.rb', line 72</span>
 
 <span class='def def kw'>def</span> <span class='search identifier id'>search</span><span class='lparen token'>(</span><span class='options identifier id'>options</span><span class='assign token'>=</span><span class='lbrace token'>{</span><span class='rbrace token'>}</span><span class='rparen token'>)</span>
   <span class='mashup identifier id'>mashup</span><span class='lparen token'>(</span><span class='self self kw'>self</span><span class='dot token'>.</span><span class='class identifier id'>class</span><span class='dot token'>.</span><span class='get identifier id'>get</span><span class='lparen token'>(</span><span class='string val'>&quot;/&quot;</span><span class='comma token'>,</span> <span class='symbol val'>:query</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='method_params identifier id'>method_params</span><span class='lparen token'>(</span><span class='string val'>'aj.jobs.search'</span><span class='comma token'>,</span> <span class='options identifier id'>options</span><span class='rparen token'>)</span><span class='rparen token'>)</span><span class='rparen token'>)</span><span class='dot token'>.</span><span class='listings identifier id'>listings</span><span class='dot token'>.</span><span class='listing identifier id'>listing</span>
@@ -667,22 +988,48 @@ perpage: The number of listings per page. The default value is 10. The maximum v
       <div class="method_details ">
   <p class="signature " id="types-instance_method">
   
-    - (<tt>nil</tt>) <strong>types</strong> 
+    - (<tt>Array&lt;Hashie::Mash&gt;</tt>) <strong>types</strong> 
   
 
   
-</p><table class="source_code">
+</p><div class="docstring">
+  <div class="discussion">
+    <p>List supported job types</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>Array&lt;Hashie::Mash&gt;</tt>)</span>
+      
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>list of types</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-66
-67
-68</pre>
+86
+87
+88</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/authentic_jobs.rb', line 66</span>
+      <pre class="code"><span class="info file"># File 'lib/authentic_jobs.rb', line 86</span>
 
 <span class='def def kw'>def</span> <span class='types identifier id'>types</span>
   <span class='@types ivar id'>@types</span> <span class='opasgn op'>||=</span> <span class='types! fid id'>types!</span>
@@ -696,22 +1043,48 @@ perpage: The number of listings per page. The default value is 10. The maximum v
       <div class="method_details ">
   <p class="signature " id="types!-instance_method">
   
-    - (<tt>nil</tt>) <strong>types!</strong> 
+    - (<tt>Array&lt;Hashie::Mash&gt;</tt>) <strong>types!</strong> 
   
 
   
-</p><table class="source_code">
+</p><div class="docstring">
+  <div class="discussion">
+    <p>List supported job types, explicitly refreshing cache</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>Array&lt;Hashie::Mash&gt;</tt>)</span>
+      
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>list of types</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-62
-63
-64</pre>
+79
+80
+81</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/authentic_jobs.rb', line 62</span>
+      <pre class="code"><span class="info file"># File 'lib/authentic_jobs.rb', line 79</span>
 
 <span class='def def kw'>def</span> <span class='types! fid id'>types!</span>
   <span class='mashup identifier id'>mashup</span><span class='lparen token'>(</span><span class='self self kw'>self</span><span class='dot token'>.</span><span class='class identifier id'>class</span><span class='dot token'>.</span><span class='get identifier id'>get</span><span class='lparen token'>(</span><span class='string val'>&quot;/&quot;</span><span class='comma token'>,</span> <span class='symbol val'>:query</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='method_params identifier id'>method_params</span><span class='lparen token'>(</span><span class='string val'>'aj.types.getList'</span><span class='rparen token'>)</span><span class='rparen token'>)</span><span class='rparen token'>)</span><span class='dot token'>.</span><span class='types identifier id'>types</span><span class='lbrack token'>[</span><span class='string val'>'type'</span><span class='rbrack token'>]</span>
@@ -727,7 +1100,26 @@ perpage: The number of listings per page. The default value is 10. The maximum v
 </div>
     
     
-<!-- GA go here -->
 
+<h3><a href="../" class='back-to-home'>&larr; Back to project homepage</a></h3>
+
+<style type="text/css" media="screen">
+  body {padding-top: 30px;}
+  a.back-to-home {position: absolute; top: 10px; left: 10px; color: #000; text-decoration: none;}
+</style>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-11252985-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
   </body>
 </html>

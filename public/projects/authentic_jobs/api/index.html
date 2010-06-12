@@ -52,27 +52,27 @@
 
 <h2>Usage</h2>
 
-<h3>Create a client with your API key</h3>
+<p>Create a client with your API key</p>
 
 <pre class="code"><span class='client identifier id'>client</span> <span class='assign token'>=</span> <span class='AuthenticJobs constant id'>AuthenticJobs</span><span class='dot token'>.</span><span class='new identifier id'>new</span><span class='lparen token'>(</span><span class='string val'>'OU812'</span><span class='rparen token'>)</span> <span class='comment val'># &lt;-- Get your key at http://www.authenticjobs.com/api/</span>
 </pre>
 
-<h3>Search for jobs</h3>
+<p>Search for jobs</p>
 
 <pre class="code"><span class='jobs identifier id'>jobs</span> <span class='assign token'>=</span> <span class='client identifier id'>client</span><span class='dot token'>.</span><span class='search identifier id'>search</span><span class='lparen token'>(</span><span class='symbol val'>:location</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>'austintxus'</span><span class='comma token'>,</span> <span class='symbol val'>:keywords</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>'ruby'</span><span class='rparen token'>)</span>
 </pre>
 
-<h3>List all companies with current listings</h3>
+<p>List all companies with current listings</p>
 
 <pre class="code"><span class='companies identifier id'>companies</span> <span class='assign token'>=</span> <span class='client identifier id'>client</span><span class='dot token'>.</span><span class='companies identifier id'>companies</span>
 </pre>
 
-<h3>List all job types</h3>
+<p>List all job types</p>
 
 <pre class="code"><span class='types identifier id'>types</span> <span class='assign token'>=</span> <span class='client identifier id'>client</span><span class='dot token'>.</span><span class='types identifier id'>types</span>
 </pre>
 
-<h3>List all job categories</h3>
+<p>List all job categories</p>
 
 <pre class="code"><span class='categories identifier id'>categories</span> <span class='assign token'>=</span> <span class='client identifier id'>client</span><span class='dot token'>.</span><span class='categories identifier id'>categories</span>
 </pre>
@@ -106,7 +106,26 @@ future version unintentionally.</li>
 </div></div>
     
     
-<!-- GA go here -->
 
+<h3><a href="../" class='back-to-home'>&larr; Back to project homepage</a></h3>
+
+<style type="text/css" media="screen">
+  body {padding-top: 30px;}
+  a.back-to-home {position: absolute; top: 10px; left: 10px; color: #000; text-decoration: none;}
+</style>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-11252985-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
   </body>
 </html>
