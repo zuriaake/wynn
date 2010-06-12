@@ -2,11 +2,11 @@ categories: projects
 repo: pengwynn/authentic_jobs
 rubygem: authentic_jobs
 template: project
+summary: Find your next gig from the console! This is a Ruby wrapper for the AuthenticJobs.com API
 
 # Authentic jobs
 
 Find your next gig from the console! This is a Ruby wrapper for the [AuthenticJobs.com API](http://www.authenticjobs.com/api/documentation/).
-<!--more -->
 
 ### Installation
 

@@ -70,7 +70,7 @@ class Page < FileModel
   
   def summary
     summary_text = metadata.summary
-    summary_text = body.split("<!--more-->")[0]
+    summary_text = body.split("<!--more-->")[0] if summary_text.blank?
     if summary_text 
       summary_text.gsub!('\n', "\n")
       case @format
