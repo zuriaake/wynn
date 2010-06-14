@@ -13,4 +13,11 @@ use Rack::Rewrite do
   r301 %r{\d{4}\/\d{2}\/([\w-]+)}, '/blog/$1'
 end
 
+use CanonicalHost do
+  case ENV['RACK_ENV'].to_sym
+    when :development then 'wynn.local'
+    when :production then 'wynnnetherland.com'
+  end
+end
+
 run Padrino.application
