@@ -5,7 +5,7 @@ summary: Ruby wrapper for the Plancast API. You've got plans, spread the word!
 
 # Plancast
 
-You've got plans, spread the word - mashup style! This is a Ruby wrapper for the [Plancast](http://plancast.com) API. 
+You've got plans, spread the word - mashup style! This is a Ruby wrapper for the [Plancast API](http://plancast.com/developers). 
 <!--more -->
 
 ## Installation
