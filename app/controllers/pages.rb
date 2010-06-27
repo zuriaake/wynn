@@ -51,5 +51,7 @@ Presto.controllers :pages do
     render "themes/#{Nesta::Config.theme}/#{@page.template}", :layout => @page.layout
   end
   
+  
+  
 
 end
