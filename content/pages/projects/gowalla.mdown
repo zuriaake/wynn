@@ -15,6 +15,10 @@ Ruby wrapper for the [Gowalla API](http://gowalla.com/api/docs).
 ## Get your API key
 
 Be sure and get your API key: [http://gowalla.com/api/keys](http://gowalla.com/api/keys)
+
+### NOTE: Several unsupported methods have been removed
+
+I originally wrote this gem by sniffing network traffic from the very awesome [Gowalla iPhone app](http://itunes.apple.com/us/app/gowalla-for-ipad/id367876241?mt=8). Many of those original methods are not part of the official API so to be a good network citizen, I have removed them in version 0.2.0.
     
 ## Usage
 
@@ -88,4 +92,3 @@ Details for another user
     :::ruby
     gowalla.user('bradleyjoyce')
     gowalla.user(1707)
-    
