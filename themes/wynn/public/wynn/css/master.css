@@ -490,16 +490,6 @@ blockquote {
   padding-left: 1.5em;
 }
 
-.wf-loading {
-  opacity: 0;
-}
-.wf-loading.wf-active {
-  opacity: 1;
-  -moz-transition: 0.2s opacity ease-in;
-  -webkit-transition: 0.2s opacity ease-in;
-  transition: 0.2s opacity ease-in;
-}
-
 #wrapper + footer {
   color: rgba(0, 0, 0, 0.3);
   font-family: "Droid Sans", sans-serif;
