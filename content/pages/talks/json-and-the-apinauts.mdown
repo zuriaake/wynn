@@ -7,4 +7,5 @@ speaker_deck_id: 4e73fdc0bc9f4e003f0014c0
 
 # JSON and the APInauts
 
+I surveyed the Ruby API development landscape at [LSRC 2010](http://lonestarrubyconf.com).
 

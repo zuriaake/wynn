@@ -8,3 +8,4 @@ speaker_deck_id: 4e73fe11ca3cd0003f0017b5
 # Accelerated Native Mobile Development with the Ti gem
 
 
+The slides from my [LSRC 2011](http://lonestarrubyconf.com) talk on a Ruby workflow for native mobile development.

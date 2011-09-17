@@ -7,3 +7,5 @@ speaker_deck_id: 4e73fcc4bc9f4e003c0015a4
 
 # Compass, Sass, and the Enlightened CSS Developer
 
+[Nathan Smith](http://sonspring.com) and I had the opportunity to speak to [Refresh OKC](http://refreshokc.org/).
+
