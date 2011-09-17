@@ -149,10 +149,7 @@ I'm a big fan of Sass, especially as implemented in the <a href="http://compass-
 
 #### Not so obvious style sources
 
-When using multiple classes, the Firebug style inspector can take me to the exact line where the style was defined.
-<a href="http://wynnnetherland.com/wp-content/uploads/2009/11/Screen-shot-2009-11-04-at-9.25.22-PM.png"><img src="http://wynnnetherland.com/wp-content/uploads/2009/11/Screen-shot-2009-11-04-at-9.25.22-PM-300x100.png" alt="Screen shot 2009-11-04 at 9.25.22 PM" title="Screen shot 2009-11-04 at 9.25.22 PM" width="300" height="100" class="aligncenter size-medium wp-image-99" /></a>
-
-With the mixin approach, these styles are now mixed into each rule. Firebug will of course show me the styles in each rule, but now I don't know where they come from unless I leave my browser and traverse my Sass code.
+When using multiple classes, the Firebug style inspector can take me to the exact line where the style was defined. With the mixin approach, these styles are now mixed into each rule. Firebug will of course show me the styles in each rule, but now I don't know where they come from unless I leave my browser and traverse my Sass code.
 
 #### Harder to play eye doctor
 
