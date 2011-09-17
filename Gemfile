@@ -1,7 +1,7 @@
 source :rubygems
 
 gem "heroku"
-gem "nesta", "0.9.5"
+gem "nesta", "~> 0.9.8"
 gem "redcarpet"
 gem "compass", "~> 0.11.5"
 
