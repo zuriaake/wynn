@@ -1,9 +1,0 @@
-categories: projects
-repo: pengwynn/groupon
-template: project
-
-# Groupon
-
-Ruby wrapper for the Groupon API
-
-<!--more -->

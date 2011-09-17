@@ -1,9 +1,0 @@
-categories: projects
-repo: pengwynn/linkedin
-template: project
-
-# Linkedin
-
-Ruby wrapper for the LinkedIn API
-
-<!--more -->

@@ -1,0 +1,10 @@
+date: 2010-08-09 07:51:06 -05:00
+categories: talks
+template: talk
+summary: I surveyed the Ruby API development landscape at LSRC 2010.
+tags: talk, ruby, api, lsrc
+speaker_deck_id: 4e73fdc0bc9f4e003f0014c0
+
+# JSON and the APInauts
+
+

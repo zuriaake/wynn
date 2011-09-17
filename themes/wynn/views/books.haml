@@ -1,0 +1,22 @@
+.secondary &nbsp;
+.primary
+  ~ @page.to_html(self)
+
+%aside.w25
+.books
+  - @page.pages.sort_by{|p| p.metadata('year').to_i }.reverse.each do |book|
+    .book{:class => book.metadata('tags').to_s.split(',').join(' ')}
+      .w25.align_right
+        - unless book.metadata('thumb_url').nil?
+          %a{:href => book.metadata('url')}
+            %img{:src => book.metadata('thumb_url')}
+        &nbsp;
+      .w50
+        - haml_tag (defined?(heading) ? heading : :h2) do
+          %a{ :href => book.metadata('url') }= book.heading
+        %h3
+          = book.metadata('year')
+          &bull;
+          = book.metadata('publisher')
+        .summary= book.summary
+      .w25 &nbsp;

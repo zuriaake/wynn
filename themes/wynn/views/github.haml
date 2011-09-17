@@ -1,0 +1,9 @@
+- info = Octokit.repo(repo)
+
+%ul.stats
+  %li
+    %a.watchers(href="http://github.com/#{repo}/watchers")
+      = info.watchers
+  %li
+    %a.forks(href="http://github.com/#{repo}/network")
+      = info.forks

@@ -1,0 +1,40 @@
+@charset 'UTF-8'
+
+@import "compass"
+@import "partials/vars"
+@import "partials/branding"
+@import "partials/typography"
+@import "partials/syntax"
+@import "partials/articles"
+@import "partials/projects"
+@import "partials/archives"
+@import "partials/fusion-ads"
+@import "partials/desktop/layout"
+
+$dillon-max-width: 1400px
+$dillon-min-width: 940px
+@import "vendor/dillon"
+
+body
+  background:
+    color: #f0f0f0
+    image: url(/wynn/images/bit-tile-alpha.png)
+    position: center -150px
+    repeat: repeat-x
+  // background-image: url(/wynn/images/bit-tile.png),  url(/wynn/images/bg.jpg)
+  // background-position: center -250px, center top
+  // background-repeat: repeat-x, no-repeat
+
+.body.fixed-nav
+  #wynning
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 999
+  .container
+    margin-top: 3em
+
+a.jump
+  display: none
+
+

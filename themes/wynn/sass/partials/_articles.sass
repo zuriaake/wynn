@@ -1,0 +1,44 @@
+.posts
+  article
+    +leader
+    +trailer(2)
+    border-color: #bbb
+    h2
+      &:before
+        content: 'S'
+        color: rgba(#000, .3)
+        font-family: 'Pictos', sans-serif
+        margin-left: -1.5em
+        margin-top: -10px
+        position: absolute
+      &:hover
+        &:before
+          color: #111
+    &.link
+      h2
+        &:before
+          content: 'j'
+    &.talk
+      h2
+        &:before
+          content: '9'
+  p
+    margin-bottom: 0
+
+.talks
+  clear: both
+
+.talk
+  +trailer
+  clear: both
+  overflow: auto
+  a
+    display: block
+    img
+      +box-shadow(rgba(#000, .3) 0 0 5px)
+      border: solid 1px rgba(#000, .1)
+      max-height: 75px
+
+.slide-container
+  width: 500px
+

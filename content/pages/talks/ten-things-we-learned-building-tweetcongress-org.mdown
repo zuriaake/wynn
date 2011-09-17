@@ -1,0 +1,11 @@
+date: 2010-03-30 08:11:18 -05:00
+categories: talks,
+template: talk
+summary: I had the privilege to keynote OpenBeta4 in OKC. Here are my slides.
+tags: talk, ruby
+speaker_deck_id: 4e70ade8ac44c40001011b2a
+
+# Ten things we learned building TweetCongress.org
+
+I had such a fun time at the <a href="http://okccoco.com">OKCCoco</a> at <a href="http://openbeta.extendedbeta.com/openbeta4.html">OpenBeta4</a>. <a href="http://twitter.com/adamstac">Adam</a> and I met a lot of super bright folks building some really cool apps. Here's the video and slides from my keynote.
+

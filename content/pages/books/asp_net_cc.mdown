@@ -1,0 +1,11 @@
+template: book
+thumb_url: /wynn/images/books/asp_net_controls.jpg
+url: http://www.amazon.com/Asp-Net-Controls-Wynn-Netherland/dp/1930110510
+isbn: 1930110510
+year: 2002
+publisher: Manning
+author: Netherland & Ganguly
+categories: books
+summary: My first book with Manning, with long time friend Rupak Ganguly, covers building advanced server-side controls in ASP.NET.
+
+# ASP.NET Custom Controls

@@ -1,0 +1,21 @@
+- @page_role = 'article' if @page.date
+.secondary
+  &nbsp;
+.primary
+
+  - if @page.date
+    %article.post
+      ~ @page.to_html(self)
+
+  - else
+    ~ @page.to_html(self)
+
+  - unless @page.articles.empty?
+    %section.page-articles
+      = haml :summaries, :layout => false, :locals => { :pages => @page.articles, :heading => :h3 }
+
+
+  = haml :summaries, :layout => false, :locals => { :pages => @page.pages, :heading => :h3 }
+%aside.w25
+  = haml :ad, :layout => false
+

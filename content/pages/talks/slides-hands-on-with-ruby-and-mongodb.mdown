@@ -1,0 +1,10 @@
+date: 2009-10-28 07:51:06 -05:00
+categories: talks
+template: talk
+summary: My slides from Austin on Rails wherein I reveal my inner MongoDB fanboy.
+tags: talk, ruby, css, sass
+speaker_deck_id: 4e70cda3ac44c4000101741d
+
+# Hands on with Ruby and MongoDB
+
+I had the opportunity to drive down to Austin yesterday and meet all the great folks at <a href="http://www.austinonrails.org/">Austin on Rails</a> and talk about <a href="http://mongodb.org">MongoDB</a>. Here are the slides from my talk.

@@ -1,5 +1,0 @@
-template: blog
-
-# Blog
-
-In order to spare you my more random thoughts on everything from guitars to Pibb Zero on this blog, I created a  [tumblr](http://pengwynn.tumblr.com).

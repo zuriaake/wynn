@@ -1,0 +1,9 @@
+- unless pages.empty?
+  .posts
+    - pages.each do |page|
+      %article{:class => page.metadata('tags').to_s.split(',').join(' ')}
+        - haml_tag (defined?(heading) ? heading : :h2) do
+          %a{ :href => page.abspath }= page.heading
+        ~ page.summary
+
+

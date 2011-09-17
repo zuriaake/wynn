@@ -1,0 +1,12 @@
+.w25 &nbsp;
+.w75
+  - Nesta::Page.find_articles.group_by {|a| a.date.year}.each do |year, articles|
+    %h2.year
+      = year
+      %span.count== (#{ articles.size })
+    %ul.archives
+      - articles.each do |article|
+        %li
+          %a{:href => article.abspath}
+            = article.heading
+            -# .summary= article.summary

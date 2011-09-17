@@ -1,30 +1,15 @@
 source :rubygems
 
-# Project requirements
-gem 'rake'
-gem 'rack-flash'
-gem 'thin' # or mongrel
-gem "builder", "2.1.2"
-gem "rdiscount", "1.5.8"
-gem "RedCloth", "4.2.2"
-gem "ultraviolet", "0.10.1"
-gem "rack-codehighlighter", "~> 0.4.6"
-gem 'adsf'
-gem "hashie", "~> 0.2.0"
-gem 'octopussy', "~> 0.2.2"
-gem 'rack-rewrite', "~> 1.0.0"
-gem "gc-stats", "~> 0.7.0"
+gem "heroku"
+gem "nesta", "0.9.5"
+gem "redcarpet"
+gem "compass", "~> 0.11.5"
 
-# Component requirements
-gem 'haml', '~> 3.0.2'
+gem "will_paginate"
+gem "racksh"
+gem "octokit"
+# gem "zocial-toolkit", :path => "~/Dropbox/Code/OS/sass/zocial-toolkit"
 
-# Test requirements
-gem 'rspec', :require => "spec", :group => "test"
-gem 'rack-test', :require => 'rack/test', :group => 'test'
+gem 'rack-rewrite'
 
-gem "hpricot", "0.8.2", :group => "test"
-gem "rspec_hpricot_matchers", "1.0", :group => "test"
-gem "test-unit", "1.2.3"
-
-# Padrino
-gem 'padrino', "0.9.9"
+# gem (RUBY_VERSION =~ /^1.9/) ? 'ruby-debug19': 'ruby-debug'

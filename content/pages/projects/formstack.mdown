@@ -1,9 +1,0 @@
-categories: projects
-repo: pengwynn/formstack
-template: project
-
-# Formstack
-
-Ruby wrapper for the Formstack API
-
-<!--more -->

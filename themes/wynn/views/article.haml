@@ -1,0 +1,19 @@
+.secondary &nbsp;
+.primary
+  .content
+
+    - if @page.date
+      %article.post.full
+        ~ @page.to_html(self)
+
+    - else
+      ~ @page.to_html(self)
+
+    - unless @page.articles.empty?
+      %section.page-articles
+        %header
+          %h2= "Posts in '#{@page.heading}'"
+        = haml :summaries, :layout => false, :locals => { :pages => @page.articles, :heading => :h3 }
+
+%aside.w25
+  = haml :ad, :layout => false

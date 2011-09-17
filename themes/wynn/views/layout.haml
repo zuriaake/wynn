@@ -1,0 +1,29 @@
+!!!html5
+%html
+  %head
+    %meta{ "http-equiv" => "content-type", "content" => "text/html; charset=utf-8" }
+    - if @description
+      %meta{ "name" => "description", "content" => @description }
+    - if @keywords
+      %meta{ "name" => "keywords", "content" => @keywords }
+    %link{ :href => "/wynn/favicon.ico", :rel => "shortcut icon" }
+    %title= @title
+    %link(href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet')
+    %link(href="/wynn/css/master.css" rel="stylesheet")
+    %link(href="http://feeds.feedburner.com/wynn" rel="alternate" type="application/atom+xml")
+
+  %body
+    #wrapper
+      = haml :top_bar, :layout => false
+      .container
+        = haml :header, :layout => false
+
+        %section(role="main")
+          = yield
+          %br.clear
+
+    = haml :footer, :layout => false
+
+    = haml :scripts, :layout => false
+    = haml :typekit, :layout => false
+    = haml :analytics, :layout => false

@@ -1,0 +1,83 @@
+date: 2009-11-09 14:17:07 -06:00
+categories: journal
+template: article
+summary: Underscore.js brings a lot of utility functions to JavaScript.
+
+# Rubyists: Meet Underscore.js, your new favorite JavaScript library
+
+One of my favorite aspects of developing in Rails is the <a href="http://slash7.com/articles/2006/12/21/secrets-of-the-rails-console-ninjas">console</a>. The ability to load and interact with my Ruby objects without using the browser is powerful.
+
+Thanks to <a href="http://getfirebug.com/">Firebug</a> for Firefox and <a href="http://webkit.org/blog/829/web-inspector-updates/">Web Inspector</a> for Webkit, I also have a console for my client-side JavaScript. I wish jQuery were as powerful when traversing raw JavaScript objects as it is traversing the DOM. Well it seems I have two wishes left for the first has been granted in <a href="http://documentcloud.github.com/underscore">Underscore.js</a>.
+
+### Underscore.js: 2kb of pure JavaScript horsepower!
+
+Underscore.js is a new JavaScript framework from <a href="http://documentcloud.org/">DocumentCloud</a> that brings a powerful set of utility functions to JavaScript with a disctinct Ruby flavor and without monkey-patching the native JavaScript types by extending via <code>prototype</code>. Just as <a href="http://prototypejs.org">Prototype.js</a> and <a href="http://jquery.com">jQuery</a> employ the <code>$</code> function, Underscore adds all of this goodness via the <code>_</code> function.
+
+So, what's in the box? Let's just ask <code>_</code> himself, Ruby style:
+
+    >>> _.methods();
+    => ["all", "any", "bind", "bindAll", "breakLoop", "clone", "compact",
+     "compose", "defer", "delay", "detect", "each", "every", "extend",
+     "filter", "first", "flatten", "foldl", "foldr", "forEach", "functions",
+     "identity", "include", "indexOf", "inject", "intersect", "invoke",
+     "isArray", "isElement", "isEmpty", "isEqual", "isFunction",
+     "isUndefined", "keys", "last", "lastIndexOf", "map", "max",
+     "methods", "min", "pluck", "reduce", "reduceRight", "reject",
+     "select", "size", "some", "sortBy", "sortedIndex", "template",
+     "toArray", "uniq", "uniqueId", "values", "without", "wrap", "zip"]
+
+
+Nifty, huh? That should look very familiar. Let's look at <code>map</code> as an example.
+
+    >>> _.map([1, 2, 3], function(num){ return num*num });
+    => [1, 4, 9]
+
+
+Pretty straightforward. But we can also call Underscore OOP style:
+
+    >>> _([1, 2, 3]).map(function(num){ return num*num });
+    => [1, 4, 9]
+
+
+What's the advantage you ask? Chaining!
+
+    >>> _([1, 2, 3]).chain().map(function(num){ return num*num }).size().value();
+    => 3
+
+
+Whoa! Why the <code><del datetime="2009-11-09T21:17:46+00:00">get</del>value()</code> at the end?
+
+<strong>UPDATE</strong>: <a href="http://github.com/jashkenas">Jeremy</a> tells me that in the 0.4.2 release <code>get()</code> has been renamed to<code> value()</code>.
+
+When chaining, Underscore returns a wrapped set, a special container object (like jQuery does for wrapped sets of elements returned via a selector). To get the last value in the chain, simply call <code>value</code>.
+
+#### What else is in the box?
+
+Many of the same Ruby Enumerable and Array functions you've come to know and love are implemented including: <code>each</code>, <code>map</code>, <code>detect</code>, <code>select</code>, <code>reject</code>, <code>all</code>, <code>any</code>, <code>include</code>, <code>max</code>, <code>min</code>, <code>sortBy</code>, <code>toArray</code>, <code>size</code>, <code>first</code>, <code>last</code>, <code>compact</code>, <code>flatten</code>, <code>uniq</code>, and <code>zip</code> plus some <a href="http://documentcloud.github.com/underscore/#documentation">new ones</a> you'll love.
+
+Underscore also includes also some really useful utility functions.
+
+#### `bind`
+
+<blockquote><code>bind</code> a function to a context object, meaning that whenever the function is called, the value of this will be the context. Optionally, bind arguments to the function to pre-fill them, also known as currying. </blockquote>
+
+    var func = function(greeting){ return greeting + ', ' + this.name };
+    func = _.bind(func, {name : 'Adrian'}, 'Yo');
+    func();
+    => "Yo, Adrian"
+
+
+#### template
+
+<blockquote>Compiles JavaScript templates into functions that can be evaluated for rendering. Useful for rendering complicated bits of HTML from JSON data sources. Template functions can both interpolate variables, using
+<code><%= … %></code>, as well as execute arbitrary JavaScript code, with <code><% … %></code>. When you evaluate a template function, pass in a context object that has properties corresponding to the template's free variables. If you're writing a one-off, you can pass the context object as the second parameter to template in order to render immediately instead of returning a template function. </blockquote>
+
+Here's an example from the docs:
+
+    var list = "<% _.each(people, function(name) { %> <li><%= name %></li> <% }); %>";
+    _.template(list, {people : ['moe', 'curly', 'larry']});
+    => " <li>moe</li> <li>curly</li> <li>larry</li> "
+
+
+### Download and enjoy
+Underscore.js is available in both <a href="http://documentcloud.github.com/underscore/underscore-min.js">production</a> and <a href="http://documentcloud.github.com/underscore/underscore.js">development</a> flavors. Go grab it and have some fun!

@@ -1,0 +1,35 @@
+ul.archives
+  list-style: none
+  a
+    color: #444
+  &.grid
+    overflow: auto
+    li
+      background: #ddd
+      float: left
+      margin-right: 1em
+      margin-bottom: 1em
+      &:last-child
+        margin-right: 0
+    a
+      $size: 144px
+      +adjust-font-size-to(14px)
+      display: block
+      height: $size
+      padding: 5px
+      overflow: hidden
+      width: $size
+    .summary
+      +adjust-font-size-to(11px)
+
+
+
+h2.year
+  clear: both
+  .count
+    color: #aaa
+    font-size: 15px
+    vertical-align: middle
+    display: none
+
+
