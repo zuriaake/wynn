@@ -5,7 +5,7 @@ $(document).ready(function() {
   prettyPrint();
 
   // lettering
-  $('h1 + p + p').lettering('words').children('span.word1').lettering();
+  // $('h1 + p + p').lettering('words').children('span.word1').lettering();
 
   // Open external links in a new window
   hostname = window.location.hostname
