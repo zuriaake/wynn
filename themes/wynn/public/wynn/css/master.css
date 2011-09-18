@@ -534,6 +534,10 @@ pre {
   clear: both;
   color: #f0f0f0;
 }
+pre.plain {
+  background: inherit;
+  color: inherit;
+}
 
 .str {
   color: #a5c261;
@@ -690,6 +694,10 @@ li.L1, li.L3, li.L5, li.L7, li.L9 {
 
 .slide-container {
   width: 500px;
+}
+
+.post p img {
+  float: right;
 }
 
 .project,
