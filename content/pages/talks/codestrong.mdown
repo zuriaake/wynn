@@ -1,0 +1,11 @@
+categories: talks
+template: talk
+date: 2011-09-20
+summary: Appcelerator Titanium Mobile geeks from around the world converged on San Francisco for Codestrong 2011. Here are my slides from my CoffeeScript, Compass, and Sass talk.
+speaker_deck_id: 4e791562c9bdcb003f0003b2
+
+# Codestrong 2011: Accelerating Titanium Development with CoffeeScript, Compass, and Sass
+
+I had so much fun connecting with other command line loving Titanium  devs at
+Codestrong 2011, comparing notes on how to get along without booting
+Titanium Studio.
