@@ -3,7 +3,7 @@
   .content
 
     - if @page.date
-      %article.post.full
+      %article.post.full{:class => css_classes_for(@page)}
         ~ @page.to_html(self)
 
     - else

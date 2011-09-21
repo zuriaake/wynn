@@ -666,6 +666,21 @@ li.L1, li.L3, li.L5, li.L7, li.L9 {
   margin-bottom: 0;
 }
 
+.permalink {
+  color: rgba(0, 0, 0, 0.2);
+}
+.permalink:hover {
+  -moz-transition-property: all 0.1s ease-out;
+  -webkit-transition-property: all 0.1s ease-out;
+  -o-transition-property: all 0.1s ease-out;
+  transition-property: all 0.1s ease-out;
+  -moz-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  color: rgba(0, 0, 0, 0.8);
+}
+
 .talks {
   clear: both;
 }
@@ -674,9 +689,6 @@ li.L1, li.L3, li.L5, li.L7, li.L9 {
   margin-bottom: 1.5em;
   clear: both;
   overflow: auto;
-}
-.talk a {
-  display: block;
 }
 .talk a img {
   -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 0 5px;

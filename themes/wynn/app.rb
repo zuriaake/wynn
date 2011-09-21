@@ -6,6 +6,18 @@ module Nesta
       "//speakerd.s3.amazonaws.com/presentations/#{id}/thumb_slide_0.jpg"
     end
 
+    def css_classes_for(page)
+      tags = page.metadata('tags').to_s.split(",")
+      categories = page.metadata('categories').to_s.split(',')
+      classes = tags.concat(categories).map{|c| c.strip.downcase}.uniq.join(' ')
+    end
+
+    def url_for(page)
+      url = page.metadata('url').to_s
+      url = "#{base_url}/#{page.path}" if url.empty?
+
+      url
+    end
 
     not_found do
       set_common_variables

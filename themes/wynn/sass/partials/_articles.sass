@@ -25,6 +25,13 @@
   p
     margin-bottom: 0
 
+.permalink
+
+  color: rgba(#000, .2)
+  &:hover
+    +single-transition(all .1s ease-out)
+    color: rgba(#000, .8)
+
 .talks
   clear: both
 
@@ -33,7 +40,6 @@
   clear: both
   overflow: auto
   a
-    display: block
     img
       +box-shadow(rgba(#000, .3) 0 0 5px)
       border: solid 1px rgba(#000, .1)
