@@ -54,6 +54,10 @@ module Nesta
 
   class FileModel
 
+    def is_linked?
+      not self.metadata('url').to_s.empty?
+    end
+
     def slug
       self.metadata('slug')
     end

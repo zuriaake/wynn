@@ -26,11 +26,10 @@
     margin-bottom: 0
 
 .permalink
-
-  color: rgba(#000, .2)
+  color: rgba(#000, .2) !important
   &:hover
     +single-transition(all .1s ease-out)
-    color: rgba(#000, .8)
+    color: rgba(#000, .8) !important
 
 .talks
   clear: both
@@ -48,13 +47,13 @@
 .slide-container
   width: 500px
 
-.post
+article
   p
     a
-      +single-transition(background-color .05s ease-in-out)
-      text-decoration: underline
+      border-bottom: solid 1px #ccc
     a:hover
+      +single-transition(all .05s)
       background: #ddd
-      text-decoration: none
+      border-color: #aaa
     img
       float: right

@@ -667,7 +667,7 @@ li.L1, li.L3, li.L5, li.L7, li.L9 {
 }
 
 .permalink {
-  color: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.2) !important;
 }
 .permalink:hover {
   -moz-transition-property: all 0.1s ease-out;
@@ -678,7 +678,7 @@ li.L1, li.L3, li.L5, li.L7, li.L9 {
   -webkit-transition-duration: 1s;
   -o-transition-duration: 1s;
   transition-duration: 1s;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.8) !important;
 }
 
 .talks {
@@ -703,22 +703,22 @@ li.L1, li.L3, li.L5, li.L7, li.L9 {
   width: 500px;
 }
 
-.post p a {
-  -moz-transition-property: background-color 0.05s ease-in-out;
-  -webkit-transition-property: background-color 0.05s ease-in-out;
-  -o-transition-property: background-color 0.05s ease-in-out;
-  transition-property: background-color 0.05s ease-in-out;
+article p a {
+  border-bottom: solid 1px #cccccc;
+}
+article p a:hover {
+  -moz-transition-property: all 0.05s;
+  -webkit-transition-property: all 0.05s;
+  -o-transition-property: all 0.05s;
+  transition-property: all 0.05s;
   -moz-transition-duration: 1s;
   -webkit-transition-duration: 1s;
   -o-transition-duration: 1s;
   transition-duration: 1s;
-  text-decoration: underline;
-}
-.post p a:hover {
   background: #dddddd;
-  text-decoration: none;
+  border-color: #aaaaaa;
 }
-.post p img {
+article p img {
   float: right;
 }
 
