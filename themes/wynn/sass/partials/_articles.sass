@@ -14,11 +14,11 @@
       &:hover
         &:before
           color: #111
-    &.link
+    &.linked
       h2
         &:before
           content: 'j'
-    &.talk
+    &.talks
       h2
         &:before
           content: '9'
@@ -44,5 +44,11 @@
 
 .post
   p
+    a
+      +single-transition(background-color .05s ease-in-out)
+      text-decoration: underline
+    a:hover
+      background: #ddd
+      text-decoration: none
     img
       float: right

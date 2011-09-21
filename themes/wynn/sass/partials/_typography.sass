@@ -8,7 +8,7 @@ $base-line-height: 24px
 
 body
   font-family: $face-serif
-  color: #333
+  color: $color-text
   color: rgba(0,0,0,.8)
 
 p, ul, ol, dl, figure
@@ -42,8 +42,7 @@ h1
 //----------------------------------------------------------------------------------------------------
 
 a
-  $default: $color-blue
-  +link-colors($default)
+  +link-colors($color-links)
   text-decoration: none
   &:focus
     outline: none
@@ -54,7 +53,7 @@ button::-moz-focus-inner
 // `Paragraphs
 //----------------------------------------------------------------------------------------------------
 
-h1 + p
+.post.journal h1 + p
   +adjust-font-size-to(18px)
   font-style: italic
 
@@ -101,18 +100,19 @@ p
       strong
         color: #fff
 
-.twitter
-  color: $twitter
-.github
-  color: $github
-.gowalla
-  color: $gowalla
-.facebook
-  color: $facebook
-.linked-in
-  color: $linked-in
-.dribbble
-  color: $dribbble
+a
+  &.twitter
+    color: $twitter
+  &.github
+    color: $github
+  &.gowalla
+    color: $gowalla
+  &.facebook
+    color: $facebook
+  &.linked-in
+    color: $linked-in
+  &.dribbble
+    color: $dribbble
 
 
 

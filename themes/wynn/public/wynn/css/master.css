@@ -291,7 +291,7 @@ h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 a {
-  color: #0085cf;
+  color: #333333;
   text-decoration: none;
 }
 a:focus {
@@ -302,7 +302,7 @@ button::-moz-focus-inner {
   border: 0;
 }
 
-h1 + p {
+.post.journal h1 + p {
   font-size: 1.125em;
   line-height: 1.333em;
   font-style: italic;
@@ -387,27 +387,22 @@ p .word1 .char1 {
   color: white;
 }
 
-.twitter {
+a.twitter {
   color: #2eb8e7;
 }
-
-.github {
+a.github {
   color: #286da3;
 }
-
-.gowalla {
+a.gowalla {
   color: #f7911f;
 }
-
-.facebook {
+a.facebook {
   color: #5574ad;
 }
-
-.linked-in {
+a.linked-in {
   color: #8fbfd7;
 }
-
-.dribbble {
+a.dribbble {
   color: #f64599;
 }
 
@@ -661,10 +656,10 @@ li.L1, li.L3, li.L5, li.L7, li.L9 {
 .posts article h2:hover:before {
   color: #111111;
 }
-.posts article.link h2:before {
+.posts article.linked h2:before {
   content: "j";
 }
-.posts article.talk h2:before {
+.posts article.talks h2:before {
   content: "9";
 }
 .posts p {
@@ -696,6 +691,21 @@ li.L1, li.L3, li.L5, li.L7, li.L9 {
   width: 500px;
 }
 
+.post p a {
+  -moz-transition-property: background-color 0.05s ease-in-out;
+  -webkit-transition-property: background-color 0.05s ease-in-out;
+  -o-transition-property: background-color 0.05s ease-in-out;
+  transition-property: background-color 0.05s ease-in-out;
+  -moz-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  text-decoration: underline;
+}
+.post p a:hover {
+  background: #dddddd;
+  text-decoration: none;
+}
 .post p img {
   float: right;
 }
