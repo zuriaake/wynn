@@ -2,6 +2,7 @@ date: 2011-09-22
 categories: linked
 url: http://csswizardry.com/2011/09/writing-efficient-css-selectors/
 tags: css, tips
+slug: css-selector-performance-breakdown
 
 # CSS selector performance breakdown
 

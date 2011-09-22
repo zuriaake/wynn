@@ -58,6 +58,10 @@ module Nesta
       not self.metadata('url').to_s.empty?
     end
 
+    def slug
+      self.metadata('slug')
+    end
+
     def best_path?(path)
       path.gsub(/^\//, '') == self.abspath.gsub(/^\//,'')
     end
@@ -74,30 +78,30 @@ module Nesta
       end
     end
 
-    def slug
-      ret = self.metadata('slug') || self.heading
-
-      #strip the string
-      ret = ret.strip
-
-      #blow away apostrophes
-      ret.gsub! /['`]/,""
-
-      # @ --> at, and & --> and
-      ret.gsub! /\s*@\s*/, " at "
-      ret.gsub! /\s*&\s*/, " and "
-
-      #replace all non alphanumeric, underscore or periods with underscore
-       ret.gsub! /\s*[^A-Za-z0-9\._]\s*/, '-'
-
-       #convert double underscores to single
-       ret.gsub! /-+/,"-"
-
-       #strip off leading/trailing underscore
-       ret.gsub! /\A[\-\.]+|[\-\.]+\z/,""
-
-       ret
-    end
+    # def slug
+    #   ret = self.metadata('slug') || self.heading
+    #
+    #   #strip the string
+    #   ret = ret.strip
+    #
+    #   #blow away apostrophes
+    #   ret.gsub! /['`]/,""
+    #
+    #   # @ --> at, and & --> and
+    #   ret.gsub! /\s*@\s*/, " at "
+    #   ret.gsub! /\s*&\s*/, " and "
+    #
+    #   #replace all non alphanumeric, underscore or periods with underscore
+    #    ret.gsub! /\s*[^A-Za-z0-9\._]\s*/, '-'
+    #
+    #    #convert double underscores to single
+    #    ret.gsub! /-+/,"-"
+    #
+    #    #strip off leading/trailing underscore
+    #    ret.gsub! /\A[\-\.]+|[\-\.]+\z/,""
+    #
+    #    ret
+    # end
 
     private
 
