@@ -5,7 +5,16 @@
 
   - if @page.date
     %article.post{:class => css_classes_for(@page)}
-      ~ @page.to_html(self)
+      - haml_tag (defined?(heading) ? heading : :h1) do
+        %a{ :href =>  url_for(@page) }<
+          = @page.heading
+        - if @page.is_linked?
+          %a.permalink{:href => url_for(@page)}
+            &rarr;
+      ~ @page.body
+
+
+
 
   - else
     ~ @page.to_html(self)
