@@ -704,7 +704,7 @@ li.L1, li.L3, li.L5, li.L7, li.L9 {
 }
 
 article p a {
-  border-bottom: solid 1px #cccccc;
+  text-decoration: underline;
 }
 article p a:hover {
   -moz-transition-property: all 0.05s;
