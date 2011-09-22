@@ -3,7 +3,7 @@ class Post < Thor
   desc "link URL", "create a link post from a URL"
   def link(url)
     metadata = {
-      :date => Date.today.to_s,
+      :date => Time.now.to_s,
       :categories => "linked",
       :url => url
     }
