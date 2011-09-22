@@ -39,6 +39,7 @@ use Rack::Rewrite do
   r301 '/blog/rubyists-meet-underscore-js-your-new-favorite-javascript-library', '/journal/rubyists-meet-underscore-js-your-new-favorite-javascript-library'
   r301 '/blog/sass-up-your-wordpress-themes-with-compass', '/journal/sass-up-your-wordpress-themes-with-compass'
   r301  %r{/projects$}, 'https://github.com/pengwynn'
+  r301  %r{/projects/$}, 'https://github.com/pengwynn'
   r301 '/blog', ''
   #/blog/css-mixins-vs-multiple-classes
   r301 '/blog/what-makes-a-good-api-wrapper', '/journal/what-makes-a-good-api-wrapper'
