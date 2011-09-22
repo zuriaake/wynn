@@ -1,0 +1,16 @@
+date: 2011-09-22 11:34:07 -0500
+categories: linked
+url: http://nestacms.com/docs/design/making-an-art-directed-blogazine
+slug: making-blogazine-with-nesta
+
+# Making an blogazine with NestaCMS
+
+For those who envy the per-post designs of the [Peepcode
+Blog](http://blog.peepcode.com/archives), [Graham Ashton](https://twitter.com/#!/grahamashton) has a nice writeup
+on his [blogazine
+plugin](https://github.com/gma/nesta-plugin-blogazine) for Nesta, the
+software delivering these very words to your computer screen. Nesta also
+powers [The Sass Way](http://thesassway.com) and will run [The
+Changelog](http://thechangelog.com) in the very near future. Definitely
+more to come on this topic.
+
