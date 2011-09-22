@@ -1,4 +1,4 @@
-date: 2011-09-22
+date: 2011-09-22 11:23:00
 categories: linked
 url: http://blogs.wsj.com/deals/2011/09/21/hewlett-packard-worst-board-ever/?mod=e2tw
 slug: HP-board-worst-ever
