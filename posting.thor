@@ -1,5 +1,6 @@
 class Post < Thor
-  desc "link", "create a link post from a URL"
+
+  desc "link URL", "create a link post from a URL"
   def link(url)
     metadata = {
       :date => Date.today.to_s,
@@ -13,6 +14,8 @@ class Post < Thor
 
     filename = path + daily_count.to_s.rjust(2, "0")
     save_file(filename, metadata)
+
+    system "$EDITOR #{filename}.mdown"
 
   end
 
