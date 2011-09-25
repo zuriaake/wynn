@@ -6,7 +6,7 @@
           %a{ :href =>  url_for(page) }<
             = page.heading
           - if page.is_linked?
-            %a.permalink{:href => page.abspath}
+            %a.permalink{:href => page.permalink}
               &#8734;
         - if page.is_linked?
           ~ page.body
