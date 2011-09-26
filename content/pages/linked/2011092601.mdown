@@ -1,0 +1,19 @@
+date: 2011-09-26 15:12:20 -0500
+categories: linked
+url: http://orderedlist.com/blog/articles/share-presentations-without-the-mess/
+
+# Speaker Deck now open
+
+I think we all have grown disappointed in
+the devolution of SlideShare. I'm so excited to see my friends at [Ordered
+List](http://orderedlist.com) have done something about it. Over a year
+in the making, they have raised the curtain on [Speaker
+Deck](http://speakerdeck.com).
+
+> We promise that we will never clutter your presentations with ads and
+> we will do our best to keep it free and simple to upload and share
+> your presentations without the mess.
+
+I'm a big fan and am using Speaker Deck to power the [talks](/talks)
+part of this site.
+
