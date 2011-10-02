@@ -13,6 +13,11 @@ gem "nesta-plugin-linkable"  #, :git => "/Users/wynn/Projects/nesta-plugin-linka
 
 gem 'rack-rewrite'
 
+# full-text search
+gem 'hashie', '~> 1.0.0'
+gem 'sanitize'
+gem 'indextank'
+
 group :development do
   gem "racksh"
   gem "tux"

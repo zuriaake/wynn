@@ -1,1 +1,3 @@
 template: archives
+
+# The Archives
