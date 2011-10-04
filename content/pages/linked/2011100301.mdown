@@ -1,0 +1,15 @@
+date: 2011-10-03 21:50:55 -0500
+categories: linked
+url: http://jeffkreeftmeijer.com/2011/microgems-five-minute-rubygems
+
+# Micro Gems: Brilliant
+
+A great idea from [Jeff Kreeftmeijer](http://jeffkreeftmeijer.com) for
+creating gems for those snippets you seem to take from
+project-to-project using GitHub gists:
+
+> See how easy it is to create your own RubyGem? The only thing you need
+> is an implementation and a gemspec. Since Bang isn’t much more than
+> that right now, I think a Gist is sufficient. At least for now.
+
+Another reason I love Bundler.
