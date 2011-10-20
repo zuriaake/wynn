@@ -720,6 +720,7 @@ article p a:hover {
 }
 article p img {
   float: right;
+  max-width: 100%;
 }
 
 .project,
