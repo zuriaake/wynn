@@ -7,7 +7,7 @@ Dan Benjamin had a [great rundown of fixed-width
 fonts](http://hivelogic.com/articles/top-10-programming-fonts/) a couple
 of years ago in which he gave his list of top programming fonts for code
 editors and terminals. Since I use command line Vim as my editor, my
-terminal and editor fonts are one in the same. As a typeface junkie, I
+terminal and editor fonts are one and the same. As a typeface junkie, I
 like to experiment from time to time and step out of my
 [Menlo](http://9-bits.com/post/123940811/menlo-font-macosx) comfort zone
 and try new things.
