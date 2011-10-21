@@ -3,6 +3,10 @@ summary: CoffeeScript's little arrow for defining functions has put new restrict
 
 # CoffeeScript-friendly typefaces - it's all about the dashrocket.
 
+*UPDATE*: Trevor [informs
+me](https://twitter.com/#!/trevorburnham/status/127117853626343424) that it was actually [Peepcode](http://peepcode.com) that coined the term
+"dash rocket."
+
 Dan Benjamin had a [great rundown of fixed-width
 fonts](http://hivelogic.com/articles/top-10-programming-fonts/) a couple
 of years ago in which he gave his list of top programming fonts for code

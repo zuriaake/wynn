@@ -79,6 +79,7 @@ use Rack::Rewrite do
   r301 %r{/2009/11/link-linkedin-into-your-next-ruby-application/}, 'https://github.com/pengwynn/linkedin'
   r301 %r{/blog/css-mixins-vs-multiple-classes/}, '/journal/css-mixins-vs-multiple-classes/'
   r301 %r{/2009/11/sass-up-your-wordpress-themes-with-compass/}, '/journal/sass-up-your-wordpress-themes-with-compass'
+  r301 %r{/linked/2011102001}, '/journal/2011102001/coffeescript-friendly-typefaces-it-s-all-about-the-dashrocket'
 
 end
 
