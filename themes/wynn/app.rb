@@ -1,3 +1,5 @@
+Tilt.prefer Tilt::RedcarpetTemplate
+
 module Nesta
   class App
     use Rack::Static, :urls => ['/wynn'], :root => 'themes/wynn/public'
@@ -25,61 +27,4 @@ module Nesta
 
   end
 
-  class FileModel
-
-
-    private
-
-      def convert_to_html(format, scope, text)
-        case format
-        when :mdown
-          Redcarpet.new(text, :fenced_code).to_html
-        when :haml
-          Haml::Engine.new(text).to_html(scope)
-        when :textile
-          RedCloth.new(text).to_html
-        end
-      end
-
-  end
-
-
-  module Plugin
-    module IndexTank
-      def self.api_url
-        @api_url ||= ENV['INDEXTANK_API_URL']
-      end
-
-      def self.api_url=(url)
-        @api_url = url
-      end
-
-      def self.index_name
-        @index_name ||= 'idx'
-      end
-
-      def self.index_name=(name)
-        @index_name = name
-      end
-
-      def self.client
-        ::IndexTank::Client.new(self.api_url)
-      end
-
-      def self.index
-        self.client.indexes(self.index_name)
-      end
-
-      def self.search(query, options={})
-        results = Hashie::Mash.new(self.index.search(query, options))
-
-        results.results.each do |r|
-          r.page = Page.find_by_path(r.delete('docid'))
-        end
-
-        results
-      end
-
-    end
-  end
 end
