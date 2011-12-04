@@ -1,5 +1,11 @@
-@import "vendor/normalize"
-@import "pictos"
+@font-face
+  font-family: 'Pictos'
+  src: url('/wynn/fonts/pictos/pictos-web.eot')
+  src: local('☺'), url('/wynn/fonts/pictos/pictos-web.woff') format('woff'), url('/wynn/fonts/pictos/pictos-web.ttf') format('truetype'), url('/wynn/fonts/pictos/pictos-web.svg#webfontphKv1xv9') format('svg')
+  font-weight: normal
+  font-style: normal
+
+
 
 $base-font-size: 16px
 $base-line-height: 24px
@@ -78,41 +84,39 @@ p
 //----------------------------------------------------------------------------------------------------
 
 #wynning
-  +trailer
   color: #a7a7a7
+  font-size: 13px
+  font-family: $face-droid-sans
+  a
+    color: #fff
+    font-weight: bold
   ul
     +horizontal-list(0)
-    font-size: 13px
-    font-family: $face-droid-sans
-    line-height: 32px
+    float: right
     li
       float: right
       margin-right: 1em
       a
         +single-transition(color 0.4s ease-in)
+        font-weight: normal
         &:hover
           color: #fff !important
-      &.logo-mark
-        float: left
-        a
-          color: #fff
-          font-weight: bold
       strong
         color: #fff
 
 a
   &.twitter
-    color: $twitter
+    color: $twitter !important
   &.github
-    color: $github
+    color: $github !important
   &.gowalla
-    color: $gowalla
+    color: $gowalla !important
   &.facebook
-    color: $facebook
+    color: $facebook !important
   &.linked-in
-    color: $linked-in
+    color: $linked-in !important
   &.dribbble
-    color: $dribbble
+    color: $dribbble !important
 
 
 
@@ -126,8 +130,6 @@ header[role=banner],
       font-weight: bold
       letter-spacing: 2px
       text-transform: uppercase
-      li
-        margin-right: 3em
       a
         display: block
         color: #000

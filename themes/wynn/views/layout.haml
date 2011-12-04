@@ -6,6 +6,7 @@
       %meta{ "name" => "description", "content" => @description }
     - if @keywords
       %meta{ "name" => "keywords", "content" => @keywords }
+    %meta(name="viewport" content="width=device-width, initial-scale=1.0")
     %link{ :href => "/wynn/favicon.ico", :rel => "shortcut icon" }
     %title= @title
     -# %link(href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet')
@@ -15,14 +16,13 @@
   %body
     #wrapper
       = haml :top_bar, :layout => false
-      .container
+      .container.centered
         = haml :header, :layout => false
 
         %section(role="main")
           = yield
-          %br.clear
 
-    = haml :footer, :layout => false
+        = haml :footer, :layout => false
 
     = haml :scripts, :layout => false
     = haml :typekit, :layout => false

@@ -1,11 +1,6 @@
-%header(role="banner")
-  .w25.branding
-    %a.logo(href="/")
+%header.row(role="banner")
+  .branding.three.columns
+    %a.logo-link(href="/")
       %img(alt="logo" src="/wynn/images/logo.png")
 
-    -# %a.logo(href="/")
-    -#   - pick = %w(running-man apple contra hogs).shuffle.first
-    -#   %img.front(src="/wynn/images/picks/small/#{pick}.png")
-    -#   %img.back(src="/wynn/images/picks/small/home.png")
-  .w75
-    = haml :nav, :layout => false
+  .nine.columns.hide-on-phones= haml :nav, :layout => false
