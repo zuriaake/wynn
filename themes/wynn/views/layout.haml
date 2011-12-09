@@ -9,21 +9,18 @@
     %meta(name="viewport" content="width=device-width, initial-scale=1.0")
     %link{ :href => "/wynn/favicon.ico", :rel => "shortcut icon" }
     %title= @title
-    -# %link(href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet')
     %link(href="/wynn/css/master.css" rel="stylesheet")
     %link(href="http://feeds.feedburner.com/wynn" rel="alternate" type="application/atom+xml")
 
   %body
-    #wrapper
-      = haml :top_bar, :layout => false
-      .container.centered
-        = haml :header, :layout => false
-
-        %section(role="main")
+    = haml :"shared/banner", :layout => false
+    %section.container.centered(role="main")
+      .row
+        .three.columns
+        %section.nine.columns
           = yield
+      .row
+        = haml :"shared/footer", :layout => false
 
-        = haml :footer, :layout => false
-
-    = haml :scripts, :layout => false
-    = haml :typekit, :layout => false
-    = haml :analytics, :layout => false
+    = haml :"shared/scripts", :layout => false
+    = haml :"shared/typekit", :layout => false

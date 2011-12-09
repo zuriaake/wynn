@@ -1,7 +1,70 @@
 // `Tabs
 //----------------------------------------------------------------------------------------------------
 
+dl.tabs
+  display: block
+  padding: 0
+  dt
+    display: block
+    width: auto
+    float: left
+    cursor: default
+    &:first-child
+      padding: 0 9px 0 0
+  dd
+    display: block
+    width: auto
+    padding: 0
+    float: left
+    a
+      display: block
+      width: auto
+      &.active
 
-// `Vertical tabs
-//----------------------------------------------------------------------------------------------------
+dl
+  &.tabs.vertical
+    height: auto
+    dt, dd
+      float: none
+      height: auto
+  &.nice.tabs.vertical
+    dt, dd
+      float: none
+      height: auto
+  &.tabs.vertical dd a
+    display: block
+    width: auto
+    height: auto
+    padding: 15px 20px
+    margin: 0
+    &.active
+      height: auto
+      margin: 0
 
+ul
+  &.tabs-content
+    margin: 0
+    display: block
+  &.tabs-content>li
+    display: none
+    &.active
+      display: block
+
+dl
+  &.contained, &.nice.contained
+    margin-bottom: 0
+  &.contained.tabs dd a
+    padding: 0 14px
+  &.nice.contained.tabs dd a
+    padding: 7px 18px 9px
+
+ul
+  &.contained
+    &.tabs-content
+      padding: 0
+    &.tabs-content>li
+      padding: 20px
+      border: solid 0 #ddd
+      border-width: 0 1px 1px 1px
+  &.nice.contained.tabs-content>li
+    border-color: #eee

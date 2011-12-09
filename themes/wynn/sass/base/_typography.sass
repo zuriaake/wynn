@@ -1,14 +1,5 @@
-@font-face
-  font-family: 'Pictos'
-  src: url('/wynn/fonts/pictos/pictos-web.eot')
-  src: local('☺'), url('/wynn/fonts/pictos/pictos-web.woff') format('woff'), url('/wynn/fonts/pictos/pictos-web.ttf') format('truetype'), url('/wynn/fonts/pictos/pictos-web.svg#webfontphKv1xv9') format('svg')
-  font-weight: normal
-  font-style: normal
-
-
-
-$base-font-size: 16px
-$base-line-height: 24px
+// `Base styles
+//----------------------------------------------------------------------------------------------------
 
 +establish-baseline
 
@@ -26,8 +17,6 @@ ul, ol
 ul
   list-style: square
 
-=pictos
-  font-family: 'Pictos', sans-serif
 
 // `Headings
 //----------------------------------------------------------------------------------------------------
@@ -38,7 +27,7 @@ ul
   margin: 0
 
 h1
-  +adjust-font-size-to(40px)
+  +adjust-font-size-to(36px)
 #{headings(2,6)}
   +adjust-font-size-to(20px)
   a
@@ -52,6 +41,7 @@ a
   text-decoration: none
   &:focus
     outline: none
+
 
 button::-moz-focus-inner
   border: 0
@@ -80,73 +70,6 @@ p
       line-height: 48px
       // margin-top: .1em
 
-// `Nav
-//----------------------------------------------------------------------------------------------------
-
-#wynning
-  color: #a7a7a7
-  font-size: 13px
-  font-family: $face-droid-sans
-  a
-    color: #fff
-    font-weight: bold
-  ul
-    +horizontal-list(0)
-    float: right
-    li
-      float: right
-      margin-right: 1em
-      a
-        +single-transition(color 0.4s ease-in)
-        font-weight: normal
-        &:hover
-          color: #fff !important
-      strong
-        color: #fff
-
-a
-  &.twitter
-    color: $twitter !important
-  &.github
-    color: $github !important
-  &.gowalla
-    color: $gowalla !important
-  &.facebook
-    color: $facebook !important
-  &.linked-in
-    color: $linked-in !important
-  &.dribbble
-    color: $dribbble !important
-
-
-
-header[role=banner],
-.splash
-  nav
-    +leader(2)
-    ul
-      +adjust-font-size-to(12px)
-      font-family: $face-droid-sans
-      font-weight: bold
-      letter-spacing: 2px
-      text-transform: uppercase
-      a
-        display: block
-        color: #000
-        em, code
-          color: rgba(#000, .5)
-          display: block
-          font-family: $face-serif
-          font-weight: normal
-          font-size: 14px
-          letter-spacing: 0
-          margin-top: -.4em
-          text-transform: lowercase
-        code
-          font-family: $face-mono
-          font-size: 13px
-          font-style: italic
-
 // `Other
 //----------------------------------------------------------------------------------------------------
 
@@ -158,13 +81,6 @@ span.amp
 .etched
   text-shadow: -1px 1px 0 rgba(#fff, .8)
 
-// `Splash
-//----------------------------------------------------------------------------------------------------
-
-.splash
-  text-align: center
-  span.im
-    display: block
 
 // `Pullquote
 //----------------------------------------------------------------------------------------------------
@@ -187,33 +103,18 @@ blockquote
   border-left: solid 2px #aaa
   color: #888
   font-style: italic
-  padding-left: 1.5em
+  padding: 0 20px
 
 
-// `Typekit
+
+.permalink
+  color: #999
+  font-size: 20px
+
+// `Masthead
 //----------------------------------------------------------------------------------------------------
+.backdrop
+  small
+    font-family: $face-sans
+    text-transform: uppercase
 
-// .wf-loading
-//   opacity: 0
-
-//   &.wf-active
-//     opacity: 1
-//     -moz-transition: 0.2s opacity ease-in
-//     -webkit-transition: 0.2s opacity ease-in
-//     transition: 0.2s opacity ease-in
-
-// `Footer
-//----------------------------------------------------------------------------------------------------
-
-#wrapper + footer
-  color: rgba(#000, .3)
-  font:
-    family: $face-droid-sans
-    size: 11px
-  letter-spacing: 2px
-  text-transform: uppercase
-
-.return
-  text-align: center
-  a
-    color: #111

@@ -1,0 +1,27 @@
+// `Mobile overrides
+//----------------------------------------------------------------------------------------------------
+
+@media only screen and (max-width: 767px)
+
+  #wynning
+    font-size: 12px
+    line-height: 14px
+    padding: $groove-padding $groove-padding * 2
+
+
+
+  .posts
+    article
+      h2
+        &:before
+          background: #000
+          color: #fff
+          line-height: 24px
+          margin-left: -$groove-padding
+          margin-top: 0
+          position: static
+          text-shadow: none
+        &:hover
+          &:before
+            color: #111
+

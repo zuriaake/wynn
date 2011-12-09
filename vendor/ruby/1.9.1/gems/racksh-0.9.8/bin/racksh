@@ -1,0 +1,26 @@
+#!/usr/bin/env ruby
+
+require File.expand_path(File.join(File.dirname(__FILE__), "..", "lib", "racksh", "init.rb"))
+
+# prevent STDOUT & STDERR to be reopened (apps do this to be able to log under Passenger)
+def STDOUT.reopen(*args); end
+def STDERR.reopen(*args); end
+
+if ARGV.empty?
+  require "irb"
+  require "irb/completion"
+  reloaded = false
+  loop do
+    pid = fork do
+      Rack::Shell.init(!reloaded)
+      IRB.conf[:PROMPT_MODE] = :SIMPLE
+      IRB.start
+    end
+    Process.wait(pid)
+    break unless $?.exitstatus == 255
+    reloaded = true
+  end
+else
+  Rack::Shell.init
+  p eval(ARGV.join(" "))
+end

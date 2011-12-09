@@ -1,6 +1,6 @@
 date: 2010-02-10 13:43:47 -06:00
 categories: talks, css, compass, sass, slides, video, speaking
-template: talk
+template: templates/talk
 summary: A video and slide deck from Dallas.rb wherein I extol the benefits of CSS metaframeworks.
 tags: talk, ruby, mongodb
 speaker_deck_id: 4e70c2a2ac44c40001015960

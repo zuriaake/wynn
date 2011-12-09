@@ -1,6 +1,6 @@
 date: 2011-08-11 14:00:00 -05:00
 categories: talks
-template: talk
+template: templates/talk
 summary: The slides from my LSRC 2011 talk on a Ruby workflow for native mobile development.
 tags: talk, ruby, api, lsrc
 speaker_deck_id: 4e73fe11ca3cd0003f0017b5

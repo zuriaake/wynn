@@ -1,5 +1,6 @@
 source :rubygems
 
+gem "sinatra-content-for"
 gem "heroku"
 gem "nesta", "~> 0.9.11"
 gem "redcarpet"

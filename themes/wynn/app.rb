@@ -1,7 +1,11 @@
+require 'sinatra/content_for'
+
 Tilt.prefer Tilt::RedcarpetTemplate
 
 module Nesta
   class App
+    helpers Sinatra::ContentFor
+
     use Rack::Static, :urls => ['/wynn'], :root => 'themes/wynn/public'
 
     def speaker_deck_thumb_url(id)
@@ -24,6 +28,10 @@ module Nesta
       haml(:error, :layout => :centered)
     end unless Nesta::App.development?
 
+    # override to point to shared/
+    def article_summaries(articles)
+      haml(:"shared/summaries", :layout => false, :locals => { :pages => articles })
+    end
 
   end
 

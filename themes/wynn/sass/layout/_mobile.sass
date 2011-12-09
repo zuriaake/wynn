@@ -1,9 +1,21 @@
-// `Mobile overrides
+// `Phone layout
 //----------------------------------------------------------------------------------------------------
 
 @media only screen and (max-width: 767px)
 
-  #wynning
-    font-size: 12px
-    line-height: 14px
-    padding: $groove-padding $groove-padding * 2
+  #wrapper
+    +leader(1)
+
+  .mobile-nav
+    +leader
+
+  a.home
+    +trailer(2)
+
+  .logo-mark
+    max-height: 64px
+
+  .backdrop
+    img
+      margin-top: -30px
+

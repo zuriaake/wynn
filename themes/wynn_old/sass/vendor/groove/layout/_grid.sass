@@ -1,0 +1,126 @@
+// `'Bass' line
+//----------------------------------------------------------------------------------------------------
+
+.centered
+  float: none
+  margin: 0 auto
+
+.container
+  padding: 0 $groove-padding
+  max-width: $groove-max-width
+  min-width: $groove-min-width
+
+.row
+  width: 100%
+  margin: 0 auto
+  .row
+    min-width: 0px
+
+.column, .columns
+  +box-sizing(border-box)
+  float: left
+  margin-left: 4.4%
+  min-height: 1px
+  position: relative
+  &:first-child
+    margin-left: 0
+
+
+
+// `Column widths
+//----------------------------------------------------------------------------------------------------
+
+.row
+  .column,
+  .columns
+
+    &.one
+      width: 4.3%
+    &.two
+      width: 13%
+    &.three
+      width: 21.7%
+    &.four
+      width: 30.4%
+    &.five
+      width: 39.1%
+    &.six
+      width: 47.8%
+    &.seven
+      width: 56.5%
+    &.eight
+      width: 65.2%
+    &.nine
+      width: 73.9%
+    &.ten
+      width: 82.6%
+    &.eleven
+      width: 91.3%
+    &.twelve
+      width: 100%
+
+    &.centered
+      float: none
+      margin: 0 auto
+
+  // `Offset columns
+  //----------------------------------------------------------------------------------------------------
+  .slide-one
+    margin-left: 13.1%
+    &:first-child
+      margin-left: 8.7%
+  .slide-two
+    margin-left: 21.8%
+    &:first-child
+      margin-left: 17.4%
+  .slide-three
+    margin-left: 30.5%
+    &:first-child
+      margin-left: 26.1%
+  .slide-four
+    margin-left: 39.2%
+    &:first-child
+      margin-left: 34.8%
+  .slide-five
+    margin-left: 47.9%
+    &:first-child
+      margin-left: 43.5%
+  .slide-six
+    margin-left: 56.6%
+    &:first-child
+      margin-left: 52.2%
+  .slide-seven
+    margin-left: 65.3%
+    &:first-child
+      margin-left: 60.9%
+  .slide-eight
+    margin-left: 74.0%
+    &:first-child
+      margin-left: 69.6%
+  .slide-nine
+    margin-left: 82.7%
+    &:first-child
+      margin-left: 78.3%
+  .slide-ten
+    margin-left: 91.4%
+    &:first-child
+      margin-left: 87.0%
+
+// `Flex objects
+//----------------------------------------------------------------------------------------------------
+
+img, object, embed
+  max-width: 100%
+  height: auto
+img
+  -ms-interpolation-mode: bicubic
+
+// `Nicolas Gallagher's micro clearfix
+//----------------------------------------------------------------------------------------------------
+.row:before, .row:after, .clearfix:before, .clearfix:after
+  content: ""
+  display: table
+.row:after, .clearfix:after
+  clear: both
+.row, .clearfix
+  zoom: 1

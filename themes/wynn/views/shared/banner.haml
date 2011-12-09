@@ -1,0 +1,21 @@
+%header#masthead
+  .container.centered
+    .row
+      .branding.six.columns
+        %a(href="/")
+          %img.logo-mark(alt="logo" src="/wynn/images/wynning.png")
+      %nav.six.columns
+        %ul.block-grid.four-up.hide-on-phones
+          %li
+            %a(href="/archives")
+              Archives
+          %li
+            %a(href="/talks")
+              Talks
+          %li
+            %a(href="/books")
+              Books
+          %li
+            %a(href="/about")
+              About
+  .backdrop= yield_content :backdrop
