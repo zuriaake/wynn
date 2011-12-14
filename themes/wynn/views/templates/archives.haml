@@ -9,9 +9,7 @@
     %ul.archives
       - articles.each do |article|
         %li
-          %a{:href => url_for(article)}
-            = article.heading
+          %a{:href => url_for(article)}>= article.heading
           - if article.is_linked?
-            %a.permalink{:href => article.abspath}
-              ⚡
-              -# &#8734;
+            &nbsp;
+            %a.permalink{:href => article.abspath} ⦿

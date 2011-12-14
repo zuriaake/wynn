@@ -2,29 +2,16 @@
 //----------------------------------------------------------------------------------------------------
 
 #masthead
-  padding-top: $groove-padding
+  +trailer(2)
+  padding: $groove-padding 0
+  li
+    text-align: right
 
-
-[role=main]
-  +leader(2)
-
-ul.site-nav
-  +horizontal-list($groove-padding)
-  float: right
-  margin-top: $groove-padding
 
 .logo-mark
   max-height: 128px
   max-width: 128px
   vertical-align: middle
-
-.backdrop
-  img
-    margin-top: -$groove-padding * 3
-    width: 100%
-  small
-    position: absolute
-    right: $groove-padding
 
 
 

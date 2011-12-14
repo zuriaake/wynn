@@ -13,14 +13,16 @@
     %link(href="http://feeds.feedburner.com/wynn" rel="alternate" type="application/atom+xml")
 
   %body
-    = haml :"shared/banner", :layout => false
-    %section.container.centered(role="main")
-      .row
-        .three.columns
-        %section.nine.columns
-          = yield
-      .row
-        = haml :"shared/footer", :layout => false
+    #wrapper
+      = haml :"shared/banner", :layout => false
+      #content.container.centered
+        .row
+          .three.columns
+          %section.nine.columns
+            = yield
+
+    = haml :"shared/footer", :layout => false
 
     = haml :"shared/scripts", :layout => false
     = haml :"shared/typekit", :layout => false
+

@@ -3,8 +3,10 @@ description: Wynn Netherland is a Christian husband, father, and full stack web 
 
 = article_summaries(latest_articles(20))
 
-- content_for :backdrop do
-  %img(src="http://farm4.staticflickr.com/3225/2846583491_b813e612eb_o.jpg")
-  %small
-    Photo credit:
-    %a Paula Netherland
+-# %style
+  :sass
+    #masthead
+      background:
+        image: url(http://farm4.staticflickr.com/3225/2846583491_b813e612eb_o.jpg)
+        size: cover
+      height: 800px

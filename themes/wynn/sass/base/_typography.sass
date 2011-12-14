@@ -32,16 +32,20 @@ h1
   +adjust-font-size-to(20px)
   a
     +link-colors(#111)
+    text-decoration: none
 
 // `Links
 //----------------------------------------------------------------------------------------------------
 
 a
   +link-colors($color-links)
-  text-decoration: none
   &:focus
     outline: none
 
+
+.permalink
+  +link-colors(#bbb, #333)
+  text-decoration: none
 
 button::-moz-focus-inner
   border: 0
@@ -107,10 +111,6 @@ blockquote
 
 
 
-.permalink
-  color: #999
-  font-size: 20px
-
 // `Masthead
 //----------------------------------------------------------------------------------------------------
 .backdrop
@@ -118,3 +118,36 @@ blockquote
     font-family: $face-sans
     text-transform: uppercase
 
+
+.site-nav
+  font:
+    family: $face-ubuntu
+    size: 11px
+    weight: 600
+  letter-spacing: 3px
+  line-height: 14px
+  margin: 0
+  text-transform: uppercase
+  a
+    display: block
+    color: #000
+    text-decoration: none
+  em, code
+    color: rgba(#000, .5)
+    display: block
+    font-family: $face-serif
+    font-weight: normal
+    font-size: 12px
+    letter-spacing: 0
+    padding-right: 3px
+    text-transform: lowercase
+  code
+    font-family: $face-mono
+    font-size: 11px
+    font-style: italic
+    line-height: 12px
+
+// `Article
+//----------------------------------------------------------------------------------------------------
+article footer
+  +adjust-font-size-to(14px)

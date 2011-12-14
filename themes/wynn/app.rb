@@ -18,6 +18,10 @@ module Nesta
       classes = tags.concat(categories).map{|c| c.strip.downcase}.uniq.join(' ')
     end
 
+    def backdrop(url, options={})
+      haml :"shared/backdrop", :layout => false, :locals => options.merge(:url => url)
+    end
+
     not_found do
       set_common_variables
       haml(:not_found, :layout => :centered)
