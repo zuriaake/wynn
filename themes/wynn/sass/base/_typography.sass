@@ -4,9 +4,10 @@
 +establish-baseline
 
 body
-  font-family: $face-serif
   color: $color-text
   color: rgba(0,0,0,.8)
+  font-family: $face-serif
+  font-weight: 100
 
 p, ul, ol, dl, figure
   margin: 1.5em 0
@@ -17,13 +18,20 @@ ul, ol
 ul
   list-style: square
 
+em
+  font-style: normal
+  font-weight: 400
+
+strong
+  font-weight: 700
+
 
 // `Headings
 //----------------------------------------------------------------------------------------------------
 
 #{headings()}
   @extend .etched
-  font-weight: 300
+  font-weight: 400
   margin: 0
 
 h1
@@ -31,7 +39,7 @@ h1
 #{headings(2,6)}
   +adjust-font-size-to(20px)
   a
-    +link-colors(#111)
+    +link-colors(#333, #999)
     text-decoration: none
 
 // `Links
@@ -39,12 +47,20 @@ h1
 
 a
   +link-colors($color-links)
+  font-weight: 400
+  text-decoration: none
   &:focus
     outline: none
+  .archives &
+    font-weight: 300
+  p &
+    background-color: #f0f0f0
 
 
 .permalink
-  +link-colors(#bbb, #333)
+  +link-colors(#aaa, #333)
+  font-family: sans-serif
+  font-weight: normal
   text-decoration: none
 
 button::-moz-focus-inner
@@ -105,19 +121,15 @@ span.amp
 //----------------------------------------------------------------------------------------------------
 blockquote
   border-left: solid 2px #aaa
+  border-left: solid 2px rgba(#000, .2)
   color: #888
-  font-style: italic
+  color: rgba(#000, .6)
   padding: 0 20px
 
 
 
 // `Masthead
 //----------------------------------------------------------------------------------------------------
-.backdrop
-  small
-    font-family: $face-sans
-    text-transform: uppercase
-
 
 .site-nav
   font:
@@ -127,27 +139,21 @@ blockquote
   letter-spacing: 3px
   line-height: 14px
   margin: 0
+  text-align: center
   text-transform: uppercase
   a
     display: block
     color: #000
+    font-weight: 600
     text-decoration: none
-  em, code
-    color: rgba(#000, .5)
-    display: block
-    font-family: $face-serif
-    font-weight: normal
-    font-size: 12px
-    letter-spacing: 0
-    padding-right: 3px
-    text-transform: lowercase
-  code
-    font-family: $face-mono
-    font-size: 11px
-    font-style: italic
-    line-height: 12px
 
 // `Article
 //----------------------------------------------------------------------------------------------------
 article footer
   +adjust-font-size-to(14px)
+
+
+// `About
+//----------------------------------------------------------------------------------------------------
+.im
+  display: block

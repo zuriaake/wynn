@@ -1,6 +1,5 @@
 date: 2009-12-15 10:24:57 -06:00
 categories: journal
-template: article
 summary: Using JSONP and the GitHub API, you can add project info to your site.
 tags: javascript, mashups, github, jquery
 

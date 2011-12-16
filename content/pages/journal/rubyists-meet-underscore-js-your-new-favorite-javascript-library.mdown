@@ -1,6 +1,5 @@
 date: 2009-11-09 14:17:07 -06:00
 categories: journal
-template: article
 summary: Underscore.js brings a lot of utility functions to JavaScript.
 
 # Rubyists: Meet Underscore.js, your new favorite JavaScript library

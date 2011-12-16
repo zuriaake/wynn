@@ -1,6 +1,5 @@
 date: 2009-11-18 03:41:50 -06:00
 categories: journal
-template: article
 summary: The GitHub fork queue makes merging pull requests too easy.
 
 # Fork you? No, no, no - Fork Queue.

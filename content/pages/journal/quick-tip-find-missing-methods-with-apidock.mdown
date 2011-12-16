@@ -1,6 +1,5 @@
 date: 2009-12-22 15:40:57 -06:00
 categories: journal
-template: article
 summary: APIDock is a great resource to find when a method first appeared in your favorite API.
 
 # Quick tip: Use APIdock to hunt down missing methods

@@ -12,4 +12,6 @@
           %a{:href => url_for(article)}>= article.heading
           - if article.is_linked?
             &nbsp;
-            %a.permalink{:href => article.abspath} ⦿
+            %a.permalink{:href => article.abspath}
+              -# ⦿
+              &bigstar;

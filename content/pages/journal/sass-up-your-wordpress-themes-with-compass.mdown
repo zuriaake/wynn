@@ -1,6 +1,5 @@
 date: 2009-11-07 19:22:06 -06:00
 categories: journal
-template: article
 summary: I don't always use WordPress. But when I do, I use compass-wordpress.
 
 # Sass up your WordPress themes with Compass

@@ -1,6 +1,5 @@
 date: 2010-02-15 15:54:30 -06:00
 categories: journal
-template: article
 summary: If your web site provides its own search function, set up to let your users search from the browser search box.
 
 # Enhance your site search with OpenSearch

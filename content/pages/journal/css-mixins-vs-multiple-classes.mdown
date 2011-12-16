@@ -1,6 +1,5 @@
 date: 2009-11-04 19:00:46 -06:00
 categories: journal, css, sass, mixins
-template: article
 summary: A growing number of CSS meta-frameworks provide support for mixins. While CSS mixins provide a number of benefits, for me, they come with trade-offs.
 
 # CSS Mixins vs. multiple classes

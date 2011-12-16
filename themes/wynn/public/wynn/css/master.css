@@ -718,9 +718,10 @@ html > body {
 }
 
 body {
-  font-family: ff-meta-serif-web-pro, "Droid Serif", "Cambria", "Palatino", serif;
   color: #333333;
   color: rgba(0, 0, 0, 0.8);
+  font-family: Merriweather, Cambria, "Droid Serif", "Palatino", "Palatino Linotype", Georgia, serif;
+  font-weight: 100;
 }
 
 p, ul, ol, dl, figure {
@@ -735,8 +736,17 @@ ul {
   list-style: square;
 }
 
+em {
+  font-style: normal;
+  font-weight: 400;
+}
+
+strong {
+  font-weight: 700;
+}
+
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 300;
+  font-weight: 400;
   margin: 0;
 }
 
@@ -750,19 +760,32 @@ h2, h3, h4, h5, h6 {
   line-height: 1.2em;
 }
 h2 a, h3 a, h4 a, h5 a, h6 a {
-  color: #111111;
+  color: #333333;
   text-decoration: none;
+}
+h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+  color: #999999;
 }
 
 a {
   color: #333333;
+  font-weight: 400;
+  text-decoration: none;
 }
 a:focus {
   outline: none;
 }
+.archives a {
+  font-weight: 300;
+}
+p a {
+  background-color: #f0f0f0;
+}
 
 .permalink {
-  color: #bbbbbb;
+  color: #aaaaaa;
+  font-family: sans-serif;
+  font-weight: normal;
   text-decoration: none;
 }
 .permalink:hover {
@@ -823,14 +846,10 @@ span.amp {
 
 blockquote {
   border-left: solid 2px #aaaaaa;
+  border-left: solid 2px rgba(0, 0, 0, 0.2);
   color: #888888;
-  font-style: italic;
+  color: rgba(0, 0, 0, 0.6);
   padding: 0 20px;
-}
-
-.backdrop small {
-  font-family: "Helvetica Neue", "Helvetica", sans-serif;
-  text-transform: uppercase;
 }
 
 .site-nav {
@@ -840,33 +859,23 @@ blockquote {
   letter-spacing: 3px;
   line-height: 14px;
   margin: 0;
+  text-align: center;
   text-transform: uppercase;
 }
 .site-nav a {
   display: block;
   color: black;
+  font-weight: 600;
   text-decoration: none;
-}
-.site-nav em, .site-nav code {
-  color: rgba(0, 0, 0, 0.5);
-  display: block;
-  font-family: ff-meta-serif-web-pro, "Droid Serif", "Cambria", "Palatino", serif;
-  font-weight: normal;
-  font-size: 12px;
-  letter-spacing: 0;
-  padding-right: 3px;
-  text-transform: lowercase;
-}
-.site-nav code {
-  font-family: Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", Monaco, monospace;
-  font-size: 11px;
-  font-style: italic;
-  line-height: 12px;
 }
 
 article footer {
   font-size: 0.875em;
   line-height: 1.714em;
+}
+
+.im {
+  display: block;
 }
 
 @media only screen and (max-width: 767px) {
@@ -875,16 +884,12 @@ article footer {
     line-height: 28px;
   }
 
-  ul, ol {
+  article ul, article ol {
     padding: 0 20px;
   }
 }
 #masthead {
-  margin-bottom: 3em;
   padding: 20px 0;
-}
-#masthead li {
-  text-align: right;
 }
 
 .logo-mark {

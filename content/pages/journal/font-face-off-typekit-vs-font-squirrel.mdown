@@ -1,6 +1,5 @@
 date: 2009-11-12 08:33:20 -06:00
 categories: journal
-template: article
 summary: Now that the curtain has come down and now Typekit is available to all, let's see how Typekit and the previously mentioned Font Squirrel stack up head-to-head.
 
 # @font-face-off: Typekit vs. Font Squirrel
