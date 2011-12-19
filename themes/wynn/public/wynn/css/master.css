@@ -2246,6 +2246,7 @@ li.L1, li.L3, li.L5, li.L7, li.L9 {
   border: none;
 }
 .hide-on-phones dl.tabs dd {
+  float: right;
   margin: 0 20px;
 }
 .hide-on-phones dl.tabs dd:first-child {
@@ -2274,4 +2275,15 @@ body {
 .back img {
   position: absolute;
   opacity: 0.25;
+}
+
+#masthead {
+  margin-bottom: 2em;
+}
+#masthead.moleskine {
+  background-image: url(http://cl.ly/2t2S0E3D303Q341h2s37/Cloud2go%20Dec%2019,%202011%202:01%20PM.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 380px;
 }
