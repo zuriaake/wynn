@@ -41,7 +41,10 @@ h1
   font-family: $face-subhead
   text-transform: uppercase
   a
-    +link-colors(#333, #999)
+    +single-transition(background-color .1s ease-in-out)
+    +link-colors(#333, #111)
+    &:hover
+      background: #eee
     font-weight: 700
     text-decoration: none
 
@@ -66,10 +69,10 @@ a
   p &
     color: #333
     +single-transition(background-color .2s ease-out)
-    background: #ddd
+    background: #eee
     padding: 0 2px
     &:hover
-      background: #f0f0f0
+      background: #ddd
 
 
 .permalink

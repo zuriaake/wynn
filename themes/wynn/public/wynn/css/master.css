@@ -1762,12 +1762,23 @@ h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 h2 a, h3 a, h4 a, h5 a, h6 a {
+  -moz-transition-property: background-color 0.1s ease-in-out;
+  -webkit-transition-property: background-color 0.1s ease-in-out;
+  -o-transition-property: background-color 0.1s ease-in-out;
+  transition-property: background-color 0.1s ease-in-out;
+  -moz-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
   color: #333333;
   font-weight: 700;
   text-decoration: none;
 }
 h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
-  color: #999999;
+  color: #111111;
+}
+h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+  background: #eeeeee;
 }
 
 .posts h2 {
@@ -1803,11 +1814,11 @@ p a {
   -webkit-transition-duration: 1s;
   -o-transition-duration: 1s;
   transition-duration: 1s;
-  background: #dddddd;
+  background: #eeeeee;
   padding: 0 2px;
 }
 p a:hover {
-  background: #f0f0f0;
+  background: #dddddd;
 }
 
 .permalink {
