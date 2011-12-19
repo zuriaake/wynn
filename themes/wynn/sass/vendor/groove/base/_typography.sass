@@ -1,36 +1,8 @@
-// `Color functions - lifted from @jlong - http://wynn.fm/hc
+// `Utility
 //----------------------------------------------------------------------------------------------------
-$reversed-text: false !default
-
-@function strengthen($color, $multiplier: 1, $reversed: $reversed-text)
-  @if $reversed
-    @return lighten($color, 20% * $multiplier)
-  @else
-    @return darken($color, 20% * $multiplier)
-
-
-
-@function soften($color, $multiplier: 1, $reversed: $reversed-text)
-  @if $reversed
-    @return darken($color, 20% * $multiplier)
-  @else
-    @return lighten($color, 20% * $multiplier)
-
-
-
-.muted
-  color: soften($color-text, 3)
-
-.loud
-  color: strengthen($color-text, 3)
-
-// `Alignment conveniences
-//----------------------------------------------------------------------------------------------------
-
 .align-right
   text-align: right
 .align-center
   text-align: center
 .align-left
   text-align: left
-

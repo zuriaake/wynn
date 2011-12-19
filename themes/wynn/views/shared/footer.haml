@@ -1,6 +1,18 @@
 %footer.site-footer.container.centered
   .row
-    .nine.columns.slide-three
+    .nine.columns
+      %ul.feeds
+        %li
+          %a(href="http://feeds.feedburner.com/wynn") RSS
+        %li
+          %a(href="/archives") Archives
+        %li.break-left
+          %a(href="http://twitter.com/pengwynn") Twitter
+        %li
+          %a(href="http://github.com/pengwynn") GitHub
+        %li
+          %a(href="http://linkedin.com/in/netherland") LinkedIn
+    .three.columns
       %span.copyright
         &copy; 2009 - #{Time.now.year}
       %a(href="//wynn.fm") Wynn Netherland

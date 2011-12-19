@@ -1,6 +1,11 @@
 @media only screen and (max-width: 767px)
 
-  // `Body
+  // `Masthead
+  //----------------------------------------------------------------------------------------------------
+  #masthead
+    margin-bottom: 2em
+
+  // `Body, lists
   //----------------------------------------------------------------------------------------------------
 
 
@@ -11,12 +16,50 @@
     font-size: 24px
     line-height: 28px
 
+  #{headings(2,6)}
+    font-size: 1em
+
   // `Lists
   //----------------------------------------------------------------------------------------------------
 
   article
     ul, ol
       padding: 0 $groove-padding
+
+  .list-group
+    margin-top: 0 !important
+    &:first-of-type
+      margin-top: 20px !important
+    h2
+      background: #888
+      color: #fff
+      margin: 0 #{-$groove-padding}
+      padding: 1em
+      text-shadow: none
+
+  .pullquote
+    float: none
+    margin: 1em 1em 1em 0
+    width: 100%
+    &.left
+      float: none
+      margin: 1em 1em 1em 0
+
+  .block-list-item p
+    font-size: 14px
+
+  .archives
+    margin: 0 #{-$groove-padding}
+    li
+      border-bottom: solid 1px #ccc
+      list-style: none
+      a
+        display: block
+        padding: 10px
+        width: 100%
+    .permalink
+      display: none
+
 
 
 

@@ -1,5 +1,5 @@
 date: 2011-04-20 13:43:47 -06:00
-categories: talks, css, compass, sass, slides, video, speaking
+categories: talks, css, compass, sass, slides,  speaking
 template: templates/talk
 summary: Nathan Smith and I had the opportunity to speak to Refresh OKC.
 tags: talk, ruby, css, compass, sass, refrsh

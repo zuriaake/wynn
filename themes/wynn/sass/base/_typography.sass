@@ -9,8 +9,9 @@ body
   font-family: $face-serif
   font-weight: 100
 
-p, ul, ol, dl, figure
+p, ul, ol, dl, figure, blockquote
   margin: 1.5em 0
+  line-height: 1.5em
 
 ul, ol
   padding: 0
@@ -30,7 +31,6 @@ strong
 //----------------------------------------------------------------------------------------------------
 
 #{headings()}
-  @extend .etched
   font-weight: 400
   margin: 0
 
@@ -38,15 +38,25 @@ h1
   +adjust-font-size-to(36px)
 #{headings(2,6)}
   +adjust-font-size-to(20px)
+  font-family: $face-subhead
+  text-transform: uppercase
   a
     +link-colors(#333, #999)
+    font-weight: 700
     text-decoration: none
+
+.posts h2
+  font-family: inherit
+  text-transform: none
+  a.external:after
+    color: #999
+    content: '\0219D'
 
 // `Links
 //----------------------------------------------------------------------------------------------------
 
 a
-  +link-colors($color-links)
+  +link-colors($color-text, darken($color-text, 40%))
   font-weight: 400
   text-decoration: none
   &:focus
@@ -54,7 +64,12 @@ a
   .archives &
     font-weight: 300
   p &
-    background-color: #f0f0f0
+    color: #333
+    +single-transition(background-color .2s ease-out)
+    background: #ddd
+    padding: 0 2px
+    &:hover
+      background: #f0f0f0
 
 
 .permalink
@@ -131,21 +146,6 @@ blockquote
 // `Masthead
 //----------------------------------------------------------------------------------------------------
 
-.site-nav
-  font:
-    family: $face-ubuntu
-    size: 11px
-    weight: 600
-  letter-spacing: 3px
-  line-height: 14px
-  margin: 0
-  text-align: center
-  text-transform: uppercase
-  a
-    display: block
-    color: #000
-    font-weight: 600
-    text-decoration: none
 
 // `Article
 //----------------------------------------------------------------------------------------------------
@@ -157,3 +157,25 @@ article footer
 //----------------------------------------------------------------------------------------------------
 .im
   display: block
+
+// `Footer
+//----------------------------------------------------------------------------------------------------
+.site-footer
+  font-size: 13px
+  font-family: $face-subhead
+  .feeds
+    +horizontal-list
+
+// `Author block
+//----------------------------------------------------------------------------------------------------
+.about-the-author
+  a
+    background: none
+    font-weight: bold
+    &:hover
+      background: none
+  img
+    padding: 3px
+    border: solid 1px #ddd
+  p
+    margin-top: 0
