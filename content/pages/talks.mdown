@@ -1,4 +1,4 @@
-template: talks
+template: templates/talks
 
 # Talks
 

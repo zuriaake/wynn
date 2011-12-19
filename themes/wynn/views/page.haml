@@ -1,30 +1,4 @@
-- @page_role = 'article' if @page.date
-.secondary
-  &nbsp;
-.primary
+~ @page.to_html(self)
 
-  - if @page.date
-    %article.post{:class => css_classes_for(@page)}
-      - haml_tag (defined?(heading) ? heading : :h1) do
-        %a{ :href =>  url_for(@page) }<
-          = @page.heading
-        - if @page.is_linked?
-          %a.permalink{:href => url_for(@page)}
-            &rarr;
-      ~ @page.body
-
-
-
-
-  - else
-    ~ @page.to_html(self)
-
-  - unless @page.articles.empty?
-    %section.page-articles
-      = haml :summaries, :layout => false, :locals => { :pages => @page.articles, :heading => :h3 }
-
-
-  = haml :summaries, :layout => false, :locals => { :pages => @page.pages, :heading => :h3 }
-%aside.w25
-  = haml :ad, :layout => false
-
+- if @page.date and !@page.is_linked?
+  = haml :"shared/author", :layout => false

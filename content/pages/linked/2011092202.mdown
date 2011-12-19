@@ -3,7 +3,7 @@ categories: linked
 url: http://blogs.wsj.com/deals/2011/09/21/hewlett-packard-worst-board-ever/?mod=e2tw
 slug: HP-board-worst-ever
 
-# Worst board evar?
+# Worst board evar
 
 A rundown of the last several CEOs of Hewlett-Packard:
 

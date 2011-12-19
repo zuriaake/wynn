@@ -1,5 +1,6 @@
 source :rubygems
 
+gem "sinatra-content-for"
 gem "heroku"
 gem "nesta", "~> 0.9.11"
 gem "redcarpet"
@@ -12,11 +13,6 @@ gem "nesta-plugin-sluggable" #, :git => "git://github.com/pengwynn/nesta-plugin-
 gem "nesta-plugin-linkable"  #, :git => "/Users/wynn/Projects/nesta-plugin-linkable"
 
 gem 'rack-rewrite'
-
-# full-text search
-gem 'hashie', '~> 1.0.0'
-gem 'sanitize'
-gem 'indextank'
 
 group :development do
   gem "racksh"

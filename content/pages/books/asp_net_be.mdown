@@ -1,4 +1,3 @@
-template: book
 thumb_url: /wynn/images/books/asp_net_by_example.gif
 url: http://www.amazon.com/ASP-NET-Example-Steven-Smith/dp/0789725622
 isbn: 0789725622

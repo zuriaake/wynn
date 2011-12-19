@@ -1,0 +1,40 @@
+// `Images
+//----------------------------------------------------------------------------------------------------
+p img
+  +box-shadow(2px 2px 2px 2px rgba(#000, .2))
+
+// `Image list
+//----------------------------------------------------------------------------------------------------
+
+.photoset
+  list-style: none
+  a
+    display: block
+    line-height: 0
+    text-align: center
+  img
+    max-width: 80%
+
+img.thumb
+  +box-shadow(1px 1px 4px rgba(#000, .2))
+
+// `List group
+//----------------------------------------------------------------------------------------------------
+
+.list-group
+  +leader
+
+
+// `Block lists
+//----------------------------------------------------------------------------------------------------
+.block-list-item
+  +trailer
+  +padding-trailer
+  border-bottom: solid 1px #ddd
+  &:last-child
+    border-bottom: none
+
+.break-left
+  margin-left: $groove-padding !important
+.break-right
+  margin-right: $groove-padding !important

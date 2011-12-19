@@ -6,24 +6,27 @@
       %meta{ "name" => "description", "content" => @description }
     - if @keywords
       %meta{ "name" => "keywords", "content" => @keywords }
+    %meta(name="viewport" content="width=device-width, initial-scale=1.0")
     %link{ :href => "/wynn/favicon.ico", :rel => "shortcut icon" }
     %title= @title
-    -# %link(href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet')
     %link(href="/wynn/css/master.css" rel="stylesheet")
     %link(href="http://feeds.feedburner.com/wynn" rel="alternate" type="application/atom+xml")
+    %link(href='http://fonts.googleapis.com/css?family=Enriqueta:400,700' rel='stylesheet' type='text/css')
+    -# %link(href='http://fonts.googleapis.com/css?family=Merriweather:400,300,700,900' rel='stylesheet' type='text/css')
+    %link(href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css')
 
   %body
     #wrapper
-      = haml :top_bar, :layout => false
-      .container
-        = haml :header, :layout => false
+      = haml :"shared/masthead", :layout => false
+      #content.container.centered
+        .row
+          .three.columns= haml :"shared/ad", :layout => false
+          %section.nine.columns
+            = yield
 
-        %section(role="main")
-          = yield
-          %br.clear
+    .show-on-phones= haml :"shared/nav", :layout => false
+    = haml :"shared/footer", :layout => false
 
-    = haml :footer, :layout => false
+    = haml :"shared/scripts", :layout => false
+    -# = haml :"shared/typekit", :layout => false
 
-    = haml :scripts, :layout => false
-    = haml :typekit, :layout => false
-    = haml :analytics, :layout => false

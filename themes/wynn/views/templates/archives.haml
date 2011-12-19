@@ -1,0 +1,16 @@
+- @title = "Archives - #{@heading}"
+
+~ @page.to_html(self)
+
+- Nesta::Page.find_articles.group_by {|a| a.date.year}.each do |year, articles|
+  .archive-year.list-group
+    %h2.year
+      = year
+    %ul.archives
+      - articles.each do |article|
+        %li
+          %a{:href => url_for(article)}>= article.heading
+          - if article.is_linked?
+            %a.permalink{:href => article.abspath}
+              -# ⦿
+              &bigstar;

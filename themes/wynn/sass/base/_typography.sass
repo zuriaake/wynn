@@ -1,0 +1,181 @@
+// `Base styles
+//----------------------------------------------------------------------------------------------------
+
++establish-baseline
+
+body
+  color: $color-text
+  color: rgba(0,0,0,.8)
+  font-family: $face-serif
+  font-weight: 100
+
+p, ul, ol, dl, figure, blockquote
+  margin: 1.5em 0
+  line-height: 1.5em
+
+ul, ol
+  padding: 0
+
+ul
+  list-style: square
+
+em
+  font-style: normal
+  font-weight: 400
+
+strong
+  font-weight: 700
+
+
+// `Headings
+//----------------------------------------------------------------------------------------------------
+
+#{headings()}
+  font-weight: 400
+  margin: 0
+
+h1
+  +adjust-font-size-to(36px)
+#{headings(2,6)}
+  +adjust-font-size-to(20px)
+  font-family: $face-subhead
+  text-transform: uppercase
+  a
+    +link-colors(#333, #999)
+    font-weight: 700
+    text-decoration: none
+
+.posts h2
+  font-family: inherit
+  text-transform: none
+  a.external:after
+    color: #999
+    content: '\0219D'
+
+// `Links
+//----------------------------------------------------------------------------------------------------
+
+a
+  +link-colors($color-text, darken($color-text, 40%))
+  font-weight: 400
+  text-decoration: none
+  &:focus
+    outline: none
+  .archives &
+    font-weight: 300
+  p &
+    color: #333
+    +single-transition(background-color .2s ease-out)
+    background: #ddd
+    padding: 0 2px
+    &:hover
+      background: #f0f0f0
+
+
+.permalink
+  +link-colors(#aaa, #333)
+  font-family: sans-serif
+  font-weight: normal
+  text-decoration: none
+
+button::-moz-focus-inner
+  border: 0
+
+// `Paragraphs
+//----------------------------------------------------------------------------------------------------
+
+.post.journal h1 + p
+  +adjust-font-size-to(18px)
+  font-style: italic
+
+p
+  .word1,
+  .word2,
+  .word3
+    +adjust-font-size-to(14px)
+    letter-spacing: .3em
+    text-transform: uppercase
+    position: relative
+  .word1, .word2
+    margin-right: .5em
+  .word1
+    .char1
+      float: left
+      font-size: 4em
+      line-height: 48px
+      // margin-top: .1em
+
+// `Other
+//----------------------------------------------------------------------------------------------------
+
+span.amp
+  font:
+    family: Baskerville,GoudyBookletter1911,'Goudy Old Style',Palatino,'Book Antiqua',serif
+    style: italic
+
+.etched
+  text-shadow: -1px 1px 0 rgba(#fff, .8)
+
+
+// `Pullquote
+//----------------------------------------------------------------------------------------------------
+
+.pullquote
+  +adjust-font-size-to(20px)
+  color: #aaa
+  display: block
+  float: right
+  margin: 1em -4em 1em 1em
+  width: 40%
+  &.left
+    float: left
+    margin: 1em 1em 1em -4em
+    text-align: right
+
+// `Blockquote
+//----------------------------------------------------------------------------------------------------
+blockquote
+  border-left: solid 2px #aaa
+  border-left: solid 2px rgba(#000, .2)
+  color: #888
+  color: rgba(#000, .6)
+  padding: 0 20px
+
+
+
+// `Masthead
+//----------------------------------------------------------------------------------------------------
+
+
+// `Article
+//----------------------------------------------------------------------------------------------------
+article footer
+  +adjust-font-size-to(14px)
+
+
+// `About
+//----------------------------------------------------------------------------------------------------
+.im
+  display: block
+
+// `Footer
+//----------------------------------------------------------------------------------------------------
+.site-footer
+  font-size: 13px
+  font-family: $face-subhead
+  .feeds
+    +horizontal-list
+
+// `Author block
+//----------------------------------------------------------------------------------------------------
+.about-the-author
+  a
+    background: none
+    font-weight: bold
+    &:hover
+      background: none
+  img
+    padding: 3px
+    border: solid 1px #ddd
+  p
+    margin-top: 0

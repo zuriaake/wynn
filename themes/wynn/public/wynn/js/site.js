@@ -22,4 +22,7 @@ $(document).ready(function() {
     $(this).children('img').attr('src', '/wynn/images/logo.png');
   });
 
+  // hide address bar
+  setTimeout(function() { window.scrollTo(0, 1) }, 100);
+
 });
