@@ -1918,8 +1918,8 @@ article footer {
   white-space: nowrap;
   display: inline;
   float: left;
-  padding-left: 4px;
-  padding-right: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .site-footer .feeds li:first-child, .site-footer .feeds li.first {
   padding-left: 0;
