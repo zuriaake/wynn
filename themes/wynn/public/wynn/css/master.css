@@ -2022,7 +2022,6 @@ article footer {
   font-size: 12px;
   font-family: "Lucida Grande", Helvetica, sans-serif;
   line-height: 15px;
-  margin-top: 196px;
 }
 #ad a {
   color: #888888;
@@ -2244,9 +2243,9 @@ li.L1, li.L3, li.L5, li.L7, li.L9 {
 }
 .hide-on-phones dl.tabs {
   border: none;
+  float: right;
 }
 .hide-on-phones dl.tabs dd {
-  float: right;
   margin: 0 20px;
 }
 .hide-on-phones dl.tabs dd:first-child {
