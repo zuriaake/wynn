@@ -41,7 +41,9 @@ h1
   font-family: $face-subhead
   text-transform: uppercase
   a
-    +single-transition(background-color .1s ease-in-out)
+    +transition-property(background-color)
+    +transition-duration(.5s)
+    +transition-timing-function(ease-in-out)
     +link-colors(#333, #111)
     &:hover
       background: #eee
@@ -67,8 +69,10 @@ a
   .archives &
     font-weight: 300
   p &
+    +transition-property(background-color)
+    +transition-duration(.5s)
+    +transition-timing-function(ease-in-out)
     color: #333
-    +single-transition(background-color .2s ease-out)
     background: #eee
     padding: 0 2px
     &:hover

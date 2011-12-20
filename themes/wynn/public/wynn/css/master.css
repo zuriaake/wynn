@@ -1762,14 +1762,18 @@ h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 h2 a, h3 a, h4 a, h5 a, h6 a {
-  -moz-transition-property: background-color 0.1s ease-in-out;
-  -webkit-transition-property: background-color 0.1s ease-in-out;
-  -o-transition-property: background-color 0.1s ease-in-out;
-  transition-property: background-color 0.1s ease-in-out;
-  -moz-transition-duration: 1s;
-  -webkit-transition-duration: 1s;
-  -o-transition-duration: 1s;
-  transition-duration: 1s;
+  -moz-transition-property: background-color;
+  -webkit-transition-property: background-color;
+  -o-transition-property: background-color;
+  transition-property: background-color;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
   color: #333333;
   font-weight: 700;
   text-decoration: none;
@@ -1805,15 +1809,19 @@ a:focus {
   font-weight: 300;
 }
 p a {
+  -moz-transition-property: background-color;
+  -webkit-transition-property: background-color;
+  -o-transition-property: background-color;
+  transition-property: background-color;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
   color: #333333;
-  -moz-transition-property: background-color 0.2s ease-out;
-  -webkit-transition-property: background-color 0.2s ease-out;
-  -o-transition-property: background-color 0.2s ease-out;
-  transition-property: background-color 0.2s ease-out;
-  -moz-transition-duration: 1s;
-  -webkit-transition-duration: 1s;
-  -o-transition-duration: 1s;
-  transition-duration: 1s;
   background: #eeeeee;
   padding: 0 2px;
 }
