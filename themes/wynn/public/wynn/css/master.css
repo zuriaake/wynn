@@ -2066,6 +2066,10 @@ article footer {
   border-top: solid 1px #dddddd;
 }
 
+.addthis_toolbox {
+  margin-top: 1em;
+}
+
 @media only screen and (max-width: 767px) {
   .branding {
     text-align: center;

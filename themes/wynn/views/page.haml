@@ -2,3 +2,7 @@
 
 - if @page.date and !@page.is_linked?
   = haml :"shared/author", :layout => false
+
+
+- if @page.date
+  = haml :"shared/sharing", :layout => false
