@@ -1943,7 +1943,9 @@ article footer {
   border: solid 1px #dddddd;
 }
 .about-the-author p {
+  font-size: 14px;
   margin-top: 0;
+  padding: 0;
 }
 
 @media only screen and (max-width: 767px) {
@@ -2007,6 +2009,10 @@ article footer {
   .archives .permalink {
     display: none;
   }
+
+  .about-the-author p {
+    font-size: 12px;
+  }
 }
 #masthead {
   padding: 20px 0;
@@ -2019,15 +2025,26 @@ article footer {
 }
 
 #ad {
-  font-size: 12px;
+  font-size: 10px;
   font-family: "Lucida Grande", Helvetica, sans-serif;
   line-height: 15px;
+  margin-top: 75px;
 }
 #ad a {
-  color: #888888;
+  color: #555555;
 }
 #ad a:hover {
   color: #333333;
+}
+#ad .save {
+  display: block;
+  margin-top: 1em;
+}
+#ad img {
+  -moz-box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .site-footer {
