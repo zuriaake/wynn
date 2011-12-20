@@ -1,0 +1,23 @@
+date: 2011-12-20 16:46:26 -0600
+categories: linked
+url: http://alexyoung.org/2011/12/19/build-an-ide-with-tmux-and-vim
+
+# Vim + tmux = custom IDE
+
+[Alex Young](http://alexyoung.org) on [stitching together your own development
+environment](http://alexyoung.org/2011/12/19/build-an-ide-with-tmux-and-vim/) with
+tmux, vim, and other text-mode apps:
+
+> The difference between this approach and a traditional IDE is this
+> interface adapts around my current task, and is only limited by the
+> thousands of commands and scripting languages that I have installed.
+
+As a recent command-line Vim convert, I agree. I use
+[tmuxinator](https://github.com/aziz/tmuxinator) to automate the
+process. I have tmux environments for development projects, blogging,
+and even GTD with
+[taskpaper.vim](https://github.com/davidoc/taskpaper.vim).
+
+
+I'm also anxious to try the upcoming [iTerm + tmux
+integration.](http://code.google.com/p/iterm2/downloads/detail?name=iTerm2-1_0_0_20111219.zip)
