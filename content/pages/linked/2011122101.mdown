@@ -1,0 +1,11 @@
+date: 2011-12-21 16:04:30 -0600
+categories: linked
+url: http://veerle.duoh.com/design/article/illustrator_pen_tool_exercises
+
+# Learn the Illustrator pen tool step-by-step
+
+[Veerle](http://twitter.com/vpieters) has created a [great
+step-by-step
+tutorial](http://veerle.duoh.com/design/article/illustrator_pen_tool_exercises)
+for mastering the pen tool in Illustrator in both CS5 and CS4/3 flavors.
+
