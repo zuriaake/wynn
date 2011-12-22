@@ -1721,6 +1721,7 @@ body {
   color: rgba(0, 0, 0, 0.8);
   font-family: Enriqueta, Merriweather, Cambria, "Droid Serif", "Palatino", "Palatino Linotype", Georgia, serif;
   font-weight: 100;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 p, ul, ol, dl, figure, blockquote {
