@@ -1,0 +1,25 @@
+date: 2011-12-23 10:15:40 -0600
+categories: linked
+url: http://www.designstaff.org/articles/design-details-2011-11-29.html
+
+# Design icebergs
+
+[Braden Kowitz](https://twitter.com/#!/kowitz) in a [thoughtful piece on
+design details on Design Staff:](http://www.designstaff.org/articles/design-details-2011-11-29.html)
+
+> Designing a custom button in Photoshop is easy — that’s the part of
+> the iceberg we can all see. Below the surface it takes a lot of effort
+> to get the details right: building pressed and inactive states,
+> preventing text highlighting on double-click, adding right-to-left
+> support, testing accessibility, and so on.
+
+> I often hit this iceberg when I stray from native controls. For example,
+> Ajax interactions require more polish than basic web pages. Custom
+> mobile menus require more polish than the built-in version. If the team
+> doesn’t have the time to polish custom UI, it’s often better to stick to
+> the boring native controls that work.
+
+Custom controls can really add to the experience, but they're not cheap.
+Buttons are one thing. Dropdown menus are another. If you have to do it,
+libraries like Nathan's [Formalize](http://formalize.me/) are a great
+head start.
