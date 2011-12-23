@@ -31,21 +31,6 @@ class Post < Thor
     system "$EDITOR #{filename}.mdown"
   end
 
-  # desc "link URL", "create a link post from a URL"
-  # def link(url)
-  #   metadata = {
-  #     :date => Time.now.to_s,
-  #     :categories => "linked",
-  #     :url => url
-  #   }
-
-  #   filename = latest_filename
-  #   save_file(filename, metadata)
-
-  #   system "$EDITOR #{filename}.mdown"
-
-  # end
-
   private
 
 
