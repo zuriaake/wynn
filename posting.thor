@@ -1,25 +1,53 @@
+require 'active_support/inflector'
+
 class Post < Thor
 
-  desc "link URL", "create a link post from a URL"
-  def link(url)
+  default_task :create
+
+  desc "create", "create a new post"
+  method_option :title, :aliases => "-t", :desc => "The title for the post"
+  method_option :url, :aliases => "-u", :desc => "The URL for the link post"
+  def create
+    categories = options.categories
+    categories ||= options.url? ? 'linked' : 'journal'
+
     metadata = {
       :date => Time.now.to_s,
-      :categories => "linked",
-      :url => url
+      :categories => categories
     }
+    metadata[:url] = options.url if options.url?
 
-    date_string = Date.today.strftime('%Y%m%d')
-    path = "content/pages/linked/#{date_string}"
-    daily_count = Dir.glob("#{path}*").size + 1
+    if options.url? or options.title.nil?
+      date_string = Date.today.strftime('%Y%m%d')
+      path = "content/pages/linked/#{date_string}"
+      daily_count = Dir.glob("#{path}*").size + 1
+      filename = path + daily_count.to_s.rjust(2, "0")
+    else
+      path = "content/pages/journal"
+      filename = File.join(path, options.title.parameterize)
+    end
 
-    filename = path + daily_count.to_s.rjust(2, "0")
-    save_file(filename, metadata)
-
+    save_file(filename, metadata, options.title)
     system "$EDITOR #{filename}.mdown"
-
   end
 
+  # desc "link URL", "create a link post from a URL"
+  # def link(url)
+  #   metadata = {
+  #     :date => Time.now.to_s,
+  #     :categories => "linked",
+  #     :url => url
+  #   }
+
+  #   filename = latest_filename
+  #   save_file(filename, metadata)
+
+  #   system "$EDITOR #{filename}.mdown"
+
+  # end
+
   private
+
 
   def save_file(filename, metadata, heading=nil, body=nil)
     # Write out the data and content to file
