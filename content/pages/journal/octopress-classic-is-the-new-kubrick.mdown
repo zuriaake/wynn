@@ -1,0 +1,79 @@
+date: 2011-12-24 09:43:56 -0600
+categories: journal
+summary: Covering the bleeding edge lands me on many a geek blog. I've noticed a trend in the last year or so - an increasing number of stock Octopress blogs.
+flags: draft
+
+# Octopress Classic is the new Kubrick
+
+[Covering the bleeding edge](http://thechangelog.com/) lands me on many
+a geek blog. I've noticed a trend in the last year or so - an increasing
+number of stock Octopress blogs.
+
+![Octoclones](http://cl.ly/1b2W3N36463L0D3H2R3G/octopress-clones.png)
+
+[Octopress](http://octopress.org/) from [Brandon
+Mathis](http://twitter.com/imathis) is a geek's dream blogging system.
+Building on [Jekyll](https://github.com/mojombo/jekyll), Brandon bundles
+a responsive layout, syntax highlighting, Disqus comments, and a long
+list of other plugins in a delicious static-based (yet Heroku friendly)
+package. It's no wonder that Octopress has become popular.
+
+I can't help but draw a parallel with the rise of WordPress in the mid 2000s. As its
+ease of use drew in new bloggers, it quickly became easy to spot a
+WordPress blog. Link rolls, archive calendar controls, default
+sidebar items, and popular plugins could be found on almost any new blog you read (including
+mine at the time). Most even didn't even bother to customize
+[Kubrick](http://wordpress.org/extend/themes/default), the default theme
+created by [Michael
+Heilemann](http://binarybonsai.com/wordpress/kubrick/). The web soon
+exploded with websites with blue block headers.
+
+I mean the title of this post as a compliment to Brandon and the success
+of Octopress. I just wince when I see the geek web turning slate gray.
+
+## Why customize your blog?
+
+Content is your voice, but design is your on-stage presentation. Make no
+mistake, content is still king, but if your blog looks like all the
+other blogs in your niche, you've got to work harder to get your voice
+heard. If you haven't customized your blog, when a reader is dropped
+onto your blog from Twitter or Reddit or wherever, you're missing an
+opportunity to identify yourself with the great post that brought them
+there. So the real question is _why wouldn't you customize the look of
+your blog?_
+
+If you're rocking Octopress, Brandon has step-by-step guides for
+customizing both [templates](http://octopress.org/docs/theme/template/)
+and [the Sass-based styles](http://octopress.org/docs/theme/styles/).
+With even small color tweaks, you can add your own personal attitude, as
+[Karthik](http://hkarthik.me/) and
+[Scott](http://www.scottw.com) have done. Add a custom
+header and you can take it even farther, as the
+[Octopress](http://octopress.org) web site does.
+
+While you can take Octopress customization a long way, I use
+[NestaCMS](http://nestacms.com) on this site because I find it less
+opinionated than Jekyll. Nesta also gives me the option to have dynamic content,
+with the same git-based publishing workflow Jekyll offers.
+
+Just this week, [Steve
+Klabnik](http://www.steveklabnik.com/), who has had one of the more
+popular Octopress sites, [said farewell](https://twitter.com/steveklabnik/status/150252892668956673).
+
+<blockquote class="twitter-tweet"><p>So I ditched Octopress today.
+What do you think? <a href="http://t.co/v7GX0lZR"
+title="http://blog.steveklabnik.com/">blog.steveklabnik.com</a></p>&mdash;
+Steve Klabnik (@steveklabnik) <a
+href="https://twitter.com/steveklabnik/status/150252892668956673"
+data-datetime="2011-12-23T16:34:15+00:00">December 23,
+2011</a></blockquote>
+
+## Personal sandbox
+
+For me, my blog is more than an outlet for sharing thoughts on design
+and development. It's my own personal laboratory to play around with
+front end tools, CSS techniques, and just have fun &mdash; just for me.
+
+Ultimately your blog should be just for you, too, whether or not you
+tinker under the hood. It can't be just for you if it looks like
+everyone else.

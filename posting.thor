@@ -7,6 +7,7 @@ class Post < Thor
   desc "create", "create a new post"
   method_option :title, :aliases => "-t", :desc => "The title for the post"
   method_option :url, :aliases => "-u", :desc => "The URL for the link post"
+  method_option :draft, :aliaes => "-d", :desc => "Flag post as draft", :type => :boolean
   def create
     categories = options.categories
     categories ||= options.url? ? 'linked' : 'journal'
@@ -16,6 +17,7 @@ class Post < Thor
       :categories => categories
     }
     metadata[:url] = options.url if options.url?
+    metadata[:flags] = 'draft' if options.draft?
 
     if options.url? or options.title.nil?
       date_string = Date.today.strftime('%Y%m%d')

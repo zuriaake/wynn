@@ -2132,6 +2132,11 @@ img.thumb {
   margin-right: 20px !important;
 }
 
+.twp-container {
+  margin-bottom: 3em !important;
+  overflow: auto;
+}
+
 pre {
   -moz-transition-property: width;
   -webkit-transition-property: width;
