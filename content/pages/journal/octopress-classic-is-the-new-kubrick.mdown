@@ -1,7 +1,6 @@
 date: 2011-12-24 09:43:56 -0600
 categories: journal
 summary: Covering the bleeding edge lands me on many a geek blog. I've noticed a trend in the last year or so - an increasing number of stock Octopress blogs.
-flags: draft
 
 # Octopress Classic is the new Kubrick
 
