@@ -1,0 +1,27 @@
+date: 2011-12-23 20:55:57 -0600
+categories: linked
+url: http://24ways.org/2011/crafting-the-front-end
+flags: draft
+
+# Understand, then automate
+
+[Ben Bodien](http://24ways.org/2011/crafting-the-front-end):
+
+> However, it is still vitally important that you understand how your
+> tools work. This is particularly critical when it comes to things like
+> preprocessors, libraries and frameworks which aim to save you time by
+> automating common processes and functions. For the most part, anything
+> that saves you time is a Good Thing™ but it cannot be stressed enough
+> that using tools like these in earnest should be avoided until you
+> understand exactly what they are doing for you (and, to an extent, how
+> they are doing it).
+
+I would add Rails view helpers to this list.
+
+Ultimately, you are responsible for anything that writes code on your behalf.
+The great thing is, though, on an open source stack, you can dig in and
+not only figure out how a tool works, but how _well_ it works.
+
+Inexperience can play out in two extremes: cobbling together other
+people's code, and rejecting anyone else's code with a _not invented here_ mentality.
+
