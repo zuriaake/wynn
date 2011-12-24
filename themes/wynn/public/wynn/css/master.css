@@ -1833,6 +1833,7 @@ p a:hover {
 .permalink {
   color: #aaaaaa;
   font-family: sans-serif;
+  font-size: 20px;
   font-weight: normal;
   text-decoration: none;
 }
