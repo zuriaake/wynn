@@ -1957,6 +1957,9 @@ article footer {
   margin-top: 0;
   padding: 0;
 }
+.about-the-author p a {
+  padding: 0;
+}
 
 @media only screen and (max-width: 767px) {
   #masthead {
@@ -2083,6 +2086,12 @@ article footer {
 
   .backdrop img {
     margin-top: -30px;
+  }
+
+  .addthis_toolbox a {
+    display: block;
+    float: none !important;
+    margin-bottom: 1em;
   }
 }
 p img {
