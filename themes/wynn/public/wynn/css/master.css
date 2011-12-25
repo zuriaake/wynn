@@ -1786,10 +1786,12 @@ h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   background: #eeeeee;
 }
 
+h1,
 .posts h2 {
   font-family: inherit;
   text-transform: none;
 }
+h1 a.external:after,
 .posts h2 a.external:after {
   color: #999999;
   content: "\0219D";

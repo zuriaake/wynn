@@ -1,8 +1,17 @@
-~ @page.to_html(self)
-
-- if @page.date and !@page.is_linked?
-  = haml :"shared/author", :layout => false
-
-
 - if @page.date
+
+  - haml_tag (defined?(heading) ? heading : :h1) do
+    %a{ :href =>  url_for(@page) }
+      = @page.heading
+
+  ~ @page.body
+
+  - unless @page.is_linked?
+    = haml :"shared/author", :layout => false
+
   = haml :"shared/sharing", :layout => false
+
+- else
+  ~ @page.to_html(self)
+
+
