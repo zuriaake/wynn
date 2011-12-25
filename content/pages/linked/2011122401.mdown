@@ -14,14 +14,12 @@ Manian](http://nimbupani.com/twittering-with-d3.html) using
 > earliest tweet. Each bar represents a tweet and grows darker across
 > the timeline based on how many retweets occur.
 
-Gorgeous. The [source is on GitHub](https://github.com/nimbupani/viz).
-
-Oh, speaking of [making Octopress look
+Gorgeous. The [source is on GitHub](https://github.com/nimbupani/viz). Oh, speaking of [making Octopress look
 nice](http://wynnnetherland.com/journal/octopress-classic-is-the-new-kubrick),
 Divya's theme is superb.
 
 <a
-href="http://cl.ly/3i2Y3z3u2R0k2X0y3R3k/nimbupanicomtwitteringwithd3html-full.png"><img
+href="http://nimbupani.com/"><img
 src="http://cl.ly/3i2Y3z3u2R0k2X0y3R3k/nimbupanicomtwitteringwithd3html-full.png"
 class="max-400"></a>
 
