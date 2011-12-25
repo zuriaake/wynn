@@ -21,5 +21,5 @@ Divya's theme is superb.
 <a
 href="http://nimbupani.com/"><img
 src="http://cl.ly/3i2Y3z3u2R0k2X0y3R3k/nimbupanicomtwitteringwithd3html-full.png"
-class="max-400"></a>
+class="max-400" style="max-height: 400px"></a>
 
