@@ -2075,6 +2075,10 @@ article footer {
   margin-top: 1em;
 }
 
+.max-400 {
+  max-height: 400px;
+}
+
 @media only screen and (max-width: 767px) {
   .branding {
     text-align: center;
