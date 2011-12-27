@@ -1,0 +1,23 @@
+date: 2011-12-27 08:41:40 -0600
+categories: linked
+url: http://davegamache.com/2011/11/craftsmanship/
+
+# Dave Gamache on craftsmanship
+
+> Craftsmanship on the web presents an interesting challenge. How we
+> build for the web is changing every day, so the practice of perfecting
+> it is never ending — but that’s what I love about it. Designing for
+> the web requires a passion for learning and the measure of quality is
+> in constant flux.
+
+If it takes [10,000
+hours](http://www.amazon.com/Outliers-Story-Success-Malcolm-Gladwell/dp/0316017922)
+to master a craft, I wonder what that is in Web years. I've been
+building the web for fifteen years now, and I've seen many friends move
+into pure management roles or leave the industry altogether. Many had
+the technical chops but just weren't willing to dig in and keep their skills
+current. To do this job well, you have to love to learn, and you have to
+love change.
+
+
+
