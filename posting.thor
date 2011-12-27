@@ -19,14 +19,14 @@ class Post < Thor
     metadata[:url] = options.url if options.url?
     metadata[:flags] = 'draft' if options.draft?
 
-    if options.url? or options.title.nil?
-      date_string = Date.today.strftime('%Y%m%d')
-      path = "content/pages/linked/#{date_string}"
-      daily_count = Dir.glob("#{path}*").size + 1
-      filename = path + daily_count.to_s.rjust(2, "0")
+    if options.url?
+      filename = path_with_datestamp("linked")
     else
-      path = "content/pages/journal"
-      filename = File.join(path, options.title.parameterize)
+      if options.title.nil?
+        filename = path_with_datestamp("journal")
+      else
+        filename = File.join("content", "pages", "journal", options.title.parameterize)
+      end
     end
 
     save_file(filename, metadata, options.title)
@@ -34,6 +34,14 @@ class Post < Thor
   end
 
   private
+
+  def path_with_datestamp(path)
+    date_string = Date.today.strftime('%Y%m%d')
+    path = File.join("content", "pages", path, date_string)
+    daily_count = Dir.glob("#{path}*").size + 1
+
+    filename = path + daily_count.to_s.rjust(2, "0")
+  end
 
 
   def save_file(filename, metadata, heading=nil, body=nil)
