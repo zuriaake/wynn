@@ -17,7 +17,7 @@ class Post < Thor
       :categories => categories
     }
     metadata[:url] = options.url if options.url?
-    metadata[:flags] = 'draft' if options.draft?
+    metadata[:flags] = 'draft'
 
     if options.url?
       filename = path_with_datestamp("linked")
