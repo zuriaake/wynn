@@ -2165,6 +2165,7 @@ pre {
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
+  margin: 1.5em 0;
   overflow: auto;
   padding: 1em;
   width: 100%;
