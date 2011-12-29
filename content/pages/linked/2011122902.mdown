@@ -1,0 +1,15 @@
+date: 2011-12-29 14:28:24 -0600
+categories: linked
+url: http://trac.webkit.org/changeset/103803
+
+# WebKit gets selector profiler
+
+There has been a [lot of talk
+lately](http://wynnnetherland.com/linked/2011092201/css-selector-performance-breakdown)
+about CSS selector performance. Thanks to [this patch](http://trac.webkit.org/changeset/103803), WebKit
+nightlies now have a profiler to display performance of your CSS
+selectors.
+
+![Selector
+profiler](http://cl.ly/44421X2s1E2b3t3R331G/SelectorProfile.png)
+
