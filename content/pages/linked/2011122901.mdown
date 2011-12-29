@@ -2,9 +2,10 @@ date: 2011-12-29 12:28:52 -0600
 categories: linked
 url: https://gist.github.com/1522576
 
-# You can find reasons not to do just about anything, including web apps
+# “Why I Don't Write Web Apps”
 
 [Less](http://lesscss.org/) creator [Alexis
-Sellier](http://twitter.com/cloudhead) picks a fight with almost every
-major programming language. Not sure that Ruby and Python are a single
+Sellier](http://twitter.com/cloudhead) picks a fight with [almost every
+major programming language.](https://gist.github.com/1522576
+) Not sure that Ruby and Python are a single
 category.
