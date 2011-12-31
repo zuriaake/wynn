@@ -1719,7 +1719,7 @@ html > body {
 body {
   color: #333333;
   color: rgba(0, 0, 0, 0.8);
-  font-family: Enriqueta, Merriweather, Cambria, "Droid Serif", "Palatino", "Palatino Linotype", Georgia, serif;
+  font-family: Bitter, Enriqueta, Merriweather, Cambria, "Droid Serif", "Palatino", "Palatino Linotype", Georgia, serif;
   font-weight: 100;
   -webkit-font-smoothing: subpixel-antialiased;
 }
@@ -1738,7 +1738,7 @@ ul {
 }
 
 em {
-  font-style: normal;
+  font-style: italic;
   font-weight: 400;
 }
 
