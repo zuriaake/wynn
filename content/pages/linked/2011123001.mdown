@@ -1,0 +1,36 @@
+date: 2011-12-30 21:55:26 -0600
+categories: linked
+url: http://karmajunkie.com/blog/2011/12/30/evolving-rails/
+
+# It shouldn't be this easy
+
+[Keith Gaddis](https://twitter.com/#!/karmajunkie) in a [thoughtful
+take](http://karmajunkie.com/blog/2011/12/30/evolving-rails/) on
+Steve Klabnik's [provocative piece on Rails'
+shortcomings:](http://blog.steveklabnik.com/posts/2011-12-30-active-record-considered-harmful)
+
+> This is mostly my opinion, but a lot of us let our rejection of
+> enterprise culture lead to rejection of “enterprisey” design patterns,
+> many of which developed in order to solve problems we’re now
+> encountering in the Rails world as we tackle problem domains that are
+> not only non-trivial but exceedingly complex.
+
+Perhaps we in the Rails community have been too quick to throw out the
+baby with the bathwater, but it was a knee-jerk reaction to
+over-architecture, not a rejection of Enterprise culture. When I came to Rails, Microsoft was telling us we
+needed [six layers of
+indirection](http://en.wikipedia.org/wiki/Windows_DNA) between the UI
+and the database. ActiveRecord was a common sense approach that fit
+nicely for eighty percent of web apps. I think it still does. For the
+twenty percent of apps with more complexity, there's a host of Rails
+plugins and a vibrant Ruby ecosystem beyond Rails.
+
+> If there’s one overriding idea from the Rails world that I think
+> should be promoted far and wide, its this: _it shouldn’t be this hard._
+
+That's the drive behind all innovation, isn't it? I just hope in the
+quest to improve, we don't lose sight of the big picture. **There has
+never been a better time to be a developer, web or otherwise.** We indeed
+have [an embarassment of
+riches](http://avdi.org/devblog/2011/12/29/stop-reading-this-blog-and-learn-something/).
+Development will always be hard. But _it shouldn't be this easy._
