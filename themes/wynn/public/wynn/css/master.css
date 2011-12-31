@@ -1825,8 +1825,8 @@ p a {
   -o-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   color: #333333;
-  background: #eeeeee;
   padding: 0 2px;
+  text-decoration: underline;
 }
 p a:hover {
   background: #dddddd;
