@@ -10,7 +10,7 @@ DHH on
 > So stop whining, spend a day to get up to speed on remote working
 > practices, and hire outside of your commuter zone.
 
-At [PureCharity](http://purecharity.com), we all work remotely. Karthik
+At [Pure Charity](http://purecharity.com), we all work remotely. Karthik
 previously shared [his thoughts on building distributed
 teams](http://hkarthik.me/blog/2011/12/12/beating-the-talent-crunch-with-a-distributed-team/) which gives a bit of detail on _how_ we work.
 
