@@ -1,0 +1,17 @@
+date: 2012-01-04 09:37:37 -0600
+categories: linked
+url: http://lesseverything.com/blog/archives/2012/01/04/switching-from-godaddy-to-dnsimple/
+
+# Move off of GoDaddy with no downtime
+
+[Steven Bristol](http://twitter.com/stevenbristol) has a great checklist for moving your domains off of
+GoDaddy and keeping your site up at the same time:
+
+> *I don't lose my current DNS settings.* Although I want to use DNSimple
+> to manage my dns settings, some of my domains have a lot of
+> configuration and I never had the time to move everything at once. It
+> turns out I don't have to: DNSimple will use your existing DNS server
+> by default if you transfer. Now I can do all of this in two steps,
+> which makes it easier for me.
+
+Could have used this last week.
