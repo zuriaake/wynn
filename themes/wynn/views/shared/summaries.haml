@@ -8,7 +8,7 @@
             -# - if page.is_linked?
             -#   &nbsp;
             -#   %span.permalink.muted &rarrw;
-        - if page.is_linked?
+        - if page.is_linked? || page.metadata('summary').nil?
           ~ page.body
         - else
           %p~ page.metadata('summary')
