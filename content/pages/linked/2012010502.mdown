@@ -1,7 +1,6 @@
 date: 2012-01-05 13:54:56 -0600
 categories: linked
 url: http://thenounproject.com/
-flags: draft
 
 # The Noun Project - “sharing, celebrating and enhancing the world's visual language”
 
