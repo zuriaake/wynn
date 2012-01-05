@@ -11,5 +11,5 @@ reader:
 > Once you get this all set up, you can use `git init` in existing
 > repositories to copy these hooks in.
 
-I've long used `git init` to _initialize_ an folder as a git repo, but
+I've long used `git init` to _initialize_ a folder as a git repo, but
 it never occurred to me to _reinitialize_ an existing repo with it.
