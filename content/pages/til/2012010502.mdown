@@ -1,0 +1,15 @@
+date: 2012-01-05 12:59:06 -0600
+categories: til
+
+# TIL: Use git init to reapply templates to an existing repo
+
+While following Tim Pope's [guide to using git hooks to reindex ctags in
+Vim](http://tbaggery.com/2011/08/08/effortless-ctags-with-git.html),
+today I learned something that may or may not be obvious to you, the
+reader:
+
+> Once you get this all set up, you can use `git init` in existing
+> repositories to copy these hooks in.
+
+I've long used `git init` to _initialize_ an folder as a git repo, but
+it never occurred to me to _reinitialize_ an existing repo with it.

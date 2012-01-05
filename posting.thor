@@ -7,7 +7,8 @@ class Post < Thor
   desc "create", "create a new post"
   method_option :title, :aliases => "-t", :desc => "The title for the post"
   method_option :url, :aliases => "-u", :desc => "The URL for the link post"
-  method_option :draft, :aliaes => "-d", :desc => "Flag post as draft", :type => :boolean
+  method_option :draft, :aliases => "-d", :desc => "Flag post as draft", :type => :boolean
+  method_option :categories, :aliases => "-c", :desc => "Categories for post"
   def create
     categories = options.categories
     categories ||= options.url? ? 'linked' : 'journal'
