@@ -1,0 +1,9 @@
+date: 2012-01-06 08:36:57 -0600
+categories: linked
+url: https://github.com/scottjehl/iOS-Orientationchange-Fix
+
+# A fix for the iOS orientationchange zoom bug
+
+A brilliant approach by [Scott Jehl](http://twitter.com/scottjehl) and
+[Mat Marquis](http://twitter.com/wilto) that [solves](https://github.com/scottjehl/iOS-Orientationchange-Fix) one of the most annoying issues on the
+mobile web.
