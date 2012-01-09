@@ -1,0 +1,33 @@
+date: 2012-01-09 10:20:56 -0600
+categories: linked
+url: http://commandcenter.blogspot.com/2011/12/esmereldas-imagination.html
+flags: draft
+
+# Rob Pike on complaining
+
+[Go](http://golang.org/) creator [Rob
+Pike](https://twitter.com/#!/rob_pike) in reaction to [how Go and Dart
+have been
+received](https://developers.facebook.com/docs/reference/dialogs/feed/)
+ by the development community:
+
+> I resolve to recognize that a complaint reveals more about the
+> complainer than the complained-about. Authority is won not by rants
+> but by experience and insight, which require practice and imagination.
+> And maybe some programming.
+
+Thoughts on the languages aside, Rob touches on something I've been mulling over the
+last few weeks - the seemingly growing din of complaining online.
+
+Perhaps my aging ears are just more sensitive to the sound. Perhaps my
+childhood fear of turning into a grumpy old man is manifesting itself as
+an acute awareness of other grumpy people. Either way, in order to avoid
+just complaining about complaining, I've decided to take some positive steps.
+
+
+**Less garbage in.** I recently went on a Twitter and Facebook purge,
+removing folks from my streams that had a low value-to-snark ratio.
+
+**Less garbage out.** I'm trying to watch my tone in what I share
+online. It's not about squelching my thoughts, it's about adding value.
+
