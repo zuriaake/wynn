@@ -1,7 +1,6 @@
 date: 2012-01-09 10:20:56 -0600
 categories: linked
 url: http://commandcenter.blogspot.com/2011/12/esmereldas-imagination.html
-flags: draft
 
 # Rob Pike on complaining
 
