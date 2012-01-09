@@ -7,7 +7,7 @@ url: http://commandcenter.blogspot.com/2011/12/esmereldas-imagination.html
 [Go](http://golang.org/) creator [Rob
 Pike](https://twitter.com/#!/rob_pike) in reaction to [how Go and Dart
 have been
-received](https://developers.facebook.com/docs/reference/dialogs/feed/)
+received](http://commandcenter.blogspot.com/2011/12/esmereldas-imagination.html)
  by the development community:
 
 > I resolve to recognize that a complaint reveals more about the
