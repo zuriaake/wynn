@@ -6,10 +6,9 @@
 
   ~ @page.body
 
-  - unless @page.is_linked?
-    = haml :"shared/author", :layout => false
-
   = haml :"shared/sharing", :layout => false
+  = haml :"shared/author", :layout => false
+
 
 - else
   ~ @page.to_html(self)
