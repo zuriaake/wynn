@@ -1,0 +1,23 @@
+date: 2012-01-12 21:39:34 -0600
+categories: linked
+url: http://developer.android.com/design/index.html
+
+# New Android design site
+
+Part style guide, part platform UI overview, the new [Android Design
+site](http://developer.android.com/design/index.html) is fantastic. Ice
+Cream Sandwich is substantially more polished than previous versions of
+the platform. While I'm dubious of whether Android will ever approach
+the level of refinement of iOS, this new design guide is a clinic in
+[building a UI standards
+reference](http://www.alistapart.com/articles/writingainterfacestyleguide/),
+an indispensable asset for an application team.
+
+[![Android color
+palette](http://cl.ly/3l0J3G3q1U0W3T1V0J0c/Screen%20Shot%202012-01-12%20at%209.41.25%20PM.png)](http://developer.android.com/design/style/color.html)
+
+[/via Nathan Smith](http://sonspring.com)
+
+
+
+
