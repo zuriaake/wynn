@@ -1,6 +1,5 @@
 date: 2012-01-13 11:31:28 -0600
 categories: journal
-flags: draft
 
 # Oops, can't find a feed
 
