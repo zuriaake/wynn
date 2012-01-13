@@ -2328,6 +2328,13 @@ body {
   opacity: 0.25;
 }
 
+img.no-shadow {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+
 #masthead {
   margin-bottom: 2em;
 }
