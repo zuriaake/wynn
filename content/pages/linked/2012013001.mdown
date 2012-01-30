@@ -1,7 +1,6 @@
 date: 2012-01-30 11:36:03 -0600
 categories: linked
 url: http://jeffkreeftmeijer.com/2012/relative-line-numbers-in-vim-for-super-fast-movement
-flags: draft
 
 # Move faster in Vim with relative line numbers
 
