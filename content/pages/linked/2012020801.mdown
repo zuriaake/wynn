@@ -1,0 +1,24 @@
+date: 2012-02-08 11:31:32 -0600
+categories: linked
+url: http://chriseppstein.github.com/blog/2012/02/08/standarding-incompatibilities/
+
+# CSSWG, save us from CSS
+
+Compass creator and Sass core team member [Chris Eppstein on the state of
+CSS:](http://chriseppstein.github.com/blog/2012/02/08/standarding-incompatibilities/)
+
+  > The CSS Working Group needs to stop rearranging deck chairs for a while and plug the giant holes first.
+
+He continues:
+
+  > It is time for native feature detection, it is time for mixins and
+  > selector inheritance, it is time for variables, it is time for
+  > user-defined functions, it is time for better syntax. Actually, I
+  > take that back. It’s way past time. Developers have been demanding
+  > variables for their CSS for a decade and that CSS doesn’t have this
+  > feature yet is an absolute embarrassment.
+
+I often hear from excited new Sass users that Sass is _what CSS should
+have been._ Here's to a day in the future when some of these features
+make it into the CSS spec and preprocessors can tackle bigger issues
+like spriting, asset management, and the like.
