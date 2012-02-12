@@ -4,7 +4,7 @@ url: https://github.com/kennethreitz/autoenv
 
 # Directory-based environments
 
-Small script from [Kenneth](https://twitter.com/#!/kennethreitz) to set
+[Small script](https://github.com/kennethreitz/autoenv) from [Kenneth](https://twitter.com/#!/kennethreitz) to set
 up environment variables based on Foreman `.env` files. It's an
 interesting concept that would no doubt offend some. After all,
 [rbenv](https://github.com/sstephenson/rbenv) calls
