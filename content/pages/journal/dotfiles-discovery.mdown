@@ -1,0 +1,73 @@
+date: 2012-03-30 15:27:07 -0500
+categories: journal
+
+# Dotfile discovery
+
+As I [tweeted earlier this
+week,](https://twitter.com/#!/pengwynn/status/185104622866796544) I came
+for the Ruby and Rails. I stayed for the \*nix.
+
+One of the joys of moving away from Windows has been having most of my
+personal settings for editors and command line tools stored in simple text files I can take with me from
+machine to machine. You wouldn't think twice about working on a serious
+project without source control, yet so many developers don't version
+their dotfiles. I admit, that was me for far too long. I customized so little on my
+Mac that it didn't seem like it was worth the trouble.
+
+I finally decided to set up [my own dotfiles](https://github.com/pengwynn/dotfiles) repo using [Josh
+Nichols' Homesick gem](https://github.com/technicalpickles/homesick).
+I quickly realized that having my dotfiles versioned in source control brought
+a freedom to tinker. I could try new keybindings or color schemes and not feel like I was
+making a huge investment.
+
+Then I read [Zach Holman's
+post](http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/)
+and it changed the way I looked at other people's dotfiles. Tucked away
+inside of these little text files are valuable tips of tricks, simple
+insights into _how_ other developers work.
+
+
+
+There are few different ways to find interesting dotfile repos on
+GitHub. Of course there's [a Google
+search](https://www.google.com/webhp?sourceid=chrome-instant&ix=heb&ie=UTF-8#hl=en&output=search&sclient=psy-ab&q=site%3Agithub.com%20dotfiles&oq=&aq=&aqi=&aql=&gs_l=&pbx=1&fp=3a4c3f9900aaf4a9&ix=heb&bav=on.2,or.r_gc.r_pw.r_cp.r_qf.,cf.osb&biw=1448&bih=866). You could also do a [repository search on GitHub](https://github.com/search?utf8=%E2%9C%93&q=dotfiles&repo=&langOverride=&start_value=1&type=Repositories&language=). I've found the best dotfiles by searching for known [config file names on GitHub](https://www.google.com/webhp?sourceid=chrome-instant&ix=heb&ie=UTF-8#hl=en&output=search&sclient=psy-ab&q=site%3Agithub.com%20tmux.conf&oq=&aq=&aqi=&aql=&gs_l=&pbx=1&fp=3a4c3f9900aaf4a9&ix=heb&bav=on.2,or.r_gc.r_pw.r_cp.r_qf.,cf.osb&biw=1448&bih=866).
+
+
+I spend a good part of the day in the Git command line so I'm always on
+on the lookout for good Git aliases [like
+these](https://github.com/ColinHebert/dotfiles/blob/master/gitconfig):
+
+    loll = log --graph --decorate --pretty=oneline --abbrev-commit
+    lol = !git --no-pager loll
+    lolal = log --graph --decorate --pretty=oneline --abbrev-commit --all
+    lola = !git --no-pager lolal
+
+
+
+![Feed
+screencap](http://cl.ly/2F3B3T221N3Z2V0d3y1S/Screen%20Shot%202012-03-30%20at%203.23.09%20PM.png)
+
+Sometimes I discover new tools altogether, like
+[gitv](https://github.com/gregsexton/gitv), a great little extension of
+Fugitive:
+
+![Gitv
+screencap](http://cl.ly/421w3Y2N3N1R041n1y39/Screen%20Shot%202012-03-30%20at%203.21.54%20PM.png)
+
+
+Some dotfile repos are chock full of [OS X
+settings](https://github.com/skwp/dotfiles/blob/master/osx):
+
+    # Disable menu bar transparency
+    defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
+
+    # Show remaining battery time; hide percentage
+    defaults write com.apple.menuextra.battery ShowPercent -string "NO"
+    defaults write com.apple.menuextra.battery ShowTime -string "YES"
+
+## Summary
+
+As [Joshua Clayton](https://twitter.com/#!/joshuaclayton) put it on a [recent episode of The Changelog](http://thechangelog.com/post/17827235767/episode-0-7-3-tmux-with-brian-hogan-and-josh-clayton), ultimately if you don't think your dotfiles are the best you're Doing it Wrong™. ([His dotfiles](https://github.com/joshuaclayton/dotfiles/) are very good, by the way.) Cherry pick what you like in other dotfiles. Keep what works, throw out what doesn't. Build your own light saber. Rebuild it with confidence.
+
+
+
