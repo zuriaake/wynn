@@ -1,6 +1,5 @@
 date: 2012-04-16 20:41:37 -0500
 categories: journal
-flags: draft
 
 # Contextual TODO list counts in your zsh prompt
 
