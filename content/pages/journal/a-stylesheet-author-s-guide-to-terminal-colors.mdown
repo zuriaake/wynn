@@ -187,4 +187,4 @@ Now when I run `git n` my [grc "stylesheet"](https://github.com/pengwynn/dotfile
 
 <img src="http://f.cl.ly/items/1P1V1p471K2k2V3f3X2x/Screen%20Shot%202012-04-18%20at%2011.08.01%20AM.png" class='no-shadow' alt="todo grc">
 
-Now, my latest [dotfile discovery](http://wynnnetherland.com/journal/dotfiles-discovery) is spelunking for grc config files to pick up some tips and tricks. If you've got some, let me know, perhaps on [Twitter](http://twitter.com/pengwynn).
+Now, my latest [dotfile discovery](http://wynnnetherland.com/journal/dotfiles-discovery) is spelunking for grc config files to pick up some tips and tricks. If you've got some, let me know, perhaps on [Twitter](http://twitter.com/pengwynn) or on [Hacker News](http://news.ycombinator.com/item?id=3858954).
