@@ -1,5 +1,6 @@
 date: 2012-04-18 11:09:51 -0500
 categories: journal
+summary: tldr; Use grc to add "stylesheets" and personal color settings for your favorite terminal apps.
 
 # A stylesheet author's guide to terminal colors
 
