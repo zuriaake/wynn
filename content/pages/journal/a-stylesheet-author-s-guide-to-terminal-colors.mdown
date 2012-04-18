@@ -156,7 +156,7 @@ Formatting rules are specified in config files. Here's a snippet from the `conf.
     =======
     ...
 
-The Homebrew formula ships with [some helpful aliases for common commands](https://github.com/mxcl/homebrew/blob/7bbe7e9311ce95a141bf5f77ca7fa02d43387748/Library/Formula/grc.rb#L25) to pipe them through grc for color.  The beauty of grc, however, is that you can supply your own config files (in addition to [those that come with the app](https://github.com/pengwynn/grc)). [Adam Yonk](http://twitter.com/adamyonk) and I created a [shell script](https://github.com/pengwynn/dotfiles/blob/d698dac49246f38111a4c6f66cf04f639645e928/bin/notes) to find all of our code annotations. Rather than hard-coding the color values in the script, he and I can now use grc to colorize to our own tastes. I use a git alias:
+The Homebrew formula ships with [some helpful aliases for common commands](https://github.com/mxcl/homebrew/blob/7bbe7e9311ce95a141bf5f77ca7fa02d43387748/Library/Formula/grc.rb#L25) to pipe them through grc for color.  The beauty of grc, however, is that you can supply your own config files (in addition to [those that come with the app](https://github.com/pengwynn/grc)). [Adam Jahnke](http://twitter.com/adamyonk) and I created a [shell script](https://github.com/pengwynn/dotfiles/blob/d698dac49246f38111a4c6f66cf04f639645e928/bin/notes) to find all of our code annotations. Rather than hard-coding the color values in the script, he and I can now use grc to colorize to our own tastes. I use a git alias:
 
     # Find FIXME, TODO, etc
     n = !"git ls-files | xargs notes | awk -F: '{ print $1,$2; print $3,$4; print $5}' | grcat conf.notes "
