@@ -2073,7 +2073,8 @@ article footer {
   border-top: solid 1px #dddddd;
 }
 
-.addthis_toolbox {
+.addthis_toolbox,
+.you-might-like {
   margin-top: 1em;
 }
 
