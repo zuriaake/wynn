@@ -1,0 +1,18 @@
+- unless pages.empty?
+  %ol
+    - pages.each do |page|
+      %li
+        %article
+          %header
+            %h1
+              %a{:href => url_or_permalink_for(page)}
+                = page.link_text
+              - if page.is_linked?
+                &nbsp;
+                %a.permalink{:href => page.permalink } #
+          - if page.summary.nil? || page.summary.empty?
+            ~ page.body(self)
+          - else
+            ~ page.summary
+            %p.read_more
+              %a(href="#{path_to(page.abspath)}")= page.read_more
