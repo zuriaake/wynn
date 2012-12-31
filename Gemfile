@@ -9,6 +9,7 @@ gem "nesta-plugin-sluggable" #, :git => "git://github.com/pengwynn/nesta-plugin-
 gem "nesta-plugin-linkable"  #, :git => "/Users/wynn/Projects/nesta-plugin-linkable"
 
 gem 'rack-rewrite'
+gem 'sinatra-simple-navigation'
 
 group :development do
   gem "racksh"

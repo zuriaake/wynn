@@ -1,5 +1,9 @@
+require 'sinatra/simple-navigation'
+
 module Nesta
   class App
+    helpers ::SimpleNavigation::Helpers
+    SimpleNavigation.config_file_path = File.join('config')
 
     set :views, 'views'
 
