@@ -1,13 +1,9 @@
 source :rubygems
 
-gem "sinatra-content-for"
 gem "heroku"
-gem "nesta", "~> 0.9.11"
+gem "nesta", "~> 0.9.13"
 gem "redcarpet"
-gem "compass", "~> 0.11.5"
-
-gem "will_paginate"
-gem "octokit"
+gem "compass", "~> 0.12.2"
 
 gem "nesta-plugin-sluggable" #, :git => "git://github.com/pengwynn/nesta-plugin-sluggable.git"
 gem "nesta-plugin-linkable"  #, :git => "/Users/wynn/Projects/nesta-plugin-linkable"

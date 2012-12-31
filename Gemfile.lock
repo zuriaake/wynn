@@ -1,23 +1,16 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    RedCloth (4.2.8)
+    RedCloth (4.2.9)
     addressable (2.2.6)
     bond (0.4.1)
-    chunky_png (1.2.5)
-    compass (0.11.5)
+    chunky_png (1.2.6)
+    compass (0.12.2)
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
-    faraday (0.7.4)
-      addressable (~> 2.2.6)
-      multipart-post (~> 1.1.0)
-      rack (>= 1.1.0, < 2)
-    faraday_middleware (0.7.0)
-      faraday (~> 0.7.3)
-    fssm (0.2.7)
-    haml (3.1.3)
-    hashie (1.0.0)
+    fssm (0.2.9)
+    haml (3.1.7)
     heroku (2.8.4)
       launchy (>= 0.3.2)
       rest-client (~> 1.6.1)
@@ -26,26 +19,21 @@ GEM
     launchy (2.0.5)
       addressable (~> 2.2.6)
     mime-types (1.16)
-    multi_json (1.0.3)
-    multipart-post (1.1.3)
-    nesta (0.9.11)
+    nesta (0.9.13)
       RedCloth (~> 4.2)
       haml (~> 3.1)
+      rack (~> 1.1)
       rdiscount (~> 1.6)
       sass (~> 3.1)
       shotgun (>= 0.8)
-      sinatra (= 1.2.6)
+      sinatra (~> 1.3)
     nesta-plugin-linkable (0.0.1)
       nesta (>= 0.9.11)
     nesta-plugin-sluggable (0.0.1)
       nesta (>= 0.9.11)
-    octokit (0.6.4)
-      addressable (~> 2.2.6)
-      faraday (~> 0.7.3)
-      faraday_middleware (~> 0.7.0.rc1)
-      hashie (~> 1.0.0)
-      multi_json (~> 1.0.2)
-    rack (1.3.3)
+    rack (1.4.1)
+    rack-protection (1.3.2)
+      rack
     rack-rewrite (1.2.1)
     rack-test (0.6.1)
       rack (>= 1.0)
@@ -65,14 +53,13 @@ GEM
       rack-test (>= 0.5)
       ripl (>= 0.3.5)
     rubyzip (0.9.4)
-    sass (3.1.7)
+    sass (3.2.4)
     shotgun (0.9)
       rack (>= 1.0)
-    sinatra (1.2.6)
-      rack (~> 1.1)
-      tilt (>= 1.2.2, < 2.0)
-    sinatra-content-for (0.2)
-      sinatra
+    sinatra (1.3.3)
+      rack (~> 1.3, >= 1.3.6)
+      rack-protection (~> 1.2)
+      tilt (~> 1.3, >= 1.3.3)
     term-ansicolor (1.0.6)
     tilt (1.3.3)
     tux (0.3.0)
@@ -80,21 +67,17 @@ GEM
       ripl-multi_line (>= 0.2.4)
       ripl-rack (>= 0.2.0)
       sinatra (>= 1.2.1)
-    will_paginate (3.0.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  compass (~> 0.11.5)
+  compass (~> 0.12.2)
   heroku
-  nesta (~> 0.9.11)
+  nesta (~> 0.9.13)
   nesta-plugin-linkable
   nesta-plugin-sluggable
-  octokit
   rack-rewrite
   racksh
   redcarpet
-  sinatra-content-for
   tux
-  will_paginate
