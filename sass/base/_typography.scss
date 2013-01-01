@@ -14,11 +14,14 @@ blockquote {
   margin-left: 0;
 }
 
-.copyright {
+.site-footer {
   @include adjust-font-size-to(14px);
   color: lighten($color-text, 20%);
-  font-style: italic;
+  font-family: $face-sans;
   text-align: center;
+  img {
+    vertical-align: middle; 
+  }
 }
 
 .lead {
@@ -154,13 +157,8 @@ p {
   margin-top: 0;
 }
 
-.about-the-author,
-.site-footer {
+.about-the-author {
   @include padding-leader;
-}
-
-.site-footer {
-  @include padding-trailer;
 }
 
 .external:after {

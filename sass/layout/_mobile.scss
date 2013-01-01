@@ -2,6 +2,8 @@
 // `Default (mobile)
 //-----------------------------------------------------------
 
+@include sticky-footer(54px);
+
 @include border-box-sizing;
 
 html {
