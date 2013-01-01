@@ -24,10 +24,10 @@ blockquote {
 .lead {
   border-bottom: solid 1px #ddd;
   line-height: 1.4em;
-  margin: 1em 0;
   font-family: $face-sans;
   font-size: 1.2em;
   font-weight: 100;
+  margin-bottom: 1em;
   a {
     font-weight: 600;
     text-decoration: none;
@@ -74,7 +74,7 @@ hr {
 .site-nav {
   @include no-bullets;
   text-transform: uppercase;
-  margin: 0 auto;
+  margin: 0 auto 2em;
   padding: 0;
   li {
     @include adjust-font-size-to(10px, 2);
