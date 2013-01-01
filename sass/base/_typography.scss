@@ -117,7 +117,11 @@ h1 {
   word-wrap: break-word;
   .stream & {
     font-size: 24px;
+    font-weight: bold;
     line-height: 1.5em;
+  }
+  .stream .linked-item & {
+    font-weight: normal; 
   }
 }
 
@@ -200,11 +204,6 @@ p {
 
   h1 {
     @include adjust-font-size-to(32px);
-    font-weight: bold;
-  }
-
-  .linked-item h1 {
-    font-weight: normal;
   }
 
   #{headings(2,6)} {
