@@ -1,0 +1,50 @@
+@import 'modules/syntax';
+
+//-----------------------------------------------------------
+// `Images and figures
+//-----------------------------------------------------------
+
+.frame {
+  background: #fff;
+  border: solid 1px $color-border;
+  padding: 3px;
+}
+
+.list-group {
+  margin-bottom: 3em;
+}
+
+.block-list {
+  margin: 2em 0;
+
+  h2 {
+    margin: 0;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .item {
+    border-bottom: solid 1px $color-border;
+    overflow: auto;
+    margin-bottom: 1.5em;
+    padding-bottom: 1.5em;
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+  .thumb {
+    @include span-columns(3);
+  }
+
+  .info {
+    @include span-columns(9 omega);
+  }
+
+  .book-meta {
+    margin-bottom: 1em;
+  }
+}

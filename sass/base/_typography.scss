@@ -1,0 +1,223 @@
+@include establish-baseline;
+
+body {
+  font-family: $face-serif;
+}
+
+dt {
+  font-weight: bold;
+}
+
+blockquote {
+  @include apply-side-rhythm-border(left);
+  font-style: italic;
+  margin-left: 0;
+}
+
+.copyright {
+  @include adjust-font-size-to(14px);
+  color: lighten($color-text, 20%);
+  font-style: italic;
+  text-align: center;
+}
+
+.lead {
+  border-bottom: solid 1px #ddd;
+  line-height: 1.4em;
+  margin: 1em 0;
+  font-family: $face-sans;
+  font-size: 1.2em;
+  font-weight: 100;
+  a {
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+}
+hr {
+  @include background-image(linear-gradient(left, rgba(#999, 0), rgba(#999, .75), rgba(#999, 0)));
+  border: 0;
+  height: 1px;
+  width:100%;
+  margin: 2em 0;
+}
+
+.post-meta {
+  color: lighten($color-text, 50%);
+  font-family: $face-sans;
+  font-size: 12px;
+  text-transform: uppercase;
+  time {
+    font-weight: bold;
+  }
+}
+
+//-----------------------------------------------------------
+// `Banner
+//-----------------------------------------------------------
+
+.byline {
+  @include adjust-font-size-to(9px);
+  font-style: italic;
+
+}
+.name {
+  font-weight: bold;
+  font-family: $face-sans;
+  text-transform: uppercase;
+}
+
+//-----------------------------------------------------------
+// `Nav
+//-----------------------------------------------------------
+
+.site-nav {
+  @include no-bullets;
+  text-transform: uppercase;
+  margin: 0 auto;
+  padding: 0;
+  li {
+    @include adjust-font-size-to(10px, 2);
+    display: inline-block;
+    font-weight: bold;
+    letter-spacing: .3em;
+    text-align: center;
+    width: 20%;
+  }
+}
+
+.mobile-nav,
+.site-nav {
+  font-family: $face-sans;
+  a {
+    text-decoration: none;
+  }
+}
+
+.mobile-nav {
+  background: $color-off-screen-background;
+  li {
+    line-height: 3em;
+    padding: 0 $grid-padding;
+    border-bottom: solid 1px lighten($color-off-screen-background, 20%);
+  }
+  .active-nav & { margin-top: 0 }
+}
+//-----------------------------------------------------------
+// `Headings
+//-----------------------------------------------------------
+
+h1 {
+  @include adjust-font-size-to(32px);
+  font-family: $face-sans;
+  font-weight: normal;
+  margin-top: 0;
+  word-wrap: break-word;
+  .stream & {
+    font-size: 24px;
+    line-height: 1.5em;
+  }
+}
+
+#{headings(2,6)} {
+  @include adjust-font-size-to(20px);
+  font-family: $face-sans;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+h2.year{
+  border-bottom: solid 1px $color-border;
+  font-weight: bold;
+  padding-bottom: .5em;
+}
+
+//-----------------------------------------------------------
+// `Articles
+//-----------------------------------------------------------
+
+.permalink {
+  display: inline-block;
+  font-size: 32px;
+  margin: 0 0 0 8px;
+  position: absolute;
+  text-decoration: none;
+}
+
+p {
+  margin-top: 0;
+}
+
+.about-the-author,
+.site-footer {
+  @include padding-leader;
+}
+
+.site-footer {
+  @include padding-trailer;
+}
+
+.external:after {
+  color: #ddd;
+  content: '\219D';
+  display: inline-block;
+  margin-left: .2em;
+}
+
+//-----------------------------------------------------------
+// `Archives
+//-----------------------------------------------------------
+.archives {
+  @include no-bullets;
+  padding: 0;
+  li {
+    @include trailer;
+  }
+}
+
+
+//**********************************************************
+
+//-----------------------------------------------------------
+// `Desktop typography
+//-----------------------------------------------------------
+
+@include at-breakpoint($desktop-layout) {
+
+  dl, ol, ul {
+    padding-left: 0;
+  }
+
+  .lead {
+    font-size: 1.7em;
+  }
+
+  //-----------------------------------------------------------
+  // `Headings
+  //-----------------------------------------------------------
+
+  h1 {
+    @include adjust-font-size-to(32px);
+  }
+
+  #{headings(2,6)} {
+    @include adjust-font-size-to(20px);
+  }
+
+  //-----------------------------------------------------------
+  // `Articles
+  //-----------------------------------------------------------
+
+
+  .about-the-author {
+    @include adjust-font-size-to(14px);
+
+  }
+
+  .permalink {
+    display: inline;
+    font-size: inherit;
+    margin: 0;
+    position: inherit;
+  }
+}

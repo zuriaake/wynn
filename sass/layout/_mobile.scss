@@ -1,0 +1,91 @@
+//-----------------------------------------------------------
+// `Default (mobile)
+//-----------------------------------------------------------
+
+@include border-box-sizing;
+
+html {
+  overflow-y: scroll;
+}
+
+.hide-on-mobile {
+  display: none;
+}
+.show-on-mobile {
+  display: block;
+}
+
+//-----------------------------------------------------------
+// `Grid
+//-----------------------------------------------------------
+
+$anchor : 2;
+$side   : $total-columns - $anchor;
+
+.container {
+  @include container;
+  max-width: 40em;
+  overflow: hidden;
+}
+
+.author-image {
+  @include trailer;
+  text-align: center;
+}
+
+.about-the-author {
+  border-top: solid 1px $color-border;
+  @include leader;
+  @include padding-leader;
+}
+
+.site-footer {
+  @include span-columns($total-columns omega);
+  clear: both;
+}
+
+
+//-----------------------------------------------------------
+// `Off-screen menu
+//-----------------------------------------------------------
+
+.mobile-nav {
+  @include transition(.2s all ease);
+  background: $color-off-screen-background;
+  margin-top: -$mobile-nav-height;
+  padding: 0;
+  li {
+    line-height: 3em;
+    padding: 0 $grid-padding;
+  }
+  .active-nav & { margin-top: 0 }
+}
+
+//-----------------------------------------------------------
+// `Header
+//-----------------------------------------------------------
+
+.branding {
+  @include padding-leader;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  width: 6em;
+}
+
+.banner {
+  margin-bottom: 2em;
+}
+
+//-----------------------------------------------------------
+// `Articles
+//-----------------------------------------------------------
+
+article {
+  @include trailer;
+  @include padding-trailer;
+  border-bottom: solid 1px #efefef;
+}
+

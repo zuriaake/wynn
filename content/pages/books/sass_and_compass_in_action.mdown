@@ -1,4 +1,4 @@
-thumb_url: /wynn/images/books/netherland_cover150.jpg
+thumb_url: /images/books/netherland_cover150.jpg
 url: http://wynn.fm/sass-meap
 isbn: 9781617290145
 year: 2011

@@ -1,0 +1,11 @@
+~ @page.to_html(self).html_safe
+
+.page(role='main')
+  .content
+    - unless (vimeo_id = @page.metadata('vimeo_id')).nil?
+      .flex-video.vimeo
+        %iframe(src="http://player.vimeo.com/video/#{vimeo_id}?title=0&amp;byline=0&amp;portrait=0"  frameborder="0" webkitAllowFullScreen allowFullScreen)
+
+    .slide-container
+      %script(src="http://speakerdeck.com/embed/#{@page.metadata('speaker_deck_id')}.js?size=preview")
+

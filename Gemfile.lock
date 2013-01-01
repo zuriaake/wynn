@@ -25,6 +25,8 @@ GEM
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
+    compass-normalize (1.4.1)
+      compass (>= 0.11.5)
     fssm (0.2.9)
     haml (3.1.7)
     heroku (2.8.4)
@@ -74,6 +76,9 @@ GEM
       tilt (~> 1.3, >= 1.3.3)
     sinatra-simple-navigation (3.5.1)
       simple-navigation (>= 3.5.0)
+    susy (1.0.5)
+      compass (>= 0.12.2)
+      sass (>= 3.2.0)
     term-ansicolor (1.0.6)
     tilt (1.3.3)
     tux (0.3.0)
@@ -87,6 +92,7 @@ PLATFORMS
 
 DEPENDENCIES
   compass (~> 0.12.2)
+  compass-normalize
   heroku
   nesta!
   nesta-plugin-linkable
@@ -95,4 +101,5 @@ DEPENDENCIES
   racksh
   redcarpet
   sinatra-simple-navigation
+  susy (~> 1.0.5)
   tux

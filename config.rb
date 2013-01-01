@@ -1,29 +1,30 @@
 # Compass Configuration
 
-# require 'zocial-toolkit'
+require 'susy'
+require 'compass-normalize'
 
 # HTTP paths
 http_path             = '/'
-http_stylesheets_path = '/wynn/css'
-http_images_path      = '/wynn/images'
-http_javascripts_path = '/wynn/javascripts'
+http_stylesheets_path = '/css'
+http_images_path      = '/images'
+http_javascripts_path = '/js'
 
 # File system locations
-sass_dir              = 'themes/wynn/sass'
-css_dir               = 'themes/wynn/public/wynn/css'
-images_dir            = 'themes/wynn/public/wynn/images'
-javascripts_dir       = 'themes/wynn/public/wynn/javascripts'
+sass_dir              = '/sass'
+css_dir               = 'public/css'
+images_dir            = 'public/images'
+javascripts_dir       = 'public/js'
 
 # Fonts
-http_fonts_path       = '/wynn/fonts'
-http_fonts_dir        = 'themes/wynn/public/wynn/fonts'
+http_fonts_path       = '/fonts'
+http_fonts_dir        = 'public/fonts'
 
 # Set to true for easier debugging
 line_comments         = false
-preferred_syntax      = :sass
+preferred_syntax      = :scss
 
 # CSS output style - :nested, :expanded, :compact, or :compressed
-output_style          = :expanded
+output_style          = :compressed
 
 # Determine whether Compass asset helper functions generate relative
 # or absolute paths

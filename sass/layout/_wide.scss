@@ -1,0 +1,39 @@
+//-----------------------------------------------------------
+// `Wide layout
+//-----------------------------------------------------------
+@include at-breakpoint($wide-layout) {
+
+  $container-width: false;
+  .container {
+    @include container;
+  }
+
+  .banner {
+    @include span-columns(3);
+  }
+
+  .page {
+    @include span-columns(9);
+  }
+
+  .about-the-author {
+    @include span-columns(3 omega);
+    margin: 0;
+    padding-top: 7em;
+    border: none;
+  }
+
+  .author-image {
+    width: auto;
+  }
+
+  .author-bio {
+    @extend .frame;
+    width: auto;
+  }
+
+  .site-footer {
+    @include span-columns(9);
+    @include push(3);
+  }
+}
