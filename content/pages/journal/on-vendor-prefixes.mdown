@@ -1,5 +1,6 @@
 date: 2012-02-09 08:11:10 -0600
 categories: journal
+summary: Vendor prefixes are a pain, but we have them for a reason. Use Sass and stay happy.
 
 # On vendor prefixes
 

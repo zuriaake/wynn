@@ -17,9 +17,16 @@
     %link(rel='icon' type='image/png' href='/images/favicon-alt.png')
 
   %body
-    .container
-      .branding
-        %a(href="/")
-          %img.logo(src="/images/pengwynn.png")
+    #mobile-nav.show-on-mobile
       = render_navigation
+      .container
+        %a.nav-toggle.open(href="#mobile-nav") &equiv;
+        %a.nav-toggle.close(href="#") &equiv;
+    .container
+      .banner
+        .branding
+          %a(href="/")
+            %img.logo(src="/images/pengwynn.png")
+        .hide-on-mobile
+          = render_navigation
       = yield

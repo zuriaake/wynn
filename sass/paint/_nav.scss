@@ -1,4 +1,4 @@
-.mobile-nav a {
+#mobile-nav li a {
   @include link-colors(#ddd, #fff, $color-link-active, #ddd);
   display: block;
   text-decoration: none;

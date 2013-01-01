@@ -49,16 +49,30 @@ $side   : $total-columns - $anchor;
 // `Off-screen menu
 //-----------------------------------------------------------
 
-.mobile-nav {
-  @include transition(.2s all ease);
-  background: $color-off-screen-background;
-  margin-top: -$mobile-nav-height;
+#mobile-nav {
+  @include transition(.3s all ease);
   padding: 0;
+  margin-top: -$mobile-nav-height;
   li {
     line-height: 3em;
     padding: 0 $grid-padding;
   }
-  .active-nav & { margin-top: 0 }
+  .open {
+    display: inline-block;
+  }
+  .close {
+    display: none;
+  }
+
+  &:target {
+    margin-top: 0;
+    .open {
+      display: none;
+    }
+    .close {
+      display: inline-block;
+    }
+  }
 }
 
 //-----------------------------------------------------------

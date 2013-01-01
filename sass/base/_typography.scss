@@ -27,7 +27,8 @@ blockquote {
   font-family: $face-sans;
   font-size: 1.2em;
   font-weight: 100;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
+  padding-bottom: 1em;
   a {
     font-weight: 600;
     text-decoration: none;
@@ -43,9 +44,9 @@ hr {
 }
 
 .post-meta {
-  color: lighten($color-text, 50%);
+  @include adjust-font-size-to(12px);
+  color: lighten($color-text, 30%);
   font-family: $face-sans;
-  font-size: 12px;
   text-transform: uppercase;
   time {
     font-weight: bold;
@@ -74,19 +75,21 @@ hr {
 .site-nav {
   @include no-bullets;
   text-transform: uppercase;
-  margin: 0 auto 2em;
+  margin: 0 auto;
   padding: 0;
-  li {
-    @include adjust-font-size-to(10px, 2);
-    display: inline-block;
-    font-weight: bold;
-    letter-spacing: .3em;
-    text-align: center;
-    width: 20%;
-  }
 }
 
-.mobile-nav,
+
+.banner li {
+  @include adjust-font-size-to(10px, 2);
+  font-weight: bold;
+  display: inline-block;
+  letter-spacing: .3em;
+  text-align: center;
+  width: 20%;
+}
+
+#mobile-nav,
 .site-nav {
   font-family: $face-sans;
   a {
@@ -94,14 +97,13 @@ hr {
   }
 }
 
-.mobile-nav {
-  background: $color-off-screen-background;
+#mobile-nav {
   li {
+    background: $color-off-screen-background;
     line-height: 3em;
     padding: 0 $grid-padding;
     border-bottom: solid 1px lighten($color-off-screen-background, 20%);
   }
-  .active-nav & { margin-top: 0 }
 }
 //-----------------------------------------------------------
 // `Headings
@@ -189,7 +191,7 @@ p {
   }
 
   .lead {
-    font-size: 1.7em;
+    font-size: 1.45em;
   }
 
   //-----------------------------------------------------------
@@ -198,6 +200,11 @@ p {
 
   h1 {
     @include adjust-font-size-to(32px);
+    font-weight: bold;
+  }
+
+  .linked-item h1 {
+    font-weight: normal;
   }
 
   #{headings(2,6)} {
