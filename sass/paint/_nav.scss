@@ -13,7 +13,7 @@
 
 .site-nav {
   a {
-    @include link-colors(#ddd, #999, #999, #ddd);
+    @include link-colors(#aaa, #666, #666, #aaa);
   }
 }
 .site-nav a.selected {
