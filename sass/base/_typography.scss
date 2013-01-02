@@ -164,7 +164,7 @@ p {
   @include padding-leader;
 }
 
-.external:after {
+.page > h1 .external:after {
   color: #ddd;
   content: '\219D';
   display: inline-block;
