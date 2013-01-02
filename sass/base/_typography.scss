@@ -20,7 +20,7 @@ blockquote {
   font-family: $face-sans;
   text-align: center;
   img {
-    vertical-align: middle; 
+    vertical-align: middle;
   }
 }
 
@@ -31,10 +31,13 @@ blockquote {
   font-size: 1.2em;
   font-weight: 100;
   margin-bottom: 2em;
-  padding-bottom: 1em;
+  padding-bottom: 2em;
   a {
     font-weight: 600;
     text-decoration: none;
+  }
+  p {
+    margin-bottom: 0;
   }
 
 }
@@ -124,7 +127,7 @@ h1 {
     line-height: 1.5em;
   }
   .stream .linked-item & {
-    font-weight: normal; 
+    font-weight: normal;
   }
 }
 

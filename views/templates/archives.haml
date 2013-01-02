@@ -9,7 +9,7 @@
     %ul.archives
       - articles.each do |article|
         %li
-          %a{ :href => url_or_permalink_for(article) }>= article.heading
+          %a{ :href => url_or_permalink_for(article) }>= widont(article.heading)
           - if article.is_linked?
             &nbsp;
             %a.permalink{ :href => article.permalink } #
