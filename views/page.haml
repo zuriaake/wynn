@@ -1,4 +1,4 @@
-.page{:class => css_classes_for(@page)}
+%article.page{:class => css_classes_for(@page)}
   - if @page.date
     - if @page.is_linked?
       %h1
@@ -15,4 +15,5 @@
       %time{:datetime => @page.date, :title => @page.date}= @page.date.strftime("%d %b %Y")
   - else
     ~ @page.to_html(self)
+%br
 

@@ -4,9 +4,9 @@
   text-decoration: none;
 }
 
-.nav-toggle {
+.nav-toggle,
+.feed {
   @include link-colors(#ddd, $color-link-active, #ddd, #ddd);
-  font-size: 4em;
   font-weight: bold;
   text-decoration: none;
 }
@@ -19,5 +19,6 @@
 .site-nav a.selected {
   color: $color-text;
 }
+
 
 
