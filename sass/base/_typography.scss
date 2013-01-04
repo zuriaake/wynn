@@ -1,3 +1,25 @@
+// @font-face {
+//   font-family: 'Entypo-Social';
+//   src: url('/fonts/entypo-social.eot');
+//   src: url('/fonts/entypo-social.eot' + '?#iefix') format('embedded-opentype'),
+//        url('/fonts/entypo-social.woff') format('woff'),
+//        url('/fonts/entypo-social.ttf') format('truetype'),
+//        url('/fonts/entypo-social.svg' + '#DroidSansRegular') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+@font-face {
+  font-family: 'pengwynn';
+  src:url('/fonts/pengwynn.eot');
+  src:url('/fonts/pengwynn.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/pengwynn.svg#pengwynn') format('svg'),
+    url('/fonts/pengwynn.woff') format('woff'),
+    url('/fonts/pengwynn.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @include establish-baseline;
 
 body {
@@ -15,23 +37,29 @@ blockquote {
 }
 
 .site-footer {
-  @include adjust-font-size-to(14px);
+  @include adjust-font-size-to(10px);
   color: lighten($color-text, 20%);
   font-family: $face-sans;
   text-align: center;
-  img {
-    vertical-align: middle;
+}
+
+.pengwynn {
+  font-family: 'pengwynn', sans-serif;
+  text-decoration: none;
+  .branding & {
+    display: block;
+    font-size: 64px;
+    padding: 20px 0;
   }
 }
 
 .lead {
-  border-bottom: solid 1px #ddd;
+  // border-bottom: solid 1px #ddd;
   line-height: 1.4em;
   font-family: $face-sans;
   font-size: 1.2em;
   font-weight: 100;
   margin-bottom: 2em;
-  padding-bottom: 2em;
   a {
     font-weight: 600;
     text-decoration: none;
@@ -39,8 +67,28 @@ blockquote {
   p {
     margin-bottom: 0;
   }
-
 }
+
+.social-links {
+  margin: 1.5em auto;
+  padding: 0;
+  text-align: center;
+}
+
+.social-links li {
+  display: inline-block;
+  text-align: center;
+}
+
+.social-links a {
+  font-family: 'pengwynn', sans-serif;
+  font-size: 32px;
+  font-weight: normal;
+  text-decoration: none;
+  padding: 0 5px;
+  -webkit-font-smoothing: antialiased;
+}
+
 hr {
   @include background-image(linear-gradient(left, rgba(#999, 0), rgba(#999, .75), rgba(#999, 0)));
   border: 0;
@@ -160,6 +208,10 @@ p {
   margin-top: 0;
 }
 
+.view-archives {
+  margin-bottom: 4em;
+}
+
 .about-the-author {
   @include padding-leader;
 }
@@ -196,7 +248,11 @@ p {
   }
 
   .lead {
-    font-size: 1.45em;
+    font-size: 1.4em;
+  }
+
+  .social-links a {
+    padding: 0 20px;
   }
 
   //-----------------------------------------------------------

@@ -26,16 +26,21 @@
       .container
         .banner
           .branding
-            %a(href="/")
-              %img.logo(src="/images/pengwynn.png")
+            %a.pengwynn(href="/") &#xe000;
           .hide-on-mobile
             = render_navigation
         = yield
+        = haml :social
         #root_footer
     #footer.container
       .site-footer
         -# %img(src="/images/pengwynn-alt.png" height="48" width="48")
-        Copyright 2007-#{Time.now.year} Wynn Netherland
+        Copyright 2007-#{Time.now.year} 
+        %a(href='http://wynn.fm') Wynn Netherland 
+        &bull;
+        Entypo pictograms by Daniel Bruce —
+        %a(href='http://entypo.com') Entypo.com
+
   <script src='//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js'></script>
   <script src='/js/prettify/prettify.js'></script>
   <script src='/js/site.js'></script>

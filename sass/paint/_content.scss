@@ -21,6 +21,29 @@ blockquote {
 }
 
 
+// Social links
+.github a:hover {
+  color: $color-github;
+}
+
+.facebook a:hover {
+  color: $color-facebook;
+}
+
+.twitter a:hover {
+  color: $color-twitter;
+}
+
+.linked-in a:hover {
+  color: $color-linked-in;
+}
+
+.flickr a:hover {
+  color: $color-flickr;
+}
+
+
+
 @include at-breakpoint($desktop-layout) {
 
 }
