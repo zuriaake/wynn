@@ -42,6 +42,11 @@ blockquote {
   color: $color-flickr;
 }
 
+.rss a:hover,
+.feed:hover {
+  color: $color-rss;
+}
+
 
 
 @include at-breakpoint($desktop-layout) {
