@@ -1,0 +1,21 @@
+date: 2013-01-06 13:24:00 -0600
+categories: linked
+url: https://github.com/tpope/vim-sensible
+
+# vim-sensible
+
+A sane starting point for your `.vimrc` from [Tim Pope][], one of the
+community's [most prolific plugin writers][plugins].
+
+> Think of sensible.vim as one step above 'nocompatible' mode: a universal set
+> of defaults that (hopefully) everyone can agree on.
+
+Looks like a great starting point to build upon by cherry-picking from [other
+people's Vim setups][dots] instead of starting with an opinionated setup and
+whittling down from there.
+
+[Tim Pope]: https://twitter.com/tpope
+[plugins]: http://www.vim.org/account/profile.php?user_id=9012
+[dots]: http://dotfiles.github.com
+
+
