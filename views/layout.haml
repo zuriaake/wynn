@@ -2,6 +2,10 @@
 %html
   %head
     %meta{ :charset => "utf-8" }
+    - if @description
+      %meta(name="description" content=@description)
+    - if @keywords
+      %meta(name="keywords" content=@keywords)
 
     -# Set the viewport width to device width for mobile
     %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1.0" }
