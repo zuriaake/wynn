@@ -1,7 +1,6 @@
 date: 2013-01-06 21:53:56 -0600
 categories: linked
 url: http://www.tylercipriani.com/vim.html
-flags: draft
 
 # Vim: Live it.
 
