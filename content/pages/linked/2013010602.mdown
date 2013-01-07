@@ -1,0 +1,14 @@
+date: 2013-01-06 21:53:56 -0600
+categories: linked
+url: http://www.tylercipriani.com/vim.html
+flags: draft
+
+# Vim: Live it.
+
+[![Vim Konami code](/attachments/vim_thing.png)](http://www.tylercipriani.com/vim.html)
+
+Not the DRYest, but definitely [Konami][] compliant, as found in the
+[`.vimrc`](https://github.com/thcipriani/dotfiles/blob/master/vimrc) in
+[Tyler's Cipriani dots](https://github.com/thcipriani/dotfiles).
+
+[Konami]: http://en.wikipedia.org/wiki/Konami_Code
