@@ -8,6 +8,6 @@ url: http://www.tylercipriani.com/vim.html
 
 Not the DRYest, but definitely [Konami][] compliant, as found in the
 [`.vimrc`](https://github.com/thcipriani/dotfiles/blob/master/vimrc) in
-[Tyler's Cipriani dots](https://github.com/thcipriani/dotfiles).
+[Tyler Cipriani's dots](https://github.com/thcipriani/dotfiles).
 
 [Konami]: http://en.wikipedia.org/wiki/Konami_Code
