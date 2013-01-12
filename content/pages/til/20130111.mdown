@@ -1,0 +1,19 @@
+date: 11 Jan 2013
+categories: til
+
+# TIL: Easy UPSERTS in MySQL
+
+I've long loved [upserts in MongoDB][upserts], but I suppose my desire to keep
+my SQL vanilla for Rails caused me to overlook easy upserts in MySQL using [`ON
+DUPLICATE KEY UDATE`][mysql]:
+
+    INSERT INTO table (`user_id`, `some_expensive_count`) 
+      VALUES (1, 333333)
+      ON DUPLICATE KEY UPDATE `some_expensive_count` = 333333;
+
+If the `INSERT` would cause a duplicate value in a `PRIMARY KEY` or `UNIQUE`
+index, an `UPDATE` is performed. Easy peasy.
+
+[upserts]: http://docs.mongodb.org/manual/applications/update/#crud-update-update
+[mysql]: http://dev.mysql.com/doc/refman/5.0/en/insert-on-duplicate.html
+
