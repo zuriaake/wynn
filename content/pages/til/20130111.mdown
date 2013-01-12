@@ -5,7 +5,7 @@ categories: til
 
 I've long loved [upserts in MongoDB][upserts], but I suppose my desire to keep
 my SQL vanilla for Rails caused me to overlook easy upserts in MySQL using [`ON
-DUPLICATE KEY UDATE`][mysql]:
+DUPLICATE KEY UPDATE`][mysql]:
 
     INSERT INTO table (`user_id`, `some_expensive_count`) 
       VALUES (1, 333333)
