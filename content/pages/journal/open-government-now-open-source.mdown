@@ -1,0 +1,27 @@
+date: 19 Jan 2013
+
+# Open Government book now open source
+
+As a contributor to the [Open Government][govt] book from O'Reilly a couple of years
+ago, I was thrilled to see [Laurel][] and [Daniel][] release it [on GitHub][]
+as part of the [#PDFtribute][] to Aaron Swartz.
+
+Aaron contributed Chapter 25 in which he argues that government transparency
+doesn't go far enough:
+
+> Perhaps even more useful than putting government documents online would be
+> providing access to corporate and nonprofit records. A lot of political
+> action takes place outside the formal government, and thus outside the scope
+> of the existing FOIA laws. But such things seem totally off the radar of most
+> transparency activists; instead, giant corporations that receive billions of
+> dollars from the government are kept impenetrably secret.
+
+You can read this chapter and the entire book [in PDF, ebook, and mobile
+formats][on GitHub].
+
+
+[#PDFtribute]: http://pdftribute.net/
+[Laurel]: https://twitter.com/laurelatoreilly
+[Daniel]: https://twitter.com/lathropd
+[govt]: http://www.amazon.com/Open-Government-Collaboration-Transparency-Participation/dp/0596804350
+[on GitHub]: https://github.com/oreillymedia/open_government
