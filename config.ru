@@ -25,6 +25,9 @@ end
 # require 'rack/codehighlighter'
 # use Rack::Codehighlighter, :pygments, :element => "pre>code", :markdown => true
 
+# Force http/non-ssl
+use Rack::SslEnforcer, :only => [], :strict => true
+
 # Nice looking 404s and other messages
 use Rack::ShowStatus
 
