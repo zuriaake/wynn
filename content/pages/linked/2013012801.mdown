@@ -1,0 +1,27 @@
+date: 2013-01-28 08:30:50 -0600
+categories: linked
+url: http://robots.thoughtbot.com/post/41439635905/bin-setup
+
+# Bootstrapping consistency
+
+Thoughtbot [recently shared][setup] how they use a `./bin/setup` script to help
+new developers install a Rails project quickly.
+
+> Regardless of the `bin/setup` file’s contents, a developer should be able to
+> clone the project and run a single, consistent, reliable command to start
+> contributing.
+
+At GitHub, we use `script/bootstrap`, but the idea is the same &mdash; a consistent
+user experience to get from zero to productive on any new project. Whether
+I'm [writing docs][docs], [extending GitHub with service hooks][hooks], or
+hacking our internal support tools, I know I can just clone the repository and
+run `script/bootstrap` to jump right in. 
+
+Thanks to [a patch][patch] from [Matt Emborsky][], this works for [my dots][dots], too.
+
+[setup]: http://robots.thoughtbot.com/post/41439635905/bin-setup
+[docs]: https://github.com/github/developer.github.com
+[hooks]: https://github.com/github/github-services
+[patch]: https://github.com/holman/dotfiles/pull/60
+[Matt Emborsky]: https://twitter.com/memborsky
+[dots]: https://github.com/pengwynn/dotfiles
