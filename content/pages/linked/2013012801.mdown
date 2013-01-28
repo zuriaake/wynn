@@ -4,8 +4,9 @@ url: http://robots.thoughtbot.com/post/41439635905/bin-setup
 
 # Bootstrapping consistency
 
-Thoughtbot [recently shared][setup] how they use a `./bin/setup` script to help
-new developers install a Rails project quickly.
+One of the best features of Rails is its consistent project layout.
+Thoughtbot [recently shared][setup] how they use a `./bin/setup` script to
+bring consistency to the project setup.
 
 > Regardless of the `bin/setup` file’s contents, a developer should be able to
 > clone the project and run a single, consistent, reliable command to start
@@ -15,9 +16,15 @@ At GitHub, we use `script/bootstrap`, but the idea is the same &mdash; a consist
 user experience to get from zero to productive on any new project. Whether
 I'm [writing docs][docs], [extending GitHub with service hooks][hooks], or
 hacking our internal support tools, I know I can just clone the repository and
-run `script/bootstrap` to jump right in. 
+run `script/bootstrap` to jump right in. Thanks to [a patch][patch] from [Matt
+Emborsky][], this works for [my dots][dots], too.
 
-Thanks to [a patch][patch] from [Matt Emborsky][], this works for [my dots][dots], too.
+We also don't stop with the project bootstrap. Our projects normally have
+`script/test` for running the local test suite, `script/cibuild` for running
+tests on the continuous integration server, as well as the usual
+`script/server`, and `script/console` scripts where applicable.
+
+As a result, I spend less time thinking _what to run_ and just _run_.
 
 [setup]: http://robots.thoughtbot.com/post/41439635905/bin-setup
 [docs]: https://github.com/github/developer.github.com
