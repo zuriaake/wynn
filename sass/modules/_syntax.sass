@@ -1,6 +1,5 @@
 $mono-font-stack: Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", Monaco, monospace !default
 pre
-  +single-transition(width, .5s)
   @include box-sizing(border-box)
   margin: 1.5em 0
   overflow: auto
@@ -22,6 +21,9 @@ pre
   &.plain
     background: inherit
     color: inherit
+    overflow: auto
+    padding: 0
+    width: 1000px
   code
     background: transparent
     color: #f0f0f0
