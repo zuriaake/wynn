@@ -43,7 +43,7 @@ GEM
       nesta (>= 0.9.11)
     nesta-plugin-sluggable (0.0.1)
       nesta (>= 0.9.11)
-    rack (1.4.1)
+    rack (1.5.2)
     rack-protection (1.3.2)
       rack
     rack-rewrite (1.2.1)
@@ -97,6 +97,7 @@ DEPENDENCIES
   nesta!
   nesta-plugin-linkable
   nesta-plugin-sluggable
+  rack (~> 1.5.2)
   rack-rewrite
   racksh
   redcarpet

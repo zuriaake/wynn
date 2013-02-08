@@ -5,6 +5,7 @@ gem "nesta", :git => "https://github.com/gma/nesta.git"
 gem "redcarpet"
 gem "compass", "~> 0.12.2"
 gem "compass-normalize"
+gem "rack", "~> 1.5.2" # critical security fix
 gem "susy", "~> 1.0.5"
 
 gem "nesta-plugin-sluggable" #, :git => "git://github.com/pengwynn/nesta-plugin-sluggable.git"
