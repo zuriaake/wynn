@@ -1,0 +1,18 @@
+date: 2013-02-12 12:54:18 -0600
+categories: journal
+
+# Project badges: ease or sleaze?
+
+Erik and Mislav have an [interesting discussion][commit] going on a Faraday
+commit on the merits of those badges in GitHub repository READMEs.
+
+I use them in a few of my projects, but lack of consistent size and Retina
+support have me leaning towards removing them.
+
+![Project badge screenshot][screencap]
+
+What's your take? Ease or [sleaze][]?
+
+[commit]: https://github.com/lostisland/faraday/commit/ac1b537f49bf110e87fe50679d80764367fb2d13
+[screencap]: http://cl.ly/image/201G3h313W2X/Screen%20Shot%202013-02-12%20at%2012.56.38%20PM.png
+[sleaze]: http://informationarchitects.net/blog/sweep-the-sleaze/
