@@ -1,0 +1,86 @@
+date: 2013-02-14 09:32:32 -0600
+categories: journal
+flags: draft
+
+# How to get great support as a technical user
+
+One of my favorite parts of working at GitHub is helping our Supportocats
+answer support requests. Since I focus mainly on the [GitHub API][API], I get
+to work with our more technical users. I've shopped at BestBuy enough to know
+what it's like when you think you know more than the staff.
+
+Nearly nine months of helping [technoweenie][] pursue Inbox 0 at the API Help
+Desk has changed the way I _ask_ for tech support for other products and
+services.
+
+## Use the right channel
+
+In the software industry, many of us have friends who have founded or work on
+some of our favorite services and tools. With those personal relationships, it
+seems easier to shoot an @reply or DM on Twitter. For [site down][status]
+questions, that's often good enough, but 140 chars just isn't conducive to
+describing (much less troubleshooting) most issues.
+
+For GitHub, [our support form][form] makes it simple to reach out and say
+_Halp!_ Sending an email to support@github.com works, too. Including "API" in
+the subject line routes you straight to the API team.
+
+Many open source projects have mailing lists, issue trackers, and IRC
+rooms to talk about issues. Find the right channel before you send a flurry of
+questions to a project maintainer.
+
+## Get to the point
+
+Once your request makes it to the top of the support queue, it has to
+be grok'd by a human. Verbosity is your foe here. The more you write, the
+longer it takes to distill your words into your actual issue. Not just once,
+but each time your ticket is passed to someone else on the team, it has to be
+reinterpreted.
+
+## Include details
+
+Your chances of getting speedy help go up substantially if you can avoid that
+dreaded "more info please" follow up. Photos, screenshots, URLs, stack traces,
+and other facts help speed up [the six stages of debugging][stages]. If you're
+calling a HTTP API, the developer has a hard time refuting `curl` output.
+
+<blockquote class="twitter-tweet"><p>`curl -v` or it didn’t happen.</p>&mdash;
+Wynn Netherland(@pengwynn) <a
+href="https://twitter.com/pengwynn/status/281151555158278145">December 18,
+2012</a></blockquote>
+
+
+## Don't piggyback issues
+
+Many request tools thread messages by subject or ticket number. You might be
+tempted to reply to that six month old email because the person who helped you
+last time seemed to know what they were talking about. Unless the issue is
+directly related, chances are you're delaying your new ticket because there's
+more previous conversation to wade through on the other end.
+
+## Don't be insecure
+
+Most support queues use plain old unencrypted email. Please, please, please
+_never send passwords, API tokens, credit cards, or other sensitive information
+in email_. Always mask or omit sensitive info in email. Be sure to scrub that
+stack trace or log snippet you're including, too.
+
+## Be classy
+
+You might have justified rage because a certain feature has been long broken
+and no one seems to care. Just don't let frustration undermine your own cause.
+Name calling and insults might make you feel better in the moment but it won't
+bring you any relief. Most support folks are extremely professional. They like
+to help or they wouldn't do what they do.
+
+That said, humans are more inclined to help when they're treated like, well, humans.
+
+Oh yeah, [we're hiring Supportocats][hiring].
+
+
+[API]: http://developer.github.com
+[status]: https://status.github.com
+[stages]: http://plasmasturm.org/log/6debug/
+[technoweenie]: https://twitter.com/technoweenie
+[form]: https://github.com/support
+[hiring]: https://jobs.github.com/companies/GitHub
