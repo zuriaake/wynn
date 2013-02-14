@@ -1,6 +1,5 @@
 date: 2013-02-14 09:32:32 -0600
 categories: journal
-flags: draft
 
 # How to get great support as a technical user
 
