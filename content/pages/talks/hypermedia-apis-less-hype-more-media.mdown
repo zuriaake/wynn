@@ -7,7 +7,7 @@ speaker_deck_id: f92a3160650e0130c19312313d1a79cc
 
 # Hypermedia APIs - less hype, more media, please
 
-My slides from [Big Ruby][conf] Hypermedia-driven APIs are all the rage, but
+My slides from [Big Ruby][conf]: Hypermedia-driven APIs are all the rage, but
 what do they mean for API client developers? Are resilient APIs worth the
 performance and complexity tradeoffs?
 
