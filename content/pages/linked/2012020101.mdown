@@ -13,7 +13,7 @@ developers](http://nserror.me/blog/2012/01/31/rake-your-objective-c-life-easier/
 > you a lot of time.
 
 Whether I'm writing mobile apps with Titanium, or writing books for
-Manning, Rake is a critical part of my polygot toolchain. It's a
+Manning, Rake is a critical part of my polyglot toolchain. It's a
 powerful thread to stitch together CoffeeScript, Python, Sass, Haskell,
 and of course Ruby.
 
