@@ -1,0 +1,23 @@
+date: 2013-03-03 13:18:25 -0600
+categories: linked
+url: https://github.com/creationix/jack
+
+
+# I don't know jack (yet)
+
+My head is still spinning from [Tim Caswell's][creationix] lightning talk at
+[Big Ruby][conf] where he showed off [jack][], his new programming language. (I'll
+post a link to the video when it's available. The gamepad-driven demo was
+amazing.) The [simple yet powerful syntax][syntax] looks like an excellent
+starter language for new programmers. I'm intrigued especially at the function
+syntax:
+
+    {arg1, arg2, arg3| body } is Function --> true
+
+I want to see how my seven-year-old picks up something like
+this since she's shown interest in Ruby already.
+
+[creationix]: https://twitter.com/creationix
+[conf]: http://bigrubyconf.com
+[jack]: https://github.com/creationix/jack
+[syntax]: https://github.com/creationix/jack/blob/master/samples/syntax.jk
