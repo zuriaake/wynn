@@ -2,8 +2,8 @@
 
 .page
   .content
-    - unless (vimeo_id = @page.metadata('vimeo_id')).nil?
-      %iframe(src="http://player.vimeo.com/video/30195860?title=0" width="100%" height="350" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen)
     .slide-container
-      %script(src="http://speakerdeck.com/embed/#{@page.metadata('speaker_deck_id')}.js?size=preview")
+      %script(async src="//speakerdeck.com/embed/#{@page.metadata('speaker_deck_id')}.js?size=preview")
+    - unless (vimeo_id = @page.metadata('vimeo_id')).nil?
+      %iframe(src="http://player.vimeo.com/video/#{@page.metadata('vimeo_id')}?title=0" width="100%" height="350" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen)
 

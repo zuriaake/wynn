@@ -4,6 +4,7 @@ template: templates/talk
 summary: Talking Hypermedia API clients at Big Ruby Conf.
 tags: talk, ruby, api, big ruby
 speaker_deck_id: f92a3160650e0130c19312313d1a79cc
+vimeo_id: 63403242
 
 # Hypermedia APIs - less hype, more media, please
 
