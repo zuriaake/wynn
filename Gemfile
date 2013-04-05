@@ -1,7 +1,7 @@
-source :rubygems
+source 'https://rubygems.org'
 
 gem "heroku"
-gem "nesta", :git => "https://github.com/gma/nesta.git"
+gem "nesta", :git => "https://github.com/gma/nesta.git", :ref => "a3e7dc2ed184bf661aaf698dd43768eda83d0c09"
 gem "redcarpet"
 gem "compass", "~> 0.12.2"
 gem "compass-normalize"
