@@ -3,7 +3,7 @@
 .page
   .content
     .slide-container
-      %script(async src="//speakerdeck.com/embed/#{@page.metadata('speaker_deck_id')}.js?size=preview")
+      %script(async class="speakerdeck-embed" data-id="#{@page.metadata('speaker_deck_id')}" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js")
     - unless (vimeo_id = @page.metadata('vimeo_id')).nil?
       %iframe(src="http://player.vimeo.com/video/#{@page.metadata('vimeo_id')}?title=0" width="100%" height="350" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen)
 
