@@ -7,6 +7,21 @@ module Nesta
 
     set :views, 'views'
 
+    def related_articles(limit = 5)
+      paths = [
+        "/journal/how-to-get-great-support",
+        "/journal/a-stylesheet-author-s-guide-to-terminal-colors",
+        "/journal/greenest-github-contributions-profiles",
+        "/journal/what-makes-a-good-api-wrapper",
+        "/journal/dotfiles-discovery",
+        "/journal/octopress-classic-is-the-new-kubrick",
+        "/journal/github-is-a-fish-bowl"
+      ]
+
+      paths.map {|p| Nesta::Page.find_by_path(p) }.
+        shuffle[0..limit]
+    end
+
     def url_or_permalink_for(page)
       page.is_linked? ? page.metadata('url') : page.permalink
     end

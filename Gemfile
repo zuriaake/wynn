@@ -17,6 +17,11 @@ gem 'sinatra-simple-navigation'
 group :development do
   gem "racksh"
   gem "tux"
+  gem 'awesome_print', :require => 'ap'
+  gem 'hirb-unicode'
+  gem 'pry'
+  gem 'wirb'
+  gem 'wirble'
 end
 
 # gem (RUBY_VERSION =~ /^1.9/) ? 'ruby-debug19': 'ruby-debug'

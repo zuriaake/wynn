@@ -1,18 +1,7 @@
 .related
   %h3 You might like
   %ul.related
-    %li
-      %a(href="/journal/how-to-get-great-support") How to get great support as a technical user
-    %li
-      %a(href="/journal/a-stylesheet-author-s-guide-to-terminal-colors") A stylesheet author's guide to terminal colors
-    %li
-      %a(href="/journal/greenest-github-contributions-profiles") Greenest GitHub contributions profiles
-    %li
-      %a(href="/journal/what-makes-a-good-api-wrapper") What makes a good API wrapper?
-    %li
-      %a(href="/journal/dotfiles-discovery") Dotfiles discovery
-    %li
-      %a(href="/journal/octopress-classic-is-the-new-kubrick") Octopress classic is the new Kubrick
-
-
+    - related_articles(5).each do |article|
+      %li
+        %a{:href => article.permalink}= article.heading
 
