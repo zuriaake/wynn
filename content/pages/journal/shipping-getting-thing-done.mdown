@@ -56,13 +56,13 @@ like me, pairing is rewarding yet very draining.
 
 Meetings work the same way. That block of time _after_ the meeting isn't
 prime time for getting much done. There's no way to avoid meetings and
-appointments, but the less you have, the larger focused blocks of time you
+appointments, but the fewer you have, the larger focused blocks of time you
 have.
 
 ## Real focus - what are you shipping _next?_
 
 Time pressures aren't the only thing that can fragment your schedule and impact
-your productivity. Too many priorities lead to a divided mind and less ships.
+your productivity. Too many priorities lead to a divided mind and fewer ships.
 Every month, someone from each GitHub team will create an issue along the lines
 of "What do you want to ship in April?" along with a short list of their goals
 for that month. Everyone from the team piles on with their lists so everyone
