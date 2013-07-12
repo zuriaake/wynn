@@ -89,9 +89,14 @@ To my knowledge, <a href="http://sass-lang.com/">Sass</a>, heavily influenced by
 
 If you're a newcomer to Sass, this example might be a bit hard to follow. Basically, we declare a mixin named <code>rounded</code> with a set of styles. These styles are then <em>mixed into</em> the elements in the following selectors. When compiled, this Sass stylesheet yields the following CSS:
 
-    #login,
+    #login {
+      background: #efefef;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+    }
+
     #sidebar {
-       -webkit-border-radius: 5px;
+      -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
     }
 
