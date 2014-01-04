@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.0.0'
+
 gem "heroku"
 gem "nesta", :git => "https://github.com/gma/nesta.git", :ref => "a3e7dc2ed184bf661aaf698dd43768eda83d0c09"
 gem "redcarpet"
