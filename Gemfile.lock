@@ -59,6 +59,9 @@ GEM
     mime-types (2.0)
     minitest (4.7.5)
     multi_json (1.8.2)
+    nesta-plugin-cache (0.0.1)
+      nesta (~> 0.9.11)
+      sinatra (~> 1.2)
     nesta-plugin-linkable (0.0.1)
       nesta (>= 0.9.11)
     nesta-plugin-sluggable (0.0.1)
@@ -132,6 +135,7 @@ DEPENDENCIES
   heroku
   hirb-unicode
   nesta!
+  nesta-plugin-cache
   nesta-plugin-linkable
   nesta-plugin-sluggable
   pry

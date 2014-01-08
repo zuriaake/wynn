@@ -13,6 +13,7 @@ gem "susy", "~> 1.0.9"
 
 gem "nesta-plugin-sluggable" #, :git => "git://github.com/pengwynn/nesta-plugin-sluggable.git"
 gem "nesta-plugin-linkable"  #, :git => "/Users/wynn/Projects/nesta-plugin-linkable"
+gem "nesta-plugin-cache" # for Rack::Cache
 
 gem 'rack-rewrite'
 gem 'sinatra-simple-navigation'
