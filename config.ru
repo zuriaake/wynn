@@ -83,6 +83,13 @@ use Rack::Rewrite do
 
 end
 
+if memcache_servers = ENV["MEMCACHIER_SERVERS"]
+  use Rack::Cache,
+    verbose: true,
+    metastore:   "memcached://#{memcache_servers}",
+    entitystore: "memcached://#{memcache_servers}"
+end
+
 # Nesta
 require 'nesta/app'
 Nesta::App.root = root
