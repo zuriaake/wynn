@@ -4,7 +4,7 @@ ruby '2.0.0'
 
 gem "foreman"
 gem "heroku"
-gem "nesta", :git => "https://github.com/gma/nesta.git", :ref => "a3e7dc2ed184bf661aaf698dd43768eda83d0c09"
+gem "nesta", :git => "https://github.com/gma/nesta.git", :ref => "a049ac1a9ac7af4296fccc87bb89b2277bcc96f7"
 gem "redcarpet"
 gem "compass", "~> 0.12.2"
 gem "compass-normalize"
