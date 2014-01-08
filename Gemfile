@@ -10,6 +10,9 @@ gem "compass", "~> 0.12.2"
 gem "compass-normalize"
 gem "rack", "~> 1.5.2" # critical security fix
 gem "susy", "~> 1.0.9"
+gem "dalli"
+gem "rack-cache"
+gem "foreman"
 
 gem "nesta-plugin-sluggable" #, :git => "git://github.com/pengwynn/nesta-plugin-sluggable.git"
 gem "nesta-plugin-linkable"  #, :git => "/Users/wynn/Projects/nesta-plugin-linkable"

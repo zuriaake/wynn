@@ -33,6 +33,7 @@ GEM
       sass (~> 3.1)
     compass-normalize (1.4.3)
       compass (>= 0.12.0)
+    dalli (2.7.0)
     dotenv (0.9.0)
     excon (0.25.3)
     foreman (0.63.0)
@@ -73,6 +74,8 @@ GEM
       method_source (~> 0.8)
       slop (~> 3.4)
     rack (1.5.2)
+    rack-cache (1.2)
+      rack (>= 0.4)
     rack-protection (1.5.1)
       rack
     rack-rewrite (1.4.01)
@@ -131,6 +134,7 @@ DEPENDENCIES
   awesome_print
   compass (~> 0.12.2)
   compass-normalize
+  dalli
   foreman
   heroku
   hirb-unicode
@@ -140,6 +144,7 @@ DEPENDENCIES
   nesta-plugin-sluggable
   pry
   rack (~> 1.5.2)
+  rack-cache
   rack-rewrite
   racksh
   redcarpet

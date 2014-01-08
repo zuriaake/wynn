@@ -6,6 +6,7 @@ module Nesta
     SimpleNavigation.config_file_path = File.join('config')
 
     set :views, 'views'
+    set :cache, Dalli::Client.new
 
     def related_articles(limit = 5)
       paths = [
