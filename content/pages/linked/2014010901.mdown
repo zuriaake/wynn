@@ -1,0 +1,18 @@
+date: 2014-01-09 11:06:48 -0600
+categories: linked
+url: http://robots.thoughtbot.com/the-unix-shells-humble-if
+
+# Unix shell if statement explained
+
+Pat Brisbin gives one of the most approachable explanations of the Unix shell's
+`if` statement that I've seen.
+
+    if [ "string" != "other string" ]; then
+      # same as if test "string" != "other string"; then
+    fi
+
+> Unfortunately, many users come across this usage first and assume the
+> brackets are part of if itself. This can lead to some nonsensical statements.
+
+I will always hold my nose every time I type `fi`, but I've grown more fond of
+shell scripting the last few years.
