@@ -1,0 +1,22 @@
+date: 2014-01-09 22:10:35 -0600
+categories: linked
+url: http://css-tricks.com/words-avoid-educational-writing/
+
+# Words to avoid in tech writing
+
+Chris Coyier's list of words to avoid in educational writing made me wince
+because I catch myself using them too often. Technical writing suffers when the
+text assumes the audience shares the author's experience or context.
+
+Whether I'm working on [docs][], [guides][], or [books][], Vim is my jam. In
+order to curb my use of these weasel words, I added some [formatting rules][]
+to my [dotfiles][].
+
+![screencap](https://f.cloud.github.com/assets/865/1884760/df9dbd6e-79ac-11e3-96b7-446802220e57.png)
+
+[docs]: http://developer.github.com
+[guides]: http://developer.github.com/guides/
+[books]: /books
+[formatting rules]: https://github.com/pengwynn/dotfiles/commit/12159ea233180344be4e25d57056ccd37061a153
+[dotfiles]: https://github.com/pengwynn/dotfiles
+
