@@ -1,6 +1,5 @@
 date: 2014-01-18 17:37:03 -0600
 categories: journal
-flags: draft
 
 # Flint: lint your project for sources of contributor friction
 
