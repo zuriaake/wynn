@@ -1,6 +1,5 @@
 date: 2014-01-21 12:31:27 -0600
 categories: journal
-flags: draft
 
 # Don't tell me how fast I read
 
