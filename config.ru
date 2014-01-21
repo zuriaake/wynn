@@ -34,9 +34,11 @@ use Rack::ShowExceptions
 require 'rack/rewrite'
 use Rack::Rewrite do
 
-  r301 %r{.*}, 'http://wynnnetherland.com$&', :if => Proc.new {|rack_env|
-    rack_env['SERVER_NAME'] != 'wynnnetherland.com'
-  }
+  if ENV['RACK_ENV'] != 'development'
+    r301 %r{.*}, 'http://wynnnetherland.com$&', :if => Proc.new {|rack_env|
+      rack_env['SERVER_NAME'] != 'wynnnetherland.com'
+    }
+  end
 
   r301 '/blog/link-linkedin-into-your-next-ruby-application', 'https://github.com/pengwynn/linkedin'
   r301 '/blog/font-face-off-typekit-vs-font-squirrel', '/journal/font-face-off-typekit-vs-font-squirrel'
