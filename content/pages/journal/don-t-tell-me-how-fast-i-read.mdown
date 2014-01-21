@@ -11,7 +11,7 @@ greatly enhance the presentation of long form essays online, I think estimated
 reading times are a feature that need to go the way of social sharing buttons,
 blog rolls, and tag clouds.
 
-## Estimated reading times are irrelvant
+## Estimated reading times are irrelevant
 
 Reading estimates appear to be a more approachable way to indicate article length
 based on word count and the reading speed of the average reader. After all, "5
