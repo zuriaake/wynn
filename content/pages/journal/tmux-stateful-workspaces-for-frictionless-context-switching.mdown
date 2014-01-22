@@ -1,0 +1,110 @@
+date: 2014-01-22 7:59:18 -0500
+categories: journal
+
+# Switch context with less friction using stateful tmux workspaces
+
+As developers, we are [well][spolsky] [aware][atwood] of the evils of context
+switching. Hopping between software projects often means making the mental
+transition between programming languages and business domains. But hop we must.
+
+Getting your tools to switch as fast as you do can be even harder. For this problem,
+[tmux][] has changed the way I work.
+
+## What is tmux?
+
+Think of tmux as a window manager for your terminal. Instead of terminal tabs,
+you can run multiple terminal sessions, stitched together into a single
+terminal window. [Evan Travers][] recently wrote a [great introduction to tmux
+sessions, windows, and panes][coderwall], the building blocks of what I call
+tmux workspaces.
+
+## Scriptable workspaces
+
+When I sit down to hack on a software project, I need some combination of the
+following:
+
+* A **text editor**
+* A local interactive **terminal shell**
+* A **remote shell** over SSH
+* A **[REPL][]**
+* A shell to **tail the development log**
+* A **database console**
+
+I use the venerable Vim as my text editor, so each one of these tools is
+terminal-based. Since tmux is [scriptable][], I can unfurl instant workspaces for
+projects according to own my personal workspace preferences:
+
+    ~/code/pengwynn/blog master
+    ❯ mx
+
+Running `mx` from the project root, I build a workspace for working on this
+blog that includes windows for vim, a shell prompt, a console using [racksh][],
+and [Foreman][] to start the server for local preview.
+
+![workspace][screencap-1]
+
+[The script][mx] will look for a tmux session based on the current folder name.
+If no such session is found, it creates one:
+
+    # look for a tmux session based on folder name
+    if ! (tmux has-session -t "$SESSION" >/dev/null 2>&1); then
+      if [ -x "$PWD"/.tmux ]; then
+        "$PWD"/.tmux "$SESSION"
+      else
+        tmux new-session -s "$SESSION" -n editor -d
+        tmux send-keys "$EDITOR" C-m #':CtrlP' C-m
+        tmux new-window -n shell -t "$SESSION"
+        _safe_window console script/console
+        _safe_window server script/server
+
+        tmux select-window -t "$SESSION":1
+      fi
+    fi
+
+If the folder has a `.tmux` file, it will run that script to create a custom
+layout for that project, otherwise it will create four stock windows. It will
+always create windows for my `$EDITOR` and a shell. For projects that have
+console and server scripts, [as most of my projects
+do][bootstrapping-consistency], the script will create windows for those as well.
+
+If a session already exists, the script will instead attach to the previous
+session, letting me pick up where I left off.
+
+    if [ -z "$TMUX" ]; then
+      tmux attach -t "$SESSION"
+    else
+      tmux switch-client -t "$SESSION"
+    fi
+
+
+
+
+tmux's scriptable command line interface lets me build workspaces quickly, but
+it's tmux's stateful sessions that make it truly remarkable. Knowing I can
+quickly reconstruct a workspace makes context switching cheap. Detaching
+from a workspace, *letting it run in the background*, makes context switching
+almost free. I can even jump between workspaces using tmux's built-in session
+chooser:
+
+![screencap-2][]
+
+It's forever changed the way I work.
+
+
+[spolsky]: http://www.joelonsoftware.com/articles/fog0000000022.html
+[atwood]: http://www.codinghorror.com/blog/2006/09/the-multi-tasking-myth.html
+[tmux]: http://tmux.sourceforge.net/
+[Evan Travers]: https://twitter.com/evantravers
+[coderwall]: https://coderwall.com/p/_g2vpq
+[REPL]: http://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop
+[scriptable]: http://manpages.ubuntu.com/manpages/precise/man1/tmux.1.html#contenttoc4
+[Octokit]: https://github.com/pengwynn/octokit
+[guard]: https://github.com/guard/guard
+[tmuxinator]: https://github.com/aziz/tmuxinator
+[Foreman]: https://github.com/ddollar/foreman
+[racksh]: https://github.com/sickill/racksh
+[bootstrapping-consistency]: /linked/2013012801/bootstrapping-consistency
+[mx]: https://github.com/pengwynn/dotfiles/blob/f575ab8a85fa87e9040a40b4806c6bc6dc8076d7/bin/mx
+
+[screencap-1]: http://cl.ly/image/2V0S2Z0W2i3P/Screen%20Shot%202014-01-22%20at%2008.41.14.png
+[screencap-2]: http://cl.ly/image/1M2931471847/Screen%20Shot%202014-01-22%20at%2009.05.17.png
