@@ -17,7 +17,7 @@ module Nesta
         "/journal/dotfiles-discovery",
         "/journal/octopress-classic-is-the-new-kubrick",
         "/journal/github-is-a-fish-bowl",
-        "/linked/2014010902/words-to-avoid-in-tech-writing",
+        "/linked/2014010902",
         "/journal/don-t-tell-me-how-fast-i-read",
         "/journal/flint-lint-your-project-for-sources-of-contributor-friction"
       ]
