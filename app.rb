@@ -16,7 +16,10 @@ module Nesta
         "/journal/what-makes-a-good-api-wrapper",
         "/journal/dotfiles-discovery",
         "/journal/octopress-classic-is-the-new-kubrick",
-        "/journal/github-is-a-fish-bowl"
+        "/journal/github-is-a-fish-bowl",
+        "/linked/2014010902/words-to-avoid-in-tech-writing",
+        "/journal/don-t-tell-me-how-fast-i-read",
+        "/journal/flint-lint-your-project-for-sources-of-contributor-friction"
       ]
 
       paths.map {|p| Nesta::Page.find_by_path(p) }.
