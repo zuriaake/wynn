@@ -8,7 +8,7 @@ When I first dove into Ruby, its powerful `Enumerable` module became my new
 hammer. I found a way to shoehorn most problems into `map`, `each`, `inject`,
 and the usual suspects. I was slow to discover some succinct idioms made
 possible by some of `Array`'s lesser known methods &mdash; idioms you only discover by
-digging through enough [Other People's Code][opc].
+digging through [Other People's Code][opc].
 
 ## *
 
