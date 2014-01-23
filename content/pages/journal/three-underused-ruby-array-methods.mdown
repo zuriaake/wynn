@@ -1,6 +1,5 @@
-date: 2014-01-22 14:03:06 -0600
+date: 2014-01-23 08:03:06 -0600
 categories: journal
-flags: draft
 
 # Three underused Ruby Array methods
 
