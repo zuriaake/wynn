@@ -22,7 +22,7 @@ You could also build the same string using the `*` method:
     [1,2,3] * ', '
     => "1, 2, 3"
 
-If you use an integer `n` as an argument, you can concatenate the array `n`
+If you use an integer as an argument, you can concatenate the array `n`
 times:
 
     [1,2,3] * 3
@@ -30,8 +30,7 @@ times:
 
 ## |
 
-Given Ruby's ultra intuitive support for combining arrays using `+`, it's not
-uncommon to see something like this:
+Given Ruby's ultra intuitive support for combining arrays using `+`, it's common to see something like this:
 
     ([1,2,3] + [2,3,4]).uniq
     => [2, 3]
@@ -62,7 +61,7 @@ intersection of another array using the `|=` or `&=` methods.
     a |= [2,3,4]
     => [1, 2, 3, 4]
 
-The `|`, `&`, `|=`, and `&=` methods also work for another Ruby underused
+The `|`, `&`, `|=`, and `&=` methods also work for another underused Ruby 
 feature: [`Set`][set].
 
 [set]: http://www.ruby-doc.org/stdlib-2.1.0/libdoc/set/rdoc/Set.html
