@@ -31,8 +31,8 @@ times:
 
 Given Ruby's ultra intuitive support for combining arrays using `+`, it's common to see something like this:
 
-    ([1,2,3] + [2,3,4]).uniq
-    => [2, 3]
+    ([1,2,3] + [3,4,5]).uniq
+    => [1, 2, 3, 4, 5]
 
 The `|` method is a more idiomatic way find the union between two Arrays.
 
