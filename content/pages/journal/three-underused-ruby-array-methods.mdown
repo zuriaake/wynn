@@ -52,10 +52,9 @@ The `&` method is an easier way to return the intersection between two Arrays.
     [1,2,3] & [2,3,4]
     => [2, 3]
 
-## Bonus: |= and &=
+## Bonus: *=, |= and &=
 
-As an added bonus, you can modify an array in place with the union or
-intersection of another array using the `|=` or `&=` methods.
+As an added bonus, you can modify an array variable in place using the `*=`, `|=`, or `&=` methods.
 
     a = [1,2,3]
     a |= [2,3,4]
