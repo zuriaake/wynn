@@ -54,14 +54,13 @@ The `&` method is an easier way to return the intersection between two Arrays.
 
 ## Bonus: *=, |= and &=
 
-As an added bonus, you can modify an array variable in place using the `*=`, `|=`, or `&=` methods.
+As an added bonus, you can modify an array variable in place using `*=`, `|=`, or `&=`.
 
     a = [1,2,3]
     a |= [2,3,4]
     => [1, 2, 3, 4]
 
-The `|`, `&`, `|=`, and `&=` methods also work for another underused Ruby 
-feature: [`Set`][set].
+`|`, `&`, `|=`, and `&=` also work for another underused Ruby feature: [`Set`][set].
 
 [set]: http://www.ruby-doc.org/stdlib-2.1.0/libdoc/set/rdoc/Set.html
 [opc]: http://drnicwilliams.com/2007/06/01/8-steps-for-fixing-other-peoples-code/
