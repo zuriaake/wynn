@@ -1,0 +1,69 @@
+date: 2014-01-22 14:03:06 -0600
+categories: journal
+flags: draft
+
+# Three underused Ruby Array methods
+
+When I first dove into Ruby, its powerful `Enumerable` module became my new
+hammer. I found a way to shoehorn most problems into `map`, `each`, `inject`,
+and the usual suspects. I was slow to discover some succinct idioms made
+possible by some of `Array`'s lesser known methods &mdash; idioms you only discover by
+digging through enough [Other People's Code][opc].
+
+## *
+
+The `join` method is a common way to build a comma-delimited string:
+
+    [1,2,3].join(', ')
+    => "1, 2, 3"
+
+You could also build the same string using the `*` method:
+
+    [1,2,3] * ', '
+    => "1, 2, 3"
+
+If you use an integer `n` as an argument, you can concatenate the array `n`
+times:
+
+    [1,2,3] * 3
+    => [1, 2, 3, 1, 2, 3, 1, 2, 3]
+
+## |
+
+Given Ruby's ultra intuitive support for combining arrays using `+`, it's not
+uncommon to see something like this:
+
+    ([1,2,3] + [2,3,4]).uniq
+    => [2, 3]
+
+The `|` method is a more idiomatic way find the union between two Arrays.
+
+    [1,2,3] | [3,4,5]
+    => [1, 2, 3, 4, 5]
+
+## &
+
+Ever <del>written</del>stumbled across something like this?
+
+    [1,2,3].select {|i| [2,3,4].include?(i) }
+    => [2, 3]
+
+The `&` method is an easier way to return the intersection between two Arrays.
+
+    [1,2,3] & [2,3,4]
+    => [2, 3]
+
+## Bonus: |= and &=
+
+As an added bonus, you can modify an array in place with the union or
+intersection of another array using the `|=` or `&=` methods.
+
+    a = [1,2,3]
+    a |= [2,3,4]
+    => [1, 2, 3, 4]
+
+The `|`, `&`, `|=`, and `&=` methods also work for another Ruby underused
+feature: [`Set`][set].
+
+[set]: http://www.ruby-doc.org/stdlib-2.1.0/libdoc/set/rdoc/Set.html
+[opc]: http://drnicwilliams.com/2007/06/01/8-steps-for-fixing-other-peoples-code/
