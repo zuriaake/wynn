@@ -30,8 +30,7 @@ laggy connections, half-duplex speakerphone mics, and lonely soliloquies into
 unknowingly-muted handsets. For effective distributed and remote teams,
 communication becomes primarily written and [async][]. In such environs, it's
 often difficult for the reader to have the same context as the writer. The
-author's tone might be hard to discern. The author's tone might be hard to
-discern. Believe it or not, emoji can help.
+author's tone might be hard to discern. Believe it or not, emoji can help.
 
 ### Better with emoji
 
@@ -71,17 +70,15 @@ Like anything, emoji can be abused. We've all seen the neverending parade of
 :+1:'s on an open source pull request, as if the 300th comment is going to
 compel the maintainer to merge it.
 
-I've been noticing I've started to associate emoji with team members based on
-how often they use certain ones. [Observing frequent emoji use][tracker] can
-indicate recurring tones in the way you communicate with your team. I try to
-avoid being overly snarky.
+[Observing frequent emoji use][tracker] can indicate recurring tones in
+the way we communicate with people. I'm trying to avoid being overly
+snarky. I don't want them to think of me when they see :trollface:.
 
-Whose face do you see when you see :trollface:. Do others see yours?
+Since pictures can also become just as trite as words, I look for new emoji to
+express feelings and keep the conversation fresh. [Mu-An Chiou][] created [an
+excellent emoji lookup tool][picker] ([source is on
+GitHub][picker-source]) for just that purpose.
 
-Lately, I've been considering my own emoji usage.  Since pictures can become
-just as trite as words, I look for new emoji to express feelings and keep the
-conversation fresh. [Mu-An Chiou][] created [an excellent emoji lookup
-tool][picker] and the [source is on GitHub][picker-source].
 
 ---
 _Special thanks to [@jasonrudolph][] for some great feedback and edits
