@@ -5,7 +5,7 @@
         %a.external{:href => @page.metadata('url')}= @page.heading
     - else
       %h1= widont(@page.heading)
-    ~ @page.body(self)
+    ~ pipeline(@page.body(self))
     %p.post-meta
       %a{:href => @page.permalink} #
       - if @page.is_linked?

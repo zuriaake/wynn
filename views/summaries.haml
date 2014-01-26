@@ -9,8 +9,8 @@
               &nbsp;
               %a.permalink{:href => page.permalink } #
         - if page.summary.nil? || page.summary.empty?
-          ~ page.body(self)
+          ~ pipeline(page.body(self))
         - else
-          ~ page.summary
+          ~ pipeline(page.summary)
           %p.read_more
             %a(href="#{path_to(page.abspath)}")= page.read_more
