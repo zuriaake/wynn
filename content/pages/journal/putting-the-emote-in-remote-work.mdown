@@ -1,0 +1,105 @@
+date: 2014-01-13 07:25:45 -0600
+categories: journal
+flags: draft
+
+# Putting the emote in remote work
+
+I had the opportunity to chat with an entire [gSchool][] class via Skype a
+couple of weeks ago and share my thoughts on development and my experience of
+working at GitHub. One student asked me to share some keys to working remotely
+since she had heard a large percentage of GitHubbers are outside of San
+Francisco.
+
+I should develop a more thoughtful response to that question, drawing from
+experience of working remotely as both an employee and an employer for the last
+seven years. Since I was put on the spot, however, I shared the first three
+tips that came to mind:
+
+- **Carve out a workspace at home.** Having a spot to retreat from family and
+  distractions at home is critical to staying productive.
+- **Be self-directed.** When you're remote, [management by wandering
+  around][mgmt] is far more difficult. You have a greater responsibility to
+  ensure your work aligns with your team and company goals.
+- **Use emoji.** The class had fun with this one, but I wasn't going for a pure
+  laugh. Since I didn't have time to elaborate, I'll do that now.
+
+## The problems with remote communication
+
+Unless everyone is in the same room, synchronous meetings are wrought with
+laggy connections, half duplex speakerphones mics, and lonely soliloquies into
+unknowingly muted handsets. For effective distributed and remote teams,
+communication becomes primarily written and [async][]. In such environs, it's
+often difficult for the reader to have the same context as the writer. The
+author's tone might be hard to discern. Emoji can help.
+
+### How Emoji help
+
+At GitHub, [emoji autocomplete][] is built into almost every tool we use.
+Whether we're [using GitHub to build GitHub][zach] or using internal tools like
+our custom workstreaming, hiring, or help desk apps, our written communication
+is steeped in emoji. But why?
+
+**Emoji express emotion.** This may seem obvious, especially if, like me, you
+once thought the term _emoji_ shared a common etymology with [emoticon][],
+those text-based smileys that have adorned email since 1982. Emoji [literally
+means "picture letter"][emoji], but those pictures can help express emotion.
+
+Saying "good job <img src="https://github.global.ssl.fastly.net/images/icons/emoji/zap.png?v5" height="16">" carries more feeling than with words alone. "Removing trailing
+whitespace" is much more fun with <img src="https://github.global.ssl.fastly.net/images/icons/emoji/fire.png?v5" height="16">.
+
+**Emoji encourage brevity.** One of the problems with electronic communication is that we get so much of it.
+Shakespeare said "Brevity is the soul of Twitter," or (something like that). A
+<img
+src="https://github.global.ssl.fastly.net/images/icons/emoji/metal.png?v5"
+height="16">, <img
+src="https://github.global.ssl.fastly.net/images/icons/emoji/+1.png?v5"
+height="16">, or <img
+src="https://github.global.ssl.fastly.net/images/icons/emoji/shipit.png?v5"
+height="16"> can be just as effective as "awesome", "I'm onboard with
+that", or "Looks good, ship it."
+
+**Emoji reinforce your words.** Some emoji serve to back up your message. One of my
+favorites combos is "<img
+src="https://github.global.ssl.fastly.net/images/icons/emoji/microscope.png?v5"
+height="16"><img
+src="https://github.global.ssl.fastly.net/images/icons/emoji/checkered_flag.png?v5"
+height="16"> science wins."
+
+**Emoji express what you cannot.** I think of the times someone (me
+included) has posted the need to take some time off to deal with personal
+tragedy. Often the responses from coworkers are merely a single <img
+src="https://github.global.ssl.fastly.net/images/icons/emoji/heart.png?v5"
+height="16">.
+
+**Emoji tell a story.** One of my favorite internal Summit presentations at
+GitHub is [Julia West][]'s emoji talk in which she tells her life story, one
+emoji at a time.
+
+### Consider your emoji usage
+
+Like anything, emoji can be abused. We've all seen the neverending parade of  <img
+src="https://github.global.ssl.fastly.net/images/icons/emoji/thumbsup.png?v5"
+height="16">'s on an open source pull request, as if the 300th comment is going
+to compel the maintainer to merge it.
+
+Lately, I've been considering my own emoji usage. Since pictures can become just as trite as
+words, I look for new emoji to express feelings and keep the conversation
+fresh. I've also been noticing I've started to associate emoji with team members based
+on how often they use certain ones. [Observing frequent emoji use][tracker] can
+indicate recurring tones in the way you communicate with your team. I try to
+avoid being overly snarky.
+
+Whose face do you see when you see <img
+src="https://github.global.ssl.fastly.net/images/icons/emoji/trollface.png?v5"
+height="16">. Do others see yours?
+
+
+[gSchool]: https://www.gschool.it/
+[mgmt]: http://en.wikipedia.org/wiki/Management_by_wandering_around
+[emoji autocomplete]: https://github.com/blog/1289-emoji-autocomplete
+[async]: http://zachholman.com/posts/how-github-works-asynchronous/
+[zach]: http://zachholman.com/talk/how-github-uses-github-to-build-github/
+[emoticon]: http://en.wikipedia.org/wiki/Emoticon
+[emoji]: http://en.wikipedia.org/wiki/Emoji
+[Julia West]: https://twitter.com/juliamae
+[tracker]: http://www.emojitracker.com/

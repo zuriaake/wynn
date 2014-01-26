@@ -14,7 +14,7 @@
         Posted on
       %time{:datetime => @page.date, :title => @page.date}= @page.date.strftime("%d %b %Y")
   - else
-    ~ @page.to_html(self)
+    ~ pipeline(@page.to_html(self))
   = haml :related, :layout => false
 %br
 

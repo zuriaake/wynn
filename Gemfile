@@ -7,6 +7,8 @@ gem "compass-normalize"
 gem "dalli"
 gem "foreman"
 gem "heroku"
+gem "gemoji"
+gem "html-pipeline"
 gem "nesta", :git => "https://github.com/gma/nesta.git", :ref => "a049ac1a9ac7af4296fccc87bb89b2277bcc96f7"
 gem "rack", "~> 1.5.2" # critical security fix
 gem "rack-cache"

@@ -1,3 +1,4 @@
+require 'html/pipeline'
 require 'sinatra/simple-navigation'
 
 module Nesta
@@ -46,6 +47,20 @@ module Nesta
 
     def widont(text)
       text.gsub(/([^\s])\s+([^\s]+)\s*$/, '\1&nbsp;\2')
+    end
+
+    def pipeline(text)
+      context = {
+        :asset_root => "http://#{request.host_with_port}/images",
+        :base_url   => "http://wynnnetherland.com"
+      }
+      pipeline = HTML::Pipeline.new [
+        HTML::Pipeline::MentionFilter,
+        HTML::Pipeline::EmojiFilter
+      ], context
+      result = pipeline.call(text)
+
+      result[:output].to_s
     end
   end
 end

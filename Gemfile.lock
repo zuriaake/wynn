@@ -40,6 +40,7 @@ GEM
       dotenv (>= 0.7)
       thor (>= 0.13.6)
     fssm (0.2.10)
+    gemoji (1.5.0)
     haml (3.1.8)
     heroku (3.2.1)
       heroku-api (~> 0.3.7)
@@ -53,11 +54,15 @@ GEM
     hirb-unicode (0.0.5)
       hirb (~> 0.5)
       unicode-display_width (~> 0.1.1)
+    html-pipeline (1.5.0)
+      activesupport (>= 2)
+      nokogiri (~> 1.4)
     i18n (0.6.9)
     launchy (2.4.2)
       addressable (~> 2.3)
     method_source (0.8.2)
     mime-types (2.0)
+    mini_portile (0.5.2)
     minitest (4.7.5)
     multi_json (1.8.2)
     nesta-plugin-cache (0.0.1)
@@ -68,6 +73,8 @@ GEM
     nesta-plugin-sluggable (0.0.1)
       nesta (>= 0.9.11)
     netrc (0.7.7)
+    nokogiri (1.6.1)
+      mini_portile (~> 0.5.0)
     paint (0.8.6)
     pry (0.9.12.4)
       coderay (~> 1.0)
@@ -136,8 +143,10 @@ DEPENDENCIES
   compass-normalize
   dalli
   foreman
+  gemoji
   heroku
   hirb-unicode
+  html-pipeline
   nesta!
   nesta-plugin-cache
   nesta-plugin-linkable
