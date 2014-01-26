@@ -51,7 +51,7 @@ module Nesta
 
     def pipeline(text)
       context = {
-        :asset_root => "http://#{request.host_with_port}/images",
+        :asset_root => "https://github.global.ssl.fastly.net/images/icons",
         :base_url   => "http://wynnnetherland.com"
       }
       pipeline = HTML::Pipeline.new [
