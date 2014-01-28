@@ -13,14 +13,14 @@ module Nesta
       paths = [
         "/journal/how-to-get-great-support",
         "/journal/a-stylesheet-author-s-guide-to-terminal-colors",
-        "/journal/greenest-github-contributions-profiles",
         "/journal/what-makes-a-good-api-wrapper",
         "/journal/dotfiles-discovery",
-        "/journal/octopress-classic-is-the-new-kubrick",
         "/journal/github-is-a-fish-bowl",
         "/linked/2014010902",
         "/journal/don-t-tell-me-how-fast-i-read",
-        "/journal/flint-lint-your-project-for-sources-of-contributor-friction"
+        "/journal/flint-lint-your-project-for-sources-of-contributor-friction",
+        "/journal/patches-speak-louder-than-words",
+        "/journal/putting-the-emote-in-remote-work"
       ]
 
       paths.map {|p| Nesta::Page.find_by_path(p) }.
