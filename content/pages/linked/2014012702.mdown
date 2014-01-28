@@ -1,0 +1,44 @@
+date: 2014-01-27 20:00:57 -0600
+categories: linked
+url: http://nshipster.com/stewardship/
+flags: draft
+
+# Stewardship
+
+[Mattt][] on the key to a successful open source project:
+
+> Developing an open source project requires equal parts engineering, product
+> design, communication, and community management. But the true deciding factor
+> for whether an open source project succeeds is stewardship.
+
+> To be a steward is to embody the responsibilities that come with ownership.
+> It is an act that justifies authority through continued accountability; both
+> the greatest challenge and reward of creating and maintaining a project.
+
+Projects that thrive over time are those that can raise up a team of
+maintainers, people who can share the load of answering questions, merging
+patches, and distributing new releases. The same attraction that draws us into
+creating and releasing new projects often pulls us onto even newer projects
+down the road.
+
+It doesn't take long until the weight of maintaining a project is a real source
+of stress. Sometimes it makes sense to move on and turn a project over to new
+blood.
+
+Last year, after it was clear that he was doing a better job at
+maintaining the project than me, I transferred the [LinkedIn gem][] to [Matt
+Kirk][]. GitHub [repository redirects][] made the switch seamless since web and
+Git access continued to Just Work™.
+
+I'm inclined to agree with Noah Slater writing for the [Engine Yard Blog][]:
+
+> if you’re working on an open source project, think carefully about where you
+> want to invest your time. Adding features, or adding people?
+
+[Mattt]: https://twitter.com/mattt
+[LinkedIn gem]: https://github.com/hexgnu/linkedin
+[Matt Kirk]: http://matthewkirk.com/
+[repository redirects]: https://github.com/blog/1508-repository-redirects-are-here
+[Engine Yard Blog]: https://blog.engineyard.com/2014/open-source-software-contribution
+
+
