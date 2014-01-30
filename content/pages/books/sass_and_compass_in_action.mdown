@@ -1,5 +1,5 @@
 thumb_url: /images/books/netherland_cover150.jpg
-url: http://wynn.fm/sass-meap
+url: http://manning.com/netherland
 isbn: 9781617290145
 year: 2011
 publisher: Manning
