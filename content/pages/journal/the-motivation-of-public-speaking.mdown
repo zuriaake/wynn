@@ -2,9 +2,9 @@ date: 2014-01-30 09:31:36 -0600
 categories: journal
 description: Find your motivation for public speaking.
 
-![slide](http://cl.ly/image/0u2L2I3x0F2Y/Photo%20Sep%2006,%2012%2048%2050%20PM.jpg)
-
 # The motivation for public speaking
+
+<img src='/images/rails-club.jpg' class='frame' alt='Speaking in Moscow' />
 
 I'm enjoying [Zach Holman][]'s new [site][speaking.io] where he shares his
 thoughts on public speaking. He does a fantastic job of breaking down the
@@ -81,6 +81,8 @@ develop and deliver.
 
 What about you? What do you have a strong desire to share? What are you
 burdened to tell everyone about?
+
+![slide](http://cl.ly/image/0u2L2I3x0F2Y/Photo%20Sep%2006,%2012%2048%2050%20PM.jpg)
 
 [Zach Holman]: http://zachholman.com
 [speaking.io]: http://speaking.io
