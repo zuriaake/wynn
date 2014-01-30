@@ -1,0 +1,89 @@
+date: 2014-01-30 09:31:36 -0600
+categories: journal
+description: Find your motivation for public speaking.
+
+![slide](http://cl.ly/image/0u2L2I3x0F2Y/Photo%20Sep%2006,%2012%2048%2050%20PM.jpg)
+
+# The motivation for public speaking
+
+I'm enjoying [Zach Holman][]'s new [site][speaking.io] where he shares his
+thoughts on public speaking. He does a fantastic job of breaking down the
+process of developing a talk.
+
+While I'm nowhere nearly as prolific as Zach, I do speak at conferences a few
+times a year. I get asked how I got into public speaking and if I have any
+advice for others wanting to do the same.
+
+I respond by asking the same question I now ask myself when I sit down to
+develop a deck for an upcoming talk &mdash; _why do you want to speak?_
+
+## Fear
+
+For many of us, the first time we spoke in a public setting was in school,
+_because we had to._ The fear of public humiliation can be a good motivator.
+Stronger yet might be the fear of a bad grade. If strong enough, such fear can
+fuel long hours of preparation to meet the expectations of the course.
+
+These types of scenes get repeated in the business world. Swap the
+instructor for your boss and the class with upper management and you have the
+same fear-driven situation.
+
+While fear _can_ be a mildly effective motivator for speaking, it's not very
+enjoyable.
+
+## Ambition
+
+Many people see speaking as a gateway to a better gig, a way to market a
+startup, or part of expanding their personal brand. Some seek broader influence
+or access to other leaders in their industry.
+
+There's nothing wrong with any of these as secondary goals. The trouble starts
+after you submit a talk to an influential conference _and it gets accepted._
+Often you find yourself once again motivated by fear, only this time it comes
+with doubt.  [Imposter syndrome][] can undermine your confidence and your
+entire development process is riddled with anxiety.
+
+I've noticed the decks for talks I've given when motivatated by fear or
+ambition took a long time to develop. The process was usually front-loaded with
+a long period of procrastination. I needed the adrenaline rush of seeing the
+event date approaching to focus my thinking and jump into the process. I've
+given too many talks this way, with slides created in the last forty-eight hours
+before the event.
+
+## Desire
+
+There have been times, however, when creating a deck has come easy. I started
+the process well in advance and continued to refine the deck up until the day
+of the talk. Looking back, my motivation in those instances was not fear but
+_desire_ - desire to tell people about something I cared about very deeply.
+
+I can remember being genuinely excited eight or so years ago to tell the
+Houston Ruby group all about using Ajax with with Rails. That deck practically
+wrote itself. Unlike fear, when desire is the motivation, the entire process
+can be enjoyable.
+
+## Burden
+
+Sometimes the desire to share can become so strong you can't _not_ tell
+someone. In the early days of Sass, I began to tell everyone I knew how it had
+changed my life. Only when you have genuine burden to share something you'll
+put up with the "get off my lawn" response that so often meets new ideas. It
+was that burden that led to [another book](/books).
+
+Seeing so many smart people that I respect move from skepticism to fully
+embracing Sass was worth the persistent sharing. Thanks to their influence, now
+it seems the whole world is using Sass.
+
+It was a similar burden that led me to talk about my [shell-based workflow using
+Vim and tmux][talk] at [BlendConf][] recently. I've received the most positive
+feedback on that one than any other talk I've ever given. It was also a joy to
+develop and deliver.
+
+What about you? What do you have a strong desire to share? What are you
+burdened to tell everyone about?
+
+[Zach Holman]: http://zachholman.com
+[speaking.io]: http://speaking.io
+[Imposter syndrome]: http://en.wikipedia.org/wiki/Impostor_syndrome
+[talk]: http://teamtreehouse.com/library/blend-conference-2013/dev-track-craft-your-own-ide-in-the-shell-wynn-netherland
+[BlendConf]: http://www.blendconf.com/
