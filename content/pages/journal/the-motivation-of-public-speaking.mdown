@@ -58,7 +58,7 @@ of the talk. Looking back, my motivation in those instances was not fear but
 _desire_ - desire to tell people about something I cared about very deeply.
 
 I can remember being genuinely excited eight or so years ago to tell the
-Houston Ruby group all about using Ajax with with Rails. That deck practically
+Houston Ruby group all about using Ajax with Rails. That deck practically
 wrote itself. Unlike fear, when desire is the motivation, the entire process
 can be enjoyable.
 
@@ -75,7 +75,7 @@ embracing Sass was worth the persistent sharing. Thanks to their influence, now
 it seems the whole world is using Sass.
 
 It was a similar burden that led me to talk about my [shell-based workflow using
-Vim and tmux][talk] at [BlendConf][] recently. I've received the most positive
+Vim and tmux][talk] at [BlendConf][] recently. I've received more positive
 feedback on that one than any other talk I've ever given. It was also a joy to
 develop and deliver.
 
