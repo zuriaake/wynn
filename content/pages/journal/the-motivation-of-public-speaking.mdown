@@ -75,7 +75,7 @@ embracing Sass was worth the persistent sharing. Thanks to their influence, now
 it seems the whole world is using Sass.
 
 It was a similar burden that led me to talk about my [shell-based workflow using
-Vim and tmux][talk] at [BlendConf][] recently. I've received the most positive
+Vim and tmux][talk] at [BlendConf][] recently. I've received more positive
 feedback on that one than any other talk I've ever given. It was also a joy to
 develop and deliver.
 
