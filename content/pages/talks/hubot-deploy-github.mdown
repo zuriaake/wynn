@@ -1,0 +1,14 @@
+date:  Sat Feb  1 19:00:59 CST 2014
+categories: talks
+template: templates/talk
+summary: Wherein I share how we do continuous deployment at GitHub.
+tags: talk, ruby, api, git
+speaker_deck_id: 493eebb06dd0013137b36ac310dcfa1f
+
+# hubot deploy GitHub
+
+Slides from my talk at [NWA TechFest 2104][conf] where I shared how we do
+continuous deployment at GitHub.
+
+[conf]: http://nwatechfest.com/
+
