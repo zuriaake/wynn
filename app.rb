@@ -35,15 +35,9 @@ module Nesta
       "//speakerd.s3.amazonaws.com/presentations/#{id}/thumb_slide_0.jpg"
     end
 
-    def image_for_page(page)
-      return if page.nil?
-
-      image = page.metadata('image')
-      if image.nil? && speaker_deck_id = page.metadata('speaker_deck_id')
-        image = speaker_deck_thumb_url(speaker_deck_id)
-      end
-
-      image
+    def image_for_page
+      image_from_metadata || image_from_speakerdeck ||
+        "http://cl.ly/image/430l0T1c1j11/wynn-moscow-square.png"
     end
 
     def css_classes_for(page)
@@ -72,6 +66,18 @@ module Nesta
       result = pipeline.call(text)
 
       result[:output].to_s
+    end
+
+    private
+
+    def image_from_metadata
+      @page && @page.metadata('image')
+    end
+
+    def image_from_speakerdeck
+      if @page && speaker_deck_id = @page.metadata('speaker_deck_id')
+        speaker_deck_thumb_url(speaker_deck_id)
+      end
     end
   end
 end
