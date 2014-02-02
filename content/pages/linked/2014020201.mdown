@@ -1,6 +1,7 @@
 date: 2014-02-02 10:38:27 -0600
 categories: linked
 url: http://www.staticapps.org/
+image: http://cl.ly/image/370a0C1k0Z28/Screen%20Shot%202014-02-02%20at%2011.07.43%20AM.png
 
 # A field guide to static apps
 
