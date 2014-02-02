@@ -5,7 +5,7 @@
   %meta(name="keywords" content=@keywords)
 
 - if @page
-  - image = @page.metadata('image')
+  - image = image_for_page(@page)
 
   / Google Authorship and Publisher Markup
   %link(rel='icon' type='image/png' href='/images/favicon-alt.png')

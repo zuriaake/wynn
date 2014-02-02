@@ -35,6 +35,17 @@ module Nesta
       "//speakerd.s3.amazonaws.com/presentations/#{id}/thumb_slide_0.jpg"
     end
 
+    def image_for_page(page)
+      return if page.nil?
+
+      image = page.metadata('image')
+      if image.nil? && speaker_deck_id = page.metadata('speaker_deck_id')
+        image = speaker_deck_thumb_url(speaker_deck_id)
+      end
+
+      image
+    end
+
     def css_classes_for(page)
       classes = page.metadata('tags').to_s.split(",")
       classes << 'linked-item' if page.is_linked?
