@@ -8,6 +8,10 @@
             - if page.is_linked?
               &nbsp;
               %a.permalink{:href => page.permalink } #
+        - if speakerdeck =  page.metadata('speaker_deck_id')
+          .thumb
+            %a{:href => page.abspath}
+              %img.frame{:src => speaker_deck_thumb_url(speakerdeck)}
         - if page.summary.nil? || page.summary.empty?
           ~ pipeline(page.body(self))
         - else

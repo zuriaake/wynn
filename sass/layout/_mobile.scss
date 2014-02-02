@@ -105,3 +105,14 @@ article {
   border-bottom: solid 1px #efefef;
 }
 
+.stream {
+  .thumb {
+    float :right
+  }
+
+  article {
+    overflow: auto
+  }
+}
+
+
