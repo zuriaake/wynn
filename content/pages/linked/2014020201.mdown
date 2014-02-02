@@ -1,0 +1,34 @@
+date: 2014-02-02 10:38:27 -0600
+categories: linked
+url: http://www.staticapps.org/
+
+# A field guide to static apps
+
+A promising [resource for building "static" web apps][guide] from [Divshot][]:
+
+> Rather than assemble content in server-side processes, static web
+> applications rely on the user's browser to drive interaction and content
+> rendering. Once considered only useful for static content, modern static web
+> apps can dynamically fetch data, synchronize multiple users in real time, and
+> more. 
+
+While I think web developers who want to build apps should seek fluency in a
+server-side technology, there is a place for static web sites for small micro
+apps and [MVP][] prototypes. Thanks to the rise of APIs that support [CORS][]
+and services like [Parse][] that provide a ready-to-go backend, these apps are
+more powerful than ever.
+
+[![showdown][logo]][hackathon]
+
+GitHub is also sponsoring an upcoming [hackathon][], the first such contest
+I've seen just for static web apps.
+
+
+[guide]: http://www.staticapps.org/
+[Divshot]: http://divshot.io
+[MVP]:http://en.wikipedia.org/wiki/Minimum_viable_product
+[CORS]: http://en.wikipedia.org/wiki/Cross-origin_resource_sharing
+[Parse]: https://parse.com/
+[hackathon]: http://www.staticshowdown.com/
+[logo]: http://cl.ly/image/0Q3P1I3Z071R/static-showdown-transparent-light.png
+
