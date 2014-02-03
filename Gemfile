@@ -25,6 +25,7 @@ gem 'sinatra-simple-navigation'
 group :development do
   gem 'awesome_print', :require => 'ap'
   gem 'hirb-unicode'
+  gem 'pismo'
   gem 'pry'
   gem 'racksh'
   gem 'shotgun'

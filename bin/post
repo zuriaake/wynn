@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 require 'rubygems'
 require 'thor'
+require 'pismo'
 require 'active_support/inflector'
 
 class Post < Thor
@@ -30,15 +31,17 @@ class Post < Thor
 
     if options.url?
       filename = path_with_datestamp("linked")
+      title = Pismo[options.url].title
     else
       if options.title.nil?
         filename = path_with_datestamp("journal")
       else
+        title = options.title
         filename = File.join("content", "pages", "journal", options.title.parameterize)
       end
     end
 
-    save_file(filename, metadata, options.title)
+    save_file(filename, metadata, title)
     system "$EDITOR #{filename}.mdown"
   end
 
