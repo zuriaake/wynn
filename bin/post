@@ -1,3 +1,6 @@
+#!/usr/bin/env ruby
+require 'rubygems'
+require 'thor'
 require 'active_support/inflector'
 
 class Post < Thor
@@ -10,6 +13,11 @@ class Post < Thor
   method_option :draft, :aliases => "-d", :desc => "Flag post as draft", :type => :boolean
   method_option :categories, :aliases => "-c", :desc => "Categories for post"
   def create
+    unless options.url? || options.title?
+      invoke :help
+      return
+    end
+
     categories = options.categories
     categories ||= options.url? ? 'linked' : 'journal'
 
@@ -62,3 +70,5 @@ class Post < Thor
   end
 
 end
+
+Post.start
