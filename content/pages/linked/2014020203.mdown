@@ -1,7 +1,6 @@
 date: 2014-02-02 21:43:47 -0600
 categories: linked
 url: http://houseofcards.tumblr.com/
-flags: draft
 
 # House of Cards cinegrams
 
