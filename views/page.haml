@@ -6,6 +6,8 @@
     - else
       %h1= widont(@page.heading)
     ~ pipeline(@page.body(self))
+    - if youtube = @page.metadata('youtube')
+      = haml :'templates/youtube', :locals => {:video_id => youtube}
     %p.post-meta
       %a{:href => @page.permalink} #
       - if @page.is_linked?

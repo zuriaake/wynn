@@ -18,3 +18,5 @@
           ~ pipeline(page.summary)
           %p.read_more
             %a(href="#{path_to(page.abspath)}")= page.read_more
+        - if youtube = page.metadata('youtube')
+          = haml :'templates/youtube', :locals => {:video_id => youtube}

@@ -36,7 +36,7 @@ module Nesta
     end
 
     def image_for_page
-      image_from_metadata || image_from_speakerdeck ||
+      image_from_metadata || image_from_speakerdeck || image_from_youtube ||
         "http://cl.ly/image/430l0T1c1j11/wynn-moscow-square.png"
     end
 
@@ -77,6 +77,12 @@ module Nesta
     def image_from_speakerdeck
       if @page && speaker_deck_id = @page.metadata('speaker_deck_id')
         speaker_deck_thumb_url(speaker_deck_id)
+      end
+    end
+
+    def image_from_youtube
+      if @page && youtube = @page.metadata('youtube')
+        "http://img.youtube.com/vi/#{youtube}/0.jpg"
       end
     end
   end
