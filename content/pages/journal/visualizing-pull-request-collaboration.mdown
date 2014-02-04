@@ -1,5 +1,7 @@
 date: 2014-02-04 07:46:51 -0600
 categories: journal
+description: Arfon Smith has created some interesting graphs that visualize the collaborative nature of a few open source projects on GitHub using pull request data.
+image: http://cl.ly/image/2T3r2Z1d2u3h/octokit-pr.png
 
 # Visualizing project collaboration using pull request data
 
