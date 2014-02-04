@@ -1,7 +1,6 @@
 date: 2014-02-04 09:32:56 -0600
 categories: linked
 url: http://carbonfive.github.io/vimtronner/
-flags: draft
 
 # vimtronner
 
