@@ -54,7 +54,7 @@ to pull the data for your own project using [the GitHub API][api].
 
 
 [arfon]: https://twitter.com/arfon
-[Octokit.rb]: https://github.com/octokit/octokitr.b
+[Octokit.rb]: https://github.com/octokit/octokit.rb
 [redis-full]: http://bl.ocks.org/arfon/raw/8726394/
 [ember-full]: http://bl.ocks.org/arfon/raw/8786799/
 [spine-full]: http://bl.ocks.org/arfon/raw/8726404/
