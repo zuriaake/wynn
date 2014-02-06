@@ -1,0 +1,46 @@
+date: 2014-02-05 08:10:22 -0600
+categories: journal
+
+# I love the smell of facepalm in the morning
+
+Most of us have a time of day when we're in the groove. If you believe the
+stereotype, developers work best late at night, fuelled by caffeine in the dim
+glow of a computer screen.
+
+Not me. I'm a morning person. I'm often up at 5AM and in full stride by 7:30. I
+think best before noon, as usually evidenced by last night's work.
+
+<blockquote class="twitter-tweet" lang="en"><p>Morning me often thinks late
+night me is a moron.</p>&mdash; Wynn Netherland (@pengwynn) <a
+href="https://twitter.com/pengwynn/statuses/410087033160228864">December 9,
+2013</a></blockquote>
+
+Early in my career, I would double down on frustrating bugs. Late nights would
+stretch into the wee hours of the morning. In time, I learned that stepping
+_away_ from code can be just as productive as stepping _through_ code. Solutions
+often seem "obvious" when you return to them after a break. For me, that's
+usually the next morning.
+
+Knowing this, I try to employ a few hacks to my workday.
+
+**Create before consuming.** Following a tip from [Jason Rudolph][], I've
+started setting aside time each morning for creative work. Starting the morning
+with some [writing](/archives) or other thought-intensive work has yielded
+better results and put me in a better frame of mind to jump into the tasks of
+the day.
+
+**Batch email, issue triage, and mundane tasks during non-peak hours.** Tim
+Ferris [helped make "batching" popular][ferris] years ago. I try to tackle the
+bulk of my batch processing in the afternoons and reserve my mornings for tasks
+that require more focus.
+
+**End the day with a failing test.** Perhaps the biggest thing I've learned to
+do is set myself up for the next morning. A failing test can verify a bug or
+  describe how a new feature should behave. I don't have to have the
+  implementation or the impact to the rest of the codebase figured out before I
+  walk away. I can tackle those bigger questions the next day, when I'm fresh.
+
+[Jason Rudolph]: https://twitter.com/jasonrudolph
+[ferris]: http://www.fourhourworkweek.com/blog/2007/03/22/how-to-check-e-mail-twice-a-day-or-once-every-10-days/
+
+
