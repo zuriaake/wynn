@@ -4,7 +4,7 @@ categories: journal
 # I love the smell of facepalm in the morning
 
 Most of us have a time of day when we're in the groove. If you believe the
-stereotype, developers work best late at night, fuelled by caffeine in the dim
+stereotype, developers work best late at night, fuelled by caffeine in the soft
 glow of a computer screen.
 
 Not me. I'm a morning person. I'm often up at 5AM and in full stride by 7:30. I
