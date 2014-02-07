@@ -1,0 +1,32 @@
+date: 2014-02-07 08:05:51 -0600
+categories: linked
+url: http://adaptivepatchwork.com/2014/01/27/everyone-on-the-internet/
+
+# Everyone on the Internet
+
+Thoughtful piece by [Timothy Clem][] on how we choose to craft the stories of
+our lives online:
+
+> My favorite hashtag by far is #nofilter. It’s the dichotomy of needing to
+> communicate that No really! It looks exactly like this, with the wonderful
+> truth that the existence of the photo is a very strategic filter on how you
+> want the world to perceive your life. And to top off the irony, you make sure
+> to connect said directed experience with every other #nofilter going on in
+> the world at that moment. Brilliant!
+
+And later:
+
+> And yet, I secretly revel in the experiences that I don’t share. The moments
+> that happen off the grid. I go out of my way sometimes to not record and not
+> broadcast.
+
+I'm reminded of Captain Miller, [sharing stories with Private Ryan][quote]
+trying to escape their battlefield reality:
+
+> Private Ryan: Tell me about your wife and those rosebushes?
+>
+> Captain Miller: No, no that one I save just for me.
+
+
+[Timothy Clem]: https://twitter.com/timothyclem
+[quote]: http://www.imdb.com/title/tt0120815/quotes?item=qt0441651
