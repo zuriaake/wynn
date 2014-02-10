@@ -7,14 +7,6 @@ When you create a public repository on GitHub, the whole
 world can watch you work. As developers, we feel the need to say "But
 wait, it's not done yet!"
 
-<blockquote class="twitter-tweet"><p>Getting GitHub follows for a
-project that doesn't work yet. Appreciate the vote of confidence, I
-guess.</p>&mdash; Mike Gunderloy (@MikeG1) <a
-href="https://twitter.com/MikeG1/status/157902750057902080"
-data-datetime="2012-01-13T19:12:03+00:00">January 13,
-2012</a></blockquote>
-
-
 <blockquote class="twitter-tweet"
 data-in-reply-to="153230851839234048"><p>@<a
 href="https://twitter.com/pengwynn">pengwynn</a> ah not worth
