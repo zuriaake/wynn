@@ -20,7 +20,8 @@ module Nesta
         "/journal/don-t-tell-me-how-fast-i-read",
         "/journal/flint-lint-your-project-for-sources-of-contributor-friction",
         "/journal/patches-speak-louder-than-words",
-        "/journal/putting-the-emote-in-remote-work"
+        "/journal/putting-the-emote-in-remote-work",
+        "/journal/i-love-the-smell-of-facepalm-in-the-morning"
       ]
 
       paths.map {|p| Nesta::Page.find_by_path(p) }.
