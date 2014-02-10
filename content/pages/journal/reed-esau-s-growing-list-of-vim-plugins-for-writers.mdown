@@ -17,7 +17,7 @@ handful of tweaks to handle (and even detect) line wrap modes.
 
 [![vim-pencil][pn-screen]][pn]
 
-**[vim-pencil-colors][pc]** provides light and dark color schemes inspired by [iA
+**[vim-colors-pencil][pc]** provides light and dark color schemes inspired by [iA
 Writer][].
 
 > iA Writer is an elegant word processor, marred only by its lack of Vim. It
@@ -62,7 +62,7 @@ See the complete list on [Reed's GitHub profile][repos].
 [lx]: http://github.com/reedes/vim-lexical
 [lc]: http://github.com/reedes/vim-litecorrect
 [pn]: http://github.com/reedes/vim-pencil
-[pc]: http://github.com/reedes/vim-pencil-colors
+[pc]: http://github.com/reedes/vim-colors-pencil
 [qu]: http://github.com/reedes/vim-quotable
 [ts]: http://github.com/reedes/vim-textobj-sentence
 [th]: http://github.com/reedes/vim-thematic
