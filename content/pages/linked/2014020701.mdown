@@ -23,8 +23,7 @@ And later:
 I'm reminded of Captain Miller, [sharing stories with Private Ryan][quote]
 trying to escape their battlefield reality:
 
-> Private Ryan: Tell me about your wife and those rosebushes?
->
+> Private Ryan: Tell me about your wife and those rosebushes?<br/>
 > Captain Miller: No, no that one I save just for me.
 
 
