@@ -1,4 +1,4 @@
-thumb_url: //cdn.wynnnetherland.com/images/books/asp_net_controls.jpg
+thumb_url: //d2tagwpl4yek52.cloudfront.net/images/books/asp_net_controls.jpg
 url: http://www.amazon.com/Asp-Net-Controls-Wynn-Netherland/dp/1930110510
 isbn: 1930110510
 year: 2002

@@ -1,4 +1,4 @@
-thumb_url: //cdn.wynnnetherland.com/images/books/netherland_cover150.jpg
+thumb_url: //d2tagwpl4yek52.cloudfront.net/images/books/netherland_cover150.jpg
 url: http://manning.com/netherland
 isbn: 9781617290145
 year: 2011

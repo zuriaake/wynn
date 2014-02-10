@@ -4,7 +4,7 @@ description: Find your motivation for public speaking.
 
 # The motivation for public speaking
 
-<img src='//cdn.wynnnetherland.com/images/rails-club.jpg' class='frame' alt='Speaking in Moscow' />
+<img src='//d2tagwpl4yek52.cloudfront.net/images/rails-club.jpg' class='frame' alt='Speaking in Moscow' />
 
 I'm enjoying [Zach Holman][]'s new [site][speaking.io] where he shares his
 thoughts on public speaking. He does a fantastic job of breaking down the
