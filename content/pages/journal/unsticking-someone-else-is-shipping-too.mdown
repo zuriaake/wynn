@@ -1,6 +1,5 @@
 date: 2014-02-11 07:30:17 -0600
 categories: journal
-flags: draft
 
 # Unsticking someone else is shipping, too
 
@@ -46,19 +45,31 @@ as much about gauging status or making strategic decisions as it is removing
 blockers. While incomplete depedencies can block us, all too often we get stuck
 on unanswered questions or baffling bugs.
 
-Here are three ways you can help unstick a teammate and get the whole team on
-their way.
+Here are some ways teams can deal with blockers.
+
+**Look out for others, offer to help.** Watch out for teammates that have gone
+quiet. Pick up on frustration in the chat room or wherever your team gathers.
+Sometimes you just need to look up and say "Need a hand?"
+
+**Ask for help.** If you're stuck, don't be afraid take the problem to the
+team. Chances are, someone else has faced the same issue.
 
 **Share grizzled experience.** Good developers are rarely smarter, they've just
 found more wrong ways to do something. Redeem your mistakes and help someone
 else out of the same pit.
 
-**Drop domain knowledge.** We all can't be experts in everything. We all
-have a deeper grasp of some areas over our teammates. Providing the right
+**Document solutions.** Don't leave those that come behind you (or future you)
+own their own. Look for ways to publish what you've learned in getting
+unblocked.  This can be a new paragraph in the project docs, a wiki entry, a
+detailed commit message, or simply linking issues across projects.
+
+**Drop domain knowledge.** We all can't be experts in everything. There are
+areas in which we have a deeper grasp than our teammates. Providing the right
 context for a teammate working outside their normal area can be invaluable.
 
 **Give sign off.** Who is waiting on you? Give weight to completed pull requests
-and other items where a quick :+1: would keep someone on your team moving.
+and other items where a quick :+1: would keep someone else moving.
+
 
 
 
