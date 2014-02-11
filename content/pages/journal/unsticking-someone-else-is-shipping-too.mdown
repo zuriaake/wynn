@@ -20,22 +20,22 @@ hill from a cold start on the slick road.
 
 As I came to the intersection that day, I saw two vehicles nose-to-nose on the
 side of the road to the left. I slowed and approached cautiously since
-visibility was limited.  Suddenly, a young man stepped out between the cars,
-forcing me to stop abruptly to avoid him. He had been securing a tow strap to
-the bumper of a stranded car and had stepped back into my lane, not seeing me.
-The driver of the other vehicle was about to attempt to pull the car to higher
-ground with his 4x4.
+visibility was limited.  Suddenly, a young man stepped out from between the
+cars, forcing me to stop abruptly to avoid him. He had been securing a tow
+strap to the bumper of a stranded car and had stepped back into my lane, not
+seeing me.  The driver of the other vehicle was about to attempt to pull the
+car to higher ground with his 4x4.
 
-Cheering them on, I waited  and watched the car get on its way. I then set out
-to continue my journey only to realize I, too, was immobile.
+Silently cheering them on, I waited  and watched the car get on its way. I then
+set out to continue my journey only to realize I, too, was immobile.
 
 The young man, still holding the free end of the tow strap, simply raised it
 and shouted over to me, "Need a hand?"
 
 After they pulled me to level ground, I walked over to thank them. The driver
-said he was on his way to check on his elderly mother but had gotten tied up at
-the intersection helping out drivers like me. **I'm sure it wasn't the
-afternoon he had planned, but I suspect he made a bigger impact this way.**
+said he was returning from checking on his elderly mother but had gotten
+drafted into his current service. **I'm sure it wasn't the afternoon he had
+planned, but I suspect he made a bigger impact this way.**
 
 ---
 
@@ -43,18 +43,22 @@ afternoon he had planned, but I suspect he made a bigger impact this way.**
 
 That question is the heart of the standup. Getting together synchronously isn't
 as much about gauging status or making strategic decisions as it is removing
-barriers that impede progress. While incomplete depedencies can block us,
-all too often it's unanswered questions or baffling bugs that stop us in our
-tracks.
+blockers. While incomplete depedencies can block us, all too often we get stuck
+on unanswered questions or baffling bugs.
 
 Here are three ways you can help unstick a teammate and get the whole team on
 their way.
 
-**Share grizzled experience.**
+**Share grizzled experience.** Good developers are rarely smarter, they've just
+found more wrong ways to do something. Redeem your mistakes and help someone
+else out of the same pit.
 
-**Drop domain knowledge.**
+**Drop domain knowledge.** We all can't be experts in everything. We all
+have a deeper grasp of some areas over our teammates. Providing the right
+context for a teammate working outside their normal area can be invaluable.
 
-**Give sign off.**
+**Give sign off.** Who is waiting on you? Give weight to completed pull requests
+and other items where a quick :+1: would keep someone on your team moving.
 
 
 
