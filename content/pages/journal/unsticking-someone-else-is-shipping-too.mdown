@@ -1,0 +1,60 @@
+date: 2014-02-11 07:30:17 -0600
+categories: journal
+flags: draft
+
+# Unsticking someone else is shipping, too
+
+_I jotted down the title for this post a few weeks ago. I was looking for
+the right way to express the idea when last week life helped out._
+
+---
+
+Texas drivers don't handle frozen roads too well. It had been snowing lightly
+for a few hours when I went to pick up my daughter from school. There were
+patches of ice, but overall, the roads weren't that bad.
+
+The trickiest spot getting out of our neighborhood during such conditions is
+usually an all-way stop at the top of a small hill. Since traffic is usually
+light, drivers often run the intersection instead of attempting to gain the
+hill from a cold start on the slick road.
+
+As I came to the intersection that day, I saw two vehicles nose-to-nose on the
+side of the road to the left. I slowed and approached cautiously since
+visibility was limited.  Suddenly, a young man stepped out between the cars,
+forcing me to stop abruptly to avoid him. He had been securing a tow strap to
+the bumper of a stranded car and had stepped back into my lane, not seeing me.
+The driver of the other vehicle was about to attempt to pull the car to higher
+ground with his 4x4.
+
+Cheering them on, I waited  and watched the car get on its way. I then set out
+to continue my journey only to realize I, too, was immobile.
+
+The young man, still holding the free end of the tow strap, simply raised it
+and shouted over to me, "Need a hand?"
+
+After they pulled me to level ground, I walked over to thank them. The driver
+said he was on his way to check on his elderly mother but had gotten tied up at
+the intersection helping out drivers like me. **I'm sure it wasn't the
+afternoon he had planned, but I suspect he made a bigger impact this way.**
+
+---
+
+## "Any blockers?"
+
+That question is the heart of the standup. Getting together synchronously isn't
+as much about gauging status or making strategic decisions as it is removing
+barriers that impede progress. While incomplete depedencies can block us,
+all too often it's unanswered questions or baffling bugs that stop us in our
+tracks.
+
+Here are three ways you can help unstick a teammate and get the whole team on
+their way.
+
+**Share grizzled experience.**
+
+**Drop domain knowledge.**
+
+**Give sign off.**
+
+
+
