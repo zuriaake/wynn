@@ -25,15 +25,16 @@
 /%meta{:content => "http://www.example.com/image.html", :name => "twitter:image:src"}/
 
 / Open Graph data
-%meta{:content => @title, :property => "og:title"}/
-%meta{:content => "article", :property => "og:type"}/
-%meta{:content => "http://wynnnetherland.com#{@page.permalink}", :property => "og:url"}/
-%meta{:content => image_for_page, :property => "og:image"}/
-%meta{:content => @description, :property => "og:description"}/
 %meta{:content => "Wynn Netherland", :property => "og:site_name"}/
-- if @page.date
-  %meta{:content => @page.date, :property => "article:published_time"}/
-%meta{:content => @page.mtime, :property => "article:modified_time"}/
+%meta{:content => @title, :property => "og:title"}/
+%meta{:content => @description, :property => "og:description"}/
+- if @page
+  %meta{:content => "article", :property => "og:type"}/
+  %meta{:content => "http://wynnnetherland.com#{@page.permalink}", :property => "og:url"}/
+  %meta{:content => image_for_page, :property => "og:image"}/
+  - if @page.date
+    %meta{:content => @page.date, :property => "article:published_time"}/
+  %meta{:content => @page.mtime, :property => "article:modified_time"}/
 /%meta{:content => "Article Section", :property => "article:section"}/
 /%meta{:content => "Article Tag", :property => "article:tag"}/
 %meta{:content => "605681706", :property => "fb:admins"}/
