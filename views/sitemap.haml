@@ -7,5 +7,5 @@
     %lastmod= @last.xmlschema
   - @pages.each do |page|
     %url
-      %loc= page.permalink
+      %loc= path_to(page.permalink, :uri => true)
       %lastmod= page.last_modified.xmlschema
