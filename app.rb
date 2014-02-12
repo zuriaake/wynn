@@ -21,6 +21,7 @@ module Nesta
         "/journal/flint-lint-your-project-for-sources-of-contributor-friction",
         "/journal/patches-speak-louder-than-words",
         "/journal/putting-the-emote-in-remote-work",
+        "/journal/tmux-stateful-workspaces-for-frictionless-context-switching",
         "/journal/i-love-the-smell-of-facepalm-in-the-morning"
       ]
 
