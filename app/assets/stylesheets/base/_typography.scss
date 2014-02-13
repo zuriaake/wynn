@@ -1,21 +1,21 @@
-// @font-face {
-//   font-family: 'Entypo-Social';
-//   src: url('/fonts/entypo-social.eot');
-//   src: url('/fonts/entypo-social.eot' + '?#iefix') format('embedded-opentype'),
-//        url('/fonts/entypo-social.woff') format('woff'),
-//        url('/fonts/entypo-social.ttf') format('truetype'),
-//        url('/fonts/entypo-social.svg' + '#DroidSansRegular') format('svg');
-//   font-weight: normal;
-//   font-style: normal;
-// }
+@font-face {
+  font-family: 'Entypo-Social';
+  src: font-url('entypo-social.eot');
+  src: font-url('entypo-social.eot' + '?#iefix') format('embedded-opentype'),
+       font-url('entypo-social.woff') format('woff'),
+       font-url('entypo-social.ttf') format('truetype'),
+       font-url('entypo-social.svg' + '#DroidSansRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
 @font-face {
   font-family: 'pengwynn';
-  src:url('//d2tagwpl4yek52.cloudfront.net/fonts/pengwynn.eot');
-  src:url('//d2tagwpl4yek52.cloudfront.net/fonts/pengwynn.eot?#iefix') format('embedded-opentype'),
-    url('//d2tagwpl4yek52.cloudfront.net/fonts/pengwynn.svg#pengwynn') format('svg'),
-    url('//d2tagwpl4yek52.cloudfront.net/fonts/pengwynn.woff') format('woff'),
-    url('//d2tagwpl4yek52.cloudfront.net/fonts/pengwynn.ttf') format('truetype');
+  src: font-url('pengwynn.eot');
+  src: font-url('pengwynn.eot?#iefix') format('embedded-opentype'),
+       font-url('pengwynn.svg#pengwynn') format('svg'),
+       font-url('pengwynn.woff') format('woff'),
+       font-url('pengwynn.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }

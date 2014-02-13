@@ -9,15 +9,14 @@
 
     %title= @title
 
-    %link(rel='icon' type='image/png' href='//d2tagwpl4yek52.cloudfront.net/images/favicon-alt.png')
     %link(href='http://feeds.feedburner.com/wynn' rel='alternate' type='application/atom+xml')
     %link(href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Bitter:400,700,400italic|Open+Sans:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css')
-    %link(rel='stylesheet' type='text/css' href='//d2tagwpl4yek52.cloudfront.net/css/application.css')
 
-    %link(rel="apple-touch-icon-precomposed" sizes="144x144" href="//d2tagwpl4yek52.cloudfront.net/apple-touch-icon-144x144-precomposed.png")
-    %link(rel="apple-touch-icon-precomposed" sizes="114x114" href="//d2tagwpl4yek52.cloudfront.net/apple-touch-icon-114x114-precomposed.png")
-    %link(rel="apple-touch-icon-precomposed" sizes="72x72" href="//d2tagwpl4yek52.cloudfront.net/apple-touch-icon-72x72-precomposed.png")
-    %link(rel="apple-touch-icon-precomposed" href="//d2tagwpl4yek52.cloudfront.net/apple-touch-icon-precomposed.png")
+    = favicon_link_tag 'favicon-alt.png', :type => 'image/png'
+    = favicon_link_tag 'apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :sizes => '144x144', :type => 'image/png'
+    = favicon_link_tag 'apple-touch-icon-114x114-precomposed.png', :rel => 'apple-touch-icon-precomposed', :sizes => '114x114', :type => 'image/png'
+    = favicon_link_tag 'apple-touch-icon-72x72-precomposed.png', :rel => 'apple-touch-icon-precomposed', :sizes => '72x72', :type => 'image/png'
+    = favicon_link_tag 'apple-touch-icon-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png'
 
     = render 'meta'
   %body
