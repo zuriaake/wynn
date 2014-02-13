@@ -1,17 +1,20 @@
 source 'https://rubygems.org'
 
-gem "gemoji"
-gem "html-pipeline"
+gem 'gemoji'
+gem 'html-pipeline'
 gem 'nesta', :github => 'gma/nesta', :ref => 'a049ac1a9a'
 gem 'nesta-rails'
-gem "nesta-plugin-sluggable"
-gem "nesta-plugin-linkable"
-gem 'rails', '3.2.9'
+gem 'nesta-plugin-sluggable'
+gem 'nesta-plugin-linkable'
+gem 'rails', '3.2.11'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 
+group :development do
+  gem 'foreman'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
