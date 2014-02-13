@@ -19,7 +19,7 @@
     @include link-colors(#aaa, #666, #666, #aaa);
   }
 }
-.site-nav a.selected {
+.site-nav li.active a {
   color: $color-text;
 }
 

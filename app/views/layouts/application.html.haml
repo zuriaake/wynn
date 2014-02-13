@@ -22,7 +22,7 @@
   %body
     #root
       #mobile-nav.show-on-mobile
-        =# render_navigation
+        = semantic_navigation :primary, :class => 'site-nav', :id => 'mobile_nav'
         .container
           %a.nav-toggle.open(href="#mobile-nav") &equiv;
           %a.nav-toggle.close(href="#") &equiv;
@@ -32,13 +32,12 @@
           .branding
             %a.pengwynn(href="/") &#xe000;
           .hide-on-mobile
-            =# render_navigation
+            = semantic_navigation :primary, :class => 'site-nav', :id => 'main_nav'
         = yield
         = render 'social'
         #root_footer
     #footer.container
       .site-footer
-        -# %img(src="/images/pengwynn-alt.png" height="48" width="48")
         Copyright 2007-#{Time.now.year}
         %a(href='http://wynn.fm') Wynn Netherland
         &bull;

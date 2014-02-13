@@ -88,6 +88,8 @@ GEM
     mime-types (1.25.1)
     mini_portile (0.5.2)
     multi_json (1.8.4)
+    navigasmic (1.0.3)
+      railties (~> 3.2)
     nesta-plugin-linkable (0.0.1)
       nesta (>= 0.9.11)
     nesta-plugin-sluggable (0.0.1)
@@ -168,6 +170,7 @@ DEPENDENCIES
   gemoji
   html-pipeline
   jquery-rails
+  navigasmic
   nesta!
   nesta-plugin-linkable
   nesta-plugin-sluggable
