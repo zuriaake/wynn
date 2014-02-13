@@ -1,37 +1,43 @@
 source 'https://rubygems.org'
 
-ruby '2.0.0'
-
-gem "compass", "~> 0.12.2"
-gem "compass-normalize"
-gem "dalli"
-gem "foreman"
-gem "heroku"
 gem "gemoji"
 gem "html-pipeline"
-gem "nesta", :git => "https://github.com/gma/nesta.git", :ref => "a049ac1a9ac7af4296fccc87bb89b2277bcc96f7"
-gem "rack", "~> 1.5.2" # critical security fix
-gem "rack-cache"
-gem "redcarpet"
-gem "susy", "~> 1.0.9"
+gem 'nesta', :github => 'gma/nesta', :ref => 'a049ac1a9a'
+gem 'nesta-rails'
+gem "nesta-plugin-sluggable"
+gem "nesta-plugin-linkable"
+gem 'rails', '3.2.9'
 
-gem "nesta-plugin-sluggable" #, :git => "git://github.com/pengwynn/nesta-plugin-sluggable.git"
-gem "nesta-plugin-linkable"  #, :git => "/Users/wynn/Projects/nesta-plugin-linkable"
-gem "nesta-plugin-cache" # for Rack::Cache
+# Bundle edge Rails instead:
+# gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'rack-rewrite'
-gem 'sinatra-simple-navigation'
 
-group :development do
-  gem 'awesome_print', :require => 'ap'
-  gem 'hirb-unicode'
-  gem 'pismo'
-  gem 'pry'
-  gem 'racksh'
-  gem 'shotgun'
-  gem 'tux'
-  gem 'wirb'
-  gem 'wirble'
+
+# Gems used only for assets and not required
+# in production environments by default.
+group :assets do
+  gem 'sass-rails',   '~> 3.2.3'
+  gem 'coffee-rails', '~> 3.2.1'
+
+  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
+  # gem 'therubyracer', :platforms => :ruby
+
+  gem 'uglifier', '>= 1.0.3'
 end
 
-# gem (RUBY_VERSION =~ /^1.9/) ? 'ruby-debug19': 'ruby-debug'
+gem 'jquery-rails'
+
+# To use ActiveModel has_secure_password
+# gem 'bcrypt-ruby', '~> 3.0.0'
+
+# To use Jbuilder templates for JSON
+# gem 'jbuilder'
+
+# Use unicorn as the app server
+# gem 'unicorn'
+
+# Deploy with Capistrano
+# gem 'capistrano'
+
+# To use debugger
+# gem 'debugger'

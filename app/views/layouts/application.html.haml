@@ -1,0 +1,53 @@
+!!! 5
+%html(itemscope=true itemtype="http://schema.org/Article")
+  %head
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+    -# Set the viewport width to device width for mobile
+    %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1.0" }
+
+    %title= @title
+
+    %link(rel='icon' type='image/png' href='//d2tagwpl4yek52.cloudfront.net/images/favicon-alt.png')
+    %link(href='http://feeds.feedburner.com/wynn' rel='alternate' type='application/atom+xml')
+    %link(href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Bitter:400,700,400italic|Open+Sans:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css')
+    %link(rel='stylesheet' type='text/css' href='//d2tagwpl4yek52.cloudfront.net/css/application.css')
+
+    %link(rel="apple-touch-icon-precomposed" sizes="144x144" href="//d2tagwpl4yek52.cloudfront.net/apple-touch-icon-144x144-precomposed.png")
+    %link(rel="apple-touch-icon-precomposed" sizes="114x114" href="//d2tagwpl4yek52.cloudfront.net/apple-touch-icon-114x114-precomposed.png")
+    %link(rel="apple-touch-icon-precomposed" sizes="72x72" href="//d2tagwpl4yek52.cloudfront.net/apple-touch-icon-72x72-precomposed.png")
+    %link(rel="apple-touch-icon-precomposed" href="//d2tagwpl4yek52.cloudfront.net/apple-touch-icon-precomposed.png")
+
+    = render 'meta'
+  %body
+    #root
+      #mobile-nav.show-on-mobile
+        =# render_navigation
+        .container
+          %a.nav-toggle.open(href="#mobile-nav") &equiv;
+          %a.nav-toggle.close(href="#") &equiv;
+      .container
+        .banner
+          %a.feed.hide-on-mobile(href='http://feeds.feedburner.com/wynn') &#xe018;
+          .branding
+            %a.pengwynn(href="/") &#xe000;
+          .hide-on-mobile
+            =# render_navigation
+        = yield
+        = render 'social'
+        #root_footer
+    #footer.container
+      .site-footer
+        -# %img(src="/images/pengwynn-alt.png" height="48" width="48")
+        Copyright 2007-#{Time.now.year}
+        %a(href='http://wynn.fm') Wynn Netherland
+        &bull;
+        Entypo pictograms by Daniel Bruce —
+        %a(href='http://entypo.com') Entypo.com
+
+  <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <script src='//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js'></script>
+  <script src='//d2tagwpl4yek52.cloudfront.net/js/prettify/prettify.js'></script>
+  <script src='//d2tagwpl4yek52.cloudfront.net/js/site.js'></script>
+  = render 'analytics'
