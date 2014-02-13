@@ -2,15 +2,13 @@ source 'https://rubygems.org'
 
 gem 'gemoji'
 gem 'html-pipeline'
+gem 'jquery-rails'
 gem 'nesta', :github => 'gma/nesta', :ref => 'a049ac1a9a'
-gem 'nesta-rails'
-gem 'nesta-plugin-sluggable'
 gem 'nesta-plugin-linkable'
+gem 'nesta-plugin-sluggable'
+gem 'nesta-rails'
 gem 'rails', '3.2.11'
-
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
-
+gem 'thin'
 
 group :development do
   gem 'foreman'
@@ -31,19 +29,3 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
-
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
-
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger
-# gem 'debugger'
