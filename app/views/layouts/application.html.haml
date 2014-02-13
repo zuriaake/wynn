@@ -2,7 +2,6 @@
 %html(itemscope=true itemtype="http://schema.org/Article")
   %head
     = stylesheet_link_tag    "application", :media => "all"
-    = javascript_include_tag "application"
     = csrf_meta_tags
     -# Set the viewport width to device width for mobile
     %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1.0" }
@@ -45,7 +44,5 @@
         %a(href='http://entypo.com') Entypo.com
 
   <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-  <script src='//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js'></script>
-  <script src='//d2tagwpl4yek52.cloudfront.net/js/prettify/prettify.js'></script>
-  <script src='//d2tagwpl4yek52.cloudfront.net/js/site.js'></script>
+  = javascript_include_tag "application"
   = render 'analytics'
