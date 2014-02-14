@@ -176,6 +176,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  charlock_holmes
   coffee-rails (~> 3.2.1)
   compass-normalize
   compass-rails
