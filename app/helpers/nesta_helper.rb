@@ -67,10 +67,13 @@ module NestaHelper
   def pipeline(text)
     context = {
       :asset_root => "https://github.global.ssl.fastly.net/images/icons",
-      :base_url   => "http://wynnnetherland.com"
+      :base_url   => "http://wynnnetherland.com",
+      :gfm        => false
     }
     pipeline = HTML::Pipeline.new [
-      HTML::Pipeline::EmojiFilter
+      HTML::Pipeline::MarkdownFilter,
+      HTML::Pipeline::EmojiFilter,
+      HTML::Pipeline::SyntaxHighlightFilter
     ], context
     result = pipeline.call(text)
 

@@ -7,96 +7,20 @@ pre
   width: 100%
 
 
-code
-  background: #e1e1e1
+code, pre
   font-family: $mono-font-stack
   font-size: 14px
   font-weight: normal
   line-height: 21px
 
 pre
-  background: #111
   clear: both
-  color: #f0f0f0
   &.plain
     background: inherit
     color: inherit
     overflow: auto
     padding: 0
     width: 1000px
-  code
-    background: transparent
-    color: #f0f0f0
 
-.str
-  color: #A5C261
-
-.kwd
-  color: #A1C2DA
-
-.com
-  color: #666
-
-.typ
-  color: #6E9CBE
-
-.lit
-  color: #C28439
-
-.pun
-  color: #efefef
-
-.pln
-  color: #efefef
-
-.tag
-  color: #E8BF6A
-
-.atn
-  color: #C8A550
-
-.atv
-  color: #A5C261
-
-.dec
-  color: #C28439
-
-pre.prettyprint
-  padding: 2px
-  border: 1px solid #888
-
-ol.linenums
-  margin-top: 0
-  margin-bottom: 0
-
-li
-  &.L0, &.L1, &.L2, &.L3, &.L5, &.L6, &.L7, &.L8
-    list-style: none
-  &.L1, &.L3, &.L5, &.L7, &.L9
-    background: #eee
-
-@media print
-  .str
-    color: #060
-  .kwd
-    color: #006
-    font-weight: bold
-  .com
-    color: #600
-    font-style: italic
-  .typ
-    color: #404
-    font-weight: bold
-  .lit
-    color: #044
-  .pun
-    color: #440
-  .pln
-    color: #000
-  .tag
-    color: #006
-    font-weight: bold
-  .atn
-    color: #404
-  .atv
-    color: #060
+.highlight
+  @extend .syntax

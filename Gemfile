@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'gemoji'
+gem 'github-linguist'
+gem 'github-markdown'
 gem 'html-pipeline'
 gem 'jquery-rails'
 gem 'navigasmic'

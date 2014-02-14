@@ -22,7 +22,7 @@
       %link{ :href => path_to(article.path, :uri => true), :type => 'text/html', :rel => 'alternate' }
       %id= atom_id(article)
       %content(type='html')
-        &= pipeline(find_and_preserve(absolute_urls(article.body(self))))
+        &= find_and_preserve(absolute_urls(article.body(self)))
         - if article.is_linked?
           :escaped
             <p><a href="http://wynnnetherland.com#{article.permalink}">#</a><p>

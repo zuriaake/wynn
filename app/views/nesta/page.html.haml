@@ -5,7 +5,7 @@
         %a.external{:href => @page.metadata('url')}= @page.heading.html_safe
     - else
       %h1= widont(@page.heading).html_safe
-    ~ pipeline(@page.body(self)).html_safe
+    ~ @page.body(self).html_safe
     - if youtube = @page.metadata('youtube')
       = render 'youtube', :video_id => youtube
     %p.post-meta
@@ -16,7 +16,7 @@
         Posted on
       %time{:datetime => @page.date, :title => @page.date}= @page.date.strftime("%d %b %Y")
   - else
-    ~ pipeline(@page.to_html(self)).html_safe
+    ~ @page.to_html(self).html_safe
   = render 'related'
 %br
 

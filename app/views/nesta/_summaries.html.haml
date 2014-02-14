@@ -13,9 +13,9 @@
             %a{:href => page.abspath}
               %img.frame{:src => speaker_deck_thumb_url(speakerdeck)}
         - if page.summary.nil? || page.summary.empty?
-          ~ pipeline(page.body(self)).html_safe
+          ~ page.body(self).html_safe
         - else
-          ~ pipeline(page.summary).html_safe
+          ~ page.summary.html_safe
           %p.read_more
             %a(href="#{path_to(page.abspath)}")= page.read_more
         - if youtube = page.metadata('youtube')
