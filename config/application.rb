@@ -64,5 +64,12 @@ module Blog
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    if username = ENV.fetch('HTTP_USERNAME', nil)
+      config.middleware.insert_after(::Rack::Lock, "::Rack::Auth::Basic", "Staging") do |u, p|
+        [u, p] == [username, ENV.fetch('HTTP_PASSWORD', nil)]
+      end
+    end
+
   end
 end
