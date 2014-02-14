@@ -8,21 +8,21 @@
   %subtitle(type='text')= @subtitle
   - if @articles[0]
     %updated= @articles[0].date(:xmlschema)
-  - if @author
+  - if author = Nesta::Config.author
     %author
-      - if @author['name']
-        %name= @author['name']
-      - if @author['uri']
-        %uri= @author['uri']
-      - if @author['email']
-        %email= @author['email']
+      - if author['name']
+        %name= author['name']
+      - if author['uri']
+        %uri= author['uri']
+      - if author['email']
+        %email= author['email']
   - @articles.each do |article|
     %entry
       %title= article.heading
       %link{ :href => path_to(article.path, :uri => true), :type => 'text/html', :rel => 'alternate' }
       %id= atom_id(article)
       %content(type='html')
-        &= find_and_preserve(absolute_urls(article.body(self)))
+        &= permit_html_escape(find_and_preserve(absolute_urls(article.body(self))))
         - if article.is_linked?
           :escaped
             <p><a href="http://wynnnetherland.com#{article.permalink}">#</a><p>
