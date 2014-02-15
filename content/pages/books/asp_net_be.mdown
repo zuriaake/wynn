@@ -1,4 +1,4 @@
-thumb_url: //d2tagwpl4yek52.cloudfront.net/images/books/asp_net_by_example.gif
+thumb_url: //static.wynnnetherland.com/images/books/asp_net_by_example.gif
 url: http://www.amazon.com/ASP-NET-Example-Steven-Smith/dp/0789725622
 isbn: 0789725622
 year: 2001
