@@ -55,19 +55,23 @@ vendor prefixes too much. I let my tools handle them for me. The
 [Compass CSS3 module](http://compass-style.org/reference/compass/css3/)
 has long made dealing with prefix soup a snap.
 
-    .radial-gradient {
-      @include background-image(radial-gradient(45px 45px, aqua 10px, #1e90ff 30px)); }
+```scss
+.radial-gradient {
+  @include background-image(radial-gradient(45px 45px, aqua 10px, #1e90ff 30px)); }
+```
 
 Which will yield the following CSS:
 
-    .radial-gradient {
-      background-image: -webkit-gradient(radial, 45px 45px, 0, 45px 45px, 30, color-stop(33.333%, #00ffff), color-stop(100%, #1e90ff));
-      background-image: -webkit-radial-gradient(45px 45px, #00ffff 10px, #1e90ff 30px);
-      background-image: -moz-radial-gradient(45px 45px, #00ffff 10px, #1e90ff 30px);
-      background-image: -o-radial-gradient(45px 45px, #00ffff 10px, #1e90ff 30px);
-      background-image: -ms-radial-gradient(45px 45px, #00ffff 10px, #1e90ff 30px);
-      background-image: radial-gradient(45px 45px, #00ffff 10px, #1e90ff 30px);
-    }
+```scss
+.radial-gradient {
+  background-image: -webkit-gradient(radial, 45px 45px, 0, 45px 45px, 30, color-stop(33.333%, #00ffff), color-stop(100%, #1e90ff));
+  background-image: -webkit-radial-gradient(45px 45px, #00ffff 10px, #1e90ff 30px);
+  background-image: -moz-radial-gradient(45px 45px, #00ffff 10px, #1e90ff 30px);
+  background-image: -o-radial-gradient(45px 45px, #00ffff 10px, #1e90ff 30px);
+  background-image: -ms-radial-gradient(45px 45px, #00ffff 10px, #1e90ff 30px);
+  background-image: radial-gradient(45px 45px, #00ffff 10px, #1e90ff 30px);
+}
+```
 
 I can choose to support as many or
 as few browsers as I want just by setting some configuration variables
