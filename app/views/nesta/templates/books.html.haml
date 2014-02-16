@@ -6,9 +6,9 @@
       - @page.pages.sort_by{|p| p.metadata('year').to_i }.reverse.each do |book|
         .book.item{:class => book.metadata('tags').to_s.split(',').join(' ')}
           .thumb
-            - unless book.metadata('thumb_url').nil?
-              %a{:href => book.metadata('url')}
-                %img.frame{:src => book.metadata('thumb_url')}
+            - unless (thumb = book.metadata('thumb_url')).nil?
+              = link_to book.metadata('url') do
+                = image_tag(thumb, :class => 'frame', :alt => book.heading, :title => book.heading)
             &nbsp;
           .info
             - haml_tag (defined?(heading) ? heading : :h2) do
