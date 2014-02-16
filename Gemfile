@@ -12,10 +12,10 @@ gem 'nesta-plugin-linkable'
 gem 'nesta-plugin-sluggable'
 gem 'nesta-rails'
 gem 'rails', '3.2.11'
-gem 'thin'
 
 group :development do
   gem 'foreman'
+  gem 'thin'
 end
 
 # Gems used only for assets and not required
@@ -31,5 +31,10 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
+end
+
+group :production do
+  gem 'heroku-deflater'
+  gem 'unicorn'
 end
 
