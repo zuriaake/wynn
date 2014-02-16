@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'heroku_rails_deflate'
 gem 'charlock_holmes'
 gem 'gemoji'
 gem 'github-linguist'
@@ -33,7 +34,6 @@ group :assets do
 end
 
 group :production do
-  gem 'heroku-deflater'
   gem 'unicorn'
 end
 

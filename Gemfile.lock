@@ -77,8 +77,8 @@ GEM
       pygments.rb (~> 0.5.4)
     github-markdown (0.6.4)
     haml (3.1.8)
-    heroku-deflater (0.5.3)
-      rack (>= 1.4.5)
+    heroku_rails_deflate (0.2.1)
+      rack (~> 1.4.5)
     hike (1.2.3)
     html-pipeline (1.5.0)
       activesupport (>= 2)
@@ -186,7 +186,7 @@ DEPENDENCIES
   gemoji
   github-linguist
   github-markdown
-  heroku-deflater
+  heroku_rails_deflate
   html-pipeline
   jquery-rails
   navigasmic
