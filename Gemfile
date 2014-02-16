@@ -15,7 +15,6 @@ gem 'rails', '3.2.11'
 
 group :development do
   gem 'foreman'
-  gem 'thin'
 end
 
 # Gems used only for assets and not required
