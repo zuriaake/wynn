@@ -1,0 +1,48 @@
+!!! 5
+%html(itemscope=true itemtype="http://schema.org/Article")
+  %head
+    = stylesheet_link_tag    "application", :media => "all"
+    = csrf_meta_tags
+    -# Set the viewport width to device width for mobile
+    %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1.0" }
+
+    %title= @title
+
+    %link(href='http://feeds.feedburner.com/wynn' rel='alternate' type='application/atom+xml')
+    %link(href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Bitter:400,700,400italic|Open+Sans:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css')
+
+    = favicon_link_tag 'favicon-alt.png', :type => 'image/png'
+    = favicon_link_tag 'apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :sizes => '144x144', :type => 'image/png'
+    = favicon_link_tag 'apple-touch-icon-114x114-precomposed.png', :rel => 'apple-touch-icon-precomposed', :sizes => '114x114', :type => 'image/png'
+    = favicon_link_tag 'apple-touch-icon-72x72-precomposed.png', :rel => 'apple-touch-icon-precomposed', :sizes => '72x72', :type => 'image/png'
+    = favicon_link_tag 'apple-touch-icon-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png'
+
+    = render 'meta'
+  %body
+    #root
+      #mobile-nav.show-on-mobile
+        = semantic_navigation :primary, :class => 'site-nav', :id => 'mobile_nav'
+        .container
+          %a.nav-toggle.open(href="#mobile-nav") &equiv;
+          %a.nav-toggle.close(href="#") &equiv;
+      .container
+        .banner
+          %a.feed.hide-on-mobile(href='http://feeds.feedburner.com/wynn') &#xe018;
+          .branding
+            %a.pengwynn(href="/") &#xe000;
+          .hide-on-mobile
+            = semantic_navigation :primary, :class => 'site-nav', :id => 'main_nav'
+        = yield
+        = render 'social'
+        #root_footer
+    #footer.container
+      .site-footer
+        Copyright 2007-#{Time.now.year}
+        %a(href='http://wynn.fm') Wynn Netherland
+        &bull;
+        Entypo pictograms by Daniel Bruce —
+        %a(href='http://entypo.com') Entypo.com
+
+  <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+  = javascript_include_tag "application"
+  = render 'analytics'

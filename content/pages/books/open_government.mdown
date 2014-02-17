@@ -1,4 +1,4 @@
-thumb_url: //d2tagwpl4yek52.cloudfront.net/images/books/open_gov.jpg
+thumb_url: books/open_gov.jpg
 url: http://www.amazon.com/Open-Government-Collaboration-Transparency-Participation/dp/0596804350
 isbn: 0596804350
 year: 2010

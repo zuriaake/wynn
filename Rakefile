@@ -1,8 +1,7 @@
-desc "Copy emoji to the Rails `public/images/emoji` directory"
-task :emoji do
-  require 'emoji'
+#!/usr/bin/env rake
+# Add your own tasks in files placed in lib/tasks ending in .rake,
+# for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.
 
-  target = "#{Rake.original_dir}/public/images"
-  mkdir_p target
-  cp_r "#{Emoji.images_path}/emoji", target, preserve: true, remove_destination: true
-end
+require File.expand_path('../config/application', __FILE__)
+
+Blog::Application.load_tasks

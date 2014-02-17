@@ -1,7 +1,7 @@
 keywords: sass, compass, css, ruby, mobile, html5, api, dotfiles
 description: Wynn Netherland is a Christian husband, father, and full stack web creative.
 
-= haml :lead
+= render 'lead'
 
 = article_summaries(latest_articles(20))
 %p.view-archives
@@ -10,7 +10,6 @@ description: Wynn Netherland is a Christian husband, father, and full stack web 
   %a(href="/archives")
     %strong archives
   or grab
-  %a(href="http://feeds.feedburner.com/wynn") 
+  %a(href="http://feeds.feedburner.com/wynn")
     %strong the feed.
--# = haml :"shared/author", :layout => false
 

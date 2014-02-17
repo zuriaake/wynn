@@ -4,7 +4,7 @@ description: Wynn Netherland is a Christian husband, father, and full stack web 
 
 %h1 About me
 
-= haml :lead
+= render 'lead'
 
 :markdown
   I grew up in Louisiana, went to school in Arkansas, but Texas is now home.
@@ -12,8 +12,9 @@ description: Wynn Netherland is a Christian husband, father, and full stack web 
   been married to my high school sweetheart. I've worked in huge companies and
   small startups. I prefer small teams of five or less.
 
-  <img src='//d2tagwpl4yek52.cloudfront.net/images/rails-club.jpg' class='frame' alt='Speaking in Moscow' />
+= image_tag 'rails-club.jpg', :class => 'frame', :alt => 'Speaking in Moscow'
 
+:markdown
   I'm a full stack developer but prefer to play where the user meets the
   machine. I love a great user experience. Sometimes this includes a GUI.
 

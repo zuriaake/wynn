@@ -1,0 +1,29 @@
+$mono-font-stack: Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", Monaco, monospace !default
+pre
+  @include box-sizing(border-box)
+  margin: 1.5em 0
+  overflow: auto
+  padding: 1em
+  width: 100%
+
+
+code, pre
+  font-family: $mono-font-stack
+  font-size: 14px
+  font-weight: normal
+  line-height: 21px
+
+pre
+  clear: both
+  white-space: pre
+  display: table-cell
+  &.plain
+    background: inherit
+    color: inherit
+    overflow: auto
+    padding: 0
+    width: 1000px
+
+.highlight
+  @extend .syntax
+  overflow-x: auto
