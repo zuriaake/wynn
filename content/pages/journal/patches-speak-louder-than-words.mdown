@@ -1,5 +1,6 @@
 date: 2014-01-28 08:48:07 -0600
 categories: journal
+summary: Think about submitting a pull request the next time you want to open an issue on a project.
 
 # Patches speak louder than words
 

@@ -1,5 +1,6 @@
 date: 2014-02-05 08:10:22 -0600
 categories: journal
+summary: In which I share some of my workday hacks.
 
 # I love the smell of facepalm in the morning
 

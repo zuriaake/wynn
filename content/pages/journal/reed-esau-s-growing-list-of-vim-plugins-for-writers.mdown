@@ -1,5 +1,6 @@
 date: 2014-02-03 08:07:00 -0600
 categories: journal
+summary: Recently, Reed Esau has amassed quite a list of Vim plugins for writers.
 
 # Reed Esau's growing list of Vim plugins for writers
 

@@ -1,5 +1,6 @@
 date: 2014-02-11 07:30:17 -0600
 categories: journal
+summary: Here are some ways teams can deal with blockers.
 
 # Unsticking someone else is shipping, too
 

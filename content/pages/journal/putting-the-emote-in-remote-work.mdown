@@ -1,6 +1,7 @@
 date: 2014-01-25 07:25:45 -0600
 categories: journal
 description: Remote communication is better with emoji.
+summary: Emoji is a big part of the way we work at GitHub.
 
 # Putting the "emote" in remote work
 

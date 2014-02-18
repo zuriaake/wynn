@@ -1,6 +1,7 @@
 date: 2014-01-30 09:31:36 -0600
 categories: journal
 description: Find your motivation for public speaking.
+summary: Public speaking is easier if you find that one thing you just have to share.
 
 # The motivation for public speaking
 

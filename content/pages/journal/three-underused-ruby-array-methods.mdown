@@ -1,5 +1,6 @@
 date: 2014-01-23 08:03:06 -0600
 categories: journal
+summary: Three Ruby Array methods that don't get enough attention.
 
 # Three underused Ruby Array methods
 
