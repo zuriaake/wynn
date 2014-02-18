@@ -1,5 +1,6 @@
 date: 2014-01-22 7:59:18 -0500
 categories: journal
+summary: Multiple workspaces with tmux has changed the way I work.
 
 # Switch context with less friction using stateful tmux workspaces
 
