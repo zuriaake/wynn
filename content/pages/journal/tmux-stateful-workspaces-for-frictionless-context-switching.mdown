@@ -35,8 +35,10 @@ I use the venerable Vim as my text editor, so each one of these tools is
 terminal-based. Since tmux is [scriptable][], I can unfurl instant workspaces for
 projects according to own my personal workspace preferences:
 
-    ~/code/pengwynn/blog master
-    ❯ mx
+```sh
+~/code/pengwynn/blog master
+❯ mx
+```
 
 Running `mx` from the project root, I build a workspace for working on this
 blog that includes windows for vim, a shell prompt, a console using [racksh][],
@@ -47,20 +49,22 @@ and [Foreman][] to start the server for local preview.
 [The script][mx] will look for a tmux session based on the current folder name.
 If no such session is found, it creates one:
 
-    # look for a tmux session based on folder name
-    if ! (tmux has-session -t "$SESSION" >/dev/null 2>&1); then
-      if [ -x "$PWD"/.tmux ]; then
-        "$PWD"/.tmux "$SESSION"
-      else
-        tmux new-session -s "$SESSION" -n editor -d
-        tmux send-keys "$EDITOR" C-m #':CtrlP' C-m
-        tmux new-window -n shell -t "$SESSION"
-        _safe_window console script/console
-        _safe_window server script/server
+```sh
+# look for a tmux session based on folder name
+if ! (tmux has-session -t "$SESSION" >/dev/null 2>&1); then
+  if [ -x "$PWD"/.tmux ]; then
+    "$PWD"/.tmux "$SESSION"
+  else
+    tmux new-session -s "$SESSION" -n editor -d
+    tmux send-keys "$EDITOR" C-m #':CtrlP' C-m
+    tmux new-window -n shell -t "$SESSION"
+    _safe_window console script/console
+    _safe_window server script/server
 
-        tmux select-window -t "$SESSION":1
-      fi
-    fi
+    tmux select-window -t "$SESSION":1
+  fi
+fi
+```
 
 If the folder has a `.tmux` file, it will run that script to create a custom
 layout for that project, otherwise it will create four stock windows. It will
@@ -71,14 +75,13 @@ do][bootstrapping-consistency], the script will create windows for those as well
 If a session already exists, the script will instead attach to the previous
 session, letting me pick up where I left off.
 
-    if [ -z "$TMUX" ]; then
-      tmux attach -t "$SESSION"
-    else
-      tmux switch-client -t "$SESSION"
-    fi
-
-
-
+```sh
+if [ -z "$TMUX" ]; then
+  tmux attach -t "$SESSION"
+else
+  tmux switch-client -t "$SESSION"
+fi
+```
 
 tmux's scriptable command line interface lets me build workspaces quickly, but
 it's tmux's stateful sessions that make it truly remarkable. Knowing I can
