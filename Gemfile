@@ -12,7 +12,7 @@ gem 'nesta', :github => 'gma/nesta', :ref => 'a049ac1a9a'
 gem 'nesta-plugin-linkable'
 gem 'nesta-plugin-sluggable'
 gem 'nesta-rails'
-gem 'rails', '3.2.11'
+gem 'rails', '3.2.17'
 
 group :development do
   gem 'foreman'
