@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
 
-gem 'heroku_rails_deflate'
 gem 'charlock_holmes'
 gem 'gemoji'
 gem 'github-linguist'
 gem 'github-markdown'
+gem 'heroku_rails_deflate'
 gem 'html-pipeline'
 gem 'jquery-rails'
 gem 'navigasmic'
@@ -12,8 +12,9 @@ gem 'nesta', :github => 'gma/nesta', :ref => 'a049ac1a9a'
 gem 'nesta-plugin-linkable'
 gem 'nesta-plugin-sluggable'
 gem 'nesta-rails'
-gem 'rails', '3.2.17'
 gem 'rack-rewrite'
+gem 'rails', '3.2.17'
+gem 'rails_12factor'
 
 group :development do
   gem 'foreman'

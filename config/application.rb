@@ -67,7 +67,7 @@ module Blog
 
 
     #config.middleware.use Rack::Deflater
-    config.middleware.insert_before(Rack::Lock, Rack::Rewrite) do
+    config.middleware.insert 0, Rack::Rewrite do
 
       unless Rails.env.development?
         r301 %r{.*}, 'http://wynnnetherland.com$&', :if => Proc.new {|rack_env|
