@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby '2.0.0'
 gem 'charlock_holmes'
 gem 'gemoji'
 gem 'github-linguist'
