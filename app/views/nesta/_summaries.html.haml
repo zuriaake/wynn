@@ -2,16 +2,16 @@
   .stream
     - pages.each do |page|
       %article{:class => css_classes_for(page)}
+        - if speakerdeck =  page.metadata('speaker_deck_id')
+          .thumb
+            %a{:href => page.abspath}
+              %img.frame{:src => speaker_deck_thumb_url(speakerdeck)}
         %header
           %h1
             %a{:href => url_or_permalink_for(page)}= widont(page.link_text).html_safe
             - if page.is_linked?
               &nbsp;
               %a.permalink{:href => page.permalink } #
-        - if speakerdeck =  page.metadata('speaker_deck_id')
-          .thumb
-            %a{:href => page.abspath}
-              %img.frame{:src => speaker_deck_thumb_url(speakerdeck)}
         - if page.summary.nil? || page.summary.empty?
           ~ page.body(self).html_safe
         - else

@@ -54,12 +54,13 @@ blockquote {
 }
 
 .lead {
-  // border-bottom: solid 1px #ddd;
+  border-bottom: solid 1px #ddd;
   line-height: 1.4em;
   font-family: $face-sans;
   font-size: 1.2em;
   font-weight: 100;
   margin-bottom: 2em;
+  padding-bottom: 2em;
   a {
     font-weight: 600;
     text-decoration: none;
@@ -169,6 +170,7 @@ h1 {
   font-weight: normal;
   margin-top: 0;
   word-wrap: break-word;
+  a { text-decoration: none; }
   .stream & {
     font-size: 24px;
     font-weight: bold;
