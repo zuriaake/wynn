@@ -13,6 +13,7 @@ gem 'nesta-plugin-linkable'
 gem 'nesta-plugin-sluggable'
 gem 'nesta-rails'
 gem 'rails', '3.2.17'
+gem 'rack-rewrite'
 
 group :development do
   gem 'foreman'
