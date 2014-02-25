@@ -1,6 +1,7 @@
 date: 2014-02-25 15:47:48 -0600
 categories: linked
 url: http://www.parklifestore.com/Merchant2/merchant.mvc?Screen=PROD&Store_Code=PLS&Product_Code=AESTHETICSTEEMENS&Category_Code=MEN#
+image: http://cl.ly/image/1E2W2i2d2I3k/aes.jpg
 
 # Aesthetics
 
