@@ -1,0 +1,14 @@
+date: 2014-02-25 15:26:27 -0600
+categories: linked
+url: http://zachholman.com/posts/only-90s-developers/
+
+# Only 90s web developers remember this
+
+Great list from Zach of things you've only seen if you developed on the web
+when Bill Clinton was in office or if you have recently browsed the web site of
+any local restaurant.
+
+I'd add installing [FrontPage extensions][fpx], and [ActiveX][].
+
+[fpx]: http://en.wikipedia.org/wiki/FrontPage_Server_Extensions
+[ActiveX]: http://en.wikipedia.org/wiki/ActiveX
