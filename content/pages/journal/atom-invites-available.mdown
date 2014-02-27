@@ -18,7 +18,7 @@ else's public GitHub project** that makes a meaningful contribution. Here are so
 - [Correct a typo][typo]
 - [Add a README, LICENSE, or CONTRIBUTING guide][flint]
 
-Just [mention me][pengwynn] on the pull request to claim your invite. :zap:
+Just [mention me][pengwynn] on the pull request to claim your invite.
 
 [Atom]: http://atom.io
 [logo]: http://cl.ly/image/023W0l1n1d3g/atom@2x.png
