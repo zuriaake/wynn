@@ -1,0 +1,7 @@
+%p.post-meta
+  %a{:href => page.permalink} #
+  - if page.is_linked?
+    Shared on
+  - else
+    Posted on
+  %time{:datetime => page.date, :title => page.date}= page.date.strftime("%d %b %Y")

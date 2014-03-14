@@ -175,9 +175,14 @@ h1 {
     font-size: 24px;
     font-weight: bold;
     line-height: 1.5em;
+    margin-right: 1em;
   }
   .stream .linked-item & {
     font-weight: normal;
+    &:after {
+      content: "\219D";
+      color: #999;
+    }
   }
 }
 

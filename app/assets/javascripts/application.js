@@ -11,4 +11,5 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
+//= require google-code-prettify-rails/prettify
 //= require_tree .

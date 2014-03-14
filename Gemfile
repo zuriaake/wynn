@@ -1,8 +1,6 @@
 source 'https://rubygems.org'
 ruby '2.0.0'
-gem 'charlock_holmes'
 gem 'gemoji'
-gem 'github-linguist'
 gem 'github-markdown'
 gem 'heroku_rails_deflate'
 gem 'html-pipeline'
@@ -12,9 +10,11 @@ gem 'nesta', :github => 'gma/nesta', :ref => 'a049ac1a9a'
 gem 'nesta-plugin-linkable'
 gem 'nesta-plugin-sluggable'
 gem 'nesta-rails'
+gem 'rack-canonical-host'
 gem 'rack-rewrite'
 gem 'rails', '3.2.17'
 gem 'rails_12factor'
+gem 'thin'
 
 group :development do
   gem 'foreman'
@@ -25,6 +25,7 @@ end
 group :assets do
   gem 'compass-rails'
   gem 'compass-normalize'
+  gem 'google-code-prettify-rails'
   gem 'susy', '~> 1.0.9'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'sass-rails',   '~> 3.2.3'
@@ -33,9 +34,5 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
-end
-
-group :production do
-  gem 'unicorn'
 end
 

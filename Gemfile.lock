@@ -42,9 +42,9 @@ GEM
     activesupport (3.2.17)
       i18n (~> 0.6, >= 0.6.4)
       multi_json (~> 1.0)
+    addressable (2.3.5)
     arel (3.0.3)
     builder (3.0.4)
-    charlock_holmes (0.6.9.4)
     chunky_png (1.2.9)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
@@ -61,21 +61,20 @@ GEM
       compass (>= 0.12.0)
     compass-rails (1.0.3)
       compass (>= 0.12.2, < 0.14)
+    daemons (1.1.9)
     dotenv (0.9.0)
     erubis (2.7.0)
-    escape_utils (1.0.1)
+    eventmachine (1.0.3)
     execjs (2.0.2)
     foreman (0.63.0)
       dotenv (>= 0.7)
       thor (>= 0.13.6)
     fssm (0.2.10)
     gemoji (1.5.0)
-    github-linguist (2.10.9)
-      charlock_holmes (~> 0.6.6)
-      escape_utils (>= 0.3.1)
-      mime-types (~> 1.19)
-      pygments.rb (~> 0.5.4)
     github-markdown (0.6.4)
+    google-code-prettify-rails (1.1.0)
+      railties (>= 3.2.0.beta, < 5.0)
+      thor (~> 0.14)
     haml (3.1.8)
     heroku_rails_deflate (0.2.1)
       rack (~> 1.4.5)
@@ -89,7 +88,6 @@ GEM
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     json (1.8.1)
-    kgio (2.9.2)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
@@ -108,13 +106,12 @@ GEM
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
     polyglot (0.3.4)
-    posix-spawn (0.3.8)
-    pygments.rb (0.5.4)
-      posix-spawn (~> 0.3.6)
-      yajl-ruby (~> 1.1.0)
     rack (1.4.5)
     rack-cache (1.2)
       rack (>= 0.4)
+    rack-canonical-host (0.0.8)
+      addressable
+      rack (~> 1.0)
     rack-protection (1.5.2)
       rack
     rack-rewrite (1.4.01)
@@ -142,7 +139,6 @@ GEM
       rake (>= 0.8.7)
       rdoc (~> 3.4)
       thor (>= 0.14.6, < 2.0)
-    raindrops (0.12.0)
     rake (10.1.1)
     rdiscount (2.1.7)
     rdoc (3.12.2)
@@ -164,6 +160,10 @@ GEM
     susy (1.0.9)
       compass (>= 0.12.2)
       sass (>= 3.2.0)
+    thin (1.6.1)
+      daemons (>= 1.0.9)
+      eventmachine (>= 1.0.0)
+      rack (>= 1.0.0)
     thor (0.18.1)
     tilt (1.4.1)
     treetop (1.4.15)
@@ -173,24 +173,18 @@ GEM
     uglifier (2.4.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
-    unicorn (4.8.2)
-      kgio (~> 2.6)
-      rack
-      raindrops (~> 0.7)
-    yajl-ruby (1.1.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  charlock_holmes
   coffee-rails (~> 3.2.1)
   compass-normalize
   compass-rails
   foreman
   gemoji
-  github-linguist
   github-markdown
+  google-code-prettify-rails
   heroku_rails_deflate
   html-pipeline
   jquery-rails
@@ -199,10 +193,11 @@ DEPENDENCIES
   nesta-plugin-linkable
   nesta-plugin-sluggable
   nesta-rails
+  rack-canonical-host
   rack-rewrite
   rails (= 3.2.17)
   rails_12factor
   sass-rails (~> 3.2.3)
   susy (~> 1.0.9)
+  thin
   uglifier (>= 1.0.3)
-  unicorn
