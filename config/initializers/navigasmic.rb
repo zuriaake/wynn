@@ -3,7 +3,7 @@ Navigasmic.setup do |config|
     n.item 'Journal', '/', :highlights_on => /journal|linked|til/i
     n.item 'Archives', '/archives'
     n.item 'About', '/about'
-    n.item 'Books', '/books'
-    n.item 'Talks', '/talks'
+    # n.item 'Books', '/books'
+    # n.item 'Talks', '/talks'
   end
 end

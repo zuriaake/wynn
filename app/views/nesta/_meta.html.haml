@@ -5,7 +5,7 @@
   %meta(name="keywords" content=@keywords)
 
 / Google Authorship and Publisher Markup
-%link(rel='author' href='https://plus.google.com/+WynnNetherland/posts')
+%link(rel='author' href='https://plus.google.com/105204699250854966179/posts')
 
 / Schema.org markup for Google+
 %meta{:content => @title, :itemprop => "name"}/
@@ -16,25 +16,25 @@
 / Twitter Card data
 /%meta{:content => "summary_large_image", :name => "twitter:card"}/
 %meta{:content => "summary", :name => "twitter:card"}/
-%meta{:content => "@pengwynn", :name => "twitter:site"}/
+%meta{:content => "@marshallyount", :name => "twitter:site"}/
 %meta{:content => @title, :name => "twitter:title"}/
 %meta{:content => @description, :name => "twitter:description"}/
-%meta{:content => "@pengwynn", :name => "twitter:creator"}/
+%meta{:content => "@marshallyount", :name => "twitter:creator"}/
 
 / Twitter summary card with large image must be at least 280x150px
 /%meta{:content => "http://www.example.com/image.html", :name => "twitter:image:src"}/
 
 / Open Graph data
-%meta{:content => "Wynn Netherland", :property => "og:site_name"}/
+%meta{:content => "Marshall Yount", :property => "og:site_name"}/
 %meta{:content => @title, :property => "og:title"}/
 %meta{:content => @description, :property => "og:description"}/
 - if @page
   %meta{:content => "article", :property => "og:type"}/
-  %meta{:content => "http://wynnnetherland.com#{@page.permalink}", :property => "og:url"}/
+  %meta{:content => "http://yountlabs.com#{@page.permalink}", :property => "og:url"}/
   %meta{:content => image_for_page, :property => "og:image"}/
   - if @page.date
     %meta{:content => @page.date, :property => "article:published_time"}/
   %meta{:content => @page.mtime, :property => "article:modified_time"}/
 /%meta{:content => "Article Section", :property => "article:section"}/
 /%meta{:content => "Article Tag", :property => "article:tag"}/
-%meta{:content => "605681706", :property => "fb:admins"}/
+%meta{:content => "731248193", :property => "fb:admins"}/

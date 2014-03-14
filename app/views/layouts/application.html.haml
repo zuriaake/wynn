@@ -8,7 +8,7 @@
 
     %title= @title
 
-    %link(href='http://feeds.feedburner.com/wynn' rel='alternate' type='application/atom+xml')
+    %link(href='http://feeds.feedburner.com/yountlabs' rel='alternate' type='application/atom+xml')
     %link(href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Bitter:400,700,400italic|Open+Sans:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css')
 
     = favicon_link_tag 'favicon-alt.png', :type => 'image/png'
@@ -27,9 +27,9 @@
           %a.nav-toggle.close(href="#") &equiv;
       .container
         .banner
-          %a.feed.hide-on-mobile(href='http://feeds.feedburner.com/wynn') &#xe018;
+          %a.feed.hide-on-mobile(href='http://feeds.feedburner.com/yountlabs') &#xe018;
           .branding
-            %a.pengwynn(href="/") &#xe000;
+            %a.marshally(href="/") &#xe000;
           .hide-on-mobile
             = semantic_navigation :primary, :class => 'site-nav', :id => 'main_nav'
         = yield
@@ -37,8 +37,8 @@
         #root_footer
     #footer.container
       .site-footer
-        Copyright 2007-#{Time.now.year}
-        %a(href='http://wynn.fm') Wynn Netherland
+        Copyright 2010-#{Time.now.year}
+        %a(href='http://yountlabs.com') Marshall Yount
         &bull;
         Entypo pictograms by Daniel Bruce —
         %a(href='http://entypo.com') Entypo.com

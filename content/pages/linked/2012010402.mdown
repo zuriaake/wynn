@@ -1,9 +1,0 @@
-date: 2012-01-04 10:31:41 -0600
-categories: linked
-url: http://www.thismanslife.co.uk/projects/lab/responsiveillustration/
-
-# Explain Responsive Web Design to your client, boss, etc.
-
-[James Mellers](https://twitter.com/#!/thismanslife) demonstrates
-Responsive Web Design in a [fun, animated
-illustration.](http://www.thismanslife.co.uk/projects/lab/responsiveillustration/).

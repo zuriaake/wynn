@@ -17,5 +17,4 @@
       %time{:datetime => @page.date, :title => @page.date}= @page.date.strftime("%d %b %Y")
   - else
     ~ @page.to_html(self).html_safe
-  = render 'related'
 %br

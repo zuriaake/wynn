@@ -1,0 +1,12 @@
+summary: Rails Performance Tricks and Treats, a presentation given to the Dallas Ruby Brigade
+date: 2010-08-10 16:45:48.000000000 +00:00
+categories: performance, presentations
+
+# Rails Performance Tricks and Treats
+
+Last Tuesday I gave this presentation on Rails Performance to the Dallas Ruby Brigade.
+
+The attendees were awesome, and I really enjoyed the Q&amp;A portions of the evening.  There are a few half completed slides at the end of the deck that were created based on killer feedback from the audience.
+<div id="__ss_4937978" style="width: 500px;"><strong><a title="Rails Performance Tricks and Treats" href="http://www.slideshare.net/marshally/rails-performance-tricks-and-treats">Rails Performance Tricks and Treats</a></strong><object id="__sse4937978" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="500" height="355" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><param name="src" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=performance-100810110217-phpapp02&amp;stripped_title=rails-performance-tricks-and-treats" /><param name="name" value="__sse4937978" /><param name="allowfullscreen" value="true" /><embed id="__sse4937978" type="application/x-shockwave-flash" width="500" height="355" src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=performance-100810110217-phpapp02&amp;stripped_title=rails-performance-tricks-and-treats" name="__sse4937978" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+<div style="padding: 5px 0 12px;">View more <a href="http://www.slideshare.net/">presentations</a> from <a href="http://www.slideshare.net/marshally">Marshall Yount</a>.</div>
+</div>

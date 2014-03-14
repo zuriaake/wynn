@@ -1,0 +1,7 @@
+date: 2010-10-04 02:42:57.000000000 +00:00
+categories: management
+
+# Respect the Web 2.0 Grind
+
+Today's Quote of the Day is from TechCrunch's <a title="If Web 1.0’s Kryptonite Was the Bust, Web 2.0 Kryptonite Was the Grind" rel="bookmark" href="http://techcrunch.com/2010/10/03/if-web-1-0%e2%80%99s-kryptonite-was-the-bust-web-2-0-kryptonite-was-the-grind/">If Web 1.0’s Kryptonite Was the Bust, Web 2.0 Kryptonite Was the Grind</a>
+<blockquote>You can’t build a huge business with less than 20 million monthly uniques and getting there is a brutal day-in, day-out grind of producing great work, making the site as intuitive as possible and continually finding reasons to remind people you are worth 5 minutes of their day everyday.</blockquote>

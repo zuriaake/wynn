@@ -8,4 +8,4 @@ $(document).ready ->
     .attr('target', '_blank')
 
   $('.page.journal p.post-meta').prev()
-    .append("<span class='pengwynn'>&nbsp;</span>")
+    .append("<span class='marshally'>&nbsp;</span>")

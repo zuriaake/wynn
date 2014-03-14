@@ -1,0 +1,100 @@
+summary: 10 things I Love about my Droid X, and 5 ways I miss my iPhone
+date: 2010-08-31 03:23:26.000000000 +00:00
+categories: mobile
+
+# My Life with Droid
+
+## 10 things I Love about my Droid X (and 5 reasons I miss my iPhone 3G)
+
+So I’ve been rocking the Droid X for a couple of weeks now. These are a few of my favorite things:
+
+### 1. Completing Calls
+
+The title line says it all. Calls on the Verizon network have been rock solid. In the past two weeks I’ve experienced zero drops – except when I’ve been talking to iPhone 4 users.
+
+To be fair, I’ve experienced two unexplained problem calls on which the audio from one side audio dropped out while the other side could still hear. For those who were keeping score at home, that’s a dramatic improvement from two or more dropped calls per day with AT&amp;T.
+
+### 2. Swype
+
+![Swype in Action](http://yountlabs.com/wp-content/uploads/2010/08/swype-300x224.jpg)
+
+[Swype](http://www.swypeinc.com/) is a touch screen text input mechanism that allow you to draw words by sliding your finger from letter to letter. Sounds neat? It turns out to be more effortlessly wonderful once you get your hands on it. Trace the letters of words you want to type without lifting your finger.
+
+Unlike other alternative text entry systems, I was productive immediately using Swype. Major win.
+
+### 3. Obscenely Large Screen
+
+![Droid X vs. iPhone 4](/images/droid-x-iphone-4.jpg)
+
+The Droid X's 4.3 inch screen is ridiculous. There's really no good reason to tote around a phone that has a screen this large. Except that it’s awesome. I'm already spoiled to it.
+
+As they say: there are two kinds of smartphone users. Size queens, and liars.
+
+### 4. Customization
+
+Want to use up 1/4 of the real estate on your home screen with a calendar widget that displays your next 4 appointments? There’s a (Motorola) app for that. It helps me keep upcoming to dos in mind when planning out my day. Want a weather app who icon changes to show today’s current temperature and conditions? There’s a (Motorola) app for that too.
+
+![customizable home screens](http://img580.imageshack.us/img580/714/homescreens.jpg)
+
+There was a lot that the iPhone wouldn’t let you do, because a hypothetical rogue app developer <em>might</em> do something rotten with it. Unfortunately studies show that [there are rogue app developers](http://mobile.venturebeat.com/2010/07/28/android-wallpaper-app-that-steals-your-data-was-downloaded-by-millions/) doing something rotten with the Android.
+
+Be careful out there, kids. For every incredible Android app that does something wonderful that would never be possible on the iPhone, there are two apps that do something horrible that would never by possible on the iPhone.
+
+### 5. Automation with Tasker
+
+The Tasker app takes all of the Android’s customization bells and whistles and exposes them through a powerful macro language. They’ve even got a <a href="http://tasker.wikidot.com/profile-index">wiki full of recipes</a> like <a href="http://tasker.wikidot.com/muteinmeetings">muting the phone during calendar meetings</a>, <a href="http://tasker.wikidot.com/headsetmenulaunch">launching the music app when headphones are inserted</a>, and <a href="http://tasker.wikidot.com/weather-dependent-background-image">changing the home screen wallpaper image according to the weather</a>. I use Tasker to disable the screensaver when using the Maps and Navigation applications and turn down notification sounds at night.
+
+### 6. Camera
+
+The Droid X takes beautiful pictures, and sports a flash for low light conditions. The picture quality is a tremendous improvement over the iPhone 3G (although merely competitive with the snazzy new iPhone 4). The Droid X’s camera app gives you the option of automagically uploading all of your photos to Facebook.
+
+Downsides? Pictures with flash are prone to excessive red eye, and the photo browsing application is weak.
+
+### 7. USB Charging
+
+A USB phone charger that uses a standard USB tip? Great idea! (Too bad my house is already littered with iPod cables)
+
+### 9. Flashing Green Message Light
+
+Steve Jobs would have you think that a phone notification light nagging you about your unread messages is the 21st century equivalent of the &lt;BLINK&gt; tag. And to tell you the truth, at first I felt liberated by the iPhone’s mediocre alerts system. I get a lot of SMS messages that aren’t urgent, and it was nice for them to drift into the background. Not having these notifications was the critical boost that helped me form the discipline to focus my daily communications time into <a href="http://www.43folders.com/2006/03/15/email-dash">Email Dashes</a>.
+
+But there were definitely times when the iPhone was a bit too meek, and I was a bit too slacks-idasical about checking my messages. In my iPhone years I missed some important texts. Now that I’ve mastered <a href="http://inboxzero.com/articles/">Inbox Zero</a> (most of the time), the blinking green notification light has become an appreciated tool rather than a slave driver.
+
+
+### 10. I still have an iPad
+
+Yes, I do miss the iOS from time to time. Thankfully, at the end of the day I still have my iPad. When I want a device that &quot;just works,&quot; I can always get out my big, bulky, but beautiful iPad.
+
+But when I’m rocking the iPad, I sure do miss Swype.
+
+## And Five Biggest Reasons I Miss My iPhone
+
+### 5. Lack of a Screenshot App
+
+I never thought I'd be missing the screenshot feature on the iPhone. I only used it a few times on my 3G. But I felt its absence in the process of writing this review.
+Android owners really only have two (preposterous) options for taking screenshots:
+
+* [Install the Android SDK](http://www.downloadsquad.com/2008/10/22/taking-screenshots-on-an-android-based-phone/) and work through a painstaking process or
+* <a href="http://androidandme.com/2009/02/beginners/guides/how-to-take-screen-shots-from-your-android-device/">Root your phone</a>
+
+Excuse me, was that second option '<strong>root your phone</strong>?'. Really? Gah.
+
+### 4. Push Notifications
+
+I was flying for business last week, and my gate was changed at the last minute. Let me tell you, I really missed FlightTracker Pro's push notification feature when I strolled up to the wrong gate in the wrong terminal. Not having push notifications sucks.
+
+Yeah, yeah, I know that Android is getting <a href="http://developer.android.com/sdk/android-2.2-highlights.html#DeveloperServices">Push Notifications</a> in the Froyo version that is <a href="http://blogs.computerworld.com/16679/droid_x_android_2_2_froyo">rumored </a>be hitting Verizon Droid X phones as early as next week. That's great news, but it will be months before there is decent app support after the feature launches.
+
+### 3. Audio Quality
+
+The Droid X speaker is weak and tinny. There’s not much more to be said about this point, except that this can be fixed by using a decent headset.
+
+### 2. The App Store
+
+Even the most rabid Android fans will readily admit that the Android Marketplace is a steaming pile of dino dung. Google, I’m talking to you here – how do you find me the needle in the entire Internet haystack when I’m searching from my desktop, but you can’t lead me to a decent application on your phone, in your own marketplace?
+
+### 1. Unwavering Great Design Standards
+
+Android was created by brilliant programmers, for programmers. The iPhone was created by brilliant designers, for everyone else. My Droid X is a beautifully executed, fully expressive, massively functional device. But it has some seriously rough edges.
+
+In effect, I’ve traded “it just works” for “this phone could do anything that I want.” And as someone who hates to be told “that can’t be done,” it’s a tradeoff I can live with.

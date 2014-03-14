@@ -1,0 +1,16 @@
+date: 2013-06-16 15:57:02 +00:00
+summary: scary
+description: Total Number of Google Searches? Scary
+
+# Total Number of Google Searches?
+
+Total number of searches tracked in my Google Web History?
+(from [https://history.google.com/history/](https://history.google.com/history/))
+
+![total searches](/images/total_google_searches.png)
+
+## 55510
+
+HOLY GUACAMOLE
+
+Heavy days at work are 100+ queries per day.
