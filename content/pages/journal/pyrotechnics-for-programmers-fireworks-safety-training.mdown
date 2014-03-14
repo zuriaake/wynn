@@ -4,7 +4,7 @@ summary: an adventure in which I try to keep all my fingers
 
 # Pyrotechnics for Programmers: Part 1, Fireworks Safety Training
 
-![Loading mortars](/images/fireworks_training_loading_mortars.jpg)
+![Loading mortars](/images/old_blog/fireworks_training_loading_mortars.jpg)
 
 Last Saturday Missy and I drove up to Lewisville for our first day of professional fireworks training.
 
@@ -22,13 +22,13 @@ The first half of class was delivered by <a href="http://www.linkedin.com/pub/pa
 
 ## Types of Fireworks
 
-![](/images/fireworks_box_of.jpg)
+![](/images/old_blog/fireworks_box_of.jpg)
 
 There are two kinds of fireworks: Consumer grade, which you and I can purchase around the fourth of July and New Years, and display fireworks, the big boys that we had shown up to learn how to shoot.
 
 Consumer fireworks (aka 1.4G) are smaller, typically less than one inch in diameter and specifically <a href="http://www.fireworksland.com/html/statelaws.html" target="_blank">defined by the weights indicated in this table</a> or in your state specific regulations.
 
-![](/images/fireworks_explosives_sign.jpg)
+![](/images/old_blog/fireworks_explosives_sign.jpg)
 
 Display fireworks (aka 1.3G) pack a greater punch and range in size going all the way up to rounds 36 inches in diameter (holy cow!).
 
@@ -36,7 +36,7 @@ Display fireworks (aka 1.3G) pack a greater punch and range in size going all th
 
 The level of detail required to pass the exams is substantial.
 
-![](/images/fireworks_training_manual.jpg)
+![](/images/old_blog/fireworks_training_manual.jpg)
 
 Quick: If you are shooting a show in which the maximum diameter of a shell is six inches, how far away does the launch pad need to be from any attendees? Answer: 420 feet, or 70 feet per inch. But if there is a school, hospital or other special entity nearby, you have to double the distance.
 
@@ -52,7 +52,7 @@ What is the minimum area required to set up 200 3" shells, 100 4" shells, and 50
 
 And on, and on, for four hours.
 
-![](/images/fireworks_mortars.jpg)
+![](/images/old_blog/fireworks_mortars.jpg)
 
 Brains bursting with information we split for lunch. Pulling into the Sonic parking lot, Missy and I speculated about when we might be able to pick off our apprentice shows. In the State of Texas you are required to assist five fireworks displays before you can sit for the licensing exam.
 
@@ -62,31 +62,31 @@ Back from the lunch we sat for a practice exam. All that dry detail from the NFP
 
 After the exam we drove out to the Lewisville Fire Department's training facility and man, was this place cool. There was a large concrete structure, deep scorch marks blistered the sides where they'd done hundreds of training events with live fire. There were a few burnt up shipping containers connected into what I can only assume was some kind of hellish obstacle course. And there were five cheerful firefighters there with a shiney red fire engine. You know, in case the idiots in this training class decided to blow themselves up.
 
-![](/images/fireworks_paul.jpg)
+![](/images/old_blog/fireworks_paul.jpg)
 
 Time to load the mortars! The shells we were shooting off that day were three inch rounds. Not the worlds biggest by any means, but about 30 times bigger than anything else I'd fired before.
 
-![](/images/fireworks_carefully_loading.jpg)
+![](/images/old_blog/fireworks_carefully_loading.jpg)
 
 The mortar tubes are colloquially referred to as "guns," and by golly you'd better treat them like loaded guns. I heard a few tales from our instructors that I'd rather not repeat. Let's just say that I need to be careful. As a computer programmer by trade, these hands are where the money comes in.
 
-![](/images/fireworks_watch_the_fingers.jpg)
+![](/images/old_blog/fireworks_watch_the_fingers.jpg)
 
 I was nervous as a cat sliding these big ass three inch shells into their tubes. The electrical isn't hooked up yet, but they train you to never put your head above a loaded tube. I was super cautious to not even glance my hands over the top of the tubes -- which was damn near impossible given the way the racks are laid out. Thankfully, instructor Kyle was there to supply us with tips. His battle tested loadout pattern kept my extremeties danger free!
 
-![](/images/fireworks_chained.jpg)
+![](/images/old_blog/fireworks_chained.jpg)
 
 My favorite piece to load was the chained shells, which launch off in series. The time delay between shots is dictated by the length of the fuse. Don't crisscross the fuses, or they could dangerously go off out of sequence.
 
-![](/images/fireworks_banana_plugs.jpg)
+![](/images/old_blog/fireworks_banana_plugs.jpg)
 
 ## Ready ... Aim ...
 
 When it came time to spool out a few hundred feet of wire and set up the firing station, I was impressed by how old school all the equipment was. Turns out there's a good reason for that. When you've got one chance to set off $30,000 worth of product for an audience of thousands/millions, you don't want a flakey bluetooth driver crashing your sexy iPad app. You want <i>Click. Boom. Applause.</i>
 
-![](/images/fireworks_old_school.jpg)
+![](/images/old_blog/fireworks_old_school.jpg)
 
-![](/images/fireworks_parallel_port.jpg)
+![](/images/old_blog/fireworks_parallel_port.jpg)
 
 Giddily each student stepped up to the firing station and got to set off about 10 shells. There was a funny delay of about a second after hitting the switch before each mortar fired.
 
@@ -94,7 +94,7 @@ After all the excitement of setup, the visual effect of the firing was a bit of 
 
 But the auditory effect? Very Satisfying. <b>BOOM, THESE THINGS ARE LOUD</b>. They were still chest rattling even though we were wearing ear plugs and hard hats.
 
-![](/images/fireworks_leave_no_trace.jpg)
+![](/images/old_blog/fireworks_leave_no_trace.jpg)
 
 ## Leave No Trace
 

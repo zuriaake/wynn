@@ -7,7 +7,7 @@ description: Total Number of Google Searches? Scary
 Total number of searches tracked in my Google Web History?
 (from [https://history.google.com/history/](https://history.google.com/history/))
 
-![total searches](/images/total_google_searches.png)
+![total searches](/images/old_blog/total_google_searches.png)
 
 ## 55510
 
