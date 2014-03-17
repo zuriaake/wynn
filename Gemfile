@@ -10,6 +10,7 @@ gem 'nesta', :github => 'gma/nesta', :ref => 'a049ac1a9a'
 gem 'nesta-plugin-linkable'
 gem 'nesta-plugin-sluggable'
 gem 'nesta-rails'
+gem 'pismo'
 gem 'rack-canonical-host'
 gem 'rack-rewrite'
 gem 'rails', '3.2.17'
@@ -35,4 +36,3 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
-
