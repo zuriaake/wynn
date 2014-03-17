@@ -47,7 +47,7 @@ module NestaHelper
 
   def image_for_page
     image_from_metadata || image_from_speakerdeck || image_from_youtube ||
-      "http://cl.ly/image/430l0T1c1j11/wynn-moscow-square.png"
+      "http://www.gravatar.com/avatar/225f493dd7b7d65d460fd427cebbdd47.png"
   end
 
   def css_classes_for(page)
