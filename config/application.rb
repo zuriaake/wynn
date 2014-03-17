@@ -71,7 +71,7 @@ module Blog
 
       unless Rails.env.development?
         r301 %r{.*}, 'http://yountlabs.com$&', :if => Proc.new {|rack_env|
-          rack_env['SERVER_NAME'] != 'yountlabs.com' &&
+          rack_env['SERVER_NAME'] != 'www.yountlabs.com' &&
             rack_env['SERVER_NAME'] !~ /stg/
         }
       end
