@@ -15,6 +15,7 @@
 }
 
 .site-nav {
+  text-align: center;
   a {
     @include link-colors(#aaa, #666, #666, #aaa);
   }
@@ -22,6 +23,3 @@
 .site-nav li.active a {
   color: $color-text;
 }
-
-
-
