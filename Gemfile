@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 ruby '2.0.0'
+
 gem 'gemoji'
 gem 'github-markdown'
 gem 'heroku_rails_deflate'
@@ -15,7 +16,7 @@ gem 'newrelic_rpm'
 gem 'pismo'
 gem 'rack-canonical-host'
 gem 'rack-rewrite'
-gem 'rails', '3.2.17'
+gem 'rails', '~>3.2.17'
 gem 'rails_12factor'
 gem 'thin'
 
