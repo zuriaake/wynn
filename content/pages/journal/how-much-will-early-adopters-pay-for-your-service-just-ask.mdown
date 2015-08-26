@@ -1,0 +1,13 @@
+summary: the nerve!
+date: 2013-06-10 03:48:12.000000000 +00:00
+categories: saas
+
+# How much will early adopters pay for your service? Just ask
+
+I recently signed up for the beta of Goldfish.io and noticed something interesting at the bottom of their signup form:
+
+![How much will early adopters pay? Just ask](/images/old_blog/early_adopter_price.png)
+
+How much will early adopters pay for your service? Ask and ye shall receive.
+
+I love the way they use a subtle anchor to frame the Name Your Own Price request.

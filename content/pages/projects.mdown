@@ -1,5 +1,0 @@
-template: projects
-
-# Projects
-
-Here's some stuff I've created, maintain, or hack on. There's more up on [Github](http://github.com/pengwynn). What are you working on? Let us know, and we just might feature it on [The Changelog](http://thechangelog.com).

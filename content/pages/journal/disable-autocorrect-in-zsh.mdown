@@ -1,0 +1,38 @@
+summary: unsetopt correct FTW
+date: 2010-11-06 14:41:19.000000000 +00:00
+categories: tools
+
+# Disable autocorrect in zsh
+
+I've been using [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) for a little over a year.  Some days I find it to be super crazy awesome, other days not so much.
+
+On the items that's been sticking in my craw is the theoretically helpful autocorrect feature of zsh.  If you are reasonably precise typist (I am), and you use a lot of unusual scripts and commands (I do), chances are you'll be incorrectly nagged by the autocorrect feature several times a day.
+
+The surgical fix is to manually disable autocorrect on a per command basis.  For example, `heroku logs` is helpfully incorrectly autocorrected to `heroku log.`
+
+````bash
+% heroku logs
+zsh: correct 'logs' to 'log' [nyae]?
+````
+
+Gah!
+
+I can disable autocorrect for the heroku command only by adding this line to my ~/.zshrc.
+
+`alias heroku='nocorrect heroku'`
+
+Honestly, I'd rather just call the whole thing off.  So I went into my ~/.zshrc and inserted the following line after the oh-my-zsh startup script.
+
+````
+source $ZSH/oh-my-zsh.sh
+unsetopt correct_all
+````
+
+UPDATE: Helpful reader Simon Russel says that the newest version of zsh expects
+
+````
+source $ZSH/oh-my-zsh.sh
+unsetopt correct
+````
+
+Done.

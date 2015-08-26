@@ -1,0 +1,30 @@
+date: 2013-06-13 00:51:15.000000000 +00:00
+categories: consulting
+summary: ABC: always be committing
+
+# What My Code Taught Me About Selling Consulting Projects
+
+I love this thought provoking article <a title="The One Thing You Don’t Know How To Do That You Do Every Day" href="http://www.simpleprogrammer.com/2013/06/09/selling/">The One Thing You Don’t Know How To Do That You Do Every Day</a> on simpleprogrammer.com, which equates writing code to selling ideas.
+
+> **Even the code you write is selling something.** The code you write should be conveying something about what it does and how it works. If you can write the code elegantly, the reader of the code might not even be aware of the “selling” taking place. Great code sells itself, it seems apparent, like there was no other way to write it. Just like certain tech companies sell their products in a way that seems like they are obvious and your life wouldn’t be complete without them.
+>
+> **(If you lack the elegance of selling your code naturally, you may have to resort to hard sale tactics and add some comments to the code to describe in detail to the user what the code is doing and what its intent is.)**
+>
+> Your sale might not even be successful at all, as your reader may simply delete your code and replace it or ignore it completely.
+>
+> Your code is also selling something besides meaning and understanding, it is selling your programming skills. When someone reads code they know you have written, they are making certain judgments about you as a programmer, and even you as a person, believe it or not.
+
+
+This year I’m learning to see code as more than a way to deliver business value; code is more importantly a communication tool. We use these cryptic languages to give specific instructions to our Turing Complete friends. More subtly we use those same cryptic languages to communicate with our teammates: “This is what I understand the problem to be” and “these are the reasons I’m using this approach.”
+
+When my father first brought home an IBM PC and I learned to program with BASIC and DOS, the process required 100% of my focus to deliver the correct instructions to the machine. This held true even more so when I arrived at University and learned C/C++. A functionality driven approach dominated the code that I wrote until about 10 years ago. The primary questions were “Do these features fulfill the requirements?” “Are they efficient?” “Can we optimize this further?”
+
+These questions remind me of my sales technique during the early years of my consulting business, in which I focused myopically on the features I would deliver. My early proposals read more like specs, and my closing ratio suffered accordingly. Guess what? The person approving the checks isn't concerned about your awesome data validation or your scalable message queuing system.
+
+As the adage goes, “People don’t buy features, they buy benefits.” And in proposal after rejected proposal, the feature obsession was slowly beaten out of me. These months were brutal.
+
+Which is funny, because the Ruby community had been teaching me the same lessons in code for years. Rejecting ceremonial configuration uses the same underlying principle as not generating complex project specs. <a href="http://tom.preston-werner.com/2010/08/23/readme-driven-development.html" title="README Drive Development">README Driven Development</a> taught me to begin a project by expressing the value that I was going to deliver to the user. BDD guided me towards hiding my the complexity of my feature code under a (nearly) plain English description of its purpose. And the User Story format drilled into my feature focused brain that the only thing that really matters about the code you right is how it affects a user’s experience.
+
+Once I started treating my sales process with the same care and attention as my git repositories, the projects started flowing with less effort. Not only do clear, concise descriptions of the benefits I can provide help me connect better with new customers, the language is also more modular and reusable. And like code, every time you reuse modular language, there are opportunities to refactor and optimize your approach. Refining a reusable pitch turned out to be way better than spending 40 hours writing up bespoke project plans for speculative deals!
+
+What’s great about this approach for both code and sales is that in both cases these techniques focus your attention where it belongs, on your audience.

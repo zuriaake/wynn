@@ -1,0 +1,14 @@
+%article.page{:class => css_classes_for(@page)}
+  - if @page.date
+    - if @page.is_linked?
+      %h1
+        %a.external{:href => @page.metadata('url')}= @page.heading.html_safe
+    - else
+      %h1= widont(@page.heading).html_safe
+    ~ @page.body(self).html_safe
+    - if youtube = @page.metadata('youtube')
+      = render 'youtube', :video_id => youtube
+    = render 'post_meta', :page => @page
+  - else
+    ~ @page.to_html(self).html_safe
+%br

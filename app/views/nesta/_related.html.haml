@@ -1,0 +1,7 @@
+.related
+  %h3 You might like
+  %ul.related
+    - related_articles(5).each do |article|
+      %li
+        %a{:href => article.permalink}= article.heading
+

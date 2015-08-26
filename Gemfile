@@ -1,22 +1,41 @@
-source :rubygems
+source 'https://rubygems.org'
+ruby '2.0.0'
 
-gem "sinatra-content-for"
-gem "heroku"
-gem "nesta", "~> 0.9.11"
-gem "redcarpet"
-gem "compass", "~> 0.11.5"
-
-gem "will_paginate"
-gem "octokit"
-
-gem "nesta-plugin-sluggable" #, :git => "git://github.com/pengwynn/nesta-plugin-sluggable.git"
-gem "nesta-plugin-linkable"  #, :git => "/Users/wynn/Projects/nesta-plugin-linkable"
-
+gem 'gemoji'
+gem 'github-markdown'
+gem 'heroku_rails_deflate'
+gem 'html-pipeline'
+gem 'jquery-rails'
+gem 'lograge'
+gem 'navigasmic'
+gem 'nesta', :github => 'gma/nesta', :ref => 'a049ac1a9a'
+gem 'nesta-plugin-linkable'
+gem 'nesta-plugin-sluggable'
+gem 'nesta-rails'
+gem 'newrelic_rpm'
+gem 'pismo'
+gem 'rack-canonical-host'
 gem 'rack-rewrite'
+gem 'rails', '~>3.2.17'
+gem 'rails_12factor'
+gem 'thin'
 
 group :development do
-  gem "racksh"
-  gem "tux"
+  gem 'foreman'
 end
 
-# gem (RUBY_VERSION =~ /^1.9/) ? 'ruby-debug19': 'ruby-debug'
+# Gems used only for assets and not required
+# in production environments by default.
+group :assets do
+  gem 'compass-rails'
+  gem 'compass-normalize'
+  gem 'google-code-prettify-rails'
+  gem 'susy', '~> 1.0.9'
+  gem 'coffee-rails', '~> 3.2.1'
+  gem 'sass-rails',   '~> 3.2.3'
+
+  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
+  # gem 'therubyracer', :platforms => :ruby
+
+  gem 'uglifier', '>= 1.0.3'
+end

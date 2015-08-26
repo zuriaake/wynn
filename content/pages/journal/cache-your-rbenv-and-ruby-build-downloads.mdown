@@ -1,0 +1,13 @@
+date: 2013-06-22 15:37:29 +00:00
+categories: tips
+summary: everyone loves caching!
+
+# Cache Your `rbenv` and `ruby-build` downloads
+
+If you hate the way `ruby-build` is always re-downloading the installer for `yaml-0.1.4` (or worse yet massive downloads for `ruby-1.9.3-p429.tar.gz`), you should enable the download cache. To cache `rbenv` downloads, all you have to do is create a `~/.rbenv/cache` directory.
+
+````bash
+% mkdir `rbenv root`/cache
+````
+
+I found this little nugget of info when perusing [the documentations for ruby-build](https://github.com/sstephenson/ruby-build#package-download-caching). I'm not sure why this feature isn't enabled by default?

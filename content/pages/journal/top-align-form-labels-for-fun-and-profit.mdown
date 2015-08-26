@@ -1,0 +1,6 @@
+date: 2010-09-02 15:07:40.000000000 +00:00
+categories: design
+
+# Top Align Form Labels For Fun and Profit
+
+<p>There’s a <a href="http://uxmovement.com/design-articles/faster-with-top-aligned-labels">fascinating article</a> over on UX Movement on why it’s easier for users to fill out forms where the labels are aligned over the top of your fields.</p>  <blockquote>   <p>Top aligned labels have proven to be faster and easier to fill out than left or right aligned labels. This is because top aligned labels <strong>require half as many visual fixations than left or right aligned labels.</strong> Top aligned labels also allow users to move down the form in one visual direction, instead of two visual directions with left and right aligned labels. This makes filling out forms quicker and easier.</p> </blockquote>  <p><img src="http://uxmovement.com/wp-content/uploads/2010/09/visualfixations.png" width="488" height="383" /> </p>  <p>I’m going to pay attention to this as I wander about on the web this week.</p> <!--b6696dabb55d41099e5dd4e19b95de36-->

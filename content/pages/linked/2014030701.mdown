@@ -1,0 +1,6 @@
+date: 2014-03-07 11:53:49 -0500
+categories: linked, tools
+url: https://medium.com/p/433852f4b4d1
+flags: draft
+
+# Why Atom Can't Replace Vim

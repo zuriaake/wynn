@@ -1,0 +1,7 @@
+#!/bin/sh
+
+set -e
+
+echo "Optimizing images..."
+find app/assets/images -name "*.png" -exec optipng -o7 {} \;
+find app/assets/images -name "*.jpg" -exec jpegoptim -m60 -o -p -n --strip-all {} \;

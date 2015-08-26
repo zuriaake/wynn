@@ -1,0 +1,13 @@
+summary: Putting the DS in RDS
+date: 2010-10-05 16:06:51.000000000 +00:00
+categories: performance
+
+# Amazon RDS announces support for Master/Slave Replication
+
+Today Amazon announced [support for Read Replicas](http://aws.amazon.com/about-aws/whats-new/2010/10/05/announcing-read-replicas-lower-high-memory-db-instance-prices-for-amazon-rds/), an implementation of MySql's Master Slave replication for AWS's [RDS](http://aws.amazon.com/rds/) (Relational Database) service.
+
+> You can now create one or more replicas of a given “source” DB Instance and serve incoming read traffic from multiple copies of your data. This new database deployment option enables you to elastically scale out beyond the capacity constraints of a single DB Instance for read-heavy database workloads. You can use Read Replicas in conjunction with Multi-AZ replication for scalable, reliable, and highly available production database deployments.
+
+This is fantastic news for anyone looking to build a massively scalable data platform on top of EC2.
+
+w00t!

@@ -1,8 +1,8 @@
 # Title and subheading for your site. Used on the home page and in page
 # titles.
 #
-title: "Wynn Netherland"
-subtitle: "Full stack web creative"
+title: Marshall Yount
+subtitle: From the power plug to the </html>
 
 # You should really specify your content's author when generating an
 # Atom feed. Specify at least one of name, uri or email, and Nesta will
@@ -11,9 +11,9 @@ subtitle: "Full stack web creative"
 # http://www.atomenabled.org/developers/syndication/atom-format-spec.php#element.feed
 #
 author:
-  name: Wynn Netherland
-  uri: http://wynnnetherland.com
-  email: wynn.netherland@gmail.com
+  name: Marshall Yount
+  uri: http://yountlabs.com
+  email: marshall.yount@gmail.com
 
 # You can stick with the default look and feel, or use a theme. Themes are
 # easy to create or install, and live inside the themes directory. You
@@ -26,7 +26,7 @@ theme: wynn
 # site's short name here. A comment form will automatically be added to
 # the bottom of your pages.
 #
-disqus_short_name: wynn
+disqus_short_name: yountlabs
 
 # cache
 #     Set it to true if you'd like Nesta to cache your pages in ./public.
@@ -54,12 +54,28 @@ content: content
 #
 # google_analytics_code: "UA-???????-?"
 
-# Overriding "cache" and "content" in production is recommended if you're
-# deploying Nesta to your own server (but see the deployment documentation
-# on the Nesta site). Setting google_analytics_code in production is
-# recommended regardless of how you're deploying (if you have a GA account!).
-#
-# Don't forget to uncomment the "production:" line too...
+# expires
+#     The amount of time each page can be cached for by the client. If your
+#     pages changes very often, set this to a small value. If on the other hand
+#     your pages are mostly static, set it to a large value. Within the time you
+#     put, a browser that has a copy of the file in its cache might choose not
+#     to requery your website for the latest version. Can be overriden in
+#     individual pages. In seconds.
+#     Default: 0
+
+expires: 3600
+
+# expires_type
+#     Whether or not proxies can cache the pages we serve. If set to public,
+#     both proxies between the browser and the web server and the browser itself
+#     can cache the pages. If set to private, only the client's browser can.
+#     In practice, if the pages are modified depending on who requests
+#     them, you should set this to private. Otherwise if all clients get the
+#     same page (usually the case, particularly on nesta websites), set it to
+#     public.
+#     Default: public
+
+expires_type: public
 
 production:
   cache: false

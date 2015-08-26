@@ -1,0 +1,98 @@
+summary: Building a better resume on GitHub
+date: 2015-08-25 1:00:00.000000000 +00:00
+categories: career
+
+I recently revamped my resume using tools (GitHub, Markdown, Mou, Chrome) from my every day programmer workflow. I found this process to be much more pleasant than the normal LinkedIn/Microsoft Word gymnastics. I hope you do as well!
+
+# History
+
+I've previously kept my resume up-to-date on [LinkedIn](https://linkedin.com/in/marshallyount). It's a standard (of sorts), people go look there automatically, and there is a passable PDF export.
+
+However, recently I've been frustrated by the **lack of a decent markup language** that can be used to provide _emphasis and highlighting_. I really just want to write a resume using [GitHub flavored Markdown](https://help.github.com/articles/github-flavored-markdown/). Markdown is a simple markup language, whose features I know by heart because I use them every day to write documentation at work.
+
+### Step 1: Export
+
+First we have to get the junky old resume out of the LinkedIn. Use the PDF export feature.
+
+![save as pdf](/images/save_as_pdf.png)
+
+Once you have the PDF in hand, copy all of the text (`Cmd-A`) and paste into a markdown file. I called mine [`resume.md`](https://github.com/marshally/resume/commit/a38b7d13a2063cf2ad4b484a7ef4f55bac4379bc).
+
+### Step 2: Tidy up
+
+The PDF text lands in a text editor like an ugly ball of mud, so we need to format everything so that it looks good.
+
+I recommend the [Mou Markdown Editor](http://25.io/mou/) for the least painless workflow. We'll also use Mou later for its PDF export feature, so you might as well get started with it now!
+
+A full lesson in Markdown formatting is beyond the scope of this blog post, but here's a generally representative section from my job experience section:
+
+```Markdown
+# Marshall Yount
+> marshall@yountlabs.com
+
+## Experience
+
+### Operations / Platform Engineering at Code Climate
+> July 2014 - Present (1 year 2 months)
+
+Code Climate maintains an automated code review system that analyzes more than 900 billion lines of source code per day. I build new features, keep the servers running, and participate in Code Reviews using GitHub Pull Requests and Slack.
+
+#### Duties
+
+* Built custom instrumentation (`statsd`, [Librato](https://librato.com) and alerting ([PagerDuty](http://pagerduty.com), [NewRelic](http://newrelic.com) systems based on **hundreds of custom metrics** that give deep insight into the Platform's performance characteristics.
+* Automated deployment with [ansible](http://ansible.com) and [Docker](http://docker.com) to more than a dozen different server types.
+* Used `rollout` feature toggles and the `scientist` gem to safely test and deploy behavior-neutral refactorings.
+* Delivered *Refactoring Rails* workshop to [Garden City Rubyconf 2015](http://www.gardencityruby.org/).
+
+#### Roles
+
+* **Platform Team Captain** for a small remote engineering team that took over an existing code base from busy founder-engineers.
+* **Sales Engineer** for *Code Climate Enterprise*, a self hosted version built on [Docker](http://docker.com).
+
+**Skills:** Rails, rollout, scientist, rspec, capistrano, sidekiq, resque, mongodb, memcached, redis, statsd, OpenVZ, Docker, Ansible, CoreOS, CentOS, Travis CI, Circle CI, Slackbot
+```
+
+Be sure to make liberal use of links, bold, italics, code blocks, and syntax highlighting.
+
+Think about formatting from the reader's perspective. Your resume is probably one out of a stack of a hundred. Make your best, most **awesome features** _really stand out_.
+
+### Step 3: Export HTML
+
+#### Stylesheet
+
+Mou supports four different stylesheets that can be applied to HTML or PDF exports. I recommend the `GitHub2` theme.
+
+#### Preview in Chrome
+
+Open the document up in your web browser of choice. I like Google Chrome because you can easily print directly to PDF.
+
+I recommend that you set the margins to `Minimum` and remove Chrome's automatic Header and Footer.
+
+#### CSS
+
+I made the following changes to the stylesheet at the top of the exported HTML:
+
+```css
+body {
+  font-size: 13px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding: 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 10px 0 10px;
+}
+```
+
+Your mileage may vary.
+
+#### Page breaks!
+
+If you would like to force a page break before some kind of section header, add style tags to the element _after the page break_. For example:
+
+```html
+<h2 style="page-break-before:always;">Outside of Work Projects</h2>
+```
+
+You may want

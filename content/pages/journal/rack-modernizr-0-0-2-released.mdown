@@ -1,0 +1,27 @@
+date: 2010-11-14 17:00:10.000000000 +00:00
+categories: opensource
+summary: because 0.0.1 wasn't good enough!
+
+# rack-modernizr 0.0.2 released
+
+With the ever increasing proliferation of browser capabilities, I'm a fan of the Modernizr JavaScript library. <a href="http://www.modernizr.com/">Modernizr</a> is:
+<blockquote>... a small and simple JavaScript library that helps you take advantage of emerging web technologies (CSS3, HTML 5) while still maintaining a fine level of control over older browsers that may not yet support these new technologies.
+
+Modernizr uses feature detection to test the current browser against upcoming features like rgba(), border-radius, CSS Transitions and many more. These are currently being implemented across browsers.</blockquote>
+What's problematic about this yummy data is that it is only available client-side.
+
+Well, it was only available client-side until the release of <a href="http://tripleodeon.com/">jamesgpearce</a>'s super cool <a href="https://github.com/jamesgpearce/modernizr-server">modernizr-server</a> PHP library.
+
+So now what's problematic is that this data is only available client-side -- or if you are using PHP.
+
+For Rubyists, I created <a href="https://github.com/marshally/rack-modernizr">rack-modernizr</a>, a Rack middleware inspired by modernizr-server but leveraging the powerful Rack programming model.
+
+rack-modernizr makes Modernizr data available on the server from a Rack environment variable:
+
+<code>&lt;%= request.env['X-rack-modernizr'].inspect %&gt;</code>
+
+It performs this magic trick by checking to see if the server know about the modernizr data yet, and injecting some javascript into the body tag if not.  The javascript sneaks the modernizr data up to the server on the back of an image tag.
+
+<script src='http://pastie.org/1297875.js'></script>
+
+This morning I released version 0.0.2.  Its my first ruby gem, the first open source project I started personally, and I am very excited about it!

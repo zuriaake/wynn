@@ -1,12 +1,14 @@
-keywords: sass, compass, css, ruby, mobile, html5, titanium
-description: Wynn Netherland is a Christian husband, father, and full stack web creative.
+keywords: sass, compass, css, ruby, mobile, html5, api, dotfiles
+description: I love cooking, productivity hacks, setting off fireworks, and making servers GO FAST.
+
+= render 'lead'
 
 = article_summaries(latest_articles(20))
-%p
+%p.view-archives
   Looking for more?
   View the
   %a(href="/archives")
-    %strong archives.
-= haml :"shared/author", :layout => false
-
-- @class_for_masthead = 'moleskine'
+    %strong archives
+  or grab
+  %a(href="http://feeds.feedburner.com/yountlabs")
+    %strong the feed.

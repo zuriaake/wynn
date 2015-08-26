@@ -1,0 +1,13 @@
+date: 2010-11-11 03:53:06.000000000 +00:00
+categories: productivity
+summary: when tools collide
+
+# My Gmail keyboard shortcuts stopped working
+
+I've been an avid user of gmail's cool kid [keyboard shortcuts](http://r.evhead.com/hodgepodge/gmail-shortcuts.html).
+
+A couple of days ago these mysteriously stopped working, knocking my reflexes off track.
+
+I realized this morning that the culprit was the [Vimium](http://vimium.github.com/) plugin for Chrome, which was stealing keypresses like 'J' and 'K'.  Vimium's settings page allows you to turn off the plugin for specific pages based on a string match (in this case "http*://mail.google.com/*").
+
+Back to normal now!

@@ -1,0 +1,25 @@
+#mobile-nav li a {
+  @include link-colors(#ddd, #fff, $color-link-active, #ddd);
+  display: block;
+  text-decoration: none;
+}
+.nav-toggle {
+  margin-top: 10px;
+}
+
+.nav-toggle,
+.feed {
+  @include link-colors(#ddd, $color-link-active, #ddd, #ddd);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.site-nav {
+  text-align: center;
+  a {
+    @include link-colors(#aaa, #666, #666, #aaa);
+  }
+}
+.site-nav li.active a {
+  color: $color-text;
+}
